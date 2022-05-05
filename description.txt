@@ -1,0 +1,9 @@
+The mod is in alpha testing.
+
+But there is already:
+* 16 Types of ammo
+* 2 Kind of materials
+* 2 NPC
+* 1 Pet
+* 2 Languages
+* 2 Secret item

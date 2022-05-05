@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P49Lu0wz6NvZu9UhabTLbSKAEvt1rwofP0fhOxYXHx4eoP9R13mUS3euwFPBLbFx2jf+lictGY1sPoi5fmYoPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dubli\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Albedo\\Albedo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dubli\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

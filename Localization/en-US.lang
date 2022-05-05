@@ -1,0 +1,90 @@
+ItemName.TestSword=Test Sword!
+ItemTooltip.TestSword=[i/s1:29]This is a sword to test new mod features[i/s1:29]
+
+
+///NAMES AND DESCRIPTIONS OF ALL SORTS OF ITEMS//
+ItemName.Gunpowder=Powder
+ItemTooltip.Gunpowder=Very explosive mixture [i/s1:1347]
+ItemName.RawSaltpeter=Saltpeter
+ItemTooltip.RawSaltpeter=Very explosive item
+ItemName.BulletOnChain=Bullet on Chain
+ItemTooltip.BulletOnChain=You were killed by this bullet and you saved it as a reminder
+
+
+///BUFF NAMES AND DESCRIPTIONS////
+BuffName.BulletPetBuff=Your lethal bullet
+BuffDescription.BulletPetBuff=Why did the bullet come to life?
+
+
+//// BULLET NAMES AND DESCRIPTIONS///
+ItemName.DirtBullet=Dirt Bullet
+ItemTooltip.DirtBullet=DirtBullet from [i/s1:2]
+ItemName.StoneBullet=Stone Bullet
+ItemTooltip.StoneBullet=DirtBullet from [i/s1:3]
+ItemName.IceBullet=Ice Bullet
+ItemTooltip.IceBullet=Delo from [i/s1:664]
+ItemName.SnowBullet=Snow Bullet
+ItemTooltip.SnowBullet=Delono from [i/s1:593]
+ItemName.GelBullet=GelBullet
+ItemTooltip.GelBullet=Bounces off walls\nDelono from [i/s1:23]
+ItemName.PinkGelBullet= Pink Gel Bullet
+ItemTooltip.PinkGelBullet=Bounces off walls\nDelo from [i/s1:3111]
+ItemName.GemBullet=PinkGelBullet
+ItemTooltip.GemBullet=Very pretty bullet\nMade from [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
+ItemName.CopperBullet=Copper Bullet
+ItemTooltip.CopperBullet=Why?{nMade of [i/s1:20]
+ItemName.IronBullet=Iron Bullet
+ItemTooltip.IronBullet=The most common bullet {made from [i/s1:22]
+ItemName.LeadBullet=Lead Bullet
+ItemTooltip.LeadBullet=The most common bullet\nMade from [i/s1:704]
+ItemName.PreciousBullet=Precious Bullet
+ItemTooltip.PreciousBullet=It's more valuable than you think \Made from [i/s1:19] or [i/s1:706]
+ItemName.TungstenBullet=Tungsten Bullet
+ItemTooltip.TungstenBullet=The most common bullet {made from [i/s1:705]
+
+
+///NAMING AND DESCRIBING THE BAGS///
+ItemName.ChlorophytePouch=chlorophyte bullet bag
+ItemName.CrystalPouch=crystal bullets bag
+ItemName.CursedPouch=cursed bullets bag
+ItemName.ExplosivePouch=explosive bullet pouch
+ItemName.GoldenPouch=golden bullet pouch
+ItemName.IchorPouch=Ichor bullet Pouch
+ItemName.LuminitePouch=luminite bullet pouch
+ItemName.MeteorPouch=bag of meteorite bullets
+ItemName.NanoPouch=nano pouch
+ItemName.PartyPouch=pouch of party bullets
+ItemName.SilverPouch=silver bullet pouch
+ItemName.VelocityPouch=high-speed pellet pouch
+ItemName.VenomPouch=pouch of poisonous pellets
+
+ItemName.CopperPouch=copper pouch
+ItemName.DirtPouch=bag of earth bullets
+ItemTooltip.DirtPouch=Why did you do that?
+ItemName.GelPouch=bag of gel bullets
+ItemName.GemPouch=a bag of self-colored bullets
+ItemName.IcePouch=IcePouch=pack of ice bullets
+ItemName.IronPouch=Iron Bullet Pouch
+ItemName.LeadPouch=bag of lead bullets
+ItemName.PinkGelPouch=horn gel bullet pouch
+ItemName.PreciousPouch=bag of precious bullets
+ItemName.SnowPouch=bag of snow bullets
+ItemName.StonePouch=bag of stone bullets
+ItemName.TungstenPouch=tungsten bullet pouch
+
+
+///NAMES OF NIPS//
+Sniper.name1=Sniper
+Sniper.name2=Kyle
+Sniper.name3=Kirill
+Sniper.name4=Bulet
+Sniper.name5=Kirsi
+Sniper.name6=Michael
+Sniper.name7=Cole
+
+
+///NIP DIALOGS///
+Sniper.dialog1=Have you heard of sky bullets? No? Neither have I.
+Sniper.dialog2=I can make bullets out of anything, I can even make bullets out of other bullets.
+Sniper.dialog3=Want to buy ice bullets? Just don't keep them in your pocket too long.
+Sniper.dialog4=How nice it is to get money for land.

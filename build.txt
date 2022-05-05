@@ -1,0 +1,5 @@
+displayName = Albedo Mod
+author = Dublikunt
+version = 0.0.4
+homepage = https://www.dublikunt.tk/
+buildIgnore =.idea\* Folder.DotSettings.user
