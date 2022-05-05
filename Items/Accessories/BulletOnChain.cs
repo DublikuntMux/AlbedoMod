@@ -6,7 +6,6 @@ namespace Albedo.Items.Accessories
 {
     public class BulletOnChain : ModItem
     {
-
         public override void SetDefaults() {
             item.damage = 0;
             item.useStyle = ItemUseStyleID.SwingThrow;

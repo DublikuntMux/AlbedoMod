@@ -23,7 +23,7 @@ namespace Albedo.Global
             if (type == NPCID.ArmsDealer)
             {
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Gunpowder>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver:20);;
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver:20);
                 nextSlot++;
             }
         }

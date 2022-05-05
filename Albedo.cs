@@ -4,6 +4,5 @@ namespace Albedo
 {
 	public class Albedo : Mod
 	{
-		
 	}
 }

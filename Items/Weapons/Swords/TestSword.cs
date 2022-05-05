@@ -8,7 +8,6 @@ namespace Albedo.Items.Weapons.Swords
 	{
 		public override void SetDefaults() 
 		{
-			
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 20;
