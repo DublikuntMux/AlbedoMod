@@ -1,5 +1,5 @@
 displayName = Albedo Mod
 author = Dublikunt
 version = 0.0.4.4
-homepage = https://www.dublikunt.tk/
+homepage = https://github.com/DublikuntMux/AlbedoMod
 buildIgnore =.idea\* .git\* bin\* obj\* .gitignore

@@ -1,4 +1,11 @@
-The mod is in alpha testing.
+This mod aims to change the gameplay for the shooter.
+If the mod does not have a translation into your language, you can go to github and help with it.
+If you have suggestions and or you find a problem, you can go to github and write about it.
+
+Github: https://github.com/DublikuntMux/AlbedoMod
+Developer site: https://www.dublikunt.tk/
+
+!The mod is in alpha testing!
 
 But there is already:
 * 20 Types of ammo
