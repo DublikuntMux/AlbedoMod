@@ -1,111 +1,118 @@
-///NAMES AND DESCRIPTIONS OF ALL SORTS OF ITEMS///
-ItemName.Gunpowder=Powder
-ItemTooltip.Gunpowder=Very explosive mixture [i/s1:1347]
+///TITLE AND DESCRIPTION OF ALL OBJECTS///
+ItemName.Gunpowder=Gunpowder
+ItemTooltip.Gunpowder=Very Explosive Mixture [i/s1:1347].
 ItemName.RawSaltpeter=Saltpeter
-ItemTooltip.RawSaltpeter=Very explosive item
-ItemName.BulletOnChain=Bullet on Chain
-ItemTooltip.BulletOnChain=You were killed by this bullet and you saved it as a reminder
+ItemTooltip.RawSaltpeter=Very Explosive Item
+ItemName.BulletOnChain=Bullet On Chain
+ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder
 
 
-///BUFF NAMES AND DESCRIPTIONS////
-BuffName.BulletPetBuff=Your lethal bullet
+///NAME AND DESCRIPTION OF BAFS///
+BuffName.BulletPetBuff=Your Deadly Bullet
 BuffDescription.BulletPetBuff=Why did the bullet come to life?
 
 
-//// BULLET NAMES AND DESCRIPTIONS///
+///BULLET NAME AND DESCRIPTION///
 ItemName.DirtBullet=Dirt Bullet
-ItemTooltip.DirtBullet=DirtBullet from [i/s1:2]
+ItemTooltip.DirtBullet=Made from [i/s1:2]
 ItemName.StoneBullet=Stone Bullet
-ItemTooltip.StoneBullet=DirtBullet from [i/s1:3]
+ItemTooltip.StoneBullet=Made from [i/s1:3]
 ItemName.IceBullet=Ice Bullet
-ItemTooltip.IceBullet=Delo from [i/s1:664]
+ItemTooltip.IceBullet=Made from [i/s1:664]
 ItemName.SnowBullet=Snow Bullet
-ItemTooltip.SnowBullet=Delono from [i/s1:593]
-ItemName.GelBullet=GelBullet
-ItemTooltip.GelBullet=Bounces off walls\nDelono from [i/s1:23]
+ItemTooltip.SnowBullet=Made from [i/s1:593]
+ItemName.GelBullet= Gel Bullet
+ItemTooltip.GelBullet=Bounces off walls\nMade from [i/s1:23]
 ItemName.PinkGelBullet= Pink Gel Bullet
-ItemTooltip.PinkGelBullet=Bounces off walls\nDelo from [i/s1:3111]
-ItemName.GemBullet=PinkGelBullet
-ItemTooltip.GemBullet=Very pretty bullet\nMade from [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
+ItemTooltip.PinkGelBullet=Bounces off walls\nMade from [i/s1:3111]
+ItemName.GemBullet=Gem Bullet
+ItemTooltip.GemBullet=Very Nice Bullet \nMade from [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
 ItemName.CopperBullet=Copper Bullet
-ItemTooltip.CopperBullet=Why?{nMade of [i/s1:20]
+ItemTooltip.CopperBullet=Why?\nMade from [i/s1:20]
 ItemName.IronBullet=Iron Bullet
-ItemTooltip.IronBullet=The most common bullet {made from [i/s1:22]
+ItemTooltip.IronBullet=Most common bullet\nMade from [i/s1:22]
 ItemName.LeadBullet=Lead Bullet
 ItemTooltip.LeadBullet=The most common bullet\nMade from [i/s1:704]
 ItemName.PreciousBullet=Precious Bullet
-ItemTooltip.PreciousBullet=It's more valuable than you think. \Made from [i/s1:19] or [i/s1:706]
+ItemTooltip.PreciousBullet=It's more expensive than you think \nBut is it any good? \nMade from [i/s1:19] or [i/s1:706]
 ItemName.TungstenBullet=Tungsten Bullet
-ItemTooltip.TungstenBullet=The most common bullet {made from [i/s1:705]
-ItemName.HellBullet=HellBullet
-ItemTooltip.HellBullet=HellBullet=Burns enemies on fire \nMade from [i/s1:175]
-ItemName.CobaltBullet=Cobalt Bullet
+ItemTooltip.TungstenBullet=The most common bullet\nMade from [i/s1:705]
+ItemName.HellBullet=Hell Bullet
+ItemTooltip.HellBullet=Set enemies on fire when hit \nMade from [i/s1:175]
+ItemName.CobaltBullet= Cobalt Bullet
 ItemTooltip.CobaltBullet=Made from [i/s1:381]
-ItemName.MythrilBullet=Mythril Bullet
+ItemName.MythrilBullet= Mithril Bullet
 ItemTooltip.MythrilBullet=Made from [i/s1:382]
-ItemName.AdamantiteBullet=Adamantite Bullet
+ItemName.AdamantiteBullet= Adamantite Bullet
 ItemTooltip.AdamantiteBullet=Made from [i/s1:391]
 
 
-///NAMING AND DESCRIBING THE BAGS///
-ItemName.ChlorophytePouch=Chlorophyte Bullet Bag
-ItemName.CrystalPouch=CrystalPouch
-ItemName.CursedPouch=Cursed Bullet Bag
-ItemName.ExplosivePouch=Bag of Explosive Bullets
-ItemName.GoldenPouch=Bag of golden bullets
-ItemName.IchorPouch=Ichoric Bullet Bag
-ItemName.LuminitePouch=Luminite Bullet Bag
-ItemName.MeteorPouch=Bag of meteorite bullets
-ItemName.NanoPouch=Nano Bullet Bag
-ItemName.PartyPouch=PartyPouch
-ItemName.SilverPouch=Silver Bullet Bag
-ItemName.VelocityPouch=High Speed Bullet Bag
-ItemName.VenomPouch=Poisonous Bullet Bag
+///NAME AND DESCRIPTION OF BAGS///
+ItemName.ChlorophytePouch=Bag of Chlorophyte Pouch
+ItemName.CrystalPouch=Crystal Pouch
+ItemName.CursedPouch=Bag of Cursed Bullets
+ItemName.ExplosivePouch=Explosive Pouch
+ItemName.GoldenPouch=Bag of Golden Bullets
+ItemName.IchorPouch=Ichor Pouch
+ItemName.LuminitePouch=Bag of Luminite Bullets
+ItemName.MeteorPouch=Meteor Pouch
+ItemName.NanoPouch=Bag of Nano Bullets
+ItemName.PartyPouch=Party Pouch Bag
+ItemName.SilverPouch=Sack of Silver Bullets
+ItemName.VelocityPouch=Velocity Pouch
+ItemName.VenomPouch=Bag of Poison Bullets
 
-ItemName.CopperPouch=Copper Bullet Bag
-ItemName.DirtPouch=Sack of earth bullets
-ItemTooltip.DirtPouch=Why did you do that?
-ItemName.GelPouch=Bag of Gel Bullets
-ItemName.GemPouch=Pack of self-colored bullets
-ItemName.IcePouch=Pack of Ice Bullets
-ItemName.IronPouch=Iron Bullet Bag
-ItemName.LeadPouch=Bag of lead bullets
-ItemName.PinkGelPouch=Pack of horn gel bullets
-ItemName.PreciousPouch=Precious Bullet Bag
-ItemName.SnowPouch=SnowPouch of snow bullets
-ItemName.StonePouch=Bag of stone bullets
-ItemName.TungstenPouch=Tungsten Bullet Bag
+ItemName.CopperPouch=Pouch of Copper Bullets
+ItemName.DirtPouch=Bag of Dirt Bullets
+ItemTooltip.DirtPouch=Why did you do this?
+ItemName.GelPouch=Gel Pouch Bag
+ItemName.GemPouch=Gem Pouch
+ItemName.IcePouch=Pouch of Ice Bullets
+ItemName.IronPouch=Sack of Iron Bullets
+ItemName.LeadPouch=Pouch of Lead Bullets
+ItemName.PinkGelPouch=Pink Gel Pouch
+ItemName.PreciousPouch=Pouch of Precious Bullets
+ItemName.SnowPouch=Sack of Snow Bullets
+ItemName.StonePouch=Sack of Stone Bullets
+ItemName.TungstenPouch=Bag of Tungsten Bullets
 ItemName.HellPouch=Bag of Hell Bullets
-ItemName.CobaltPouch=Bag of cobalt bullets
-ItemName.MythrilPouch=Mythril Bullet Bag
-ItemName.AdamantitePouch=Bag of Adamantium Bullets
+ItemName.CobaltPouch=Pouch of Cobalt Bullets
+ItemName.MythrilPouch=Bag of Mithril Bullets
+ItemName.AdamantitePouch=Pouch of Adamantium Bullets
+
+ItemName.CosmoPouch=Sack of Sky Bullets
+ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nThis pouch holds the technology of the ancients.
+ItemName.PostLunarPouch=Pouch of Post Moon Lord Bullets
+ItemTooltip.PostLunarPouch=This pouch has powers that your father never dreamed of.
+ItemName.HardmodPouch=Pouch of Hardmode Bullets
+ItemName.PrehardmodPouch=Pouch of Prehardmod Pouch
 
 
-///NAMES OF NIPS//
-Sniper.name1=Sniper
+///NIPS NAMES//
+Sniper.name1=Tagged
 Sniper.name2=Kyle
-Sniper.name3=Kyrill
-Sniper.name4=Bulet
+Sniper.name3=Kirill
+Sniper.name4=Bullet
 Sniper.name5=Kirsi
 Sniper.name6=Michael
 Sniper.name7=Cole
 
 Bagman.name1=Denis
 Bagman.name2=Michael
-Bagman.name3=Galya
-Bagman.name4=Michael
+Bagman.name3=Galia
+Bagman.name4=Mikasa
 Bagman.name5=Alla
-Bagman.name6=Kenarius
-Bagman.name7=Carla
+Bagman.name6=Cenarius
+Bagman.name7=Karla
 
 
-///DIALOGS OF THE NIPS///
-Sniper.dialog1=Have you heard anything about sky bullets? No? Neither have I.
+///NIP DIALOGUES///
+Sniper.dialog1=Have you heard anything about sky bullets? Not? I'm here too.
 Sniper.dialog2=I can make bullets out of anything, I can even make bullets out of other bullets.
-Sniper.dialog3=Want to buy ice bullets? Just don't keep them in your pocket too long.
-Sniper.dialog4=How nice it is to get money for land.
+Sniper.dialog3=Would you like to buy ice bullets? Just don't keep them in your pocket for too long.
+Sniper.dialog4=It's good to get paid for land.
 
-Bagman.dialog1= Do you know the sniper? He's my brother.
-Bagman.dialog2= If you only knew the effort it took me to collect these sacks of bullets.
-Bagman.dialog3= The most modest prices on everything, one platinum and a bag of what's good in your pocket.
-Bagman.dialog4= You heard about Albedo, he's scary... Don't believe him!
+Bagman.dialog1=Do you know the sniper? He's my brother.
+Bagman.dialog2=If you only knew how hard it took me to collect these bags of bullets.
+Bagman.dialog3=The most modest prices on everything for just one platinum and a bag of good stuff in your pocket.
+Bagman.dialog4= You've heard of Albedo, he's scary... Don't trust him!

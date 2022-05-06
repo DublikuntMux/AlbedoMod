@@ -18,6 +18,7 @@ namespace Albedo.Base
             projectile.width = 4;
             projectile.height = 20;
             projectile.aiStyle = 1;
+            aiType = 14;
             projectile.friendly = true;
             projectile.hostile = false;
             projectile.penetrate = Penetrate;

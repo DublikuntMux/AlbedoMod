@@ -80,6 +80,13 @@ ItemName.CobaltPouch=Мешок кобальтовых пуль
 ItemName.MythrilPouch=Мешок мифриловых пуль
 ItemName.AdamantitePouch=Мешок адамантиевых пуль
 
+ItemName.CosmoPouch=Мешок небесных пуль
+ItemTooltip.CosmoPouch=Это мешок когдато пренадлежал Albedo \nЭтот мешоку хранитв себе технологии древних.
+ItemName.PostLunarPouch=Мешок пост-мунлордных пуль
+ItemTooltip.PostLunarPouch=Этот мешок иемеет власть которая не снилась твоему отцу.
+ItemName.HardmodPouch=Мешок хардмодных пуль
+ItemName.PrehardmodPouch=Мешок прехардмодных пуль
+
 
 ///ИМЕНА НИПОВ//
 Sniper.name1=Меченый

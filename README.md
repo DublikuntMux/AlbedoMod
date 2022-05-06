@@ -1,6 +1,6 @@
 
 <h1 align="center"> Albedo Mod </h1>
-<p align="center">My first site build on next and chakra-ui </p>
+<p align="center"> My first mod for Terraria </p>
 
 <div align="center">
 	<img src="https://www.codefactor.io/repository/github/dublikuntmux/AlbedoMod/badge" alt="Github code factor">
