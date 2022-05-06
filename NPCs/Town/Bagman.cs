@@ -1,3 +1,4 @@
+using Albedo.Global;
 using Albedo.Items.Ammos.Bullets;
 using Albedo.Items.Ammos.Pouches.Mod;
 using Albedo.Items.Ammos.Pouches.Vanila;
@@ -12,6 +13,8 @@ namespace Albedo.NPCs.Town
     [AutoloadHead]
     public class Bagman : ModNPC
     {
+        private bool _otherShop;
+        
         public override bool Autoload(ref string name) 
         {
             name = "Bagman";
@@ -52,7 +55,7 @@ namespace Albedo.NPCs.Town
 
         public override bool CanTownNPCSpawn(int numTownNPCs, int money)
         {
-            return NPC.downedMoonlord;
+            return NPC.downedBoss3;
         }
         
         public override string TownNPCName()
@@ -121,106 +124,118 @@ namespace Albedo.NPCs.Town
         
         public override void SetChatButtons(ref string button, ref string button2)
         {
-            button = Language.GetTextValue("LegacyInterface.28");
+            button = Language.GetTextValue("Mods.Albedo.NPC.PreHardmod") + " " + Language.GetTextValue("LegacyInterface.28");
+            button2 = Language.GetTextValue("Mods.Albedo.NPC.Hardmod") + " " + Language.GetTextValue("LegacyInterface.28");
         }
         
         public override void OnChatButtonClicked(bool firstButton, ref bool shop)
-        {
-            if (firstButton)
-            {
-                shop = true;
-            }
+        { 
+            shop = true;
+            ((Bagman)mod.GetNPC(Name))._otherShop = !firstButton;
         }
 
         public override void SetupShop(Chest shop, ref int nextSlot)
         {
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<CopperPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<DirtPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<GelPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<GemPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<IcePouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<IronPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<LeadPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<PinkGelPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<PreciousPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<SnowPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<StonePouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<TungstenPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<ChlorophytePouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<CursedPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<ExplosivePouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<GoldenPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<IchorPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<LuminitePouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<MeteorPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<NanoPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<PartyPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<SilverPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<VelocityPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<VenomPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<HellPouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantitePouch>());
-            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
-            nextSlot++;
+            if (_otherShop)
+            {
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<PinkGelPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                if (Main.hardMode)
+                {
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<HellPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<ChlorophytePouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<CursedPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<IchorPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<NanoPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<PartyPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<VelocityPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<VenomPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilPouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantitePouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                }
+                
+                if (NPC.downedMoonlord)
+                {
+                    shop.item[nextSlot].SetDefaults(ModContent.ItemType<LuminitePouch>());
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                    nextSlot++;
+                }
+            }
+            else
+            {
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<CopperPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<DirtPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<GelPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<GemPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<IcePouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<IronPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<LeadPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++; 
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<PreciousPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<SnowPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<StonePouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<TungstenPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<ExplosivePouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<GoldenPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<MeteorPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<SilverPouch>());
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum:1);
+                nextSlot++;
+            }
         }
     }
 }

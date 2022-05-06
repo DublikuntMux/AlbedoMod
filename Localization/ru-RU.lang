@@ -70,7 +70,7 @@ ItemName.GemPouch=Мешок самоцветных пуль
 ItemName.IcePouch=Мешок ледяных пуль
 ItemName.IronPouch=Мешок железных пуль
 ItemName.LeadPouch=Мешок свинцовых пуль
-ItemName.PinkGelPouch=Мешок пулей из рогового геля
+ItemName.PinkGelPouch=Мешок пулей из розового геля
 ItemName.PreciousPouch=Мешок драгоценых пуль
 ItemName.SnowPouch=Мешок снежных пуль
 ItemName.StonePouch=Мешок каменых пуль
@@ -116,3 +116,8 @@ Bagman.dialog1=Ты знаеш снайпера? Он мой брат.
 Bagman.dialog2=Если б ты только знал каких усилий мне стоило собрать эти мешки с пулями.
 Bagman.dialog3=Самые скромные цены на все всего одна платина и мешок с чем у годно у тебя в кармане.
 Bagman.dialog4= Ты слышал о Альбедо он страшный... Не верь ему!
+
+
+///ДОПОЛНИТЕЛЬНОЕ///
+NPC.Hardmod=Хардмодный
+NPC.PreHardmod=Пре хардмодный

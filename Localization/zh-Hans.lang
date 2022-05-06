@@ -117,4 +117,9 @@ Bagman.dialog2=如果你只知道我收集这些子弹袋是多么辛苦。
 Bagman.dialog3=最便宜的价格，只需一个铂金和口袋里的一袋好东西。
 Bagman.dialog4= 你听说过Albedo，他很可怕...不要相信他！
 
+
+///选修的///
+NPC.Hardmod=Hardmod
+NPC.PreHardmod=PreHardmod
+
 ///Translate with google///

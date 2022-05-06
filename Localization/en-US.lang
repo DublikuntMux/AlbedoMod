@@ -116,3 +116,8 @@ Bagman.dialog1=Do you know the sniper? He's my brother.
 Bagman.dialog2=If you only knew how hard it took me to collect these bags of bullets.
 Bagman.dialog3=The most modest prices on everything for just one platinum and a bag of good stuff in your pocket.
 Bagman.dialog4= You've heard of Albedo, he's scary... Don't trust him!
+
+
+///OPTIONAL///
+NPC.Hardmod=Hardmod
+NPC.PreHardmod=PreHardmod
