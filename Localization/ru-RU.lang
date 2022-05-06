@@ -84,8 +84,8 @@ ItemName.CosmoPouch=Мешок небесных пуль
 ItemTooltip.CosmoPouch=Это мешок когдато пренадлежал Albedo \nЭтот мешоку хранитв себе технологии древних.
 ItemName.PostLunarPouch=Мешок пост-мунлордных пуль
 ItemTooltip.PostLunarPouch=Этот мешок иемеет власть которая не снилась твоему отцу.
-ItemName.HardmodPouch=Мешок хардмодных пуль
-ItemName.PrehardmodPouch=Мешок прехардмодных пуль
+ItemName.HardmodePouch=Мешок хардмодных пуль
+ItemName.PrehardmodePouch=Мешок прехардмодных пуль
 
 
 ///ИМЕНА НИПОВ//

@@ -12,7 +12,6 @@ namespace Albedo.Projectiles.Bullets
 		
         public override void AI()
         {
-            projectile.aiStyle = 0;
             Lighting.AddLight(projectile.position, 0.9f, 0.1f, 0.1f);
             Lighting.Brightness(1, 1);
             int dust = Dust.NewDust(projectile.Center, 1, 1, 6, 0f, 0f, 0, default(Color), 0.6f);

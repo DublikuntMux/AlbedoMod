@@ -84,8 +84,8 @@ ItemName.CosmoPouch=Sack of Sky Bullets
 ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nThis pouch holds the technology of the ancients.
 ItemName.PostLunarPouch=Pouch of Post Moon Lord Bullets
 ItemTooltip.PostLunarPouch=This pouch has powers that your father never dreamed of.
-ItemName.HardmodPouch=Pouch of Hardmode Bullets
-ItemName.PrehardmodPouch=Pouch of Prehardmod Pouch
+ItemName.HardmodePouch=Pouch of Hardmode Bullets
+ItemName.PrehardmodePouch=Pouch of Prehardmod Pouch
 
 
 ///NIPS NAMES//

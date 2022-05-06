@@ -1,8 +1,11 @@
-using System.Text.RegularExpressions;
 using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
+using Terraria.DataStructures;
+using Terraria.Graphics.Shaders;
+using static Terraria.Main;
 
 namespace Albedo.Base
 {
@@ -19,10 +22,24 @@ namespace Albedo.Base
 			item.maxStack = 1;
 			Item item1 = item;
 			item1.value *= 3996;
-			Item item2 = item;
-			item2.rare++;
+			item.rare = ItemRarityID.Yellow;
 		}
 
+		public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
+		{
+			if (((TooltipLine)line).mod == "Terraria" && ((TooltipLine)line).Name == "ItemName")
+			{
+				spriteBatch.End();
+				spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
+				GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(3027), item, (DrawData?)null);
+				Utils.DrawBorderString(spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White, 1f, 0f, 0f, -1);
+				spriteBatch.End();
+				spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);
+				return false;
+			}
+			return true;
+		}
+		
 		public override void AddRecipes()
 		{
 			ModRecipe val = new ModRecipe(mod);

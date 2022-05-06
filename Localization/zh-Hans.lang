@@ -84,8 +84,8 @@ ItemName.CosmoPouch=一袋天空子弹
 ItemTooltip.CosmoPouch=这个袋子曾经属于雅儿贝德\n这个袋子里有古人的技术。
 ItemName.PostLunarPouch=邮月领主子弹袋
 ItemTooltip.PostLunarPouch=这个袋子拥有你父亲做梦都想不到的力量。
-ItemName.HardmodPouch=困难模式子弹袋
-ItemName.PrehardmodPouch=一袋 Prehardmod Pouch
+ItemName.HardmodePouch=困难模式子弹袋
+ItemName.PrehardmodePouch=一袋 Prehardmod Pouch
 
 
 ///NIPS 名称//

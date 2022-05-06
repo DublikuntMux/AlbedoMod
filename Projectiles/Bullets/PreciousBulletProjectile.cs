@@ -12,7 +12,6 @@ namespace Albedo.Projectiles.Bullets
 	
 		public override void AI()
         {
-			projectile.aiStyle = 0;
 			Lighting.AddLight(projectile.position, 0.7f, 0.7f, 0.7f);
 			Lighting.Brightness(1, 1);
 		}

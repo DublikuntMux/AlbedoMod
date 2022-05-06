@@ -1,17 +1,32 @@
-﻿using Albedo.Base;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace Albedo.Projectiles.Combined
 {
-    public class PrehardmodBulletProjectile : BasBulletProjectile
+    public class PrehardmodBulletProjectile : ModProjectile
     {
-        protected override string Name => "PreHardmod Bullet";
-        protected override int Penetrate => 10;
-        
+
+        public override void SetStaticDefaults() 
+        {
+            DisplayName.SetDefault("PreHardmod Bullet");
+        }
+
         public override void SetDefaults()
         {
-            base.SetStaticDefaults();
+            projectile.ranged = true;
+            projectile.width = 4;
+            projectile.height = 20;
+            projectile.aiStyle = 1;
+            aiType = 14;
+            projectile.friendly = true;
+            projectile.hostile = false;
+            projectile.penetrate = 20;
+            projectile.timeLeft = 400;
+            projectile.ignoreWater = false;
+            projectile.tileCollide = true;
+            projectile.scale = 0.7f;
+            projectile.extraUpdates = 1;
             projectile.timeLeft = 200;
             projectile.alpha = 255;
             projectile.light = 0.5f;
@@ -20,6 +35,12 @@ namespace Albedo.Projectiles.Combined
             projectile.extraUpdates = 1;
             projectile.usesLocalNPCImmunity = true;
             projectile.localNPCHitCooldown = 2;
+        }
+        
+        public override void AI()
+        {
+            Lighting.AddLight(projectile.position, 0.1f, 0.1f, 0.9f);
+            Lighting.Brightness(1, 1);
         }
         
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
