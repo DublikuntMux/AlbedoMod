@@ -10,13 +10,6 @@ namespace Albedo.Base
 	{
 		protected abstract int AmmunitionItem { get; }
 
-		public override void SetStaticDefaults()
-		{
-			DisplayName.SetDefault(Language.ActiveCulture == GameCulture.Russian
-				? Regex.Replace(Name, "([А-Я])", " $1").Trim()
-				: Regex.Replace(Name, "([A-Z])", " $1").Trim());
-		}
-
 		public override void SetDefaults()
 		{
 			item.CloneDefaults(AmmunitionItem);

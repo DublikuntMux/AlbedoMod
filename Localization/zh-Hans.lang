@@ -1,0 +1,113 @@
+﻿///各种项目的名称和描述///
+ItemName.Gunpowder=火药
+ItemTooltip.Gunpowder=极具爆炸性的混合物[i/s1:1347]。
+ItemName.RawSaltpeter=Saltpeter
+ItemTooltip.RawSaltpeter=极易爆炸的物品
+ItemName.BulletOnChain=链条上的子弹
+ItemTooltip.BulletOnChain=你被这颗子弹打死了，你把它保存起来作为一个提醒
+
+
+///buffname和buff描述////
+BuffName.BulletPetBuff=你的致命子弹
+BuffDescription.BulletPetBuff=为什么子弹是活的？
+
+
+//bulletname and bulletdescription////
+ItemName.DirtBullet=泥土子弹
+ItemTooltip.DirtBullet=DirtBullet from [i/s1:2]
+ItemName.StoneBullet=石子弹
+ItemTooltip.StoneBullet=DirtBullet来自[i/s1:3]
+ItemName.IceBullet=冰子弹
+ItemTooltip.IceBullet=Delo from [i/s1:664]
+ItemName.SnowBullet=SnowBullet
+ItemTooltip.SnowBullet=GelBullet来自[i/s1:593]
+ItemName.GelBullet=GelBullet
+ItemTooltip.GelBullet=Bounces off walls\nZdelono from [i/s1:23]
+ItemName.PinkGelBullet=PinkGel Bullet
+ItemTooltip.PinkGelBullet=Bounces off walls/nDelo from [i/s1:3111]
+ItemName.GemBullet=PinkGelBullet
+ItemTooltip.GemBullet=Very pretty bullet/nMade from [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
+ItemName.CopperBullet=铜质子弹
+ItemTooltip.CopperBullet=Why? [i/s1:20]
+ItemName.IronBullet=Iron Bullet
+ItemTooltip.IronBullet=最常见的子弹
+ItemName.LeadBullet=Lead Bullet
+ItemTooltip.LeadBullet=Made from [i/s1:704]
+ItemName.PreciousBullet=珍贵的子弹
+ItemTooltip.PreciousBullet=它比你想象的更有价值。\由[i/s1:19]或[i/s1:706]制成
+ItemName.TungstenBullet= 钨制子弹
+ItemTooltip.TungstenBullet=Made from [i/s1:705]
+ItemName.HellBullet=HellBullet
+ItemTooltip.HellBullet=地狱子弹=在撞击时烧伤敌人
+ItemName.CobaltBullet=Cobalt Bullet
+ItemTooltip.CobaltBullet=Made from [i/s1:381]
+ItemName.MythrilBullet=Mythril Bullet
+ItemTooltip.MythrilBullet=由[i/s1:382]制成。
+ItemName.AdamantiteBullet=Adamantite Bullet
+ItemTooltip.AdamantiteBullet=由[i/s1:391]制成
+
+
+//对袋子进行命名和描述//。
+ItemName.ChlorophytePouch=Chlorophyte Bullet Bag
+ItemName.CrystalPouch=CrystalPouch
+ItemName.CursedPouch=被诅咒的子弹袋
+ItemName.ExplosivePouch=一袋爆炸性子弹
+ItemName.GoldenPouch=Golden Bullet Bag
+ItemName.IchorPouch=Ichoric Bullet Bag
+ItemName.LuminitePouch=夜光子弹袋
+ItemName.MeteorPouch=陨石子弹袋
+ItemName.NanoPouch=纳米子弹袋
+ItemName.PartyPouch=PartyPullet Bag
+ItemName.SilverPouch=SilverPouch
+ItemName.VelocityPouch=High Speed Bullet Bag
+ItemName.VenomPouch=有毒的子弹袋
+
+ItemName.CopperPouch=一袋铜子弹
+ItemName.DirtPouch=Earthly Bullet Bag
+ItemTooltip.DirtPouch=你为什么这么做？
+ItemName.GelPouch=GelPouch
+ItemName.GemPouch=一包宝石子弹
+ItemName.IcePouch=一包冰子弹
+ItemName.IronPouch=Iron Bullet Bag
+ItemName.LeadPouch=一袋铅弹
+ItemName.PinkGelPouch=一包淫荡的凝胶子弹
+ItemName.PreciousPouch=珍贵的子弹袋
+ItemName.SnowPouch=雪花弹的雪袋
+ItemName.StonePouch=一袋石子弹
+ItemName.TungstenPouch=钨合金子弹袋
+ItemName.HellPouch=HellBag of Hell Bullets
+ItemName.CobaltPouch=一袋钴质子弹
+ItemName.MythrilPouch=Mythril Bullet Bag
+ItemName.AdamantitePouch=Adamantium Bullets袋装子弹
+
+
+/ / 拈花惹草的名字/ /
+狙击手.name1=狙击手
+狙击手.name2=凯尔
+狙击手.name3=Kyryll
+狙击手.name4=Bulet
+狙击手.name5=Kirsi
+狙击手.name6=Michael
+狙击手.name7=Cole
+
+Bagman.name1=Denis
+Bagman.name2=Michael
+Bagman.name3=Galya
+Bagman.name4=Michael
+Bagman.name5=Alla
+Bagman.name6=Kenarius
+Bagman.name7=Carla
+
+
+/// 聂耳的对话////
+狙击手.dialog1=你听说过关于天空子弹的事吗？不是吗？我也没有。
+Sniper.dialog2=我可以用任何东西制造子弹，我甚至可以用其他子弹制造子弹。
+狙击手.dialog3=要买冰子弹吗？只是不要把它们放在你的口袋里太长时间。
+Sniper.dialog4=拿钱买地多好啊。
+
+Bagman.dialog1=你知道狙击手吗？他是我的兄弟。
+Bagman.dialog2=如果你知道我为收集这些子弹袋所做的努力。
+Bagman.dialog3=一切最适度的价格是一个白金和口袋里的一袋什么东西。
+Bagman.dialog4=你听说过阿尔贝多，他很吓人...... 不要相信他!
+
+///Translate with deepl.com///

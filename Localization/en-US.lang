@@ -1,8 +1,4 @@
-ItemName.TestSword=Test Sword!
-ItemTooltip.TestSword=[i/s1:29]This is a sword to test new mod features[i/s1:29]
-
-
-///NAMES AND DESCRIPTIONS OF ALL SORTS OF ITEMS//
+///NAMES AND DESCRIPTIONS OF ALL SORTS OF ITEMS///
 ItemName.Gunpowder=Powder
 ItemTooltip.Gunpowder=Very explosive mixture [i/s1:1347]
 ItemName.RawSaltpeter=Saltpeter
@@ -38,53 +34,78 @@ ItemTooltip.IronBullet=The most common bullet {made from [i/s1:22]
 ItemName.LeadBullet=Lead Bullet
 ItemTooltip.LeadBullet=The most common bullet\nMade from [i/s1:704]
 ItemName.PreciousBullet=Precious Bullet
-ItemTooltip.PreciousBullet=It's more valuable than you think \Made from [i/s1:19] or [i/s1:706]
+ItemTooltip.PreciousBullet=It's more valuable than you think. \Made from [i/s1:19] or [i/s1:706]
 ItemName.TungstenBullet=Tungsten Bullet
 ItemTooltip.TungstenBullet=The most common bullet {made from [i/s1:705]
+ItemName.HellBullet=HellBullet
+ItemTooltip.HellBullet=HellBullet=Burns enemies on fire \nMade from [i/s1:175]
+ItemName.CobaltBullet=Cobalt Bullet
+ItemTooltip.CobaltBullet=Made from [i/s1:381]
+ItemName.MythrilBullet=Mythril Bullet
+ItemTooltip.MythrilBullet=Made from [i/s1:382]
+ItemName.AdamantiteBullet=Adamantite Bullet
+ItemTooltip.AdamantiteBullet=Made from [i/s1:391]
 
 
 ///NAMING AND DESCRIBING THE BAGS///
-ItemName.ChlorophytePouch=chlorophyte bullet bag
-ItemName.CrystalPouch=crystal bullets bag
-ItemName.CursedPouch=cursed bullets bag
-ItemName.ExplosivePouch=explosive bullet pouch
-ItemName.GoldenPouch=golden bullet pouch
-ItemName.IchorPouch=Ichor bullet Pouch
-ItemName.LuminitePouch=luminite bullet pouch
-ItemName.MeteorPouch=bag of meteorite bullets
-ItemName.NanoPouch=nano pouch
-ItemName.PartyPouch=pouch of party bullets
-ItemName.SilverPouch=silver bullet pouch
-ItemName.VelocityPouch=high-speed pellet pouch
-ItemName.VenomPouch=pouch of poisonous pellets
+ItemName.ChlorophytePouch=Chlorophyte Bullet Bag
+ItemName.CrystalPouch=CrystalPouch
+ItemName.CursedPouch=Cursed Bullet Bag
+ItemName.ExplosivePouch=Bag of Explosive Bullets
+ItemName.GoldenPouch=Bag of golden bullets
+ItemName.IchorPouch=Ichoric Bullet Bag
+ItemName.LuminitePouch=Luminite Bullet Bag
+ItemName.MeteorPouch=Bag of meteorite bullets
+ItemName.NanoPouch=Nano Bullet Bag
+ItemName.PartyPouch=PartyPouch
+ItemName.SilverPouch=Silver Bullet Bag
+ItemName.VelocityPouch=High Speed Bullet Bag
+ItemName.VenomPouch=Poisonous Bullet Bag
 
-ItemName.CopperPouch=copper pouch
-ItemName.DirtPouch=bag of earth bullets
+ItemName.CopperPouch=Copper Bullet Bag
+ItemName.DirtPouch=Sack of earth bullets
 ItemTooltip.DirtPouch=Why did you do that?
-ItemName.GelPouch=bag of gel bullets
-ItemName.GemPouch=a bag of self-colored bullets
-ItemName.IcePouch=IcePouch=pack of ice bullets
-ItemName.IronPouch=Iron Bullet Pouch
-ItemName.LeadPouch=bag of lead bullets
-ItemName.PinkGelPouch=horn gel bullet pouch
-ItemName.PreciousPouch=bag of precious bullets
-ItemName.SnowPouch=bag of snow bullets
-ItemName.StonePouch=bag of stone bullets
-ItemName.TungstenPouch=tungsten bullet pouch
+ItemName.GelPouch=Bag of Gel Bullets
+ItemName.GemPouch=Pack of self-colored bullets
+ItemName.IcePouch=Pack of Ice Bullets
+ItemName.IronPouch=Iron Bullet Bag
+ItemName.LeadPouch=Bag of lead bullets
+ItemName.PinkGelPouch=Pack of horn gel bullets
+ItemName.PreciousPouch=Precious Bullet Bag
+ItemName.SnowPouch=SnowPouch of snow bullets
+ItemName.StonePouch=Bag of stone bullets
+ItemName.TungstenPouch=Tungsten Bullet Bag
+ItemName.HellPouch=Bag of Hell Bullets
+ItemName.CobaltPouch=Bag of cobalt bullets
+ItemName.MythrilPouch=Mythril Bullet Bag
+ItemName.AdamantitePouch=Bag of Adamantium Bullets
 
 
 ///NAMES OF NIPS//
 Sniper.name1=Sniper
 Sniper.name2=Kyle
-Sniper.name3=Kirill
+Sniper.name3=Kyrill
 Sniper.name4=Bulet
 Sniper.name5=Kirsi
 Sniper.name6=Michael
 Sniper.name7=Cole
 
+Bagman.name1=Denis
+Bagman.name2=Michael
+Bagman.name3=Galya
+Bagman.name4=Michael
+Bagman.name5=Alla
+Bagman.name6=Kenarius
+Bagman.name7=Carla
 
-///NIP DIALOGS///
-Sniper.dialog1=Have you heard of sky bullets? No? Neither have I.
+
+///DIALOGS OF THE NIPS///
+Sniper.dialog1=Have you heard anything about sky bullets? No? Neither have I.
 Sniper.dialog2=I can make bullets out of anything, I can even make bullets out of other bullets.
 Sniper.dialog3=Want to buy ice bullets? Just don't keep them in your pocket too long.
 Sniper.dialog4=How nice it is to get money for land.
+
+Bagman.dialog1= Do you know the sniper? He's my brother.
+Bagman.dialog2= If you only knew the effort it took me to collect these sacks of bullets.
+Bagman.dialog3= The most modest prices on everything, one platinum and a bag of what's good in your pocket.
+Bagman.dialog4= You heard about Albedo, he's scary... Don't believe him!
