@@ -42,8 +42,8 @@ namespace Albedo.Projectiles.Combined
 		{
 			for (int i = 0; i < 6; i++)
 			{
-				float x = projectile.position.X - projectile.velocity.X / 10f * (float)i;
-				float y = projectile.position.Y - projectile.velocity.Y / 10f * (float)i;
+				float x = projectile.position.X - (projectile.velocity.X / 10f * i);
+				float y = projectile.position.Y - (projectile.velocity.Y / 10f * i);
 				int num = Dust.NewDust(new Vector2(x, y), 1, 1, _dusts[_currentDust], 0f, 0f, 0, default(Color), 1f);
 				Main.dust[num].alpha = projectile.alpha;
 				Main.dust[num].position.X = x;
@@ -57,7 +57,8 @@ namespace Albedo.Projectiles.Combined
 			{
 				_currentDust = 0;
 			}
-			float num2 = (float)Math.Sqrt(projectile.velocity.X * projectile.velocity.X + projectile.velocity.Y * projectile.velocity.Y);
+			float num2 = (float) Math.Sqrt(projectile.velocity.X * projectile.velocity.X +
+			                               projectile.velocity.Y * projectile.velocity.Y);
 			float num3 = projectile.localAI[0];
 			if (num3 == 0f)
 			{
@@ -81,12 +82,18 @@ namespace Albedo.Projectiles.Combined
 			{
 				for (int j = 0; j < 200; j++)
 				{
-					if (Main.npc[j].CanBeChasedBy((object)projectile, false) && (projectile.ai[1] == 0f || projectile.ai[1] == (float)(j + 1)))
+					if (Main.npc[j].CanBeChasedBy((object) projectile, false) &&
+					    (projectile.ai[1] == 0f || projectile.ai[1] == (j + 1)))
 					{
-						float num8 = Main.npc[j].position.X + (float)Main.npc[j].width / 2f;
-						float num9 = Main.npc[j].position.Y + (float)Main.npc[j].height / 2f;
-						float num10 = Math.Abs(projectile.position.X + (float)projectile.width / 2f - num8) + Math.Abs(projectile.position.Y + (float)projectile.height / 2f - num9);
-						if (num10 < num6 && Collision.CanHit(new Vector2(projectile.position.X + (float)projectile.width / 2f, projectile.position.Y + (float)projectile.height / 2f), 1, 1, Main.npc[j].position, Main.npc[j].width, Main.npc[j].height))
+						float num8 = Main.npc[j].position.X + (Main.npc[j].width / 2f);
+						float num9 = Main.npc[j].position.Y + (Main.npc[j].height / 2f);
+						float num10 = Math.Abs(projectile.position.X + projectile.width / 2f - num8) +
+						              Math.Abs(projectile.position.Y + projectile.height / 2f - num9);
+						if (num10 < num6 &&
+						    Collision.CanHit(
+							    new Vector2(projectile.position.X + projectile.width / 2f,
+								    projectile.position.Y + projectile.height / 2f), 1, 1, Main.npc[j].position,
+							    Main.npc[j].width, Main.npc[j].height))
 						{
 							num6 = num10;
 							num4 = num8;
@@ -105,15 +112,17 @@ namespace Albedo.Projectiles.Combined
 			if (projectile.ai[1] > 0f)
 			{
 				int num11 = (int)(projectile.ai[1] - 1f);
-				if (Main.npc[num11].active && Main.npc[num11].CanBeChasedBy((object)projectile, true) && !Main.npc[num11].dontTakeDamage)
+				if (Main.npc[num11].active && Main.npc[num11].CanBeChasedBy((object) projectile, true) &&
+				    !Main.npc[num11].dontTakeDamage)
 				{
-					float num12 = Main.npc[num11].position.X + (float)(Main.npc[num11]).width / 2;
-					float num13 = Main.npc[num11].position.Y + (float)(Main.npc[num11]).height / 2;
-					if (Math.Abs(projectile.position.X + (float)(projectile.width / 2) - num12) + Math.Abs(projectile.position.Y + (float)(projectile.height / 2) - num13) < 1000f)
+					float num12 = Main.npc[num11].position.X + ((Main.npc[num11]).width / 2);
+					float num13 = Main.npc[num11].position.Y + ((Main.npc[num11]).height / 2);
+					if (Math.Abs(projectile.position.X + (projectile.width / 2) - num12) +
+					    Math.Abs(projectile.position.Y + (projectile.height / 2) - num13) < 1000f)
 					{
 						flag = true;
-						num4 = Main.npc[num11].position.X + (float)(Main.npc[num11]).width / 2;
-						num5 = Main.npc[num11].position.Y + (float)(Main.npc[num11]).height / 2;
+						num4 = Main.npc[num11].position.X + ((Main.npc[num11]).width / 2);
+						num5 = Main.npc[num11].position.Y + ((Main.npc[num11]).height / 2);
 					}
 				}
 				else
@@ -128,7 +137,8 @@ namespace Albedo.Projectiles.Combined
 			if (flag)
 			{
 				float num14 = num3;
-				Vector2 vector = new Vector2(projectile.position.X + (float)projectile.width * 0.5f, projectile.position.Y + (float)projectile.height * 0.5f);
+				Vector2 vector = new Vector2(projectile.position.X + (projectile.width * 0.5f),
+					projectile.position.Y + (projectile.height * 0.5f));
 				float num15 = num4 - vector.X;
 				float num16 = num5 - vector.Y;
 				float num17 = (float)Math.Sqrt(num15 * num15 + num16 * num16);
@@ -136,8 +146,8 @@ namespace Albedo.Projectiles.Combined
 				num15 *= num17;
 				num16 *= num17;
 				int num18 = 8;
-				projectile.velocity.X = (projectile.velocity.X * (float)(num18 - 1) + num15) / (float)num18;
-				projectile.velocity.Y = (projectile.velocity.Y * (float)(num18 - 1) + num16) / (float)num18;
+				projectile.velocity.X = (projectile.velocity.X * (num18 - 1) + num15) / num18;
+				projectile.velocity.Y = (projectile.velocity.Y * (num18 - 1) + num16) / num18;
 			}
 		}
 
@@ -189,8 +199,8 @@ namespace Albedo.Projectiles.Combined
 			}
 			for (int j = 0; j < 3; j++)
 			{
-				float num2 = (0f - projectile.velocity.X) * (float)Main.rand.Next(40, 70) * 0.01f + (float)Main.rand.Next(-20, 21) * 0.4f;
-				float num3 = (0f - projectile.velocity.Y) * (float)Main.rand.Next(40, 70) * 0.01f + (float)Main.rand.Next(-20, 21) * 0.4f;
+				float num2 = (0f - projectile.velocity.X) * Main.rand.Next(40, 70) * 0.01f + Main.rand.Next(-20, 21) * 0.4f;
+				float num3 = (0f - projectile.velocity.Y) * Main.rand.Next(40, 70) * 0.01f + Main.rand.Next(-20, 21) * 0.4f;
 				Projectile.NewProjectile(projectile.position.X + num2, projectile.position.Y + num3, num2, num3, ProjectileID.CrystalShard, projectile.damage, 0f, projectile.owner, 0f, 0f);
 			}
 			Main.PlaySound(SoundID.Item14, projectile.position);
@@ -212,19 +222,19 @@ namespace Albedo.Projectiles.Combined
 			Gore obj5 = Main.gore[num5];
 			obj5.velocity *= 0.3f;
 			Gore val = Main.gore[num5];
-			val.velocity.X = val.velocity.X + (float)Main.rand.Next(-10, 11) * 0.05f;
+			val.velocity.X = val.velocity.X + Main.rand.Next(-10, 11) * 0.05f;
 			Gore val2 = Main.gore[num5];
-			val2.velocity.Y = val2.velocity.Y + (float)Main.rand.Next(-10, 11) * 0.05f;
+			val2.velocity.Y = val2.velocity.Y + Main.rand.Next(-10, 11) * 0.05f;
 			if (projectile.owner == Main.myPlayer)
 			{
 				projectile.localAI[1] = -1f;
 				projectile.maxPenetrate = 0;
-				projectile.position.X = projectile.position.X + (float)(projectile.width / 2);
-				projectile.position.Y = projectile.position.Y + (float)(projectile.height / 2);
+				projectile.position.X = projectile.position.X + (projectile.width / 2);
+				projectile.position.Y = projectile.position.Y + (projectile.height / 2);
 				projectile.width = 80;
 				projectile.height = 80;
-				projectile.position.X = projectile.position.X - (float)(projectile.width / 2);
-				projectile.position.Y = projectile.position.Y - (float)(projectile.height / 2);
+				projectile.position.X = projectile.position.X - (projectile.width / 2);
+				projectile.position.Y = projectile.position.Y - (projectile.height / 2);
 				projectile.Damage();
 			}
 		}
@@ -236,7 +246,7 @@ namespace Albedo.Projectiles.Combined
 			for (int i = 0; i < 10; i++)
 			{
 				int num = Dust.NewDust(projectile.position, projectile.width, projectile.height, 171, 0f, 0f, 100, default(Color), 1f);
-				Main.dust[num].scale = (float)Main.rand.Next(1, 10) * 0.1f;
+				Main.dust[num].scale = Main.rand.Next(1, 10) * 0.1f;
 				Main.dust[num].noGravity = true;
 				Main.dust[num].fadeIn = 1.5f;
 				Dust obj = Main.dust[num];
@@ -247,38 +257,38 @@ namespace Albedo.Projectiles.Combined
 				int num2 = Main.rand.Next(139, 143);
 				int num3 = Dust.NewDust(projectile.position, projectile.width, projectile.height, num2, (0f - projectile.velocity.X) * 0.3f, (0f - projectile.velocity.Y) * 0.3f, 0, default(Color), 1.2f);
 				Dust val = Main.dust[num3];
-				val.velocity.X = val.velocity.X + (float)Main.rand.Next(-50, 51) * 0.01f;
+				val.velocity.X = val.velocity.X + Main.rand.Next(-50, 51) * 0.01f;
 				Dust val2 = Main.dust[num3];
-				val2.velocity.Y = val2.velocity.Y + (float)Main.rand.Next(-50, 51) * 0.01f;
+				val2.velocity.Y = val2.velocity.Y + Main.rand.Next(-50, 51) * 0.01f;
 				Dust val3 = Main.dust[num3];
-				val3.velocity.X = val3.velocity.X * (1f + (float)Main.rand.Next(-50, 51) * 0.01f);
+				val3.velocity.X = val3.velocity.X * (1f + Main.rand.Next(-50, 51) * 0.01f);
 				Dust val4 = Main.dust[num3];
-				val4.velocity.Y = val4.velocity.Y * (1f + (float)Main.rand.Next(-50, 51) * 0.01f);
+				val4.velocity.Y = val4.velocity.Y * (1f + Main.rand.Next(-50, 51) * 0.01f);
 				Dust val5 = Main.dust[num3];
-				val5.velocity.X = val5.velocity.X + (float)Main.rand.Next(-50, 51) * 0.05f;
+				val5.velocity.X = val5.velocity.X + Main.rand.Next(-50, 51) * 0.05f;
 				Dust val6 = Main.dust[num3];
-				val6.velocity.Y = val6.velocity.Y + (float)Main.rand.Next(-50, 51) * 0.05f;
+				val6.velocity.Y = val6.velocity.Y + Main.rand.Next(-50, 51) * 0.05f;
 				Dust obj2 = Main.dust[num3];
-				obj2.scale *= 1f + (float)Main.rand.Next(-30, 31) * 0.01f;
+				obj2.scale *= 1f + Main.rand.Next(-30, 31) * 0.01f;
 			}
 			for (int k = 0; k < 5; k++)
 			{
 				int num4 = Main.rand.Next(276, 283);
 				int num5 = Gore.NewGore(projectile.position, -projectile.velocity * 0.3f, num4, 1f);
 				Gore val7 = Main.gore[num5];
-				val7.velocity.X = val7.velocity.X + (float)Main.rand.Next(-50, 51) * 0.01f;
+				val7.velocity.X = val7.velocity.X + Main.rand.Next(-50, 51) * 0.01f;
 				Gore val8 = Main.gore[num5];
-				val8.velocity.Y = val8.velocity.Y + (float)Main.rand.Next(-50, 51) * 0.01f;
+				val8.velocity.Y = val8.velocity.Y + Main.rand.Next(-50, 51) * 0.01f;
 				Gore val9 = Main.gore[num5];
-				val9.velocity.X = val9.velocity.X * (1f + (float)Main.rand.Next(-50, 51) * 0.01f);
+				val9.velocity.X = val9.velocity.X * (1f + Main.rand.Next(-50, 51) * 0.01f);
 				Gore val10 = Main.gore[num5];
-				val10.velocity.Y = val10.velocity.Y * (1f + (float)Main.rand.Next(-50, 51) * 0.01f);
+				val10.velocity.Y = val10.velocity.Y * (1f + Main.rand.Next(-50, 51) * 0.01f);
 				Gore obj3 = Main.gore[num5];
-				obj3.scale *= 1f + (float)Main.rand.Next(-20, 21) * 0.01f;
+				obj3.scale *= 1f + Main.rand.Next(-20, 21) * 0.01f;
 				Gore val11 = Main.gore[num5];
-				val11.velocity.X = val11.velocity.X + (float)Main.rand.Next(-50, 51) * 0.05f;
+				val11.velocity.X = val11.velocity.X + Main.rand.Next(-50, 51) * 0.05f;
 				Gore val12 = Main.gore[num5];
-				val12.velocity.Y = val12.velocity.Y + (float)Main.rand.Next(-50, 51) * 0.05f;
+				val12.velocity.Y = val12.velocity.Y + Main.rand.Next(-50, 51) * 0.05f;
 			}
 		}
     }
