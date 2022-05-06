@@ -1,5 +1,5 @@
-displayName = Albedo Mod
+displayName = [c/AF4BFF:Albedo] [c/9F0060:M][c/800080:o][c/60009F:d]
 author = Dublikunt
-version = 0.0.4.4
+version = 0.0.4.5
 homepage = https://github.com/DublikuntMux/AlbedoMod
 buildIgnore =.idea\* .git\* bin\* obj\* .gitignore

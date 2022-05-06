@@ -14,6 +14,9 @@ But there is already:
 * 1 Pet
 * 3 Languages
 
+V0.0.4.5
+* 64bit tModLoder crash fix
+
 V0.0.4.4
 * NPC fix
 
