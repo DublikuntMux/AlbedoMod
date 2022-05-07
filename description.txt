@@ -5,14 +5,21 @@ If you have suggestions and or you find a problem, you can go to github and writ
 Github: https://github.com/DublikuntMux/AlbedoMod
 Developer site: https://www.dublikunt.tk/
 
-!The mod is in alpha testing!
+!MOD IN ALPHA TESTING!
 
 But there is already:
-* 20 Types of ammo
-* 2 Kind of materials
+* 20 Ammos
+* 4 Guns
+* 2 Materials
 * 2 NPC
 * 1 Pet
 * 3 Languages
+
+V0.0.4.7
+* BIG UPDATE!!
+* new rarity
+* new guns
+* recursion fix
 
 V0.0.4.6
 * New item name effects

@@ -36,7 +36,7 @@ namespace Albedo.Items.Ammos.Combined
             {
                 spriteBatch.End();
                 spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
-                GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(2869), item, (DrawData?)null);
+                GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(3534), item, (DrawData?)null);
                 Utils.DrawBorderString(spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White, 1f, 0f, 0f, -1);
                 spriteBatch.End();
                 spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);

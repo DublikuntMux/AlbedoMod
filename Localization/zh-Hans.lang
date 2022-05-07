@@ -12,6 +12,20 @@ BuffName.BulletPetBuff=你的致命子弹
 BuffDescription.BulletPetBuff=为什么子弹会复活？
 
 
+///武器名称和描述///
+ItemName.RustleDunes=沙丘的沙沙声
+ItemTooltip.RustleDunes=我想知道里面有没有杜松子酒？
+ItemName.ShotgunMeasurements=ShotgunMeasurements
+ItemTooltip.ShotgunMeasurements=强大到发射时甚至不会发出声音\n 有 50% 的几率不消耗弹药筒
+ItemName.LavaDisaster=熔岩灾难
+ItemTooltip.LavaDisaster=曾经属于 Albedo\n 有 50% 的几率不消耗弹药筒
+ItemTooltip.SDFMG=来自心灵深处\n 有 50% 的几率不消耗弹药
+ItemName.KryonikGun=冰炮
+ItemTooltip.KryonikGun=子弹在击中敌人时会碎成碎片。
+ItemName.СlockworkСannon=发条炮
+ItemTooltip.СlockworkСannon=快速射击...
+
+
 ///项目符号名称和描述///
 ItemName.DirtBullet=土子弹
 ItemTooltip.DirtBullet=由 [i/s1:2] 制成

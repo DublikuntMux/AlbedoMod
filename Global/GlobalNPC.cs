@@ -11,7 +11,7 @@ namespace Albedo.Global
         {
             if (npc.type == NPCID.GiantBat)
             {
-                if (Main.rand.NextBool(10))
+                if (Main.rand.Next(0, 100) >= 30)
                 {
                     Item.NewItem(npc.getRect(), ModContent.ItemType<Gunpowder>());
                 }

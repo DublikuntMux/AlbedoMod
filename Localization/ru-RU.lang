@@ -12,6 +12,20 @@ BuffName.BulletPetBuff=Твоя смертельная пуля
 BuffDescription.BulletPetBuff=Почему пуля ожила?
 
 
+///НАЗВАНИЕ И ОПИСАНИЕ ОРУЖИЙ///
+ItemName.RustleDunes=Шорох Дюн
+ItemTooltip.RustleDunes=Интерестно ести ли в нутри джин?
+ItemName.ShotgunMeasurements=Ружьё измерений
+ItemTooltip.ShotgunMeasurements=Настолко сильное что даже звук не успивает появится при выстреле\n Имеет 50% шанс не потратить патрон.
+ItemName.LavaDisaster=Лавовое бедствие
+ItemTooltip.LavaDisaster=Когда то пренодлежало Альбедо\n Имеет 50% шанс не потратить патрон
+ItemTooltip.SDFMG=Из далеких глубин разума\n Имеет 50% шанс не потратить патрон
+ItemName.KryonikGun=Леданая пушка
+ItemTooltip.KryonikGun=Пули разлетаются на куски при сталкновении с врагом.
+ItemName.СlockworkСannon=Заводная пушка
+ItemTooltip.СlockworkСannon=Скорострел...
+
+
 ///НАЗВАНИЕ И ОПИСАНИЕ ПУЛЬ///
 ItemName.DirtBullet=Земляная пуля
 ItemTooltip.DirtBullet=Зделоно из [i/s1:2]

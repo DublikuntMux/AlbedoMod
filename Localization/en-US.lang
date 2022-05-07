@@ -12,6 +12,20 @@ BuffName.BulletPetBuff=Your Deadly Bullet
 BuffDescription.BulletPetBuff=Why did the bullet come to life?
 
 
+///NAME AND DESCRIPTION OF WEAPONS///
+ItemName.RustleDunes=Rustle of the Dunes
+ItemTooltip.RustleDunes=I wonder if there is gin inside?
+ItemName.ShotgunMeasurements=ShotgunMeasurements
+ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired\n Has a 50% chance to not consume a cartridge.
+ItemName.LavaDisaster=Lava Disaster
+ItemTooltip.LavaDisaster=Once belonged to Albedo\n Has a 50% chance to not consume a cartridge
+ItemTooltip.SDFMG=From the Far Depths of the Mind\n Has a 50% chance to not consume an ammo
+ItemName.KryonikGun=Kryonik Gun
+ItemTooltip.KryonikGun=Bullets shatter into pieces on impact with an enemy.
+ItemName.СlockworkСannon=Clockwork Cannon
+ItemTooltip.СlockworkСannon=Rapid Fire...
+
+
 ///BULLET NAME AND DESCRIPTION///
 ItemName.DirtBullet=Dirt Bullet
 ItemTooltip.DirtBullet=Made from [i/s1:2]
