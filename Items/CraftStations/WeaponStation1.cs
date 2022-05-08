@@ -1,28 +1,31 @@
-using Terraria;
-using Terraria.ID;
+using Albedo.Items.Materials;
+using Albedo.Tiles.CraftStations;
 using Terraria.ModLoader;
+using Terraria.ID;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.DataStructures;
 using Terraria.Graphics.Shaders;
 using static Terraria.Main;
 
-namespace Albedo.Base
+namespace Albedo.Items.CraftStations
 {
-	public abstract class BasePouch : ModItem
+	public class WeaponStation1 : ModItem
 	{
-		protected abstract int AmmunitionItem { get; }
-
 		public override void SetDefaults()
 		{
-			item.CloneDefaults(AmmunitionItem);
-			item.width = 26;
-			item.height = 26;
-			item.consumable = false;
-			item.maxStack = 1;
-			Item item1 = item;
-			item1.value *= 3996;
+			item.width = 28;
+			item.height = 14;
 			item.rare = ItemRarityID.Yellow;
+			item.maxStack = 99;
+			item.useTurn = true;
+			item.autoReuse = true;
+			item.useAnimation = 15;
+			item.useTime = 10;
+			item.useStyle = ItemUseStyleID.SwingThrow;
+			item.consumable = true;
+			item.createTile = ModContent.TileType<WeaponStation1Tile>();
 		}
 
 		public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
@@ -43,8 +46,11 @@ namespace Albedo.Base
 		public override void AddRecipes()
 		{
 			ModRecipe val = new ModRecipe(mod);
-			val.AddIngredient(AmmunitionItem, 3996);
-			val.AddTile(TileID.CrystalBall);
+			val.AddIngredient(ItemID.Furnace);
+			val.AddIngredient(ItemID.Star, 5);
+			val.AddIngredient(ItemID.Ruby, 5);
+			val.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 5);
+			val.AddTile(TileID.Anvils);
 			val.SetResult(this);
 			val.AddRecipe();
 		}

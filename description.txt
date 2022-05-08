@@ -9,16 +9,18 @@ Developer site: https://www.dublikunt.tk/
 
 But there is already:
 * 20 Ammos
-* 4 Guns
-* 2 Materials
+* 6 Guns
+* 4 Materials
 * 2 NPC
 * 1 Pet
 * 3 Languages
 
-V0.0.4.7
+V0.0.5.1
 * BIG UPDATE!!
 * new rarity
 * new guns
+* new materials
+* new craft station
 * recursion fix
 
 V0.0.4.6

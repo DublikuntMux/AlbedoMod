@@ -1,3 +1,5 @@
+using Albedo.Items.Materials;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -9,7 +11,7 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Guns
 {
-	public class СlockworkСannon : ModItem
+	public class ClockworkCannon : ModItem
 	{
 		public override void SetDefaults()
 		{
@@ -38,7 +40,7 @@ namespace Albedo.Items.Weapons.Guns
 			{
 				spriteBatch.End();
 				spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
-				GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(3597), item, (DrawData?)null);
+				GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(3553), item, (DrawData?)null);
 				Utils.DrawBorderString(spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White, 1f, 0f, 0f, -1);
 				spriteBatch.End();
 				spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);
@@ -64,6 +66,17 @@ namespace Albedo.Items.Weapons.Guns
 		public override bool ConsumeAmmo(Player player)
 		{
 			return Main.rand.Next(0, 100) >= 33;
+		}
+		
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.Cog, 25);
+			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 15);
+			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 15);
+			recipe.AddTile(ModContent.TileType<WeaponStation2Tile>());
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 	}
 }

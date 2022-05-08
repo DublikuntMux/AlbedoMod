@@ -1,10 +1,18 @@
 ///НАЗВАНИЕ И ОПИСАНИЕ ВСЯКИХ ПРЕДМЕТОВ///
 ItemName.Gunpowder=Порох
 ItemTooltip.Gunpowder=Очень взрывоопасная смесь [i/s1:1347].
-ItemName.RawSaltpeter=Селитра
-ItemTooltip.RawSaltpeter=Очень взрывоопасная вещь
 ItemName.BulletOnChain=Пуля на цепи
 ItemTooltip.BulletOnChain=Вас убили этой пулей и вы сохронили ее как напоминание
+
+
+///НАЗВАНИЕ И ОПИСАНИЕ РУД///
+ItemName.RawSaltpeter=Селитра
+ItemTooltip.RawSaltpeter=Очень взрывоопасная вещь
+ItemName.AlbedoOre=Руда Альбедо
+ItemTooltip.AlbedoOre=Из руды сочитятся древнии слова
+ItemName.AlbedoIngot=Слиток Альбедо
+ItemTooltip.AlbedoIngot=Слиток пытается говорить свами \nВы не сошли сума?
+AlbedoIngot.Map=Слсток Альбедо
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ БАФОВ///
@@ -22,8 +30,18 @@ ItemTooltip.LavaDisaster=Когда то пренодлежало Альбедо
 ItemTooltip.SDFMG=Из далеких глубин разума\n Имеет 50% шанс не потратить патрон
 ItemName.KryonikGun=Леданая пушка
 ItemTooltip.KryonikGun=Пули разлетаются на куски при сталкновении с врагом.
-ItemName.СlockworkСannon=Заводная пушка
-ItemTooltip.СlockworkСannon=Скорострел...
+ItemName.ClockworkCannon=Заводная пушка
+ItemTooltip.ClockworkCannon=Скорострел...
+
+
+///НАЗВАНИЕ КРАФТ СТВНЦИЙ///
+WeaponStationTile.Name=Станок для создания оружия
+ItemName.WeaponStation1=Станок для создания оружия
+ItemTooltip.WeaponStation1=Станция для создание простых оружий.
+ItemName.WeaponStation2=Продвинутый станок для создания оружия
+ItemTooltip.WeaponStation2=Станция для создания продвинутых оружий.
+ItemName.WeaponStation3=Истеный станок для создания оружия
+ItemTooltip.WeaponStation3=Станция для создание оружия по древним тнхнологиям.
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ ПУЛЬ///

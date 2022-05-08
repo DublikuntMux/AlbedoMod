@@ -1,10 +1,18 @@
 ///TITLE AND DESCRIPTION OF ALL OBJECTS///
 ItemName.Gunpowder=Gunpowder
 ItemTooltip.Gunpowder=Very Explosive Mixture [i/s1:1347].
-ItemName.RawSaltpeter=Saltpeter
-ItemTooltip.RawSaltpeter=Very Explosive Item
 ItemName.BulletOnChain=Bullet On Chain
 ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder
+
+
+///NAME AND DESCRIPTION OF ORES///
+ItemName.RawSaltpeter=Saltpeter
+ItemTooltip.RawSaltpeter=Very Explosive Item
+ItemName.AlbedoOre=Albedo Ore
+ItemTooltip.AlbedoOre=Ancient words ooze from the ore
+ItemName.AlbedoIngot=Albedo Ingot
+ItemTooltip.AlbedoIngot=Ingot is trying to talk to you \nAre you out of your mind?
+AlbedoIngot.Map=Albedo Ingot
 
 
 ///NAME AND DESCRIPTION OF BAFS///
@@ -16,14 +24,24 @@ BuffDescription.BulletPetBuff=Why did the bullet come to life?
 ItemName.RustleDunes=Rustle of the Dunes
 ItemTooltip.RustleDunes=I wonder if there is gin inside?
 ItemName.ShotgunMeasurements=ShotgunMeasurements
-ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired\n Has a 50% chance to not consume a cartridge.
+ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired\n Has a 50% chance of not wasting a round.
 ItemName.LavaDisaster=Lava Disaster
 ItemTooltip.LavaDisaster=Once belonged to Albedo\n Has a 50% chance to not consume a cartridge
 ItemTooltip.SDFMG=From the Far Depths of the Mind\n Has a 50% chance to not consume an ammo
-ItemName.KryonikGun=Kryonik Gun
+ItemName.KryonikGun=Ice Cannon
 ItemTooltip.KryonikGun=Bullets shatter into pieces on impact with an enemy.
-ItemName.СlockworkСannon=Clockwork Cannon
-ItemTooltip.СlockworkСannon=Rapid Fire...
+ItemName.ClockworkCannon=Clockwork Cannon
+ItemTooltip.ClockworkCannon=Quick Fire...
+
+
+///NAME OF CRAFT STATES///
+WeaponStationTile.Name=Weapon Crafting Station
+ItemName.WeaponStation1=Weapon Crafting Station
+ItemTooltip.WeaponStation1=Station for crafting simple weapons.
+ItemName.WeaponStation2=Advanced Weapon Station
+ItemTooltip.WeaponStation2=Station for crafting advanced weapons.
+ItemName.WeaponStation3=Wall Weapon Station
+ItemTooltip.WeaponStation3=An ancient technology weapon crafting station.
 
 
 ///BULLET NAME AND DESCRIPTION///
@@ -95,11 +113,12 @@ ItemName.MythrilPouch=Bag of Mithril Bullets
 ItemName.AdamantitePouch=Pouch of Adamantium Bullets
 
 ItemName.CosmoPouch=Sack of Sky Bullets
-ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nThis pouch holds the technology of the ancients.
+ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nKeep this pouch
+tv itself the technology of the ancients.
 ItemName.PostLunarPouch=Pouch of Post Moon Lord Bullets
 ItemTooltip.PostLunarPouch=This pouch has powers that your father never dreamed of.
-ItemName.HardmodePouch=Pouch of Hardmode Bullets
-ItemName.PrehardmodePouch=Pouch of Prehardmod Pouch
+ItemName.HardmodePouch=Hardmode Pouch
+ItemName.PrehardmodePouch=Pouch of Prehardmode Bullets
 
 
 ///NIPS NAMES//

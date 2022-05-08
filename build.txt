@@ -1,6 +1,6 @@
 displayName = [c/AF4BFF:Albedo] [c/9F0060:M][c/800080:o][c/60009F:d]
 author = Dublikunt
-version = 0.0.4.7
+version = 0.0.5.1
 homepage = https://github.com/DublikuntMux/AlbedoMod
 includePDB = true
 hideCode = true

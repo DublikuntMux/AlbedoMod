@@ -1,10 +1,18 @@
 ﻿///所有对象的标题和描述///
 ItemName.Gunpowder=火药
 ItemTooltip.Gunpowder=极易爆炸的混合物 [i/s1:1347]。
-ItemName.RawSaltpeter=硝石
-ItemTooltip.RawSaltpeter=易爆物品
 ItemName.BulletOnChain=链上的子弹
 ItemTooltip.BulletOnChain=你被这颗子弹杀死并保存为提醒
+
+
+///矿石名称及描述///
+ItemName.RawSaltpeter=硝石
+ItemTooltip.RawSaltpeter=易爆物品
+ItemName.AlbedoOre=反照率矿石
+ItemTooltip.AlbedoOre=古代文字从矿石中渗出
+ItemName.AlbedoIngot=反照率锭
+ItemTooltip.AlbedoIngot=Ingot 试图和你说话\n你疯了吗？
+AlbedoIngot.Map=反照率锭
 
 
 ///BAFS的名称和描述///
@@ -16,14 +24,24 @@ BuffDescription.BulletPetBuff=为什么子弹会复活？
 ItemName.RustleDunes=沙丘的沙沙声
 ItemTooltip.RustleDunes=我想知道里面有没有杜松子酒？
 ItemName.ShotgunMeasurements=ShotgunMeasurements
-ItemTooltip.ShotgunMeasurements=强大到发射时甚至不会发出声音\n 有 50% 的几率不消耗弹药筒
+ItemTooltip.ShotgunMeasurements=如此强大，发射时甚至不会发出声音\n 有 50% 的几率不会浪费一发子弹。
 ItemName.LavaDisaster=熔岩灾难
 ItemTooltip.LavaDisaster=曾经属于 Albedo\n 有 50% 的几率不消耗弹药筒
 ItemTooltip.SDFMG=来自心灵深处\n 有 50% 的几率不消耗弹药
 ItemName.KryonikGun=冰炮
 ItemTooltip.KryonikGun=子弹在击中敌人时会碎成碎片。
-ItemName.СlockworkСannon=发条炮
-ItemTooltip.СlockworkСannon=快速射击...
+ItemName.ClockworkCannon=发条炮
+ItemTooltip.ClockworkCannon=快速射击...
+
+
+///工艺国家名称///
+WeaponStationTile.Name=武器制造站
+ItemName.WeaponStation1=武器制造站
+ItemTooltip.WeaponStation1=用于制作简单武器的工作站。
+ItemName.WeaponStation2=高级武器站
+ItemTooltip.WeaponStation2=用于制作高级武器的工作站。
+ItemName.WeaponStation3=墙壁武器站
+ItemTooltip.WeaponStation3=古代科技武器制造站。
 
 
 ///项目符号名称和描述///
@@ -95,11 +113,12 @@ ItemName.MythrilPouch=秘银子弹袋
 ItemName.AdamantitePouch=一袋精金子弹
 
 ItemName.CosmoPouch=一袋天空子弹
-ItemTooltip.CosmoPouch=这个袋子曾经属于雅儿贝德\n这个袋子里有古人的技术。
+ItemTooltip.CosmoPouch=这个袋子曾经属于雅儿贝德\n保留这个袋子
+电视本身就是古人的技术。
 ItemName.PostLunarPouch=邮月领主子弹袋
 ItemTooltip.PostLunarPouch=这个袋子拥有你父亲做梦都想不到的力量。
-ItemName.HardmodePouch=困难模式子弹袋
-ItemName.PrehardmodePouch=一袋 Prehardmod Pouch
+ItemName.HardmodePouch=困难模式袋
+ItemName.PrehardmodePouch=困难模式前子弹袋
 
 
 ///NIPS 名称//
@@ -127,7 +146,7 @@ Sniper.dialog3=你想买冰弹吗？只是不要把它们放在口袋里太久�
 Sniper.dialog4=土地获得报酬是好事。
 
 Bagman.dialog1=你认识狙击手吗？他是我的兄弟。
-Bagman.dialog2=如果你只知道我收集这些子弹袋是多么辛苦。
+Bagman.dialog2=如果你只知道我收集这些子弹袋是多么的辛苦。
 Bagman.dialog3=最便宜的价格，只需一个铂金和口袋里的一袋好东西。
 Bagman.dialog4= 你听说过Albedo，他很可怕...不要相信他！
 
