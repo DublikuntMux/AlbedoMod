@@ -16,6 +16,11 @@ namespace Albedo.Global
                     Item.NewItem(npc.getRect(), ModContent.ItemType<Gunpowder>());
                 }
             }
+            
+            if (Main.player[(int)Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>().ZoneGrap) {
+                Item.NewItem(npc.getRect(), ModContent.ItemType<GunMasterSoul>());
+            }
+            
         }
 
         public override void SetupShop(int type, Chest shop, ref int nextSlot)

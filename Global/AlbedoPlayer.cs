@@ -5,5 +5,6 @@ namespace Albedo.Global
     public class AlbedoPlayer : ModPlayer
     {
         public bool BulletPet;
+        public bool ZoneGrap;
     }
 }

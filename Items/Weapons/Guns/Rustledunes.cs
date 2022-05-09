@@ -1,3 +1,5 @@
+using Albedo.Items.Materials;
+using Albedo.Tiles.CraftStations;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
@@ -35,6 +37,19 @@ namespace Albedo.Items.Weapons.Guns
 		public override Vector2? HoldoutOffset()
 		{
 			return new Vector2(-5f, 0f);
+		}
+		
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.SandBlock, 50);
+			recipe.AddIngredient(ItemID.AntlionMandible, 15);
+			recipe.AddIngredient(ItemID.Amber, 10);
+			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 15);
+			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 15);
+			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 	}
 }

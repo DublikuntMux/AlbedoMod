@@ -3,6 +3,7 @@ If the mod does not have a translation into your language, you can go to github 
 If you have suggestions and or you find a problem, you can go to github and write about it.
 
 Github: https://github.com/DublikuntMux/AlbedoMod
+Patreon: https://www.patreon.com/DublikuntMax
 Developer site: https://www.dublikunt.tk/
 
 !MOD IN ALPHA TESTING!
@@ -14,6 +15,11 @@ But there is already:
 * 2 NPC
 * 1 Pet
 * 3 Languages
+
+V0.0.5.2
+* add patreon items
+* new material
+* world gen fix
 
 V0.0.5.1
 * BIG UPDATE!!

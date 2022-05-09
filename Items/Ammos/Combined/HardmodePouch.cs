@@ -1,6 +1,7 @@
 ﻿using Albedo.Items.Ammos.Pouches.Mod;
 using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Combined;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -62,7 +63,7 @@ namespace Albedo.Items.Ammos.Combined
             val.AddIngredient(ModContent.ItemType<AdamantitePouch>());
             val.AddIngredient(ModContent.ItemType<CobaltPouch>());
             val.AddIngredient(ModContent.ItemType<MythrilPouch>());
-            val.AddTile(TileID.MythrilAnvil);
+            val.AddTile(ModContent.TileType<WeaponStation2Tile>());
             val.SetResult(this, 1);
             val.AddRecipe();
         }

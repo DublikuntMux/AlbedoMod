@@ -1,5 +1,6 @@
 ﻿using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Combined;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -48,7 +49,7 @@ namespace Albedo.Items.Ammos.Combined
         {
             ModRecipe val = new ModRecipe(mod);
             val.AddIngredient(ModContent.ItemType<LuminitePouch>());
-            val.AddTile(TileID.LunarCraftingStation);
+            val.AddTile(ModContent.TileType<WeaponStation3Tile>());
             val.SetResult(this, 1);
             val.AddRecipe();
         }

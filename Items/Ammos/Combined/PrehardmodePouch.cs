@@ -1,6 +1,7 @@
 ﻿using Albedo.Items.Ammos.Pouches.Mod;
 using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Combined;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -62,7 +63,7 @@ namespace Albedo.Items.Ammos.Combined
             val.AddIngredient(ModContent.ItemType<SnowPouch>());
             val.AddIngredient(ModContent.ItemType<StonePouch>());
             val.AddIngredient(ModContent.ItemType<TungstenPouch>());
-            val.AddTile(TileID.CrystalBall);
+            val.AddTile(ModContent.TileType<WeaponStation1Tile>());
             val.SetResult(this, 1);
             val.AddRecipe();
         }

@@ -6,16 +6,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Terraria.DataStructures;
-using Terraria.Graphics.Shaders;
-using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Guns
 {
 	public class KryonikGun : ModItem
 	{
-		private const int NumFrames = 1;
-		
 		public override void SetDefaults()
 		{
 			item.damage = 23;
@@ -37,28 +32,17 @@ namespace Albedo.Items.Weapons.Guns
 		
 		public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
 		{
-			if (((TooltipLine)line).mod == "Terraria" && ((TooltipLine)line).Name == "ItemName")
-			{
-				spriteBatch.End();
-				spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
-				GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(3554), item, (DrawData?)null);
-				Utils.DrawBorderString(spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White, 1f, 0f, 0f, -1);
-				spriteBatch.End();
-				spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);
-				return false;
-			}
-			return true;
+			return AlbedoUtils.CustomRarity(3554, line);
 		}
 
 		public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
 		{
 			Item val = Main.item[whoAmI];
-			Texture2D texture = mod.GetTexture("Albedo/Items/Weapons/Guns/KryonikGun_Glow");
-			int num = texture.Height / NumFrames;
+			Texture2D texture = mod.GetTexture("Items/Weapons/Guns/KryonikGun_Glow");
+			int num = texture.Height;
 			int width = texture.Width;
-			int y = ((NumFrames > 1) ? (num * Main.itemFrame[whoAmI]) : 0);
-			SpriteEffects effects = ((val.direction < 0) ? SpriteEffects.FlipHorizontally : SpriteEffects.None);
-			Rectangle rectangle = new Rectangle(0, y, width, num);
+			SpriteEffects effects = val.direction < 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+			Rectangle rectangle = new Rectangle(0, 0, width, num);
 			Vector2 vector = new Vector2(val.Center.X, val.position.Y + val.height - num / 2);
 			Main.spriteBatch.Draw(texture, vector - Main.screenPosition, rectangle, Color.White, rotation, Utils.Size(rectangle) / 2f, scale, effects, 0f);
 		}

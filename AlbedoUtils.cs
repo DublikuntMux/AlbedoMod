@@ -26,10 +26,10 @@ namespace Albedo
             bool flag = false;
             for (int i = 0; i < 200; i++)
             {
-                float num = Main.npc[i].width / 2 + Main.npc[i].height / 2;
-                if (Main.npc[i].CanBeChasedBy(projectile, false) && projectile.WithinRange(Main.npc[i].Center, distanceRequired + num) && (ignoreTiles || Collision.CanHit(projectile.Center, 1, 1, Main.npc[i].Center, 1, 1)))
+                float num = npc[i].width / 2 + npc[i].height / 2;
+                if (npc[i].CanBeChasedBy(projectile) && projectile.WithinRange(npc[i].Center, distanceRequired + num) && (ignoreTiles || Collision.CanHit(projectile.Center, 1, 1, npc[i].Center, 1, 1)))
                 {
-                    center = Main.npc[i].Center;
+                    center = npc[i].Center;
                     flag = true;
                     break;
                 }
@@ -48,18 +48,18 @@ namespace Albedo
 
         public static Vector2 RandomVelocity(float directionMult, float speedLowerLimit, float speedCap, float speedMult = 0.1f)
         {
-            Vector2 vector = new Vector2(Main.rand.NextFloat(0f - directionMult, directionMult), Main.rand.NextFloat(0f - directionMult, directionMult));
+            Vector2 vector = new Vector2(rand.NextFloat(0f - directionMult, directionMult), rand.NextFloat(0f - directionMult, directionMult));
             while (vector.X == 0f && vector.Y == 0f)
             {
-                vector = new Vector2(Main.rand.NextFloat(0f - directionMult, directionMult), Main.rand.NextFloat(0f - directionMult, directionMult));
+                vector = new Vector2(rand.NextFloat(0f - directionMult, directionMult), rand.NextFloat(0f - directionMult, directionMult));
             }
             vector.Normalize();
-            return vector * (Main.rand.NextFloat(speedLowerLimit, speedCap) * speedMult);
+            return vector * (rand.NextFloat(speedLowerLimit, speedCap) * speedMult);
         }
 
         public static bool CustomRarity(int rarity, DrawableTooltipLine line)
         {
-            if (((TooltipLine)line).mod == "Terraria" && ((TooltipLine)line).Name == "ItemName")
+            if (line.mod == "Terraria" && line.Name == "ItemName")
             {
                 spriteBatch.End();
                 spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);

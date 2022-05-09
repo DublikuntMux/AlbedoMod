@@ -1,4 +1,5 @@
 ﻿using Albedo.Projectiles.Combined;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
@@ -49,7 +50,7 @@ namespace Albedo.Items.Ammos.Combined
             val.AddIngredient(ModContent.ItemType<PrehardmodePouch>());
             val.AddIngredient(ModContent.ItemType<HardmodePouch>());
             val.AddIngredient(ModContent.ItemType<PostLunarPouch>());
-            val.AddTile(TileID.LunarCraftingStation);
+            val.AddTile(ModContent.TileType<WeaponStation3Tile>());
             val.SetResult(this, 1);
             val.AddRecipe();
         }
