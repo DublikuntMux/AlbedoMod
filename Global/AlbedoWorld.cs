@@ -9,6 +9,8 @@ namespace Albedo.Global
 {
     public class AlbedoWorld : ModWorld
     {
+        public static bool DownedHellGuard;
+        public static bool DownedGunMaster;
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
         {
             int shiniestIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Shinies"));

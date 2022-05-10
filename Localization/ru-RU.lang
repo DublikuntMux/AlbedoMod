@@ -120,6 +120,11 @@ ItemName.HardmodePouch=Мешок хардмодных пуль
 ItemName.PrehardmodePouch=Мешок прехардмодных пуль
 
 
+///ИМЕНА БОССОВ///
+NPCName.HellGuard=Адский защитник
+NPCName.HellGuardHand=Рука адского защитника
+
+
 ///ИМЕНА НИПОВ//
 Sniper.name1=Меченый
 Sniper.name2=Кайл

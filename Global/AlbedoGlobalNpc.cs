@@ -7,6 +7,8 @@ namespace Albedo.Global
 {
     public class AlbedoGlobalNpc : GlobalNPC
     {
+        public static int HellGuard;
+        public static int GunMaster;
         public override void NPCLoot(NPC npc)
         {
             if (npc.type == NPCID.GiantBat)

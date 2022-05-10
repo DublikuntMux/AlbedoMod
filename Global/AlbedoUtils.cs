@@ -1,7 +1,9 @@
-﻿using Terraria;
+﻿using System.Linq;
+using Terraria;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Terraria.Graphics.Shaders;
+using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.Main;
 
@@ -69,6 +71,79 @@ namespace Albedo.Global
                 return false;
             }
             return true;
+        }
+        
+        public static NPC NpcExists(int whoAmI, params int[] types)
+        {
+            if (whoAmI <= -1 || whoAmI >= 200 || !npc[whoAmI].active || (types.Length != 0 && !types.Contains(npc[whoAmI].type)))
+            {
+                return null;
+            }
+            return npc[whoAmI];
+        }
+
+        public static NPC NpcExists(float whoAmI, params int[] types)
+        {
+            return NpcExists((int)whoAmI, types);
+        }
+        
+        public static bool CanDeleteProjectile(Projectile projectile, int deletionRank = 0)
+        {
+            if (!projectile.active)
+            {
+                return false;
+            }
+            if (projectile.damage <= 0)
+            {
+                return false;
+            }
+            if (projectile.GetGlobalProjectile<AlbedoGloabalProjectile>().DeletionImmuneRank > deletionRank)
+            {
+                return false;
+            }
+            if (projectile.friendly)
+            {
+                if (projectile.whoAmI == player[projectile.owner].heldProj)
+                {
+                    return false;
+                }
+                if (IsMinionDamage(projectile, includeMinionShot: false))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        public static bool IsMinionDamage(Projectile projectile, bool includeMinionShot = true)
+        {
+            if (projectile.melee || projectile.ranged || projectile.magic)
+            {
+                return false;
+            }
+            if (!projectile.minion && !projectile.sentry && !(projectile.minionSlots > 0f))
+            {
+                if (includeMinionShot)
+                {
+                    return ProjectileID.Sets.MinionShot[projectile.type] || ProjectileID.Sets.SentryShot[projectile.type];
+                }
+                return false;
+            }
+            return true;
+        }
+        
+        public static bool BossIsAlive(ref int bossId, int bossType)
+        {
+            if (bossId != -1)
+            {
+                if (npc[bossId].active && npc[bossId].type == bossType)
+                {
+                    return true;
+                }
+                bossId = -1;
+                return false;
+            }
+            return false;
         }
     }
 }
