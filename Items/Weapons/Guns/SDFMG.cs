@@ -1,4 +1,5 @@
-﻿using Albedo.Items.Materials;
+﻿using Albedo.Global;
+using Albedo.Items.Materials;
 using Albedo.Projectiles.GunProjectiles;
 using Albedo.Tiles.CraftStations;
 using Terraria;

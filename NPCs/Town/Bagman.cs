@@ -1,5 +1,3 @@
-using Albedo.Global;
-using Albedo.Items.Ammos.Bullets;
 using Albedo.Items.Ammos.Pouches.Mod;
 using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Bullets;
@@ -48,10 +46,7 @@ namespace Albedo.NPCs.Town
             animationType = NPCID.Mechanic;
         }
         
-        public override void AI()
-        {
-            npc.breath = 200;
-        }
+        public override void AI() => npc.breath = 200;
 
         public override bool CanTownNPCSpawn(int numTownNPCs, int money)
         {
@@ -131,7 +126,7 @@ namespace Albedo.NPCs.Town
         public override void OnChatButtonClicked(bool firstButton, ref bool shop)
         { 
             shop = true;
-            ((Bagman)mod.GetNPC(Name))._otherShop = !firstButton;
+            _otherShop = !firstButton;
         }
 
         public override void SetupShop(Chest shop, ref int nextSlot)

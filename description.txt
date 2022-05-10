@@ -4,6 +4,7 @@ If you have suggestions and or you find a problem, you can go to github and writ
 
 Github: https://github.com/DublikuntMux/AlbedoMod
 Patreon: https://www.patreon.com/DublikuntMax
+Discord: Coming soon...
 Developer site: https://www.dublikunt.tk/
 
 !MOD IN ALPHA TESTING!
@@ -16,12 +17,12 @@ But there is already:
 * 1 Pet
 * 3 Languages
 
-V0.0.5.2
+V0.0.5.2 - Community update
 * add patreon items
 * new material
 * world gen fix
 
-V0.0.5.1
+V0.0.5.1 - Colorful update
 * BIG UPDATE!!
 * new rarity
 * new guns

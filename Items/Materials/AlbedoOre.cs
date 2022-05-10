@@ -1,4 +1,5 @@
-﻿using Albedo.Tiles.Ores;
+﻿using Albedo.Global;
+using Albedo.Tiles.Ores;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

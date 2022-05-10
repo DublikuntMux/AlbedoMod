@@ -1,4 +1,5 @@
-﻿using Albedo.Tiles.Bars;
+﻿using Albedo.Global;
+using Albedo.Tiles.Bars;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

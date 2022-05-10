@@ -46,11 +46,8 @@ namespace Albedo.NPCs.Town
             animationType = 17;
         }
         
-        public override void AI()
-        {
-            npc.breath = 200;
-        }
-        
+        public override void AI() => npc.breath = 200;
+
         public override bool CanGoToStatue(bool toKingStatue)
         {
             return !toKingStatue;
@@ -155,7 +152,7 @@ namespace Albedo.NPCs.Town
         public override void OnChatButtonClicked(bool firstButton, ref bool shop)
         { 
             shop = true;
-            ((Sniper)mod.GetNPC(Name))._otherShop = !firstButton;
+            _otherShop = !firstButton;
         }
 
         public override void SetupShop(Chest shop, ref int nextSlot)

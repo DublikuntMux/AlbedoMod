@@ -1,12 +1,11 @@
 ﻿using Terraria;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using Terraria.DataStructures;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 using static Terraria.Main;
 
-namespace Albedo
+namespace Albedo.Global
 {
     public static class AlbedoUtils
     {
@@ -63,7 +62,7 @@ namespace Albedo
             {
                 spriteBatch.End();
                 spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
-                foreach (Item item1 in item) GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(rarity), item1, (DrawData?)null);
+                foreach (Item item1 in item) GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(rarity), item1);
                 Utils.DrawBorderString(spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White, 1f, 0f, 0f, -1);
                 spriteBatch.End();
                 spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);

@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace Albedo.Global
 {
-    public class ModGlobalNpc : GlobalNPC
+    public class AlbedoGlobalNpc : GlobalNPC
     {
         public override void NPCLoot(NPC npc)
         {
@@ -17,7 +17,7 @@ namespace Albedo.Global
                 }
             }
             
-            if (Main.player[(int)Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>().ZoneGrap) {
+            if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>().ZoneGrap) {
                 Item.NewItem(npc.getRect(), ModContent.ItemType<GunMasterSoul>());
             }
             

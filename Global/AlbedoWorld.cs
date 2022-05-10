@@ -7,7 +7,7 @@ using Terraria.World.Generation;
 
 namespace Albedo.Global
 {
-    public class GlobalWorld : ModWorld
+    public class AlbedoWorld : ModWorld
     {
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
         {
