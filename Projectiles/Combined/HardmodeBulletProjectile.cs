@@ -1,12 +1,16 @@
-﻿using Albedo.Base;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace Albedo.Projectiles.Combined
 {
     public class HardmodeBulletProjectile : ModProjectile
     {
+        private int _bounce = 25;
+        private readonly int[] _dusts = {130, 55, 133, 131, 132};
+        private int _currentDust;
+        
         public override void SetStaticDefaults() 
         {
             DisplayName.SetDefault("HardMode Bullet");
@@ -39,8 +43,46 @@ namespace Albedo.Projectiles.Combined
         
         public override void AI()
         {
-            Lighting.AddLight(projectile.position, 0.9f, 0.1f, 0.1f);
-            Lighting.Brightness(1, 1);
+            for (int i = 0; i < 6; i++)
+            {
+                float x = projectile.position.X - projectile.velocity.X / 10f * i;
+                float y = projectile.position.Y - projectile.velocity.Y / 10f * i;
+                int num = Dust.NewDust(new Vector2(x, y), 1, 1, _dusts[_currentDust], 0f, 0f, 0, default(Color), 1f);
+                Main.dust[num].alpha = projectile.alpha;
+                Main.dust[num].position.X = x;
+                Main.dust[num].position.Y = y;
+                Dust obj = Main.dust[num];
+                obj.velocity *= 0f;
+                Main.dust[num].noGravity = true;
+            }
+            _currentDust++;
+            if (_currentDust > 4)
+            {
+                _currentDust = 0;
+            }
+        }
+        
+        public override bool OnTileCollide(Vector2 oldVelocity)
+        {
+            if (_bounce > 1)
+            {
+                Collision.HitTiles(projectile.position, projectile.velocity, projectile.width, projectile.height);
+                Main.PlaySound(SoundID.Item10, projectile.position);
+                _bounce--;
+                if (projectile.velocity.X != oldVelocity.X)
+                {
+                    projectile.velocity.X = 0f - oldVelocity.X;
+                }
+                if (projectile.velocity.Y != oldVelocity.Y)
+                {
+                    projectile.velocity.Y = 0f - oldVelocity.Y;
+                }
+            }
+            else
+            {
+                projectile.Kill();
+            }
+            return false;
         }
         
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)

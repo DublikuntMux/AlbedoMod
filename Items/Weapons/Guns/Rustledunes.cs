@@ -3,7 +3,7 @@ using Albedo.Tiles.CraftStations;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using static Albedo.Global.AlbedoUtils;
+using static Albedo.AlbedoUtils;
 
 namespace Albedo.Items.Weapons.Guns
 {

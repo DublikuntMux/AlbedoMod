@@ -32,7 +32,6 @@
     <None Remove="Localization\en-US.hjson" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Projectiles\Boss" />
     <Folder Include="Tiles\CraftStation" />
   </ItemGroup>
 </Project>

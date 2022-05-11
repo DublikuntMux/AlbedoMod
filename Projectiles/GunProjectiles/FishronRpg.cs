@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
-using static Albedo.Global.AlbedoUtils;
+using static Albedo.AlbedoUtils;
 
 namespace Albedo.Projectiles.GunProjectiles
 {

@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using Albedo.Global;
 using Terraria;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
@@ -7,7 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.Main;
 
-namespace Albedo.Global
+namespace Albedo
 {
     public static class AlbedoUtils
     {
@@ -144,6 +146,102 @@ namespace Albedo.Global
                 return false;
             }
             return false;
+        }
+        
+        public static Vector2 ClosestPointInHitbox(Entity entity, Vector2 desiredLocation)
+        {
+            Vector2 vector = desiredLocation - entity.Center;
+            vector.X = Math.Min(Math.Abs(vector.X), entity.width / 2) * (float)Math.Sign(vector.X);
+            vector.Y = Math.Min(Math.Abs(vector.Y), entity.height / 2) * (float)Math.Sign(vector.Y);
+            return entity.Center + vector;
+        }
+        
+        public static Projectile ProjectileExists(int whoAmI, params int[] types)
+        {
+            if (whoAmI <= -1 || whoAmI >= 1000 || !projectile[whoAmI].active || (types.Length != 0 && !types.Contains(projectile[whoAmI].type)))
+            {
+                return null;
+            }
+            return projectile[whoAmI];
+        }
+
+        public static void ClearFriendlyProjectiles(int deletionRank = 0, int bossNpc = -1)
+        {
+            ClearProjectiles(clearHostile: false, clearFriendly: true, deletionRank, bossNpc);
+        }
+
+        public static void ClearHostileProjectiles(int deletionRank = 0, int bossNpc = -1)
+        {
+            ClearProjectiles(clearHostile: true, clearFriendly: false, deletionRank, bossNpc);
+        }
+
+        private static void ClearProjectiles(bool clearHostile, bool clearFriendly, int deletionRank = 0, int bossNpc = -1)
+        {
+            if (netMode == NetmodeID.MultiplayerClient)
+            {
+                return;
+            }
+            if (OtherBossAlive(bossNpc))
+            {
+                clearHostile = false;
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 1000; j++)
+                {
+                    Projectile val = projectile[j];
+                    if (val.active && ((val.hostile && clearHostile) || (val.friendly && clearFriendly)) && CanDeleteProjectile(val, deletionRank))
+                    {
+                        val.Kill();
+                    }
+                }
+            }
+        }
+        
+        public static bool OtherBossAlive(int npcID)
+        {
+            if (npcID > -1 && npcID < 200)
+            {
+                for (int i = 0; i < 200; i++)
+                {
+                    if (npc[i].active && npc[i].boss && i != npcID)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        
+        public static Player PlayerExists(int whoAmI)
+        {
+            if (whoAmI <= -1 || whoAmI >= 255 || !player[whoAmI].active || player[whoAmI].ghost)
+            {
+                return null;
+            }
+            return player[whoAmI];
+        }
+
+        public static Player PlayerExists(float whoAmI)
+        {
+            return PlayerExists((int)whoAmI);
+        }
+        
+        public static int GetByUUIDReal(int player, float projectileIdentity, params int[] projectileType)
+        {
+            return GetByUUIDReal(player, (int)projectileIdentity, projectileType);
+        }
+
+        public static int GetByUUIDReal(int player, int projectileIdentity, params int[] projectileType)
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                if (projectile[i].active && projectile[i].identity == projectileIdentity && projectile[i].owner == player && (projectileType.Length == 0 || projectileType.Contains(projectile[i].type)))
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
     }
 }

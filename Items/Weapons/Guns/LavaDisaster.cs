@@ -1,4 +1,3 @@
-using Albedo.Global;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Terraria;

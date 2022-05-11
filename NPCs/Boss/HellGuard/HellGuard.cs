@@ -12,6 +12,7 @@ namespace Albedo.NPCs.Boss.HellGuard
   [AutoloadBossHead]
   public class HellGuard : ModNPC
   {
+    public int ritualProj;
     public override void SetStaticDefaults()
     {
       Main.npcFrameCount[npc.type] = 2;
@@ -81,6 +82,10 @@ namespace Albedo.NPCs.Boss.HellGuard
         {
           float num = (float) (0.78 * (index + (double) Main.rand.NextFloat(-0.5f, 0.5f)));
           Projectile.NewProjectile(npc.Center, Vector2.Zero, ModContent.ProjectileType<EarthChainBlast2>(), 0, 0.0f, Main.myPlayer, num, 3f);
+        }
+        if (Main.netMode != NetmodeID.MultiplayerClient)
+        {
+          ritualProj = Projectile.NewProjectile(npc.Center, Vector2.Zero, ModContent.ProjectileType<Arena>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
         }
         int num1 = NPC.NewNPC((int) npc.Center.X, (int) npc.Center.Y, ModContent.NPCType<HellGuardHand>(), npc.whoAmI, 0.0f, 0.0f, npc.whoAmI, 1f);
         if (num1 < 200 && Main.netMode == NetmodeID.Server)
