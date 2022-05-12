@@ -18,7 +18,6 @@ namespace Albedo.Projectiles.Boss.HellGuard
     public override void OnHitPlayer(Player target, int damage, bool crit)
     {
       target.AddBuff(24, 300, true);
-      target.AddBuff(67, 300, true);
     }
 
     public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)

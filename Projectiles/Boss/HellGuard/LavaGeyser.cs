@@ -54,6 +54,11 @@ namespace Albedo.Projectiles.Boss.HellGuard
       Dust.NewDust(projectile.position, projectile.width, projectile.height, 6, 0.0f, 0.0f, 0, new Color(), 1f);
     }
 
+    public override void OnHitPlayer(Player target, int damage, bool crit)
+    {
+      target.AddBuff(24, 300, true);
+    }
+    
     public override void Kill(int timeLeft)
     {
       if (Main.netMode == NetmodeID.MultiplayerClient)

@@ -6,13 +6,13 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Terraria.Localization;
 
 namespace Albedo.NPCs.Boss.HellGuard
 {
   [AutoloadBossHead]
   public class HellGuard : ModNPC
   {
-    public int ritualProj;
     public override void SetStaticDefaults()
     {
       Main.npcFrameCount[npc.type] = 2;
@@ -85,7 +85,7 @@ namespace Albedo.NPCs.Boss.HellGuard
         }
         if (Main.netMode != NetmodeID.MultiplayerClient)
         {
-          ritualProj = Projectile.NewProjectile(npc.Center, Vector2.Zero, ModContent.ProjectileType<Arena>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
+          Projectile.NewProjectile(npc.Center, Vector2.Zero, ModContent.ProjectileType<Arena>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
         }
         int num1 = NPC.NewNPC((int) npc.Center.X, (int) npc.Center.Y, ModContent.NPCType<HellGuardHand>(), npc.whoAmI, 0.0f, 0.0f, npc.whoAmI, 1f);
         if (num1 < 200 && Main.netMode == NetmodeID.Server)
@@ -312,7 +312,11 @@ namespace Albedo.NPCs.Boss.HellGuard
 
     public override void NPCLoot()
     {
-      AlbedoWorld.DownedHellGuard = true;
+      if (!AlbedoWorld.DownedHellGuard)
+      {
+        AlbedoWorld.DownedHellGuard = true;
+        AlbedoUtils.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.HellGuard"), Color.Purple);
+      }
       if (Main.netMode == NetmodeID.Server)
         NetMessage.SendData(MessageID.WorldData);
     }

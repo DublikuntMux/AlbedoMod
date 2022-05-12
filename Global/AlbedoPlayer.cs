@@ -7,9 +7,9 @@ namespace Albedo.Global
     public class AlbedoPlayer : ModPlayer
     {
         public bool BulletPet;
-        public bool ZoneGrap;
+        public bool CanGrap;
         public int Screenshake;
-        
+
         public override void ModifyScreenPosition()
         {
             if (Screenshake > 0)

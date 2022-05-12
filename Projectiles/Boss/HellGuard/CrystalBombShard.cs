@@ -21,8 +21,8 @@ namespace Albedo.Projectiles.Boss.HellGuard
 
     public override void OnHitPlayer(Player target, int damage, bool crit)
     {
-      target.AddBuff(46, 180);
-      target.AddBuff(44, 180);
+      target.AddBuff(30, 180);
+      target.AddBuff(33, 180);
     }
   }
 }

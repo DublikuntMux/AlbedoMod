@@ -1,8 +1,10 @@
 ///НАЗВАНИЕ И ОПИСАНИЕ ВСЯКИХ ПРЕДМЕТОВ///
 ItemName.Gunpowder=Порох
-ItemTooltip.Gunpowder=Очень взрывоопасная смесь [i/s1:1347].
+ItemTooltip.Gunpowder=Очень взрывоопасная смесь.
 ItemName.BulletOnChain=Пуля на цепи
 ItemTooltip.BulletOnChain=Вас убили этой пулей и вы сохронили ее как напоминание
+ItemName.GunGodSoul=Душа Бога оружия
+ItemTooltip.GunGodSoul=Содержит силу которая и не снилась твоему отцу
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ РУД///
@@ -18,6 +20,8 @@ AlbedoIngot.Map=Слсток Альбедо
 ///НАЗВАНИЕ И ОПИСАНИЕ БАФОВ///
 BuffName.BulletPetBuff=Твоя смертельная пуля
 BuffDescription.BulletPetBuff=Почему пуля ожила?
+BuffName.HellGuardCurse=Проклятие адского хранителя
+BuffDescription.HellGuardCurse=Тебе надо убить хранителя ада чтобы срожятся со стеной плоти.
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ ОРУЖИЙ///
@@ -32,6 +36,12 @@ ItemName.KryonikGun=Леданая пушка
 ItemTooltip.KryonikGun=Пули разлетаются на куски при сталкновении с врагом.
 ItemName.ClockworkCannon=Заводная пушка
 ItemTooltip.ClockworkCannon=Скорострел...
+ItemName.Triple=Тройничок
+ItemTooltip.Triple= ММММ))))
+ItemName.RocketShotgun=Ракетный дробовик
+ItemTooltip.RocketShotgun=Имеет шанс выстрелить ракетой вместо пули.
+ItemName.ShortStarCannon=Короткая звездная пушка
+ItemTooltip.ShortStarCannon=Стреляет пятью звездами за раз.
 
 
 ///НАЗВАНИЕ КРАФТ СТВНЦИЙ///
@@ -123,8 +133,13 @@ ItemName.PrehardmodePouch=Мешок прехардмодных пуль
 ///ИМЕНА БОССОВ///
 NPCName.HellGuard=Адский защитник
 NPCName.HellGuardHand=Рука адского защитника
-NPCName.GunMaster=Мастер оружия
+NPCName.GunGod=Бог оружия
 NPCName.MiniGun=Одержимое оружие
+
+
+///СООБЩЕНИЯ БОССОВ///
+BossMassage.GunGod=Вы высвободили древнию силу...\nЭто определенно ктото заметил...
+BossMassage.HellGuard=Вы чуствуете что ад стал опасние..
 
 
 ///ИМЕНА НИПОВ//

@@ -68,15 +68,7 @@ namespace Albedo.Projectiles.Combined
         {
             for (int i = 0; i < 3; i++)
             {
-                float x = projectile.position.X - projectile.velocity.X / 10f * i;
-                float y = projectile.position.Y - projectile.velocity.Y / 10f * i;
-                int num = Dust.NewDust(new Vector2(x, y), 1, 1, _dusts[_currentDust], 0f, 0f, 0, default(Color), 1f);
-                Main.dust[num].alpha = projectile.alpha;
-                Main.dust[num].position.X = x;
-                Main.dust[num].position.Y = y;
-                Dust obj = Main.dust[num];
-                obj.velocity *= 0f;
-                Main.dust[num].noGravity = true;
+                AlbedoUtils.NewDust(projectile, Vector2.Zero, _dusts[_currentDust]);
             }
             _currentDust++;
             if (_currentDust > 1)

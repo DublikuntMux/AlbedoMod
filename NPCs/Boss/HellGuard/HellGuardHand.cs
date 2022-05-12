@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Albedo.Global;
+using Albedo.Projectiles.Boss;
 using Albedo.Projectiles.Boss.HellGuard;
 using Terraria;
 using Terraria.ID;

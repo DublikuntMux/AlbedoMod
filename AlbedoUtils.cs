@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using static Terraria.Main;
 
@@ -73,6 +74,31 @@ namespace Albedo
                 return false;
             }
             return true;
+        }
+        
+        public static void GlowMask(Texture2D texture,float rotation, float scale, int whoAmI)
+        {
+            Item val = item[whoAmI];
+            int num = texture.Height;
+            int width = texture.Width;
+            SpriteEffects effects = val.direction < 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
+            Rectangle rectangle = new Rectangle(0, 0, width, num);
+            Vector2 vector = new Vector2(val.Center.X, val.position.Y + val.height - num / 2);
+            spriteBatch.Draw(texture, vector - screenPosition, rectangle, Color.White, rotation, Utils.Size(rectangle) / 2f, scale, effects, 0f);
+        }
+        
+        public static void NewDust(Projectile projectile, Vector2 speed, int type, int count = 1, int chance = 100, float size = 1f, Color color = default(Color), int alpha = 0, bool noGrav = true, bool noLight = false, Action<Dust> callback = null)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (rand.Next(100) <= chance)
+                {
+                    Dust val = Dust.NewDustDirect(projectile.position, projectile.width, projectile.height, type, speed.X, speed.Y, alpha, color, size);
+                    val.noGravity = noGrav;
+                    val.noLight = noLight;
+                    callback?.Invoke(val);
+                }
+            }
         }
         
         public static NPC NpcExists(int whoAmI, params int[] types)
@@ -226,13 +252,8 @@ namespace Albedo
         {
             return PlayerExists((int)whoAmI);
         }
-        
-        public static int GetByUUIDReal(int player, float projectileIdentity, params int[] projectileType)
-        {
-            return GetByUUIDReal(player, (int)projectileIdentity, projectileType);
-        }
 
-        public static int GetByUUIDReal(int player, int projectileIdentity, params int[] projectileType)
+        public static int GetByUuidReal(int player, int projectileIdentity, params int[] projectileType)
         {
             for (int i = 0; i < 1000; i++)
             {
@@ -242,6 +263,27 @@ namespace Albedo
                 }
             }
             return -1;
+        }
+        
+        public static void Chat(string massage, Color color, bool sync = true)
+        {
+            Chat(s, color.R, color.G, color.B, sync);
+        }
+
+        private static void Chat(string s, byte colorR = byte.MaxValue, byte colorG = byte.MaxValue, byte colorB = byte.MaxValue, bool sync = true)
+        {
+            if (netMode == NetmodeID.SinglePlayer)
+            {
+                NewText(s, colorR, colorG, colorB, false);
+            }
+            else if (netMode == NetmodeID.MultiplayerClient)
+            {
+                NewText(s, colorR, colorG, colorB, false);
+            }
+            else if (sync && netMode == NetmodeID.Server)
+            {
+                NetMessage.BroadcastChatMessage(NetworkText.FromLiteral(s), new Color(colorR, colorG, colorB), -1);
+            }
         }
     }
 }
