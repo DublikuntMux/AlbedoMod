@@ -61,7 +61,7 @@ namespace Albedo
             return vector * (rand.NextFloat(speedLowerLimit, speedCap) * speedMult);
         }
 
-        public static bool CustomRarity(int rarity, DrawableTooltipLine line)
+        public static bool LiveRarity(int rarity, DrawableTooltipLine line)
         {
             if (line.mod == "Terraria" && line.Name == "ItemName")
             {

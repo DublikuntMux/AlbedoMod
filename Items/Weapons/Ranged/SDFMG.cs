@@ -55,7 +55,7 @@ namespace Albedo.Items.Weapons.Ranged
         
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
-            return AlbedoUtils.CustomRarity(2873, line);
+            return AlbedoUtils.LiveRarity(2873, line);
         }
 
         public override bool ConsumeAmmo(Player player)

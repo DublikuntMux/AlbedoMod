@@ -18,8 +18,13 @@ But there is already:
 * 2 (de)buffs
 * 2 NPC
 * 1 Pet
-* 3 Languages
+* All Languages
 * Patreon Items 
+
+V0.0.5.3 - Enemy update
+* new boss
+* new boss reward
+* all languages
 
 V0.0.5.2 - Community update
 * new bosses

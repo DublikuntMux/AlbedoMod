@@ -1,5 +1,7 @@
 ﻿using System;
 using Albedo.Global;
+using Albedo.Items.TreasureBags;
+using Albedo.Items.Trophies;
 using Albedo.Projectiles.Boss.HellGuard;
 using Terraria;
 using Terraria.ID;
@@ -42,6 +44,7 @@ namespace Albedo.NPCs.Boss.HellGuard
       npc.trapImmune = true;
       npc.dontTakeDamage = true;
       npc.alpha = byte.MaxValue;
+      bossBag = ModContent.ItemType<HellGuardBag>();
     }
 
     public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
@@ -319,6 +322,11 @@ namespace Albedo.NPCs.Boss.HellGuard
       }
       if (Main.netMode == NetmodeID.Server)
         NetMessage.SendData(MessageID.WorldData);
+      Item.NewItem(npc.Hitbox, ModContent.ItemType<HellGuardBag>());
+      if (Main.rand.Next(0, 100) <= 10)
+      {
+        Item.NewItem(npc.Hitbox, ModContent.ItemType<HellGuardTrophy>());
+      }
     }
 
     public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)

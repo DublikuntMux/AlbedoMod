@@ -21,6 +21,7 @@ namespace Albedo.Buffs.Boss
             player.statDefense -= 10;
             player.endurance /= 1.3f;
             player.maxMinions /= 2;
+            player.ammoBox = false;
         }
     }
 }

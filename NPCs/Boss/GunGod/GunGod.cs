@@ -2,6 +2,8 @@
 using System.IO;
 using Albedo.Buffs.Boss;
 using Albedo.Global;
+using Albedo.Items.TreasureBags;
+using Albedo.Items.Trophies;
 using Albedo.Projectiles.Boss.GunGod;
 using Terraria;
 using Terraria.ID;
@@ -32,7 +34,7 @@ namespace Albedo.NPCs.Boss.GunGod
             npc.height = 57;
             npc.damage = 150;
             npc.defense = 80;
-            npc.lifeMax = 60000 * 3;
+            npc.lifeMax = 160000;
             npc.value = Item.buyPrice(0, 20);
             npc.HitSound = SoundID.NPCHit57;
             npc.noGravity = true;
@@ -47,7 +49,7 @@ namespace Albedo.NPCs.Boss.GunGod
             npc.buffImmune[24] = true;
             npc.buffImmune[68] = true;
             npc.timeLeft = NPC.activeTime * 30;
-            //bossBag = ModContent.ItemType<GunGodBag>();
+            bossBag = ModContent.ItemType<GunGodBag>();
         }
 
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
@@ -1377,6 +1379,11 @@ namespace Albedo.NPCs.Boss.GunGod
             }
             if (Main.netMode == NetmodeID.Server)
                 NetMessage.SendData(MessageID.WorldData);
+            Item.NewItem(npc.Hitbox, ModContent.ItemType<GunGodBag>());
+            if (Main.rand.Next(0, 100) <= 10)
+            {
+                Item.NewItem(npc.Hitbox, ModContent.ItemType<GunGodTrophy>());
+            }
         }
 
         public override void BossLoot(ref string name, ref int potionType)

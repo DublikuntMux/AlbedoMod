@@ -24,6 +24,8 @@ BuffName.HellGuardCurse=Hellguard's Curse
 BuffDescription.HellGuardCurse=You need to kill the guardian of hell to heal with the wall of flesh.
 BuffName.GunGodCurse=GunGod Curses
 BuffDescription.GunGodCurse=GunGodCurse aura is pressing down on you...
+BuffName.HellConfessions=Confessions of Hell
+BuffDescription.HellConfessions=Hell starts helping you \nHow prosaic it...
 
 
 ///NAME AND DESCRIPTION OF WEAPONS///
@@ -132,16 +134,46 @@ ItemName.HardmodePouch=Hardmode Pouch
 ItemName.PrehardmodePouch=Pouch of Prehardmode Bullets
 
 
+///BOS ITEM///
+ItemName.CursedPistol=Cursed Pistol
+ItemTooltip.CursedPistol=Obsidian pistol god-cursed weapon. \nNot consumable
+ItemName.GodTribute=God Tribute
+ItemTooltip.GodTribute=An offering to an ancient being... \nNot consumable
+ItemName.SniperVoodooDoll=Sniper VoodooDoll
+ItemTooltip.SniperVoodooDoll=Doesn't kill Sniper \nNot consumable
+
+ItemName.GunDemonBag=Gun Demon Bag
+ItemTooltip.GunDemonBag=Victory Reward.
+ItemName.GunGodBag=Gun God Bag
+ItemTooltip.GunGodBag=Victory Reward.
+ItemName.HellGuardBag=Hell Guard Bag
+ItemTooltip.HellGuardBag=Victory Reward.
+
+ItemName.GunDemonTrophy=Gun Demon Trophy
+ItemTooltip.GunDemonTrophy=Trophy for perseverance.
+ItemName.GunGodTrophy=Gun God Trophy
+ItemTooltip.GunGodTrophy=Trophy for perseverance.
+ItemName.HellGuardTrophy=Hell Guard Trophy
+ItemTooltip.HellGuardTrophy=Trophy for perseverance.
+
+
 ///BOSS NAMES///
 NPCName.HellGuard=Hell Guard
 NPCName.HellGuardHand=Hand of the HellGuard
 NPCName.GunGod=Gun God
 NPCName.MiniGun=Possessed Weapon
+NPCName.GunDemonHead=Gun Demon
+NPCName.GunDemonBody=Gun Demon
+NPCName.GunDemonTail=Gun Demon
+NPCName.MagmaLeechHead=Magma Leech
+NPCName.MagmaLeechBody=Magma Leech
+NPCName.MagmaLeechTail=Magma Leech
 
 
 ///BOSS MESSAGES///
-BossMassage.GunGod=You have unleashed an ancient power...\nSomeone has definitely noticed...
 BossMassage.HellGuard=You feel like hell has become dangerous..
+BossMassage.GunGod=You have unleashed an ancient power...\nSomeone has definitely noticed...
+BossMassage.GunDemon=Infernal creatures make way for you...
 
 
 ///NIPS NAMES//
@@ -175,5 +207,6 @@ Bagman.dialog4= You've heard of Albedo, he's scary... Don't trust him!
 
 
 ///MISC///
+Misc.OnEnter=[AlbedoMod] - !MOD IN ALPHA TESTING!
 NPC.Hardmod=Hardmod
 NPC.PreHardmod=PreHardmod

@@ -11,6 +11,8 @@ namespace Albedo.Global
     {
         public static bool DownedHellGuard;
         public static bool DownedGunGod;
+        public static bool DownedGunDemon;
+        
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
         {
             int shiniestIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Shinies"));

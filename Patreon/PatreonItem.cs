@@ -17,7 +17,7 @@ namespace Albedo.Patreon
 
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
-            return AlbedoUtils.CustomRarity(3027, line);
+            return AlbedoUtils.LiveRarity(3027, line);
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)

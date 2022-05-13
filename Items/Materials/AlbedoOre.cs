@@ -31,7 +31,7 @@ namespace Albedo.Items.Materials
         
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
-            return AlbedoUtils.CustomRarity(3025, line);
+            return AlbedoUtils.LiveRarity(3025, line);
         }
     }
 }

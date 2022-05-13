@@ -31,7 +31,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
 		{
-			return CustomRarity(3533, line);
+			return LiveRarity(3533, line);
 		}
 		
 		public override Vector2? HoldoutOffset()

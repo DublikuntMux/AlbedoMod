@@ -33,7 +33,7 @@ namespace Albedo.Items.Weapons.Ranged
 		
 		public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
 		{
-			return AlbedoUtils.CustomRarity(3554, line);
+			return AlbedoUtils.LiveRarity(3554, line);
 		}
 		
 		public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)

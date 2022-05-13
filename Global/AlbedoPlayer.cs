@@ -1,5 +1,9 @@
+using Albedo.Buffs.Permanents;
 using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
+using Terraria.GameInput;
 
 namespace Albedo.Global
 {
@@ -9,6 +13,19 @@ namespace Albedo.Global
         public bool CanGrap;
         public int Screenshake;
 
+        public override void OnEnterWorld(Player player)
+        {
+            AlbedoUtils.Chat(Language.GetTextValue("Mods.Albedo.Misc.OnEnter"), Color.Red, false);
+        }
+
+        public override void ProcessTriggers(TriggersSet triggersSet)
+        {
+            if (AlbedoWorld.DownedGunDemon)
+            {
+                player.AddBuff(ModContent.BuffType<HellConfessions>(), 3);
+            }
+        }
+        
         public override void ModifyScreenPosition()
         {
             if (Screenshake > 0)

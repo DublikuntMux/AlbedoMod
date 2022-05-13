@@ -9,3 +9,7 @@
 	<img src="https://img.shields.io/github/last-commit/dublikuntmux/AlbedoMod" alt="GitHub last commit"/>
     <img src="https://img.shields.io/github/commit-activity/w/dublikuntmux/AlbedoMod" alt="GitHub commit activity"/>
 </div>
+
+[Patreon : Dublikunt is creating Albedo mod for Terraria | Patreon](https://www.patreon.com/DublikuntMax)  
+[Developer site: Home - Dublikunt Max](https://www.dublikunt.tk)  
+Discord: Coming soon...  
