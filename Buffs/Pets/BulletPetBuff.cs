@@ -3,7 +3,7 @@ using Albedo.Projectiles.Pets;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Albedo.Buffs
+namespace Albedo.Buffs.Pets
 {
     public class BulletPetBuff : ModBuff
     {

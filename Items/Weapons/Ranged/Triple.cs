@@ -1,4 +1,6 @@
+using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -51,6 +53,17 @@ namespace Albedo.Items.Weapons.Ranged
 		{
 			Texture2D texture = mod.GetTexture("Items/Weapons/Ranged/Triple_Glow");
 			AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+		}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.FlintlockPistol);
+			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 10);
+			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 20);
+			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 	}
 }

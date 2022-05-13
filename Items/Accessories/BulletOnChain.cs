@@ -1,4 +1,5 @@
-﻿using Albedo.Global;
+﻿using Albedo.Buffs.Pets;
+using Albedo.Global;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -19,7 +20,7 @@ namespace Albedo.Items.Accessories
             item.noMelee = true;
             item.value = Item.sellPrice(gold:5, silver:50);
             item.shoot = ModContent.ProjectileType<Projectiles.Pets.BulletPet>();
-            item.buffType = ModContent.BuffType<Buffs.BulletPetBuff>();
+            item.buffType = ModContent.BuffType<BulletPetBuff>();
         }
         
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)

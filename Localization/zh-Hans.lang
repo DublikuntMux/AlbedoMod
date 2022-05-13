@@ -1,8 +1,10 @@
 ﻿///所有对象的标题和描述///
 ItemName.Gunpowder=火药
-ItemTooltip.Gunpowder=极易爆炸的混合物 [i/s1:1347]。
+ItemTooltip.Gunpowder=极易爆炸的混合物。
 ItemName.BulletOnChain=链上的子弹
 ItemTooltip.BulletOnChain=你被这颗子弹杀死并保存为提醒
+ItemName.GunGodSoul=枪神之魂
+ItemTooltip.GunGodSoul=拥有你父亲做梦都想不到的力量
 
 
 ///矿石名称及描述///
@@ -18,6 +20,10 @@ AlbedoIngot.Map=反照率锭
 ///BAFS的名称和描述///
 BuffName.BulletPetBuff=你的致命子弹
 BuffDescription.BulletPetBuff=为什么子弹会复活？
+BuffName.HellGuardCurse=地狱守卫的诅咒
+BuffDescription.HellGuardCurse=你需要杀死地狱守卫才能用血肉之墙治疗。
+BuffName.GunGodCurse=枪神诅咒
+BuffDescription.GunGodCurse=GunGodCurse 光环正在压向你...
 
 
 ///武器名称和描述///
@@ -32,6 +38,12 @@ ItemName.KryonikGun=冰炮
 ItemTooltip.KryonikGun=子弹在击中敌人时会碎成碎片。
 ItemName.ClockworkCannon=发条炮
 ItemTooltip.ClockworkCannon=快速射击...
+ItemName.Triple=三人行
+ItemTooltip.Triple= MMMM))))
+ItemName.RocketShotgun=火箭霰弹枪
+ItemTooltip.RocketShotgun=有几率发射火箭而不是子弹。
+ItemName.ShortStarCannon=短星炮
+ItemTooltip.ShortStarCannon=一次发射 5 颗星。
 
 
 ///工艺国家名称///
@@ -113,12 +125,23 @@ ItemName.MythrilPouch=秘银子弹袋
 ItemName.AdamantitePouch=一袋精金子弹
 
 ItemName.CosmoPouch=一袋天空子弹
-ItemTooltip.CosmoPouch=这个袋子曾经属于雅儿贝德\n保留这个袋子
-电视本身就是古人的技术。
+ItemTooltip.CosmoPouch=这个袋子曾经属于雅儿贝德\n这个袋子里有古人的技术。
 ItemName.PostLunarPouch=邮月领主子弹袋
 ItemTooltip.PostLunarPouch=这个袋子拥有你父亲做梦都想不到的力量。
 ItemName.HardmodePouch=困难模式袋
 ItemName.PrehardmodePouch=困难模式前子弹袋
+
+
+///BOSS 名称///
+NPCName.HellGuard=地狱守卫
+NPCName.HellGuardHand=地狱守卫之手
+NPCName.GunGod=枪神
+NPCName.MiniGun=拥有武器
+
+
+///老板留言///
+BossMassage.GunGod=你释放了一种古老的力量...\n肯定有人注意到了...
+BossMassage.HellGuard=你觉得地狱变得危险了..
 
 
 ///NIPS 名称//

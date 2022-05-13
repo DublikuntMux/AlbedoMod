@@ -1,8 +1,8 @@
 displayName = [c/AF4BFF:Albedo] [c/9F0060:M][c/800080:o][c/60009F:d]
 author = Dublikunt
 version = 0.0.5.2
-homepage = https://github.com/DublikuntMux/AlbedoMod
-includePDB = true
+homepage = https://forums.terraria.org/index.php?threads/albedo-mod.112382/
+includePDB = false
 hideCode = true
 hideResources = true
-buildIgnore =.idea\* .git\* bin\* obj\* .gitignore
+buildIgnore =.idea\* .git\* bin\* obj\* .gitignore Properties\*

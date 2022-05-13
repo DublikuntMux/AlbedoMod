@@ -8,19 +8,18 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Albedo.Projectiles.Boss.GunGod
 {
-	public class StyxGazer : ModProjectile
+	public class SDFMG : ModProjectile
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Styx Gazer");
 			ProjectileID.Sets.TrailCacheLength[projectile.type] = 6;
 			ProjectileID.Sets.TrailingMode[projectile.type] = 2;
 		}
 
 		public override void SetDefaults()
 		{
-			projectile.width = 60;
-			projectile.height = 60;
+			projectile.width = 34;
+			projectile.height = 74;
 			projectile.scale = 1f;
 			projectile.hostile = true;
 			projectile.ignoreWater = true;
@@ -30,6 +29,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 			projectile.penetrate = -1;
 			projectile.GetGlobalProjectile<AlbedoGloabalProjectile>().DeletionImmuneRank = 2;
 			projectile.hide = true;
+			projectile.scale = 2.5f;
 		}
 
 		public override void AI()
@@ -46,13 +46,12 @@ namespace Albedo.Projectiles.Boss.GunGod
 				{
 					projectile.localAI[1] = projectile.ai[1] / 60f;
 				}
-				projectile.velocity = Utils.RotatedBy(projectile.velocity, (double)projectile.ai[1], default(Vector2));
 				projectile.ai[1] -= projectile.localAI[1];
-				projectile.Center = val.Center + Utils.RotatedBy(new Vector2(60f, 60f), (double)(projectile.velocity.ToRotation() - (float)Math.PI / 4f), default(Vector2)) * projectile.scale;
+				projectile.Center = val.Center;
 				if (projectile.localAI[0] == 0f)
 				{
 					projectile.localAI[0] = 1f;
-					Main.PlaySound(SoundID.Item71, projectile.Center);
+					Main.PlaySound(SoundID.Item10, projectile.Center);
 				}
 				projectile.Opacity = (float)Math.Min(1.0, (2 - projectile.extraUpdates) * Math.Sin(Math.PI * (60 - projectile.timeLeft) / 60.0));
 				projectile.direction = projectile.spriteDirection = Math.Sign(projectile.ai[1]);
@@ -84,7 +83,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 			int y = num * projectile.frame;
 			Rectangle rectangle = new Rectangle(0, y, texture2D.Width, num);
 			Vector2 origin = Utils.Size(rectangle) / 2f;
-			SpriteEffects effects = ((projectile.spriteDirection <= 0) ? SpriteEffects.FlipHorizontally : SpriteEffects.None);
+			SpriteEffects effects = projectile.spriteDirection <= 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
 			Color color = lightColor;
 			color = projectile.GetAlpha(color);
 			for (int i = 0; i < ProjectileID.Sets.TrailCacheLength[projectile.type]; i++)

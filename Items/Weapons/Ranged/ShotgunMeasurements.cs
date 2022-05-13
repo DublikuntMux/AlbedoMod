@@ -22,6 +22,7 @@ namespace Albedo.Items.Weapons.Ranged
 			item.shoot = ModContent.ProjectileType<AuralisBullet>();
 			item.shootSpeed = 7.5f;
 			item.useAmmo = AmmoID.Bullet;
+			item.UseSound = SoundID.Item31;
 			item.rare = ItemRarityID.Purple;
 			item.width = 96;
 			item.height = 34;

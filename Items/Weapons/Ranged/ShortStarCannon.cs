@@ -1,3 +1,5 @@
+using Albedo.Items.Materials;
+using Albedo.Tiles.CraftStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -11,7 +13,7 @@ namespace Albedo.Items.Weapons.Ranged
 	{
 		public override void SetDefaults()
 		{
-			item.damage = 81;
+			item.damage = 50;
 			item.crit = 5;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.UseSound = SoundID.Item36;
@@ -19,7 +21,7 @@ namespace Albedo.Items.Weapons.Ranged
 			item.useAnimation = 30;
 			item.ranged = true;
 			item.noMelee = true;
-			item.rare = ItemRarityID.LightRed;
+			item.rare = ItemRarityID.Green;
 			item.value = Item.buyPrice(0, 5);
 			item.shootSpeed = 28f;
 			item.useAmmo = AmmoID.FallenStar;
@@ -49,6 +51,17 @@ namespace Albedo.Items.Weapons.Ranged
 		{
 			Texture2D texture = mod.GetTexture("Items/Weapons/Ranged/ShortStarCannon_Glow");
 			AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+		}
+
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.MeteoriteBar, 10);
+			recipe.AddIngredient(ItemID.Minishark);
+			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 20);
+			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 	}
 }

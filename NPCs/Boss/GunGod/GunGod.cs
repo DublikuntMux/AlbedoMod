@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Albedo.Buffs.Boss;
 using Albedo.Global;
 using Albedo.Projectiles.Boss.GunGod;
 using Terraria;
@@ -27,8 +28,8 @@ namespace Albedo.NPCs.Boss.GunGod
 
         public override void SetDefaults()
         {
-            npc.width = 120;
-            npc.height = 120;
+            npc.width = 58;
+            npc.height = 57;
             npc.damage = 150;
             npc.defense = 80;
             npc.lifeMax = 60000 * 3;
@@ -154,6 +155,10 @@ namespace Albedo.NPCs.Boss.GunGod
 					}
 				}
             }
+            if (Main.player[Main.myPlayer].active && npc.Distance(Main.player[Main.myPlayer].Center) < 3000f)
+            {
+                Main.player[Main.myPlayer].AddBuff(ModContent.BuffType<GunGodCurse>(), 2);
+            }
             Player val = Main.player[npc.target];
             npc.direction = npc.spriteDirection = npc.Center.X < val.Center.X ? 1 : -1;
             Vector2 vector;
@@ -161,8 +166,7 @@ namespace Albedo.NPCs.Boss.GunGod
             {
                 case -3:
                 {
-                    NPC npc1 = npc;
-                    npc1.velocity *= 0.9f;
+                    npc.velocity *= 0.9f;
                     npc.dontTakeDamage = true;
                     for (int i = 0; i < 5; i++)
                     {
@@ -190,8 +194,7 @@ namespace Albedo.NPCs.Boss.GunGod
                 case -2:
                     if (AliveCheck(val))
                     {
-                        NPC npc11 = npc;
-                        npc11.velocity *= 0.9f;
+                        npc.velocity *= 0.9f;
                         npc.dontTakeDamage = true;
                         for (int num52 = 0; num52 < 5; num52++)
                         {
@@ -210,8 +213,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     break;
                 case -1:
                 {
-                    NPC npc12 = npc;
-                    npc12.velocity *= 0.9f;
+                    npc.velocity *= 0.9f;
                     npc.dontTakeDamage = true;
                     if (npc.buffType[0] != 0)
                     {
@@ -228,8 +230,7 @@ namespace Albedo.NPCs.Boss.GunGod
                         }
                         npc.localAI[3] = 2f;
                         int num61 = (int)(npc.lifeMax / 90 * Main.rand.NextFloat(1f, 1.5f));
-                        NPC npc13 = npc;
-                        npc13.life += num61;
+                        npc.life += num61;
                         if (npc.life > npc.lifeMax)
                         {
                             npc.life = npc.lifeMax;
@@ -348,7 +349,7 @@ namespace Albedo.NPCs.Boss.GunGod
                             float num10 = npc.localAI[3] > 1f ? 1f : 0f;
                             Projectile.NewProjectile(npc.Center, npc.DirectionTo(val.Center) * 30f, ModContent.ProjectileType<ScytheSplit>(), npc.damage / 4, 0f, Main.myPlayer, num9, num10);
                             float num11 = (float)Math.PI * (npc.Center.X < val.Center.X ? 1 : -1);
-                            Projectile.NewProjectile(npc.Center, new Vector2(npc.Center.X < val.Center.X ? -1f : 1f, -1f), ModContent.ProjectileType<StyxGazer>(), npc.damage / 4, 0f, Main.myPlayer, (float)npc.whoAmI, num11 / 60f * 2f);
+                            Projectile.NewProjectile(npc.Center, new Vector2(npc.Center.X < val.Center.X ? -1f : 1f, -1f), ModContent.ProjectileType<SDFMG>(), npc.damage / 4, 0f, Main.myPlayer, (float)npc.whoAmI, num11 / 60f * 2f);
                         }
                     }
                     break;
@@ -359,8 +360,7 @@ namespace Albedo.NPCs.Boss.GunGod
                         break;
                     }
                     npc.velocity = npc.DirectionTo(val.Center);
-                    NPC npc4 = npc;
-                    npc4.velocity *= npc.localAI[3] > 1f  ? 2f : 6f;
+                    npc.velocity *= npc.localAI[3] > 1f  ? 2f : 6f;
                     int num16 = npc.localAI[3] > 1f ? 7 : 6;
                     num16++;
                     if (!((npc.ai[1] -= 1f) < 0f))
@@ -398,8 +398,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     {
                         break;
                     }
-                    NPC npc5 = npc;
-                    npc5.velocity *= 0.9f;
+                    npc.velocity *= 0.9f;
                     if (npc.ai[2] == 0f)
                     {
                         if (npc.localAI[3] > 1f)
@@ -442,8 +441,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     npc.velocity = npc.DirectionTo(val.Center + val.velocity) * 30f;
                     if (npc.localAI[3] > 1f)
                     {
-                        NPC npc6 = npc;
-                        npc6.velocity *= 1.2f;
+                        npc.velocity *= 1.2f;
                         for (int m = 0; m < 128; m++)
                         {
                             Vector2 vector3 = Utils.RotatedBy(-Utils.RotatedBy(Vector2.UnitY, m * 3.14159274101257 * 2.0 / 128.0, default(Vector2)) * new Vector2(8f, 16f), (double)npc.velocity.ToRotation(), default(Vector2));
@@ -457,8 +455,8 @@ namespace Albedo.NPCs.Boss.GunGod
                         }
                         if (Main.netMode != NetmodeID.MultiplayerClient)
                         {
-                            float num22 = 4.712389f * ((npc.ai[2] % 2f == 0f) ? 1 : (-1));
-                            Projectile.NewProjectile(npc.Center, Utils.RotatedBy(Vector2.Normalize(npc.velocity), (double)((0f - num22) / 2f), default(Vector2)), ModContent.ProjectileType<StyxGazer>(), npc.damage / 4, 0f, Main.myPlayer, npc.whoAmI, num22 / 60f * 2f);
+                            float num22 = 4.712389f * (npc.ai[2] % 2f == 0f ? 1 : -1);
+                            Projectile.NewProjectile(npc.Center, Utils.RotatedBy(Vector2.Normalize(npc.velocity), (double)((0f - num22) / 2f), default(Vector2)), ModContent.ProjectileType<SDFMG>(), npc.damage / 4, 0f, Main.myPlayer, npc.whoAmI, num22 / 60f * 2f);
                         }
                     }
                     break;
@@ -468,7 +466,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     {
                         break;
                     }
-                    npc.direction = (npc.spriteDirection = Math.Sign(npc.velocity.X));
+                    npc.direction = npc.spriteDirection = Math.Sign(npc.velocity.X);
                     if (npc.localAI[3] > 1f)
                     {
                         for (int num54 = 0; num54 < 2; num54++)
@@ -566,8 +564,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     {
                         break;
                     }
-                    NPC npc9 = npc;
-                    npc9.velocity *= 0.99f;
+                    npc.velocity *= 0.99f;
                     if (npc.ai[2] == 0f)
                     {
                         npc.ai[2] = 1f;
@@ -630,8 +627,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     {
                         break;
                     }
-                    NPC npc10 = npc;
-                    npc10.velocity *= 0.99f;
+                    npc.velocity *= 0.99f;
                     if (npc.ai[1] == 0f && Main.netMode != NetmodeID.MultiplayerClient)
                     {
                         Projectile.NewProjectile(npc.Center, Vector2.Zero, ModContent.ProjectileType<GlowRing>(), 0, 0f, Main.myPlayer, npc.whoAmI, -4f);
@@ -735,8 +731,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     {
                         break;
                     }
-                    NPC npc14 = npc;
-                    npc14.velocity *= 0.9f;
+                    npc.velocity *= 0.9f;
                     npc.localAI[2] = 0f;
                     if (!((npc.ai[1] += 1f) > 120f))
                     {
@@ -901,8 +896,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     if (!(npc.ai[1] < 150f) || AliveCheck(val))
                     {
                         npc.velocity.Y = 0f;
-                        NPC npc7 = npc;
-                        npc7.velocity *= 0.947f;
+                        npc.velocity *= 0.947f;
                         npc.ai[3] += npc.velocity.Length();
                         if (npc.ai[1] > 150f)
                         {
@@ -961,8 +955,7 @@ namespace Albedo.NPCs.Boss.GunGod
                 case 14:
                     if (AliveCheck(val))
                     {
-                        NPC npc3 = npc;
-                        npc3.velocity *= 0.9f;
+                        npc.velocity *= 0.9f;
                         if ((npc.ai[1] += 1f) > 60f)
                         {
                             npc.netUpdate = true;
@@ -973,8 +966,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     break;
                 case 15:
                 {
-                    NPC npc2 = npc;
-                    npc2.velocity *= 0.9f;
+                    npc.velocity *= 0.9f;
                     if (npc.ai[1] < 60f)
                     {
                         FancyFireballs((int)npc.ai[1]);
@@ -1121,8 +1113,7 @@ namespace Albedo.NPCs.Boss.GunGod
                 case 20:
                 {
                     npc.velocity.Y *= 0.97f;
-                    NPC npc8 = npc;
-                    npc8.position += npc.velocity;
+                    npc.position += npc.velocity;
                     npc.direction = (npc.spriteDirection = Math.Sign(npc.ai[2] - npc.Center.X));
                     if ((npc.ai[1] += 1f) > 90f)
                     {
@@ -1395,8 +1386,7 @@ namespace Albedo.NPCs.Boss.GunGod
 
         public override void FindFrame(int frameHeight)
         {
-            NPC npc1 = npc;
-            if ((npc1.frameCounter += 1.0) > 6.0)
+            if ((npc.frameCounter += 1.0) > 6.0)
             {
                 npc.frameCounter = 0.0;
                 npc.frame.Y += frameHeight;
@@ -1406,8 +1396,7 @@ namespace Albedo.NPCs.Boss.GunGod
                 }
             }
         }
-
-
+        
         public override bool PreDraw(SpriteBatch spriteBatch, Color lightColor)
         {
             Texture2D texture = Main.npcTexture[npc.type];

@@ -22,6 +22,8 @@ BuffName.BulletPetBuff=Твоя смертельная пуля
 BuffDescription.BulletPetBuff=Почему пуля ожила?
 BuffName.HellGuardCurse=Проклятие адского хранителя
 BuffDescription.HellGuardCurse=Тебе надо убить хранителя ада чтобы срожятся со стеной плоти.
+BuffName.GunGodCurse=Проклятия бога оружия
+BuffDescription.GunGodCurse=Аура Бог аоружия давит на вас...
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ ОРУЖИЙ///

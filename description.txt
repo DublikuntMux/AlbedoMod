@@ -4,20 +4,28 @@ If you have suggestions and or you find a problem, you can go to github and writ
 
 Github: https://github.com/DublikuntMux/AlbedoMod
 Patreon: https://www.patreon.com/DublikuntMax
+Terraria forum: https://forums.terraria.org/index.php?threads/albedo-mod.112382
 Discord: Coming soon...
-Developer site: https://www.dublikunt.tk/
+Developer site: https://www.dublikunt.tk
 
 !MOD IN ALPHA TESTING!
 
 But there is already:
+* 2 Boss
 * 20 Ammos
-* 6 Guns
-* 4 Materials
+* 9 Guns
+* 5 Materials
+* 2 (de)buffs
 * 2 NPC
 * 1 Pet
 * 3 Languages
+* Patreon Items 
 
 V0.0.5.2 - Community update
+* new bosses
+* new guns
+* new materials
+* thread on terrria forum
 * add patreon items
 * new material
 * world gen fix

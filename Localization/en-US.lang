@@ -1,8 +1,10 @@
 ///TITLE AND DESCRIPTION OF ALL OBJECTS///
 ItemName.Gunpowder=Gunpowder
-ItemTooltip.Gunpowder=Very Explosive Mixture [i/s1:1347].
+ItemTooltip.Gunpowder=Very explosive mixture.
 ItemName.BulletOnChain=Bullet On Chain
 ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder
+ItemName.GunGodSoul=GunGod Soul
+ItemTooltip.GunGodSoul=Contains a power your father never dreamed of
 
 
 ///NAME AND DESCRIPTION OF ORES///
@@ -18,13 +20,17 @@ AlbedoIngot.Map=Albedo Ingot
 ///NAME AND DESCRIPTION OF BAFS///
 BuffName.BulletPetBuff=Your Deadly Bullet
 BuffDescription.BulletPetBuff=Why did the bullet come to life?
+BuffName.HellGuardCurse=Hellguard's Curse
+BuffDescription.HellGuardCurse=You need to kill the guardian of hell to heal with the wall of flesh.
+BuffName.GunGodCurse=GunGod Curses
+BuffDescription.GunGodCurse=GunGodCurse aura is pressing down on you...
 
 
 ///NAME AND DESCRIPTION OF WEAPONS///
 ItemName.RustleDunes=Rustle of the Dunes
 ItemTooltip.RustleDunes=I wonder if there is gin inside?
 ItemName.ShotgunMeasurements=ShotgunMeasurements
-ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired\n Has a 50% chance of not wasting a round.
+ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired\n Has a 50% chance to not consume a cartridge.
 ItemName.LavaDisaster=Lava Disaster
 ItemTooltip.LavaDisaster=Once belonged to Albedo\n Has a 50% chance to not consume a cartridge
 ItemTooltip.SDFMG=From the Far Depths of the Mind\n Has a 50% chance to not consume an ammo
@@ -32,6 +38,12 @@ ItemName.KryonikGun=Ice Cannon
 ItemTooltip.KryonikGun=Bullets shatter into pieces on impact with an enemy.
 ItemName.ClockworkCannon=Clockwork Cannon
 ItemTooltip.ClockworkCannon=Quick Fire...
+ItemName.Triple=Threesome
+ItemTooltip.Triple= MMMM))))
+ItemName.RocketShotgun=Rocket Shotgun
+ItemTooltip.RocketShotgun=Has a chance to fire a rocket instead of a bullet.
+ItemName.ShortStarCannon=Short Star Cannon
+ItemTooltip.ShortStarCannon=Fires 5 stars at once.
 
 
 ///NAME OF CRAFT STATES///
@@ -99,7 +111,7 @@ ItemName.DirtPouch=Bag of Dirt Bullets
 ItemTooltip.DirtPouch=Why did you do this?
 ItemName.GelPouch=Gel Pouch Bag
 ItemName.GemPouch=Gem Pouch
-ItemName.IcePouch=Pouch of Ice Bullets
+ItemName.IcePouch=A bag of ice bullets
 ItemName.IronPouch=Sack of Iron Bullets
 ItemName.LeadPouch=Pouch of Lead Bullets
 ItemName.PinkGelPouch=Pink Gel Pouch
@@ -113,12 +125,23 @@ ItemName.MythrilPouch=Bag of Mithril Bullets
 ItemName.AdamantitePouch=Pouch of Adamantium Bullets
 
 ItemName.CosmoPouch=Sack of Sky Bullets
-ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nKeep this pouch
-tv itself the technology of the ancients.
+ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nThis pouch holds the technology of the ancients.
 ItemName.PostLunarPouch=Pouch of Post Moon Lord Bullets
 ItemTooltip.PostLunarPouch=This pouch has powers that your father never dreamed of.
 ItemName.HardmodePouch=Hardmode Pouch
 ItemName.PrehardmodePouch=Pouch of Prehardmode Bullets
+
+
+///BOSS NAMES///
+NPCName.HellGuard=Hell Guard
+NPCName.HellGuardHand=Hand of the HellGuard
+NPCName.GunGod=Gun God
+NPCName.MiniGun=Possessed Weapon
+
+
+///BOSS MESSAGES///
+BossMassage.GunGod=You have unleashed an ancient power...\nSomeone has definitely noticed...
+BossMassage.HellGuard=You feel like hell has become dangerous..
 
 
 ///NIPS NAMES//
@@ -151,6 +174,6 @@ Bagman.dialog3=The most modest prices on everything for just one platinum and a 
 Bagman.dialog4= You've heard of Albedo, he's scary... Don't trust him!
 
 
-///OPTIONAL///
+///MISC///
 NPC.Hardmod=Hardmod
 NPC.PreHardmod=PreHardmod

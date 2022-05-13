@@ -224,13 +224,13 @@ namespace Albedo
             }
         }
         
-        public static bool OtherBossAlive(int npcID)
+        public static bool OtherBossAlive(int npcId)
         {
-            if (npcID > -1 && npcID < 200)
+            if (npcId > -1 && npcId < 200)
             {
                 for (int i = 0; i < 200; i++)
                 {
-                    if (npc[i].active && npc[i].boss && i != npcID)
+                    if (npc[i].active && npc[i].boss && i != npcId)
                     {
                         return true;
                     }
@@ -265,24 +265,28 @@ namespace Albedo
             return -1;
         }
         
-        public static void Chat(string massage, Color color, bool sync = true)
+        public static void Chat(string message, Color color, bool sync = true)
         {
-            Chat(s, color.R, color.G, color.B, sync);
+            Chat(message, color.R, color.G, color.B, sync);
         }
 
-        private static void Chat(string s, byte colorR = byte.MaxValue, byte colorG = byte.MaxValue, byte colorB = byte.MaxValue, bool sync = true)
+        private static void Chat(string message, byte colorR = byte.MaxValue, byte colorG = byte.MaxValue, byte colorB = byte.MaxValue, bool sync = true)
         {
-            if (netMode == NetmodeID.SinglePlayer)
+            switch (netMode)
             {
-                NewText(s, colorR, colorG, colorB, false);
-            }
-            else if (netMode == NetmodeID.MultiplayerClient)
-            {
-                NewText(s, colorR, colorG, colorB, false);
-            }
-            else if (sync && netMode == NetmodeID.Server)
-            {
-                NetMessage.BroadcastChatMessage(NetworkText.FromLiteral(s), new Color(colorR, colorG, colorB), -1);
+                case NetmodeID.SinglePlayer:
+                case NetmodeID.MultiplayerClient:
+                    NewText(message, colorR, colorG, colorB, false);
+                    break;
+                default:
+                {
+                    if (sync && netMode == NetmodeID.Server)
+                    {
+                        NetMessage.BroadcastChatMessage(NetworkText.FromLiteral(message), new Color(colorR, colorG, colorB), -1);
+                    }
+
+                    break;
+                }
             }
         }
     }

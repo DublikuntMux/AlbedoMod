@@ -24,6 +24,7 @@ namespace Albedo.Items.Weapons.Ranged
 			item.knockBack = 2.5f;
 			item.value = Item.buyPrice(0, 36);
 			item.autoReuse = true;
+			item.UseSound = SoundID.NPCHit5;
 			item.rare = ItemRarityID.Pink;
 			item.shoot = ModContent.ProjectileType<IceShard>();
 			item.shootSpeed = 15f;

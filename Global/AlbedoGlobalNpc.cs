@@ -1,4 +1,5 @@
 using Albedo.Buffs;
+using Albedo.Buffs.Boss;
 using Albedo.Items.Materials;
 using Albedo.NPCs.Boss.HellGuard;
 using Terraria;

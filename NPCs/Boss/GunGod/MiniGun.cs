@@ -10,6 +10,8 @@ namespace Albedo.NPCs.Boss.GunGod
 {
     public class MiniGun : ModNPC
     {
+	    public override string Texture => "Terraria/Item_98";
+	    
         public override void SetStaticDefaults()
         {
             NPCID.Sets.TrailCacheLength[npc.type] = 5;
@@ -93,7 +95,7 @@ namespace Albedo.NPCs.Boss.GunGod
 			}
 			else
 			{
-				Vector2 vector2 = Main.player[npc.target].Center + Utils.RotatedBy(Vector2.UnitX, (double)npc.ai[2], default(Vector2)) * ((npc.ai[1] < 45f) ? 200 : 500) - npc.Center;
+				Vector2 vector2 = Main.player[npc.target].Center + Utils.RotatedBy(Vector2.UnitX, (double)npc.ai[2], default(Vector2)) * (npc.ai[1] < 45f ? 200 : 500) - npc.Center;
 				vector2 /= 8f;
 				npc.velocity = (npc.velocity * 19f + vector2) / 20f;
 			}
@@ -104,9 +106,9 @@ namespace Albedo.NPCs.Boss.GunGod
 			}
 			if (npc.localAI[1] == 0f)
 			{
-				npc.localAI[1] = (Main.rand.NextBool() ? 1 : (-1));
+				npc.localAI[1] = Main.rand.NextBool() ? 1 : -1;
 			}
-			npc.rotation = (float)Math.Sin(Math.PI * 2.0 * npc.localAI[0]++ / 90.0) * (float)Math.PI / 8f * npc.localAI[1];
+			npc.rotation = npc.DirectionFrom(Main.player[npc.target].Center).ToRotation();
 			if (npc.localAI[0] > 180f)
 			{
 				npc.localAI[0] = 0f;
@@ -151,7 +153,7 @@ namespace Albedo.NPCs.Boss.GunGod
             Vector2 origin = Utils.Size(frame) / 2f;
             Color color = lightColor;
             color = npc.GetAlpha(color);
-            SpriteEffects effects = ((npc.spriteDirection <= 0) ? SpriteEffects.FlipHorizontally : SpriteEffects.None);
+            SpriteEffects effects = npc.spriteDirection <= 0 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
             for (int i = 0; i < NPCID.Sets.TrailCacheLength[npc.type]; i++)
             {
                 Color color2 = color * 0.5f;
