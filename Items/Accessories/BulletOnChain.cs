@@ -1,5 +1,5 @@
 ﻿using Albedo.Buffs.Pets;
-using Albedo.Global;
+using Albedo.Projectiles.Pets;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -8,7 +8,8 @@ namespace Albedo.Items.Accessories
 {
     public class BulletOnChain : ModItem
     {
-        public override void SetDefaults() {
+        public override void SetDefaults()
+        {
             item.damage = 0;
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.width = 30;
@@ -18,20 +19,19 @@ namespace Albedo.Items.Accessories
             item.useTime = 20;
             item.rare = ItemRarityID.Yellow;
             item.noMelee = true;
-            item.value = Item.sellPrice(gold:5, silver:50);
-            item.shoot = ModContent.ProjectileType<Projectiles.Pets.BulletPet>();
+            item.value = Item.sellPrice(gold: 5, silver: 50);
+            item.shoot = ModContent.ProjectileType<BulletPet>();
             item.buffType = ModContent.BuffType<BulletPetBuff>();
         }
-        
+
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
             return AlbedoUtils.LiveRarity(3027, line);
         }
 
-        public override void UseStyle(Player player) {
-            if (player.whoAmI == Main.myPlayer && player.itemTime == 0) {
-                player.AddBuff(item.buffType, 3600, true);
-            }
+        public override void UseStyle(Player player)
+        {
+            if (player.whoAmI == Main.myPlayer && player.itemTime == 0) player.AddBuff(item.buffType, 3600);
         }
     }
 }

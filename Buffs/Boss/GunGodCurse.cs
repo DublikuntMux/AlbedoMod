@@ -5,7 +5,8 @@ namespace Albedo.Buffs.Boss
 {
     public class GunGodCurse : ModBuff
     {
-        public override void SetDefaults() {
+        public override void SetDefaults()
+        {
             Main.buffNoTimeDisplay[Type] = true;
             Main.debuff[Type] = true;
             Main.buffNoSave[Type] = true;

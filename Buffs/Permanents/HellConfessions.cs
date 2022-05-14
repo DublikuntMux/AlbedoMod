@@ -5,7 +5,8 @@ namespace Albedo.Buffs.Permanents
 {
     public class HellConfessions : ModBuff
     {
-        public override void SetDefaults() {
+        public override void SetDefaults()
+        {
             Main.buffNoTimeDisplay[Type] = true;
             Main.buffNoSave[Type] = true;
             longerExpertDebuff = false;

@@ -16,7 +16,7 @@ namespace Albedo.Items.Materials
         {
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.useTurn = true;
-            item.value = Item.buyPrice(copper:20);
+            item.value = Item.buyPrice(copper: 20);
             item.rare = ItemRarityID.Yellow;
             item.useAnimation = 15;
             item.useTime = 10;

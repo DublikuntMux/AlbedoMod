@@ -12,8 +12,8 @@ namespace Albedo.NPCs.Town
     public class Sniper : ModNPC
     {
         private bool _otherShop;
-        
-        public override bool Autoload(ref string name) 
+
+        public override bool Autoload(ref string name)
         {
             name = "Sniper";
             return mod.Properties.Autoload;
@@ -29,7 +29,7 @@ namespace Albedo.NPCs.Town
             NPCID.Sets.AttackAverageChance[npc.type] = 30;
             NPCID.Sets.HatOffsetY[npc.type] = -2;
         }
-        
+
         public override void SetDefaults()
         {
             npc.townNPC = true;
@@ -45,19 +45,22 @@ namespace Albedo.NPCs.Town
             npc.knockBackResist = 0.5f;
             animationType = 17;
         }
-        
-        public override void AI() => npc.breath = 200;
+
+        public override void AI()
+        {
+            npc.breath = 200;
+        }
 
         public override bool CanGoToStatue(bool toKingStatue)
         {
             return !toKingStatue;
         }
-        
+
         public override bool CanTownNPCSpawn(int numTownNPCs, int money)
         {
             return NPC.downedBoss1;
         }
-        
+
         public override string TownNPCName()
         {
             switch (WorldGen.genRand.Next(7))
@@ -93,10 +96,7 @@ namespace Albedo.NPCs.Town
                     break;
             }
 
-            if (NPC.downedMoonlord)
-            {
-                damage = 1000;
-            }
+            if (NPC.downedMoonlord) damage = 1000;
             knockback = 4f;
         }
 
@@ -105,13 +105,14 @@ namespace Albedo.NPCs.Town
             cooldown = 3;
             randExtraCooldown = 3;
         }
-        
-        public override void TownNPCAttackProjSpeed(ref float multiplier, ref float gravityCorrection, ref float randomOffset)
+
+        public override void TownNPCAttackProjSpeed(ref float multiplier, ref float gravityCorrection,
+            ref float randomOffset)
         {
             multiplier = 6f;
             randomOffset = 0f;
         }
-        
+
         public override void TownNPCAttackProj(ref int projType, ref int attackDelay)
         {
             attackDelay = 10;
@@ -125,7 +126,7 @@ namespace Albedo.NPCs.Town
                     break;
             }
         }
-        
+
         public override string GetChat()
         {
             switch (WorldGen.genRand.Next(4))
@@ -142,15 +143,17 @@ namespace Albedo.NPCs.Town
                     return Language.GetTextValue("Mods.Albedo.Sniper.dialog4");
             }
         }
-        
+
         public override void SetChatButtons(ref string button, ref string button2)
         {
-            button = Language.GetTextValue("Mods.Albedo.NPC.PreHardmod") + " " + Language.GetTextValue("LegacyInterface.28");
-            button2 = Language.GetTextValue("Mods.Albedo.NPC.Hardmod") + " " + Language.GetTextValue("LegacyInterface.28");
+            button = Language.GetTextValue("Mods.Albedo.NPC.PreHardmod") + " " +
+                     Language.GetTextValue("LegacyInterface.28");
+            button2 = Language.GetTextValue("Mods.Albedo.NPC.Hardmod") + " " +
+                      Language.GetTextValue("LegacyInterface.28");
         }
-        
+
         public override void OnChatButtonClicked(bool firstButton, ref bool shop)
-        { 
+        {
             shop = true;
             _otherShop = !firstButton;
         }
@@ -160,62 +163,62 @@ namespace Albedo.NPCs.Town
             if (_otherShop)
             {
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<PinkGelBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 5);
                 nextSlot++;
                 if (Main.hardMode)
                 {
                     shop.item[nextSlot].SetDefaults(ModContent.ItemType<HellBullet>());
-                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:40);
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 40);
                     nextSlot++;
                     shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltBullet>());
-                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:60);
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 60);
                     nextSlot++;
                     shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilBullet>());
-                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:80);
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 80);
                     nextSlot++;
                     shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantiteBullet>());
-                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver:1);
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 1);
                     nextSlot++;
                 }
             }
             else
             {
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<DirtBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<StoneBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<SnowBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<IceBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<GelBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<GemBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:7);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 7);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<CopperBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<IronBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<LeadBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<PreciousBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<TungstenBullet>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper:5);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
                 nextSlot++;
-            
+
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<Gunpowder>());
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver:20);
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 20);
                 nextSlot++;
             }
         }

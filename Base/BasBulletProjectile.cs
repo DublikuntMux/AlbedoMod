@@ -7,12 +7,12 @@ namespace Albedo.Base
         protected new abstract string Name { get; }
         protected abstract int Penetrate { get; }
 
-        public override void SetStaticDefaults() 
+        public override void SetStaticDefaults()
         {
             DisplayName.SetDefault(Name);
         }
 
-        public override void SetDefaults() 
+        public override void SetDefaults()
         {
             projectile.ranged = true;
             projectile.width = 4;

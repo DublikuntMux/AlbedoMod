@@ -1,11 +1,11 @@
 ﻿using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.Main;
-using Microsoft.Xna.Framework;
 
 namespace Albedo.Items.Weapons.Ranged
 {
@@ -22,7 +22,7 @@ namespace Albedo.Items.Weapons.Ranged
             item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 2.75f;
-            item.value = Item.buyPrice(1, 80, 0, 0);
+            item.value = Item.buyPrice(1, 80);
             item.rare = ItemRarityID.Red;
             item.UseSound = SoundID.Item11;
             item.autoReuse = true;
@@ -41,18 +41,18 @@ namespace Albedo.Items.Weapons.Ranged
             return new Vector2(-10f, 0f);
         }
 
-        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY,
+            ref int type, ref int damage, ref float knockBack)
         {
-            float num = speedX + rand.Next(-5, 6) * 0.05f;
-            float num2 = speedY + rand.Next(-5, 6) * 0.05f;
+            var num = speedX + rand.Next(-5, 6) * 0.05f;
+            var num2 = speedY + rand.Next(-5, 6) * 0.05f;
             if (rand.NextBool(5))
-            {
-                Projectile.NewProjectile(position.X, position.Y, num, num2, ModContent.ProjectileType<FishronRpg>(), damage, knockBack, ((Entity)player).whoAmI, 0f, 0f);
-            }
-            Projectile.NewProjectile(position.X, position.Y, num, num2, type, damage, knockBack, ((Entity)player).whoAmI, 0f, 0f);
+                Projectile.NewProjectile(position.X, position.Y, num, num2, ModContent.ProjectileType<FishronRpg>(),
+                    damage, knockBack, player.whoAmI);
+            Projectile.NewProjectile(position.X, position.Y, num, num2, type, damage, knockBack, player.whoAmI);
             return false;
         }
-        
+
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
             return AlbedoUtils.LiveRarity(2873, line);
@@ -62,10 +62,10 @@ namespace Albedo.Items.Weapons.Ranged
         {
             return rand.Next(0, 100) >= 50;
         }
-        
+
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
+            var recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.LunarBar, 15);
             recipe.AddIngredient(ItemID.SDMG);
             recipe.AddIngredient(ItemID.BubbleGun);

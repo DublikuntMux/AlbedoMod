@@ -22,6 +22,7 @@ But there is already:
 * Patreon Items 
 
 V0.0.5.3 - Enemy update
+* code refactor
 * new boss
 * new boss reward
 * all languages

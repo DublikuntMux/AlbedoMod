@@ -1,8 +1,8 @@
 using Albedo.Items.Materials;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 
 namespace Albedo.Tiles.Ores
 {
@@ -19,7 +19,7 @@ namespace Albedo.Tiles.Ores
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
+            var name = CreateMapEntryName();
             AddMapEntry(new Color(200, 200, 55), name);
 
             dustType = DustID.Amber;

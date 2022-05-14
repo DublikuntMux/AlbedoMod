@@ -1,17 +1,17 @@
-﻿using Terraria;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 
 namespace Albedo.Projectiles.Combined
 {
     public class PostLunarBulletProjectile : ModProjectile
     {
-        private int _bounce = 25;
         private readonly int[] _dusts = {135, 132, 131};
+        private int _bounce = 25;
         private int _currentDust;
-        
-        public override void SetStaticDefaults() 
+
+        public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("PostLunar Bullet");
         }
@@ -40,7 +40,7 @@ namespace Albedo.Projectiles.Combined
             projectile.usesLocalNPCImmunity = true;
             projectile.localNPCHitCooldown = 2;
         }
-        
+
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
             if (_bounce > 1)
@@ -48,39 +48,28 @@ namespace Albedo.Projectiles.Combined
                 Collision.HitTiles(projectile.position, projectile.velocity, projectile.width, projectile.height);
                 Main.PlaySound(SoundID.Item10, projectile.position);
                 _bounce--;
-                if (projectile.velocity.X != oldVelocity.X)
-                {
-                    projectile.velocity.X = 0f - oldVelocity.X;
-                }
-                if (projectile.velocity.Y != oldVelocity.Y)
-                {
-                    projectile.velocity.Y = 0f - oldVelocity.Y;
-                }
+                if (projectile.velocity.X != oldVelocity.X) projectile.velocity.X = 0f - oldVelocity.X;
+                if (projectile.velocity.Y != oldVelocity.Y) projectile.velocity.Y = 0f - oldVelocity.Y;
             }
             else
             {
                 projectile.Kill();
             }
+
             return false;
         }
-        
+
         public override void AI()
         {
-            for (int i = 0; i < 4; i++)
-            {
-                AlbedoUtils.NewDust(projectile, Vector2.Zero, _dusts[_currentDust]);
-            }
+            for (var i = 0; i < 4; i++) AlbedoUtils.NewDust(projectile, Vector2.Zero, _dusts[_currentDust]);
             _currentDust++;
-            if (_currentDust > 2)
-            {
-                _currentDust = 0;
-            }
+            if (_currentDust > 2) _currentDust = 0;
         }
-        
+
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
-            Main.PlaySound(SoundID.Dig, (int)projectile.position.X, (int)projectile.position.Y, 1, 1f, 0f);
-            target.AddBuff(BuffID.Electrified, 600, false);
+            Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y);
+            target.AddBuff(BuffID.Electrified, 600);
         }
     }
 }

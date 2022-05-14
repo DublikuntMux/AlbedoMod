@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
-using Albedo.Global;
+using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 
 namespace Albedo.Patreon
 {
     public abstract class PatreonItem : ModItem
     {
         protected abstract string Owner { get; }
-        
+
         public override void SetDefaults()
         {
             item.rare = ItemRarityID.Yellow;
@@ -22,11 +21,11 @@ namespace Albedo.Patreon
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
-            TooltipLine val1 = new TooltipLine(mod, "tooltip", "=> Patreon Item <=")
+            var val1 = new TooltipLine(mod, "tooltip", "=> Patreon Item <=")
             {
                 overrideColor = Color.Orange
             };
-            TooltipLine val2 = new TooltipLine(mod, "tooltip", "By: " + Owner)
+            var val2 = new TooltipLine(mod, "tooltip", "By: " + Owner)
             {
                 overrideColor = Color.Orange
             };

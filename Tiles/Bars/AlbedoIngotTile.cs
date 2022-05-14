@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Albedo.Items.Materials;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -25,12 +26,9 @@ namespace Albedo.Tiles.Bars
 
         public override bool Drop(int i, int j)
         {
-            Tile t = Main.tile[i, j];
-            int style = t.frameX / 18;
-            if (style == 0)
-            {
-                Item.NewItem(i * 16, j * 16, 16, 16, ModContent.ItemType<Items.Materials.AlbedoIngot>());
-            }
+            var t = Main.tile[i, j];
+            var style = t.frameX / 18;
+            if (style == 0) Item.NewItem(i * 16, j * 16, 16, 16, ModContent.ItemType<AlbedoIngot>());
             return base.Drop(i, j);
         }
     }

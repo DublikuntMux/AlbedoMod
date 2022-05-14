@@ -1,5 +1,4 @@
-﻿using Albedo.Global;
-using Albedo.Tiles.Bars;
+﻿using Albedo.Tiles.Bars;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -18,7 +17,7 @@ namespace Albedo.Items.Materials
             item.width = 20;
             item.height = 20;
             item.maxStack = 99;
-            item.value = Item.buyPrice(silver:20);
+            item.value = Item.buyPrice(silver: 20);
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.useTurn = true;
             item.useAnimation = 15;
@@ -29,7 +28,7 @@ namespace Albedo.Items.Materials
             item.createTile = ModContent.TileType<AlbedoIngotTile>();
             item.placeStyle = 0;
         }
-        
+
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
             return AlbedoUtils.LiveRarity(3025, line);
@@ -37,7 +36,7 @@ namespace Albedo.Items.Materials
 
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
+            var recipe = new ModRecipe(mod);
             recipe.AddIngredient(ModContent.ItemType<AlbedoOre>(), 4);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

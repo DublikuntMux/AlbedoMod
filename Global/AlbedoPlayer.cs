@@ -1,9 +1,9 @@
 using Albedo.Buffs.Permanents;
+using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.GameInput;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
-using Terraria.GameInput;
 
 namespace Albedo.Global
 {
@@ -20,18 +20,12 @@ namespace Albedo.Global
 
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-            if (AlbedoWorld.DownedGunDemon)
-            {
-                player.AddBuff(ModContent.BuffType<HellConfessions>(), 3);
-            }
+            if (AlbedoWorld.DownedGunDemon) player.AddBuff(ModContent.BuffType<HellConfessions>(), 3);
         }
-        
+
         public override void ModifyScreenPosition()
         {
-            if (Screenshake > 0)
-            {
-                Main.screenPosition += Main.rand.NextVector2Circular(7f, 7f);
-            }
+            if (Screenshake > 0) Main.screenPosition += Main.rand.NextVector2Circular(7f, 7f);
         }
 
         public override void ResetEffects()

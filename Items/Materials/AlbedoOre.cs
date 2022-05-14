@@ -1,5 +1,4 @@
-﻿using Albedo.Global;
-using Albedo.Tiles.Ores;
+﻿using Albedo.Tiles.Ores;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -17,7 +16,7 @@ namespace Albedo.Items.Materials
         {
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.useTurn = true;
-            item.value = Item.buyPrice(silver:5);
+            item.value = Item.buyPrice(silver: 5);
             item.rare = ItemRarityID.Pink;
             item.useAnimation = 15;
             item.useTime = 10;
@@ -28,7 +27,7 @@ namespace Albedo.Items.Materials
             item.width = 12;
             item.height = 12;
         }
-        
+
         public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
         {
             return AlbedoUtils.LiveRarity(3025, line);

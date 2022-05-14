@@ -1,4 +1,3 @@
-
 <h1 align="center"> Albedo Mod </h1>
 <p align="center"> My first mod for Terraria </p>
 

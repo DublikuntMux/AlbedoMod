@@ -1,15 +1,17 @@
 ﻿using Albedo.Global;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 
 namespace Albedo.Buffs.Boss
 {
     public class HellGuardCurse : ModBuff
     {
         private bool _brodcast;
-        public override void SetDefaults() {
+
+        public override void SetDefaults()
+        {
             Main.buffNoTimeDisplay[Type] = true;
             Main.debuff[Type] = true;
             Main.buffNoSave[Type] = true;
@@ -25,6 +27,7 @@ namespace Albedo.Buffs.Boss
                 player.GetModPlayer<AlbedoPlayer>().Screenshake = 60;
                 _brodcast = true;
             }
+
             player.buffTime[buffIndex] = 36000;
             player.bleed = true;
             player.statDefense /= 2;

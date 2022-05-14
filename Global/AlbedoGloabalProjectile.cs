@@ -24,7 +24,7 @@ namespace Albedo.Global
                 case 461:
                 case 632:
                 case 633:
-                    DeletionImmuneRank = 1; 
+                    DeletionImmuneRank = 1;
                     break;
                 case 656:
                     DeletionImmuneRank = 1;

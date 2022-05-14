@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace Albedo
 {
-	public class Albedo : Mod
-	{
-	}
+    public class Albedo : Mod
+    {
+    }
 }
