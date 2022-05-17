@@ -1,4 +1,3 @@
-using Albedo.Global;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -7,7 +6,7 @@ namespace Albedo.Base
     public abstract class BaseBullet : AlbedoItem
     {
         protected override int Rarity => 3;
-        
+
         protected abstract float ShootSpeed { get; }
         protected abstract int Damage { get; }
         protected abstract float KnockBack { get; }

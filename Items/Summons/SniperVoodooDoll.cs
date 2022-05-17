@@ -1,5 +1,4 @@
 using Albedo.Base;
-using Albedo.Global;
 using Albedo.NPCs.Boss.HellGuard;
 using Terraria;
 using Terraria.ID;

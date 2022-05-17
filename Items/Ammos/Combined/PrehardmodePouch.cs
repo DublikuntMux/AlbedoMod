@@ -1,23 +1,18 @@
 ﻿using Albedo.Base;
-using Albedo.Global;
 using Albedo.Items.Ammos.Pouches.Mod;
 using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Combined;
 using Albedo.Tiles.CraftStations;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Terraria.Main;
 
 namespace Albedo.Items.Ammos.Combined
 {
     public class PrehardmodePouch : AlbedoItem
     {
         protected override int Rarity => 8;
-        
+
         public override void SetDefaults()
         {
             item.damage = 100;

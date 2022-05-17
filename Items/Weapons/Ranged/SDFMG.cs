@@ -1,5 +1,4 @@
 ﻿using Albedo.Base;
-using Albedo.Global;
 using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;

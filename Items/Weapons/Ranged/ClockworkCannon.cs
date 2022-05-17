@@ -1,5 +1,4 @@
 using Albedo.Base;
-using Albedo.Global;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;

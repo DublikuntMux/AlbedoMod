@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Albedo.Base;
-using Albedo.Global;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 

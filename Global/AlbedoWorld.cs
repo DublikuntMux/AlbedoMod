@@ -16,7 +16,7 @@ namespace Albedo.Global
         public static bool DownedHellGuard;
         public static bool DownedGunDemon;
         public static bool DownedGunGod;
-        
+
         public override TagCompound Save()
         {
             var list = new List<string>();
@@ -56,7 +56,7 @@ namespace Albedo.Global
             };
             writer.Write(bitsByte);
         }
-        
+
         public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
         {
             var shiniestIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Shinies"));

@@ -1,22 +1,17 @@
 ﻿using Albedo.Base;
-using Albedo.Global;
 using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Combined;
 using Albedo.Tiles.CraftStations;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Terraria.Main;
 
 namespace Albedo.Items.Ammos.Combined
 {
     public class PostLunarPouch : AlbedoItem
     {
         protected override int Rarity => 10;
-        
+
         public override void SetDefaults()
         {
             item.damage = 100;
@@ -31,7 +26,7 @@ namespace Albedo.Items.Ammos.Combined
             item.value = Item.buyPrice(14);
             item.ammo = AmmoID.Bullet;
         }
-        
+
         public override void AddRecipes()
         {
             var val = new ModRecipe(mod);

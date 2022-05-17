@@ -1,5 +1,4 @@
 using Albedo.Base;
-using Albedo.Global;
 using Terraria.ID;
 
 namespace Albedo.Items.Weapons.Ranged

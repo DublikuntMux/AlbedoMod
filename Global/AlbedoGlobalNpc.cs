@@ -10,7 +10,7 @@ namespace Albedo.Global
     {
         public static int HellGuard;
         public static int GunGod;
-        
+
         public override void NPCLoot(NPC npc)
         {
             if (npc.type == NPCID.GiantBat)
@@ -20,7 +20,7 @@ namespace Albedo.Global
             if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
                 .CanGrap) Item.NewItem(npc.getRect(), ModContent.ItemType<GunGodSoul>());
         }
-        
+
         public override void SetupShop(int type, Chest shop, ref int nextSlot)
         {
             if (type == NPCID.ArmsDealer)
@@ -30,7 +30,7 @@ namespace Albedo.Global
                 nextSlot++;
             }
         }
-        
+
         public override bool PreAI(NPC npc)
         {
             if (npc.type == NPCID.WallofFlesh)

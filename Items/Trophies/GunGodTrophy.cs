@@ -8,7 +8,7 @@ namespace Albedo.Items.Trophies
     public class GunGodTrophy : AlbedoItem
     {
         protected override int Rarity => 11;
-        
+
         public override void SetDefaults()
         {
             item.width = 30;

@@ -52,40 +52,40 @@ namespace Albedo.Base
             switch (Rarity)
             {
                 case 12:
-                    rarity = 3556;//RainbowMid
+                    rarity = 3556; //RainbowMid
                     break;
                 case 11:
-                    rarity = 2870;//Rainbow
+                    rarity = 2870; //Rainbow
                     break;
                 case 10:
-                    rarity = 3039;//Cosmos
+                    rarity = 3039; //Cosmos
                     break;
                 case 9:
-                    rarity = 3025;//Purple
+                    rarity = 3025; //Purple
                     break;
                 case 8:
-                    rarity = 3027;//Gold
+                    rarity = 3027; //Gold
                     break;
                 case 7:
-                    rarity = 3553;//Copper
+                    rarity = 3553; //Copper
                     break;
                 case 6:
-                    rarity = 1053;//Yellow
+                    rarity = 1053; //Yellow
                     break;
                 case 5:
-                    rarity = 3550;//Orange
+                    rarity = 3550; //Orange
                     break;
                 case 4:
-                    rarity = 3551;//Green
+                    rarity = 3551; //Green
                     break;
                 case 3:
-                    rarity = 3552;//Blue
+                    rarity = 3552; //Blue
                     break;
                 case 2:
-                    rarity = 3026;//White
+                    rarity = 3026; //White
                     break;
                 case 1:
-                    rarity = 3026;//Black
+                    rarity = 3026; //Black
                     break;
             }
 

@@ -13,22 +13,22 @@ namespace Albedo.Global
         public bool BulletPet;
         public bool CanGrap;
         public int Screenshake;
-        
+
         public override void OnEnterWorld(Player player)
         {
             GameHelper.Chat(Language.GetTextValue("Mods.Albedo.Misc.OnEnter"), Color.Red, false);
         }
-        
+
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
             if (AlbedoWorld.DownedGunDemon) player.AddBuff(ModContent.BuffType<HellConfessions>(), 3);
         }
-        
+
         public override void ModifyScreenPosition()
         {
             if (Screenshake > 0) Main.screenPosition += Main.rand.NextVector2Circular(7f, 7f);
         }
-        
+
         public override void ResetEffects()
         {
             if (Screenshake > 0)

@@ -1,5 +1,4 @@
 using Albedo.Base;
-using Albedo.Global;
 using Albedo.Projectiles.Weapons.Ranged;
 using Terraria.ID;
 using Terraria.ModLoader;

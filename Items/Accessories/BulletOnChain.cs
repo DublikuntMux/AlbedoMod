@@ -1,6 +1,5 @@
 ﻿using Albedo.Base;
 using Albedo.Buffs.Pets;
-using Albedo.Global;
 using Albedo.Projectiles.Pets;
 using Terraria;
 using Terraria.ID;

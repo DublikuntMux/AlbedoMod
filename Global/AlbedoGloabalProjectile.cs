@@ -7,7 +7,7 @@ namespace Albedo.Global
     {
         public int DeletionImmuneRank;
         public override bool InstancePerEntity => true;
-        
+
         public override void SetDefaults(Projectile projectile)
         {
             switch (projectile.type)

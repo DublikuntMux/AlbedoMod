@@ -1,6 +1,5 @@
 using System;
 using Albedo.Base;
-using Albedo.Global;
 using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
