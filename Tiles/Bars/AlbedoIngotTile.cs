@@ -1,7 +1,6 @@
 ﻿using Albedo.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -21,7 +20,7 @@ namespace Albedo.Tiles.Bars
             TileObjectData.newTile.LavaDeath = false;
             TileObjectData.addTile(Type);
 
-            AddMapEntry(new Color(200, 10, 200), Language.GetText("Mods.Albedo.AlbedoIngot.Map"));
+            AddMapEntry(new Color(200, 10, 200));
         }
 
         public override bool Drop(int i, int j)

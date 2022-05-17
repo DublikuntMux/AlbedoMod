@@ -1,0 +1,235 @@
+///TÍTULO E DESCRIÇÃO DE TODOS OS OBJETOS///
+ItemName.Gunpowder=Pólvora
+ItemTooltip.Gunpowder=Mistura muito explosiva.
+ItemName.BulletOnChain=Bala na Cadeia
+ItemTooltip.BulletOnChain=Você foi morto por esta bala e salvo como lembrete.
+ItemName.GunGodSoul=Alma do Deus das Armas
+ItemTooltip.GunGodSoul=Contém um poder que seu pai nunca sonhou.
+
+
+///NOME E DESCRIÇÃO DOS MINÉRIOS///
+ItemName.RawSaltpeter=Saltpeter
+ItemTooltip.RawSaltpeter=Item Muito Explosivo
+ItemName.AlbedoOre=Albedo Ore
+ItemTooltip.AlbedoOre=Palavras antigas escorrem do minério
+ItemName.AlbedoIngot=Albedo Lingote
+ItemTooltip.AlbedoIngot=Ingot está tentando falar com você \nVocê está louco?
+ItemName.AngeliteBar=Barra Angelite
+ItemTooltip.AngeliteBar=Vida do anjo na barra.
+ItemName.AngeliteOre=Minério Angelita
+ItemTooltip.AngeliteOre=Vida de anjo em minério.
+
+
+///NOME E DESCRIÇÃO DO BAFS///
+BuffName.BulletPetBuff=Sua bala mortal
+BuffDescription.BulletPetBuff=Por que a bala ganhou vida?
+BuffName.HellGuardCurse=Maldição do Hellguard
+BuffDescription.HellGuardCurse=Você precisa matar o guardião do inferno para curar com a parede de carne.
+BuffName.GunGodCurse=Maldições do Deus das Pistolas
+BuffDescription.GunGodCurse=A aura de GunGodCurse está pressionando você...
+BuffName.HellConfessions=Confissões do Inferno
+BuffDescription.HellConfessions=O inferno começa a te ajudar \nComo é prosaico...
+
+
+///NOME E DESCRIÇÃO DAS ARMAS///
+ItemName.RustleDunes=Rustle of the Dunes
+ItemTooltip.RustleDunes=Gostaria de saber se há gin dentro?
+ItemName.ShotgunMeasurements=ShotgunMeasurements
+ItemTooltip.ShotgunMeasurements=Tão forte que nem faz barulho quando disparado.
+ItemName.LavaDisaster=Desastre de lava
+ItemTooltip.LavaDisaster=Uma vez pertenceu a Albedo.
+ItemTooltip.SDFMG=Das Profundezas da Mente.
+ItemName.KryonikGun=Canhão de Gelo
+ItemTooltip.KryonikGun=Balas se quebram em pedaços no impacto com um inimigo.
+ItemName.ClockworkCannon=Canhão Mecânico
+ItemTooltip.ClockworkCannon=Disparo Rápido...
+ItemName.Triple=Três
+ItemTooltip.Triple= MMMM))))
+ItemName.RocketShotgun=Rocket Shotgun
+ItemTooltip.RocketShotgun=Tem chance de disparar um foguete ao invés de uma bala.
+ItemName.ShortStarCannon=Canhão de Estrela Curta
+ItemTooltip.ShortStarCannon=Dispara 5 estrelas de uma vez.
+ItemName.AdamantiteRifle=Rifle de Adamantita
+ItemTooltip.AdamantiteRifle=Poder Adamantite!!!
+ItemName.AlienBlaster=Alien Blaster
+ItemTooltip.AlienBlaster=Armas alienígenas perdidas.
+ItemName.Musket=Musket
+ItemTooltip.Musket=Mosquete normal.
+ItemName.DistortedGun=Pistola Distorcida
+ItemTooltip.DistortedGun=Fede como um verme.
+ItemName.CosmicAssaultRifle=Rifle de Assalto Cósmico
+ItemTooltip.CosmicAssaultRifle=Armas alienígenas perdidas.
+ItemName.Magmum=Magmum
+ItemTooltip.Magmum=Parece um verme de lava.
+ItemName.AngelGun=Anjo
+ItemTooltip.AngelGun=Anjo Caído.
+ItemName.ShadowDreams=Sombra dos Sonhos
+ItemTooltip.ShadowDreams=Fantasias sombrias profundas.
+ItemName.ImprovedMusket=Mosquete Melhorado
+ItemTooltip.ImprovedMusket=Poder!!!
+
+
+///NOME DOS ESTADOS DO ARTESANATO///
+WeaponStationTile.Name=Estação de Criação de Armas
+ItemName.WeaponStation1=Estação de Fabricação de Armas
+ItemTooltip.WeaponStation1=Estação para fabricar armas simples.
+ItemName.WeaponStation2=Estação de Armas Avançadas
+ItemTooltip.WeaponStation2=Estação para fabricar armas avançadas.
+ItemName.WeaponStation3=Estação de Armas de Parede
+ItemTooltip.WeaponStation3=Uma antiga estação de fabricação de armas de tecnologia.
+
+
+///NOME E DESCRIÇÃO DO BULLET///
+ItemName.DirtBullet=Bala Suja
+ItemTooltip.DirtBullet=Feito de [i/s1:2]
+ItemName.StoneBullet=Bala de Pedra
+ItemTooltip.StoneBullet=Feito de [i/s1:3]
+ItemName.IceBullet=Bala de Gelo
+ItemTooltip.IceBullet=Feito de [i/s1:664]
+ItemName.SnowBullet=Bala de Neve
+ItemTooltip.SnowBullet=Feito de [i/s1:593]
+ItemName.GelBullet= Bala de Gel
+ItemTooltip.GelBullet=Bate nas paredes\nFeito de [i/s1:23]
+ItemName.PinkGelBullet= Bala de Gel Rosa
+ItemTooltip.PinkGelBullet=Bate nas paredes\nFeito de [i/s1:3111]
+ItemName.GemBullet=Gem Bullet
+ItemTooltip.GemBullet=Bola Muito Boa \nFeita de [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
+ItemName.CopperBullet=Bala de Cobre
+ItemTooltip.CopperBullet=Por quê?\nFeito de [i/s1:20]
+ItemName.IronBullet=Bala de Ferro
+ItemTooltip.IronBullet=Marca mais comum\nFeito de [i/s1:22]
+ItemName.LeadBullet=Marca de chumbo
+ItemTooltip.LeadBullet=O marcador mais comum\nFeito de [i/s1:704]
+ItemName.PreciousBullet=Bala Preciosa
+ItemTooltip.PreciousBullet=É mais caro do que você pensa \nMas é bom? \nFeito de [i/s1:19] ou [i/s1:706]
+ItemName.TungstenBullet=Bala de Tungstênio
+ItemTooltip.TungstenBullet=O marcador mais comum\nFeito de [i/s1:705]
+ItemName.HellBullet=Bala Infernal
+ItemTooltip.HellBullet=Incendeie os inimigos ao ser atingido \nFeito de [i/s1:175]
+ItemName.CobaltBullet= Bala de Cobalto
+ItemTooltip.CobaltBullet=Feito de [i/s1:381]
+ItemName.MythrilBullet= Bala de Mithril
+ItemTooltip.MythrilBullet=Feito de [i/s1:382]
+ItemName.AdamantiteBullet= Bala de Adamantita
+ItemTooltip.AdamantiteBullet=Feito de [i/s1:391]
+
+
+///NOME E DESCRIÇÃO DAS BOLSAS///
+ItemName.ChlorophytePouch=Saco de bolsa de clorofito
+ItemName.CrystalPouch=Bolsa de Cristal
+ItemName.CursedPouch=Saco de Balas Amaldiçoadas
+ItemName.ExplosivePouch=Bolsa Explosiva
+ItemName.GoldenPouch=Bolsa de Balas Douradas
+ItemName.IchorPouch=Ichor Pouch
+ItemName.LuminitePouch=Bolsa de Balas Luminite
+ItemName.MeteorPouch=Meteor Pouch
+ItemName.NanoPouch=Saco de Nano Balas
+ItemName.PartyPouch=Bolsa de Festa
+ItemName.SilverPouch=Saco de Balas de Prata
+ItemName.VelocityPouch=Bolsa de Velocidade
+ItemName.VenomPouch=Bolsa de Balas Venenosas
+
+ItemName.CopperPouch=Bolsa de Balas de Cobre
+ItemName.DirtPouch=Saco de balas sujas
+ItemTooltip.DirtPouch=Por que você fez isso?
+ItemName.GelPouch=Bolsa de Gel
+ItemName.GemPouch=Bolsa de Gemas
+ItemName.IcePouch=Um saco de balas de gelo
+ItemName.IronPouch=Saco de Balas de Ferro
+ItemName.LeadPouch=Bolsa de Balas de Chumbo
+ItemName.PinkGelPouch=Bolsa de Gel Rosa
+ItemName.PreciousPouch=Bolsa de Balas Preciosas
+ItemName.SnowPouch=Saco de Balas de Neve
+ItemName.StonePouch=Saco de Balas de Pedra
+ItemName.TungstenPouch=Saco de Balas de Tungstênio
+ItemName.HellPouch=Bolsa de Balas Infernais
+ItemName.CobaltPouch=Bolsa de Balas de Cobalto
+ItemName.MythrilPouch=Bolsa de Balas de Mithril
+ItemName.AdamantitePouch=Bolsa de Balas de Adamantium
+
+ItemName.CosmoPouch=Saco de Balas do Céu
+ItemTooltip.CosmoPouch=Esta bolsa já pertenceu a Albedo.
+ItemName.PostLunarPouch=Bolsa de Balas Pós Moon Lord
+ItemTooltip.PostLunarPouch=Esta bolsa tem poderes que seu pai nunca sonhou.
+ItemName.HardmodePouch=Bolsa Hardmode
+ItemTooltip.HardmodePouch=Como shampoo 3 em 1.
+ItemName.PrehardmodePouch=Bolsa de Balas Prehardmode
+ItemTooltip.PrehardmodePouch=Mistura de todas as bolsas pré-hardmode.
+
+
+///BOS ITEM///
+ItemName.CursedPistol=Pistola Amaldiçoada
+ItemTooltip.CursedPistol=Pistola Obsidiana arma amaldiçoada.
+ItemName.GodTribute=Tributo a Deus
+ItemTooltip.GodTribute=Uma oferenda a um ser antigo...
+ItemName.SniperVoodooDoll=Sniper VoodooDoll
+ItemTooltip.SniperVoodooDoll=Não consumível
+
+ItemName.GunDemonBag=Arma Demônio Saco do Tesouro
+ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
+ItemName.GunGodBag=Bolsa do Tesouro do Deus das Armas
+ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
+ItemName.HellGuardBag=Bolsa de Tesouro do Guarda Infernal
+ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
+
+ItemName.GunDemonTrophy=Troféu Demônio da Arma
+ItemTooltip.GunDemonTrophy=Troféu para perseverança.
+ItemName.GunGodTrophy=Troféu Deus das Armas
+ItemTooltip.GunGodTrophy=Troféu para perseverança.
+ItemName.HellGuardTrophy=Troféu Guarda Infernal
+ItemTooltip.HellGuardTrophy=Troféu para perseverança.
+
+
+///NOME DO CHEFE///
+NPCName.HellGuard=Guarda Infernal
+NPCName.HellGuardHand=Mão do HellGuard
+NPCName.GunGod=Deus das Armas
+NPCName.MiniGun=Arma Possuída
+NPCName.GunDemonHead=Arma Demônio
+NPCName.GunDemonBody=Arma Demônio
+NPCName.GunDemonTail=Arma Demônio
+NPCName.MagmaLeechHead=Magma Leech
+NPCName.MagmaLeechBody=Magma Leech
+NPCName.MagmaLeechTail=Magma Leech
+
+
+///MENSAGENS DO CHEFE///
+BossMassage.HellGuard=Você sente que o inferno se tornou perigoso.
+BossMassage.GunGod=Você liberou um poder antigo...\nAlguém definitivamente notou...
+BossMassage.GunDemon=Criaturas infernais abrem caminho para você...
+
+
+///NOMES NIPS//
+Sniper.name1=Marcado
+Sniper.name2=Kyle
+Sniper.name3=Kirill
+Sniper.name4=Bala
+Sniper.name5=Kirsi
+Sniper.name6=Michael
+Sniper.name7=Cole
+
+Bagman.name1=Denis
+Bagman.name2=Michael
+Bagman.name3=Gália
+Bagman.name4=Mikasa
+Bagman.name5=Alô
+Bagman.name6=Cenário
+Bagman.name7=Carla
+
+
+///DIÁLOGOS NIP///
+Sniper.dialog1=Você já ouviu alguma coisa sobre balas do céu? Não? Eu tambem estou aqui.
+Sniper.dialog2=Posso fazer balas com qualquer coisa, posso até fazer balas com outras balas.
+Sniper.dialog3=Você gostaria de comprar balas de gelo? Só não os guarde no bolso por muito tempo.
+Sniper.dialog4=É bom ser pago pela terra.
+
+Bagman.dialog1=Você conhece o atirador? Ele é meu irmão.
+Bagman.dialog2=Se você soubesse o quanto foi difícil para mim coletar esses sacos de balas.
+Bagman.dialog3=Os preços mais modestos em tudo por apenas uma platina e um saco de coisas boas no bolso.
+Bagman.dialog4= Você já ouviu falar de Albedo, ele é assustador... Não confie nele!
+
+
+///MISC///
+Misc.OnEnter=[AlbedoMod] - !MOD EM TESTE ALPHA!
+NPC.Hardmod=Hardmod
+NPC.PreHardmod=PreHardmod

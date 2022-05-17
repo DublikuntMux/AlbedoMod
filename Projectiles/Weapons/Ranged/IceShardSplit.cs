@@ -1,16 +1,14 @@
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using static Albedo.AlbedoUtils;
+using static Albedo.Helper.GameHelper;
 
 namespace Albedo.Projectiles.Weapons.Ranged
 {
     public class IceShardSplit : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Ice Shard");
-        }
+        public override string Texture => "Albedo/Projectiles/Empty";
 
         public override void SetDefaults()
         {
@@ -34,7 +32,14 @@ namespace Albedo.Projectiles.Weapons.Ranged
             var projectile1 = projectile;
             projectile1.rotation += 0.15f;
             Lighting.AddLight(projectile1.Center, new Vector3(44f, 191f, 232f) * 0.005098039f);
-            NewDust(projectile1, Vector2.Zero, 68, 2, 100, 1, default, 100);
+            for (var i = 0; i < 2; i++)
+            {
+                var val = Dust.NewDustDirect(projectile.position, projectile.width, projectile.height,
+                    DustID.BlueCrystalShard,
+                    0f, 0f, 100);
+                val.noGravity = true;
+            }
+
             if (projectile1.timeLeft < 150) HomeInOnNPC(projectile1, !projectile1.tileCollide, 450f, 12f, 25f);
         }
     }

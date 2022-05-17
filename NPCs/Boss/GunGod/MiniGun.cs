@@ -1,4 +1,5 @@
 ﻿using System;
+using Albedo.Helper;
 using Albedo.Projectiles.Boss.GunGod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -46,7 +47,7 @@ namespace Albedo.NPCs.Boss.GunGod
 
         public override void AI()
         {
-            var val = AlbedoUtils.NpcExists(npc.ai[0], ModContent.NPCType<GunGod>());
+            var val = BossHelper.NpcExists(npc.ai[0], ModContent.NPCType<GunGod>());
             if (val == null || val.dontTakeDamage)
             {
                 if (Main.netMode != NetmodeID.MultiplayerClient)

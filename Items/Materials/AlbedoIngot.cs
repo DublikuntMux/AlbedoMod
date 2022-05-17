@@ -1,12 +1,16 @@
-﻿using Albedo.Tiles.Bars;
+﻿using Albedo.Base;
+using Albedo.Global;
+using Albedo.Tiles.Bars;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Items.Materials
 {
-    public class AlbedoIngot : ModItem
+    public class AlbedoIngot : AlbedoItem
     {
+        protected override int Rarity => 3;
+
         public override void SetStaticDefaults()
         {
             ItemID.Sets.SortingPriorityMaterials[item.type] = 59;
@@ -24,14 +28,8 @@ namespace Albedo.Items.Materials
             item.useTime = 10;
             item.autoReuse = true;
             item.consumable = true;
-            item.rare = ItemRarityID.Pink;
             item.createTile = ModContent.TileType<AlbedoIngotTile>();
             item.placeStyle = 0;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3025, line);
         }
 
         public override void AddRecipes()

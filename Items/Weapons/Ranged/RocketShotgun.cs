@@ -1,3 +1,6 @@
+using Albedo.Base;
+using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;
@@ -9,9 +12,10 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    internal class RocketShotgun : ModItem
+    internal class RocketShotgun : AlbedoItem
     {
         private int _rocket;
+        protected override int Rarity => 6;
 
         public override void SetDefaults()
         {
@@ -25,7 +29,6 @@ namespace Albedo.Items.Weapons.Ranged
             item.ranged = item.noMelee = true;
             item.knockBack = 4f;
             item.value = Item.sellPrice(0, 1, 25);
-            item.rare = ItemRarityID.Green;
             item.UseSound = SoundID.Item36;
             item.autoReuse = true;
             item.shoot = ProjectileID.PurificationPowder;
@@ -64,7 +67,7 @@ namespace Albedo.Items.Weapons.Ranged
             float rotation, float scale, int whoAmI)
         {
             var texture = mod.GetTexture("Items/Weapons/Ranged/RocketShotgun_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+            GameHelper.GlowMask(texture, rotation, scale, whoAmI);
         }
 
         public override void AddRecipes()

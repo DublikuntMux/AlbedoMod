@@ -1,4 +1,5 @@
 using System;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -31,7 +32,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
         public override void AI()
         {
-            var val = AlbedoUtils.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+            var val = BossHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
             if (val == null)
             {
                 projectile.Kill();

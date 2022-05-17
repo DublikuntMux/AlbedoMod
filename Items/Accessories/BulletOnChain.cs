@@ -1,4 +1,6 @@
-﻿using Albedo.Buffs.Pets;
+﻿using Albedo.Base;
+using Albedo.Buffs.Pets;
+using Albedo.Global;
 using Albedo.Projectiles.Pets;
 using Terraria;
 using Terraria.ID;
@@ -6,8 +8,10 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Accessories
 {
-    public class BulletOnChain : ModItem
+    public class BulletOnChain : AlbedoItem
     {
+        protected override int Rarity => 8;
+
         public override void SetDefaults()
         {
             item.damage = 0;
@@ -17,16 +21,10 @@ namespace Albedo.Items.Accessories
             item.UseSound = SoundID.Item2;
             item.useAnimation = 20;
             item.useTime = 20;
-            item.rare = ItemRarityID.Yellow;
             item.noMelee = true;
             item.value = Item.sellPrice(gold: 5, silver: 50);
             item.shoot = ModContent.ProjectileType<BulletPet>();
             item.buffType = ModContent.BuffType<BulletPetBuff>();
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3027, line);
         }
 
         public override void UseStyle(Player player)

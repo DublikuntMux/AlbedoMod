@@ -54,26 +54,42 @@ namespace Albedo.Projectiles.Weapons.Ranged
 
         public override void Kill(int timeLeft)
         {
-            var explode = Projectile.NewProjectileDirect(projectile.position, Vector2.Zero, 695,
+            var explode = Projectile.NewProjectileDirect(projectile.position, Vector2.Zero,
+                ProjectileID.DD2ExplosiveTrapT2Explosion,
                 (int) (projectile.damage * 2.5f), 4f, projectile.owner);
             explode.hide = true;
             explode.netUpdate = true;
             Main.PlaySound(SoundID.DD2_KoboldExplosion, projectile.position);
-            AlbedoUtils.NewDust(explode, Vector2.Zero, 31, 24, 90, 1f, default, 0, true, false, delegate(Dust o)
+            NewDust(explode, Vector2.Zero, 31, 24, 90, 1f, default, 0, true, false, delegate(Dust o)
             {
                 o.velocity = -VelocityToPoint(o.position, explode.Center, Main.rand.NextFloat(4f));
                 o.fadeIn = Main.rand.NextFloat(2f, 4f);
             });
-            AlbedoUtils.NewDust(explode, Vector2.Zero, 6, 28, 90, 3f, default, 0, true, false,
+            NewDust(explode, Vector2.Zero, 6, 28, 90, 3f, default, 0, true, false,
                 delegate(Dust o)
                 {
                     o.velocity = -VelocityToPoint(o.position, explode.Center, Main.rand.NextFloat(4f));
                 });
-            AlbedoUtils.NewDust(explode, Vector2.Zero, 182, 12, 90, 1.4f, default, 0, true, false,
+            NewDust(explode, Vector2.Zero, 182, 12, 90, 1.4f, default, 0, true, false,
                 delegate(Dust o)
                 {
                     o.velocity = -VelocityToPoint(o.position, explode.Center, Main.rand.NextFloat(4f));
                 });
+        }
+
+        private static void NewDust(Projectile projectile, Vector2 speed, int type, int count = 1, int chance = 100,
+            float size = 1f, Color color = default, int alpha = 0, bool noGrav = true, bool noLight = false,
+            Action<Dust> callback = null)
+        {
+            for (var i = 0; i < count; i++)
+                if (Main.rand.Next(100) <= chance)
+                {
+                    var val = Dust.NewDustDirect(projectile.position, projectile.width, projectile.height, type,
+                        speed.X, speed.Y, alpha, color, size);
+                    val.noGravity = noGrav;
+                    val.noLight = noLight;
+                    callback?.Invoke(val);
+                }
         }
 
         private static Vector2 VelocityToPoint(Vector2 A, Vector2 B, float speed)

@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Albedo.AlbedoUtils;
+using static Albedo.Helper.GameHelper;
 
 namespace Albedo.Projectiles.Weapons.Ranged
 {
@@ -28,7 +28,19 @@ namespace Albedo.Projectiles.Weapons.Ranged
         {
             if (projectile.ai[1] == 0f)
             {
-                NewDust(projectile, Vector2.Zero, 33, 6, 90, 2, default, 100, false);
+                for (var i = 0; i < 5; i++)
+                {
+                    var num = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width,
+                        projectile.height, 33, 0f, 0f, 100, default, 2f);
+                    var obj = Main.dust[num];
+                    obj.velocity *= 3f;
+                    if (Main.rand.NextBool(2))
+                    {
+                        Main.dust[num].scale = 0.5f;
+                        Main.dust[num].fadeIn = 1f + Main.rand.Next(10) * 0.1f;
+                    }
+                }
+
                 projectile.ai[1] = 1f;
                 Main.PlaySound(SoundID.Item92, projectile.position);
             }
@@ -102,7 +114,7 @@ namespace Albedo.Projectiles.Weapons.Ranged
             for (var i = 0; i < 10; i++)
             {
                 var num = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width,
-                    projectile.height, 33, 0f, 0f, 100, default, 2f);
+                    projectile.height, DustID.Water, 0f, 0f, 100, default, 2f);
                 var obj = Main.dust[num];
                 obj.velocity *= 3f;
                 if (Main.rand.NextBool(2))
@@ -115,12 +127,12 @@ namespace Albedo.Projectiles.Weapons.Ranged
             for (var j = 0; j < 20; j++)
             {
                 var num2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width,
-                    projectile.height, 33, 0f, 0f, 100, default, 3f);
+                    projectile.height, DustID.Water, 0f, 0f, 100, default, 3f);
                 Main.dust[num2].noGravity = true;
                 var obj2 = Main.dust[num2];
                 obj2.velocity *= 5f;
                 num2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width,
-                    projectile.height, 33, 0f, 0f, 100, default, 2f);
+                    projectile.height, DustID.Water, 0f, 0f, 100, default, 2f);
                 var obj3 = Main.dust[num2];
                 obj3.velocity *= 2f;
             }

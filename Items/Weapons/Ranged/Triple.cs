@@ -1,16 +1,18 @@
+using Albedo.Base;
+using Albedo.Global;
 using Albedo.Items.Materials;
-using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class Triple : ModItem
+    public class Triple : AlbedoItem
     {
+        protected override int Rarity => 3;
+
         public override void SetDefaults()
         {
             item.damage = 21;
@@ -24,10 +26,9 @@ namespace Albedo.Items.Weapons.Ranged
             item.noMelee = true;
             item.knockBack = 0f;
             item.value = Item.sellPrice(0, 1, 10);
-            item.rare = ItemRarityID.Green;
             item.UseSound = SoundID.Item36;
             item.autoReuse = true;
-            item.shoot = ModContent.ProjectileType<Holowave>();
+            item.shoot = ProjectileID.Bullet;
             item.shootSpeed = 1f;
             item.useAmmo = AmmoID.Bullet;
             item.crit = 12;
@@ -48,13 +49,6 @@ namespace Albedo.Items.Weapons.Ranged
         public override Vector2? HoldoutOffset()
         {
             return new Vector2(-12f, 0f);
-        }
-
-        public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor,
-            float rotation, float scale, int whoAmI)
-        {
-            var texture = mod.GetTexture("Items/Weapons/Ranged/Triple_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
         }
 
         public override void AddRecipes()

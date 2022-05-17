@@ -1,14 +1,17 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Albedo.Base;
+using Albedo.Global;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
-using Terraria.ModLoader;
 using static Terraria.Main;
 
 namespace Albedo.Items.Materials
 {
-    public class GunGodSoul : ModItem
+    public class GunGodSoul : AlbedoItem
     {
+        protected override int Rarity => 9;
+
         public override void SetStaticDefaults()
         {
             RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
@@ -25,12 +28,6 @@ namespace Albedo.Items.Materials
             item.height = refItem.height;
             item.maxStack = 999;
             item.value = 1000;
-            item.rare = ItemRarityID.Yellow;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3027, line);
         }
 
         public override void GrabRange(Player player, ref int grabRange)
@@ -42,7 +39,7 @@ namespace Albedo.Items.Materials
         {
             var vectorItemToPlayer = player.Center - item.Center;
             var movement = -vectorItemToPlayer.SafeNormalize(default) * 0.1f;
-            item.velocity = item.velocity + movement;
+            item.velocity += movement;
             item.velocity = Collision.TileCollision(item.position, item.velocity, item.width, item.height);
             return true;
         }

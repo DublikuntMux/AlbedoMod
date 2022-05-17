@@ -1,12 +1,16 @@
-﻿using Albedo.Tiles.Ores;
+﻿using Albedo.Base;
+using Albedo.Global;
+using Albedo.Tiles.Ores;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Items.Materials
 {
-    public class AlbedoOre : ModItem
+    public class AlbedoOre : AlbedoItem
     {
+        protected override int Rarity => 3;
+
         public override void SetStaticDefaults()
         {
             ItemID.Sets.SortingPriorityMaterials[item.type] = 58;
@@ -17,7 +21,6 @@ namespace Albedo.Items.Materials
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.useTurn = true;
             item.value = Item.buyPrice(silver: 5);
-            item.rare = ItemRarityID.Pink;
             item.useAnimation = 15;
             item.useTime = 10;
             item.autoReuse = true;
@@ -26,11 +29,6 @@ namespace Albedo.Items.Materials
             item.createTile = ModContent.TileType<AlbedoOreTitle>();
             item.width = 12;
             item.height = 12;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3025, line);
         }
     }
 }

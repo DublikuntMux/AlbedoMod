@@ -12,11 +12,7 @@ namespace Albedo.Projectiles.Combined
         private int _bounce = 25;
 
         private int _currentDust;
-
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Cosmo Bullet");
-        }
+        public override string Texture => "Albedo/Projectiles/Empty";
 
         public override void SetDefaults()
         {
@@ -39,7 +35,19 @@ namespace Albedo.Projectiles.Combined
 
         public override void AI()
         {
-            for (var i = 0; i < 7; i++) AlbedoUtils.NewDust(projectile, Vector2.Zero, _dusts[_currentDust]);
+            for (var i = 0; i < 7; i++)
+            {
+                var x = projectile.position.X - projectile.velocity.X / 10f * i;
+                var y = projectile.position.Y - projectile.velocity.Y / 10f * i;
+                var num = Dust.NewDust(new Vector2(x, y), 1, 1, _dusts[_currentDust]);
+                Main.dust[num].alpha = projectile.alpha;
+                Main.dust[num].position.X = x;
+                Main.dust[num].position.Y = y;
+                var obj = Main.dust[num];
+                obj.velocity *= 0f;
+                Main.dust[num].noGravity = true;
+            }
+
             _currentDust++;
             if (_currentDust > 5) _currentDust = 0;
             var num2 = (float) Math.Sqrt(projectile.velocity.X * projectile.velocity.X +

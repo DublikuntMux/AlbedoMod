@@ -2,9 +2,9 @@
 ItemName.Gunpowder=Gunpowder
 ItemTooltip.Gunpowder=Very explosive mixture.
 ItemName.BulletOnChain=Bullet On Chain
-ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder
+ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder.
 ItemName.GunGodSoul=GunGod Soul
-ItemTooltip.GunGodSoul=Contains a power your father never dreamed of
+ItemTooltip.GunGodSoul=Contains a power your father never dreamed of.
 
 
 ///NAME AND DESCRIPTION OF ORES///
@@ -14,7 +14,10 @@ ItemName.AlbedoOre=Albedo Ore
 ItemTooltip.AlbedoOre=Ancient words ooze from the ore
 ItemName.AlbedoIngot=Albedo Ingot
 ItemTooltip.AlbedoIngot=Ingot is trying to talk to you \nAre you out of your mind?
-AlbedoIngot.Map=Albedo Ingot
+ItemName.AngeliteBar=Angelite Bar
+ItemTooltip.AngeliteBar=Angel life in bar.
+ItemName.AngeliteOre=Angelite Ore
+ItemTooltip.AngeliteOre=Angel life in ore.
 
 
 ///NAME AND DESCRIPTION OF BAFS///
@@ -32,12 +35,12 @@ BuffDescription.HellConfessions=Hell starts helping you \nHow prosaic it...
 ItemName.RustleDunes=Rustle of the Dunes
 ItemTooltip.RustleDunes=I wonder if there is gin inside?
 ItemName.ShotgunMeasurements=ShotgunMeasurements
-ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired\n Has a 50% chance to not consume a cartridge.
+ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired.
 ItemName.LavaDisaster=Lava Disaster
-ItemTooltip.LavaDisaster=Once belonged to Albedo\n Has a 50% chance to not consume a cartridge
-ItemTooltip.SDFMG=From the Far Depths of the Mind\n Has a 50% chance to not consume an ammo
+ItemTooltip.LavaDisaster=Once belonged to Albedo.
+ItemTooltip.SDFMG=From the Far Depths of the Mind.
 ItemName.KryonikGun=Ice Cannon
-ItemTooltip.KryonikGun=Bullets shatter into pieces on impact with an enemy.
+ItemTooltip.KryonikGun=Bullets shatter into pieces on impact with an enemy..
 ItemName.ClockworkCannon=Clockwork Cannon
 ItemTooltip.ClockworkCannon=Quick Fire...
 ItemName.Triple=Threesome
@@ -46,6 +49,24 @@ ItemName.RocketShotgun=Rocket Shotgun
 ItemTooltip.RocketShotgun=Has a chance to fire a rocket instead of a bullet.
 ItemName.ShortStarCannon=Short Star Cannon
 ItemTooltip.ShortStarCannon=Fires 5 stars at once.
+ItemName.AdamantiteRifle=Adamantite Rifle
+ItemTooltip.AdamantiteRifle=Adamantite power!!!
+ItemName.AlienBlaster=Alien Blaster
+ItemTooltip.AlienBlaster=Lost alien weapons.
+ItemName.Musket=Musket
+ItemTooltip.Musket=Regular musket.
+ItemName.DistortedGun=Distorted Gun
+ItemTooltip.DistortedGun=Stinks like a worm.
+ItemName.CosmicAssaultRifle=Cosmic Assault Rifle
+ItemTooltip.CosmicAssaultRifle=Lost alien weapons.
+ItemName.Magmum=Magmum
+ItemTooltip.Magmum=Looks like a lava worm.
+ItemName.AngelGun=Angel
+ItemTooltip.AngelGun=Fallen Angel.
+ItemName.ShadowDreams=Shadow Dreams
+ItemTooltip.ShadowDreams=Deep dark fantasies.
+ItemName.ImprovedMusket=Improved Musket
+ItemTooltip.ImprovedMusket=Power!!!
 
 
 ///NAME OF CRAFT STATES///
@@ -127,27 +148,29 @@ ItemName.MythrilPouch=Bag of Mithril Bullets
 ItemName.AdamantitePouch=Pouch of Adamantium Bullets
 
 ItemName.CosmoPouch=Sack of Sky Bullets
-ItemTooltip.CosmoPouch=This pouch once belonged to Albedo \nThis pouch holds the technology of the ancients.
+ItemTooltip.CosmoPouch=This pouch once belonged to Albedo.
 ItemName.PostLunarPouch=Pouch of Post Moon Lord Bullets
 ItemTooltip.PostLunarPouch=This pouch has powers that your father never dreamed of.
 ItemName.HardmodePouch=Hardmode Pouch
+ItemTooltip.HardmodePouch=Like shampoo 3 in 1.
 ItemName.PrehardmodePouch=Pouch of Prehardmode Bullets
+ItemTooltip.PrehardmodePouch=Mix of all pre-hardmode pouch.
 
 
 ///BOS ITEM///
 ItemName.CursedPistol=Cursed Pistol
-ItemTooltip.CursedPistol=Obsidian pistol god-cursed weapon. \nNot consumable
+ItemTooltip.CursedPistol=Obsidian pistol god-cursed weapon.
 ItemName.GodTribute=God Tribute
-ItemTooltip.GodTribute=An offering to an ancient being... \nNot consumable
+ItemTooltip.GodTribute=An offering to an ancient being...
 ItemName.SniperVoodooDoll=Sniper VoodooDoll
-ItemTooltip.SniperVoodooDoll=Doesn't kill Sniper \nNot consumable
+ItemTooltip.SniperVoodooDoll=Not consumable
 
-ItemName.GunDemonBag=Gun Demon Bag
-ItemTooltip.GunDemonBag=Victory Reward.
-ItemName.GunGodBag=Gun God Bag
-ItemTooltip.GunGodBag=Victory Reward.
-ItemName.HellGuardBag=Hell Guard Bag
-ItemTooltip.HellGuardBag=Victory Reward.
+ItemName.GunDemonBag=Gun Demon Treasure Bag
+ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
+ItemName.GunGodBag=Gun God Treasure Bag
+ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
+ItemName.HellGuardBag=Hell Guard Treasure Bag
+ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
 
 ItemName.GunDemonTrophy=Gun Demon Trophy
 ItemTooltip.GunDemonTrophy=Trophy for perseverance.

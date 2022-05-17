@@ -1,11 +1,14 @@
+using Albedo.Base;
 using Albedo.Tiles.Trophies;
 using Terraria;
 using Terraria.ModLoader;
 
 namespace Albedo.Items.Trophies
 {
-    public class GunGodTrophy : ModItem
+    public class GunGodTrophy : AlbedoItem
     {
+        protected override int Rarity => 11;
+        
         public override void SetDefaults()
         {
             item.width = 30;

@@ -1,5 +1,6 @@
 using System;
 using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -69,7 +70,7 @@ namespace Albedo.Projectiles
 
         public override void AI()
         {
-            var val = AlbedoUtils.NpcExists(projectile.ai[1], npcType);
+            var val = BossHelper.NpcExists(projectile.ai[1], npcType);
             if (val != null)
             {
                 var projectile1 = projectile;

@@ -1,3 +1,5 @@
+using Albedo.Base;
+using Albedo.Global;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Terraria.ID;
@@ -5,13 +7,14 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.CraftStations
 {
-    public class WeaponStation1 : ModItem
+    public class WeaponStation1 : AlbedoItem
     {
+        protected override int Rarity => 4;
+
         public override void SetDefaults()
         {
             item.width = 28;
             item.height = 14;
-            item.rare = ItemRarityID.Yellow;
             item.maxStack = 99;
             item.useTurn = true;
             item.autoReuse = true;
@@ -20,11 +23,6 @@ namespace Albedo.Items.CraftStations
             item.useStyle = ItemUseStyleID.SwingThrow;
             item.consumable = true;
             item.createTile = ModContent.TileType<WeaponStation1Tile>();
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3027, line);
         }
 
         public override void AddRecipes()

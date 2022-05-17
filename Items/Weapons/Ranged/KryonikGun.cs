@@ -1,3 +1,6 @@
+using Albedo.Base;
+using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;
@@ -9,8 +12,10 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class KryonikGun : ModItem
+    public class KryonikGun : AlbedoItem
     {
+        protected override int Rarity => 3;
+
         public override void SetDefaults()
         {
             item.damage = 23;
@@ -25,22 +30,16 @@ namespace Albedo.Items.Weapons.Ranged
             item.value = Item.buyPrice(0, 36);
             item.autoReuse = true;
             item.UseSound = SoundID.NPCHit5;
-            item.rare = ItemRarityID.Pink;
             item.shoot = ModContent.ProjectileType<IceShard>();
             item.shootSpeed = 15f;
             item.useAmmo = AmmoID.Bullet;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3554, line);
         }
 
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor,
             float rotation, float scale, int whoAmI)
         {
             var texture = mod.GetTexture("Items/Weapons/Ranged/KryonikGun_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+            GameHelper.GlowMask(texture, rotation, scale, whoAmI);
         }
 
         public override Vector2? HoldoutOffset()

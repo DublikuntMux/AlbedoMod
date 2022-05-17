@@ -1,4 +1,5 @@
 ﻿using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -45,7 +46,7 @@ namespace Albedo.Projectiles.Boss.HellGuard
                 }
 
                 if (projectile.localAI[1] > 60.0 && projectile.localAI[1] < 150.0 &&
-                    AlbedoUtils.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
+                    BossHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
                         ModContent.NPCType<NPCs.Boss.HellGuard.HellGuard>()) &&
                     Main.npc[AlbedoGlobalNpc.HellGuard].HasValidTarget)
                 {

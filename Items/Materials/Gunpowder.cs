@@ -1,18 +1,21 @@
+using Albedo.Base;
+using Albedo.Global;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Items.Materials
 {
-    internal class Gunpowder : ModItem
+    internal class Gunpowder : AlbedoItem
     {
+        protected override int Rarity => 1;
+
         public override void SetDefaults()
         {
             item.width = 20;
             item.height = 20;
             item.maxStack = 999;
             item.value = Item.buyPrice(silver: 10);
-            item.rare = ItemRarityID.Gray;
         }
 
         public override void AddRecipes()

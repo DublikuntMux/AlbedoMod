@@ -1,4 +1,6 @@
-﻿using Albedo.Items.Ammos.Pouches.Mod;
+﻿using Albedo.Base;
+using Albedo.Global;
+using Albedo.Items.Ammos.Pouches.Mod;
 using Albedo.Items.Ammos.Pouches.Vanila;
 using Albedo.Projectiles.Combined;
 using Albedo.Tiles.CraftStations;
@@ -12,8 +14,10 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Ammos.Combined
 {
-    public class PrehardmodePouch : ModItem
+    public class PrehardmodePouch : AlbedoItem
     {
+        protected override int Rarity => 8;
+        
         public override void SetDefaults()
         {
             item.damage = 100;
@@ -23,27 +27,10 @@ namespace Albedo.Items.Ammos.Combined
             item.knockBack = 8f;
             item.consumable = false;
             item.maxStack = 1;
-            item.rare = ItemRarityID.Red;
             item.shoot = ModContent.ProjectileType<PrehardmodBulletProjectile>();
             item.shootSpeed = 15f;
             item.value = Item.buyPrice(14);
             item.ammo = AmmoID.Bullet;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            if (line.mod == "Terraria" && line.Name == "ItemName")
-            {
-                spriteBatch.End();
-                spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
-                GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(3533), item);
-                Utils.DrawBorderString(spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White);
-                spriteBatch.End();
-                spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);
-                return false;
-            }
-
-            return true;
         }
 
         public override void AddRecipes()

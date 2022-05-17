@@ -18,7 +18,7 @@ namespace Albedo.Tiles.Trophies
             disableSmartCursor = true;
             var name = CreateMapEntryName();
             name.SetDefault(Language.GetTextValue("Mods.Albedo.ItemName.HellGuardTrophy"));
-            this.AddMapEntry(new Color(120, 0, 0), name);
+            AddMapEntry(new Color(120, 0, 0), name);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)

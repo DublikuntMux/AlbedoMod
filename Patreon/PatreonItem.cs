@@ -1,23 +1,16 @@
 ﻿using System.Collections.Generic;
+using Albedo.Base;
+using Albedo.Global;
 using Microsoft.Xna.Framework;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Patreon
 {
-    public abstract class PatreonItem : ModItem
+    public abstract class PatreonItem : AlbedoItem
     {
         protected abstract string Owner { get; }
 
-        public override void SetDefaults()
-        {
-            item.rare = ItemRarityID.Yellow;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3027, line);
-        }
+        protected override int Rarity => 10;
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {

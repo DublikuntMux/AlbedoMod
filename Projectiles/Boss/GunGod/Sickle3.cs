@@ -1,3 +1,4 @@
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -21,7 +22,7 @@ namespace Albedo.Projectiles.Boss.GunGod
             projectile1.rotation += 0.8f;
             if (projectile.ai[1] == 0f)
             {
-                var val = AlbedoUtils.PlayerExists(projectile.ai[0]);
+                var val = BossHelper.PlayerExists(projectile.ai[0]);
                 if (val != null)
                 {
                     var vector = new Vector2(projectile.localAI[0], projectile.localAI[1]);

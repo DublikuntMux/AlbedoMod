@@ -1,4 +1,5 @@
 using System;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -48,7 +49,7 @@ namespace Albedo.Projectiles.Boss.GunGod
             }
             else if (projectile.timeLeft < 360)
             {
-                var val = AlbedoUtils.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+                var val = BossHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
                 if (val == null)
                 {
                     projectile.Kill();

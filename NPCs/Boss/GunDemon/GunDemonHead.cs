@@ -1,8 +1,10 @@
 using System;
 using Albedo.Base;
 using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.TreasureBags;
 using Albedo.Items.Trophies;
+using Albedo.NPCs.Enemies.Hell;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -52,12 +54,7 @@ namespace Albedo.NPCs.Boss.GunDemon
 
         private void SpawnAdds()
         {
-            var odds =
-                Main.expertMode
-                    ? 150
-                    : 200;
-
-            if (Main.rand.NextBool(odds))
+            if (Main.rand.NextBool(350))
                 NPC.NewNPC((int) npc.Center.X - 70, (int) npc.Center.Y, ModContent.NPCType<MagmaLeechHead>());
         }
 
@@ -109,7 +106,7 @@ namespace Albedo.NPCs.Boss.GunDemon
             if (!AlbedoWorld.DownedGunDemon)
             {
                 AlbedoWorld.DownedGunDemon = true;
-                AlbedoUtils.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.GunDemon"), Color.Purple);
+                GameHelper.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.GunDemon"), Color.Purple);
             }
 
             if (Main.netMode == NetmodeID.Server)

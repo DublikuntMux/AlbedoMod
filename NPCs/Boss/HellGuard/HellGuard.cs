@@ -1,5 +1,6 @@
 ﻿using System;
 using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.TreasureBags;
 using Albedo.Items.Trophies;
 using Albedo.Projectiles.Boss.HellGuard;
@@ -349,7 +350,7 @@ namespace Albedo.NPCs.Boss.HellGuard
             if (!AlbedoWorld.DownedHellGuard)
             {
                 AlbedoWorld.DownedHellGuard = true;
-                AlbedoUtils.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.HellGuard"), Color.Purple);
+                GameHelper.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.HellGuard"), Color.Purple);
             }
 
             if (Main.netMode == NetmodeID.Server)

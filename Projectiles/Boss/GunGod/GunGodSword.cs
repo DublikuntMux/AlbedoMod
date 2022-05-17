@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -31,7 +32,7 @@ namespace Albedo.Projectiles.Boss.GunGod
         {
             if (projectile.velocity.HasNaNs() || projectile.velocity == Vector2.Zero)
                 projectile.velocity = -Vector2.UnitY;
-            var val = AlbedoUtils.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+            var val = BossHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
             if (val == null)
             {
                 projectile.Kill();

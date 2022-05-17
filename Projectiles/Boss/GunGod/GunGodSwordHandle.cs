@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -26,7 +27,7 @@ namespace Albedo.Projectiles.Boss.GunGod
         {
             if (projectile.velocity.HasNaNs() || projectile.velocity == Vector2.Zero)
                 projectile.velocity = -Vector2.UnitY;
-            var byUuidReal = AlbedoUtils.GetByUuidReal(projectile.owner, (int) projectile.ai[1],
+            var byUuidReal = BossHelper.GetByUuidReal(projectile.owner, (int) projectile.ai[1],
                 ModContent.ProjectileType<GunGodSword>());
             if (byUuidReal != -1)
             {

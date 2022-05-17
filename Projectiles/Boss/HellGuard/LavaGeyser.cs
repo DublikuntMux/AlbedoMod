@@ -7,10 +7,8 @@ namespace Albedo.Projectiles.Boss.HellGuard
 {
     public class LavaGeyser : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Geyser");
-        }
+        public override string Texture => "Albedo/Projectiles/Empty";
+
 
         public override void SetDefaults()
         {

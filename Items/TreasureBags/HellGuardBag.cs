@@ -1,15 +1,19 @@
+using Albedo.Base;
+using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.NPCs.Boss.HellGuard;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Items.TreasureBags
 {
-    public class HellGuardBag : ModItem
+    public class HellGuardBag : AlbedoItem
     {
+        protected override int Rarity => 11;
+
         public override int BossBagNPC => ModContent.NPCType<HellGuard>();
 
         public override void SetDefaults()
@@ -18,7 +22,6 @@ namespace Albedo.Items.TreasureBags
             item.consumable = true;
             item.width = 24;
             item.height = 24;
-            item.rare = ItemRarityID.Expert;
         }
 
         public override void OpenBossBag(Player player)
@@ -30,12 +33,7 @@ namespace Albedo.Items.TreasureBags
             float rotation, float scale, int whoAmI)
         {
             var texture = mod.GetTexture("Items/TreasureBags/HellGuardBag_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3556, line);
+            GameHelper.GlowMask(texture, rotation, scale, whoAmI);
         }
     }
 }

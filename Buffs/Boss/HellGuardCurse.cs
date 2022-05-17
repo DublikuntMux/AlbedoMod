@@ -1,4 +1,5 @@
 ﻿using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Localization;
@@ -8,7 +9,7 @@ namespace Albedo.Buffs.Boss
 {
     public class HellGuardCurse : ModBuff
     {
-        private bool _brodcast;
+        private bool _broadcast;
 
         public override void SetDefaults()
         {
@@ -21,11 +22,11 @@ namespace Albedo.Buffs.Boss
 
         public override void Update(Player player, ref int buffIndex)
         {
-            if (!_brodcast)
+            if (!_broadcast)
             {
-                AlbedoUtils.Chat(Language.GetTextValue("Mods.Albedo.BuffDescription.HellGuardCurse"), Color.Red, false);
+                GameHelper.Chat(Language.GetTextValue("Mods.Albedo.BuffDescription.HellGuardCurse"), Color.Red, false);
                 player.GetModPlayer<AlbedoPlayer>().Screenshake = 60;
-                _brodcast = true;
+                _broadcast = true;
             }
 
             player.buffTime[buffIndex] = 36000;

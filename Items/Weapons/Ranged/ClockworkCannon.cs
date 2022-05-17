@@ -1,3 +1,5 @@
+using Albedo.Base;
+using Albedo.Global;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
@@ -8,8 +10,10 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class ClockworkCannon : ModItem
+    public class ClockworkCannon : AlbedoItem
     {
+        protected override int Rarity => 7;
+
         public override void SetDefaults()
         {
             item.damage = 55;
@@ -23,17 +27,11 @@ namespace Albedo.Items.Weapons.Ranged
             item.noMelee = true;
             item.knockBack = 3.75f;
             item.value = Item.buyPrice(0, 80);
-            item.rare = ItemRarityID.Yellow;
             item.UseSound = SoundID.Item31;
             item.autoReuse = true;
             item.shoot = ProjectileID.PurificationPowder;
             item.shootSpeed = 20f;
             item.useAmmo = AmmoID.Bullet;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3553, line);
         }
 
         public override Vector2? HoldoutOffset()

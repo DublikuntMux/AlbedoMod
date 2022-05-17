@@ -1,5 +1,6 @@
 using System;
 using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -35,7 +36,7 @@ namespace Albedo.Projectiles.Boss.GunGod
         public override void AI()
         {
             projectile.hide = false;
-            var val = AlbedoUtils.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+            var val = BossHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
             if (val != null)
             {
                 if (val.ai[0] == 0f) projectile.extraUpdates = 1;

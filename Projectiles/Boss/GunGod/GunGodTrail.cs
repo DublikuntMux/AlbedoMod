@@ -1,3 +1,4 @@
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -31,7 +32,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
         public override void AI()
         {
-            var val = AlbedoUtils.NpcExists(projectile.ai[1]);
+            var val = BossHelper.NpcExists(projectile.ai[1]);
             if (val != null)
             {
                 projectile.Center = val.Center;

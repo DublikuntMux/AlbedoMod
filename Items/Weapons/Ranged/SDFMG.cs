@@ -1,4 +1,6 @@
-﻿using Albedo.Items.Materials;
+﻿using Albedo.Base;
+using Albedo.Global;
+using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
@@ -9,8 +11,10 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class SDFMG : ModItem
+    public class SDFMG : AlbedoItem
     {
+        protected override int Rarity => 10;
+
         public override void SetDefaults()
         {
             item.damage = 100;
@@ -23,7 +27,6 @@ namespace Albedo.Items.Weapons.Ranged
             item.noMelee = true;
             item.knockBack = 2.75f;
             item.value = Item.buyPrice(1, 80);
-            item.rare = ItemRarityID.Red;
             item.UseSound = SoundID.Item11;
             item.autoReuse = true;
             item.shoot = ProjectileID.PurificationPowder;
@@ -51,11 +54,6 @@ namespace Albedo.Items.Weapons.Ranged
                     damage, knockBack, player.whoAmI);
             Projectile.NewProjectile(position.X, position.Y, num, num2, type, damage, knockBack, player.whoAmI);
             return false;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(2873, line);
         }
 
         public override bool ConsumeAmmo(Player player)

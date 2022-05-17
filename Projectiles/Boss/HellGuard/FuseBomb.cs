@@ -1,4 +1,5 @@
 ﻿using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -8,10 +9,7 @@ namespace Albedo.Projectiles.Boss.HellGuard
 {
     public class FuseBomb : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Bomb");
-        }
+        public override string Texture => "Albedo/Projectiles/Empty";
 
         public override void SetDefaults()
         {
@@ -41,7 +39,7 @@ namespace Albedo.Projectiles.Boss.HellGuard
                     target.AddBuff(67, 120);
             }
 
-            if (!AlbedoUtils.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
+            if (!BossHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
                     ModContent.NPCType<NPCs.Boss.HellGuard.HellGuard>()))
                 return;
             target.AddBuff(24, 300);

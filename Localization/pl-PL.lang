@@ -1,0 +1,235 @@
+///TYTUŁ I OPIS WSZYSTKICH OBIEKTÓW///
+ItemName.Gunpowder=Proch strzelniczy
+ItemTooltip.Gunpowder=Bardzo wybuchowa mieszanka.
+ItemName.BulletOnChain=Kula na łańcuchu
+ItemTooltip.BulletOnChain=Zostałeś zabity przez ten pocisk i zapisany jako przypomnienie.
+ItemName.GunGodSoul=Dusza boga broni
+ItemTooltip.GunGodSoul=Zawiera moc, o której twój ojciec nigdy nie marzył.
+
+
+///NAZWA I OPIS RUD///
+ItemName.RawSaltpeter=Saltpeter
+ItemTooltip.RawSaltpeter=Bardzo wybuchowy przedmiot
+ItemName.AlbedoOre=Ruda Albedo
+ItemTooltip.AlbedoOre=Starożytne słowa sączą się z rudy
+ItemName.AlbedoIngot=Sztabka Albedo
+ItemTooltip.AlbedoIngot=Ingot próbuje z tobą porozmawiać \nOszalałeś?
+ItemName.AngeliteBar=Angelitowy pasek
+ItemTooltip.AngeliteBar=Życie anioła w barze.
+ItemName.AngeliteOre=Ruda anioła
+ItemTooltip.AngeliteOre=Życie anioła w rudzie.
+
+
+///NAZWA I OPIS BAFS///
+BuffName.BulletPetBuff=Twój śmiercionośny pocisk
+BuffDescription.BulletPetBuff=Dlaczego kula ożyła?
+BuffName.HellGuardCurse=Klątwa Piekielnego Strażnika
+BuffDescription.HellGuardCurse=Musisz zabić strażnika piekła, aby uleczyć się ścianą ciała.
+BuffName.GunGodCurse=Klątwy boga broni
+BuffDescription.GunGodCurse=Aura GunGodCurse naciska na ciebie...
+BuffName.HellConfessions=Wyznania piekła
+BuffDescription.HellConfessions=Piekło zaczyna ci pomagać \nJakie to prozaiczne...
+
+
+///NAZWA I OPIS BRONI///
+ItemName.RustleDunes=Szelest wydm
+ItemTooltip.RustleDunes=Zastanawiam się, czy w środku jest gin?
+ItemName.ShotgunMeasurements=Pomiary strzelby
+ItemTooltip.ShotgunMeasurements=Tak silny, że nie wydaje nawet dźwięku podczas strzału.
+ItemName.LavaDisaster=Katastrofa lawy
+ItemTooltip.LavaDisaster=Kiedyś należał do Albedo.
+ItemTooltip.SDFMG=Z odległych głębin umysłu.
+ItemName.KryonikGun=Lodowe działo
+ItemTooltip.KryonikGun=Pociski rozpadają się na kawałki po uderzeniu w wroga..
+ItemName.ClockworkCannon=Clockwork Cannon
+ItemTooltip.ClockworkCannon=Szybki ostrzał...
+ItemName.Triple=Trójkąt
+ItemTooltip.Triple= MMMM))))
+ItemName.RocketShotgun=Rakietowa strzelba
+ItemTooltip.RocketShotgun=Może wystrzelić rakietę zamiast pocisku.
+ItemName.ShortStarCannon=Krótka gwiezdna armata
+ItemTooltip.ShortStarCannon=Wystrzeliwuje 5 gwiazdek na raz.
+ItemName.AdamantiteRifle=Karabin Adamantytowy
+ItemTooltip.AdamantiteRifle=Adamantytowa moc!!!
+ItemName.AlienBlaster=Obcy Blaster
+ItemTooltip.AlienBlaster=Zagubiona broń obcych.
+ItemName.Musket=Muszkiet
+ItemTooltip.Musket=Zwykły muszkiet.
+ItemName.DistortedGun=Zniekształcony pistolet
+ItemTooltip.DistortedGun=Śmierdzi jak robak.
+ItemName.CosmicAssaultRifle=Kosmiczny karabin szturmowy
+ItemTooltip.CosmicAssaultRifle=Zagubiona broń obcych.
+ItemName.Magmum=Magmum
+ItemTooltip.Magmum=Wygląda jak robak lawy.
+ItemName.AngelGun=Anioł
+ItemTooltip.AngelGun=Upadły anioł.
+ItemName.ShadowDreams=Cienie snów
+ItemTooltip.ShadowDreams=Głębokie mroczne fantazje.
+ItemName.ImprovedMusket=Ulepszony muszkiet
+ItemTooltip.ImprovedMusket=Moc!!!
+
+
+///NAZWY STANÓW RZEMIOSŁA///
+WeaponStationTile.Name=Stacja wytwarzania broni
+ItemName.WeaponStation1=Stacja wytwarzania broni
+ItemTooltip.WeaponStation1=Stacja do wytwarzania prostej broni.
+ItemName.WeaponStation2=Zaawansowana stacja broni
+ItemTooltip.WeaponStation2=Stacja do wytwarzania zaawansowanej broni.
+ItemName.WeaponStation3=Ściana stacja broni
+ItemTooltip.WeaponStation3=Starożytne stanowisko do wytwarzania broni technologicznej.
+
+
+///NAZWA I OPIS POCISKU///
+ItemName.DirtBullet=Pocisk brudu
+ItemTooltip.DirtBullet=Wykonano z [i/s1:2]
+ItemName.StoneBullet=Kamienny pocisk
+ItemTooltip.StoneBullet=Wykonano z [i/s1:3]
+ItemName.IceBullet=Lodowy pocisk
+ItemTooltip.IceBullet=Wykonano z [i/s1:664]
+ItemName.SnowBullet=Śnieżny pocisk
+ItemTooltip.SnowBullet=Wykonano z [i/s1:593]
+ItemName.GelBullet= Żelowy pocisk
+ItemTooltip.GelBullet=Odbija się od ścian\nWykonane z [i/s1:23]
+ItemName.PinkGelBullet= Różowy żelowy pocisk
+ItemTooltip.PinkGelBullet=Odbija się od ścian\nWykonano z [i/s1:3111]
+ItemName.GemBullet=Klejnotowy pocisk
+ItemTooltip.GemBullet=Bardzo ładny pocisk \nWykonano z [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
+ItemName.CopperBullet=Miedziany pocisk
+ItemTooltip.CopperBullet=Dlaczego?\nWykonano z [i/s1:20]
+ItemName.IronBullet=Żelazny pocisk
+ItemTooltip.IronBullet=Najpopularniejszy pocisk\nWykonany z [i/s1:22]
+ItemName.LeadBullet=Ołów Bullet
+ItemTooltip.LeadBullet=Najpopularniejszy pocisk\nWykonany z [i/s1:704]
+ItemName.PreciousBullet=Cenny pocisk
+ItemTooltip.PreciousBullet=Jest droższy niż myślisz \nAle czy to jest dobre? \nWykonano z [i/s1:19] lub [i/s1:706]
+ItemName.TungstenBullet=Wolframowy pocisk
+ItemTooltip.TungstenBullet=Najpopularniejszy pocisk\nWykonany z [i/s1:705]
+ItemName.HellBullet=Piekielny pocisk
+ItemTooltip.HellBullet=Podpal wrogów po trafieniu \nWykonano z [i/s1:175]
+ItemName.CobaltBullet= Kobaltowy pocisk
+ItemTooltip.CobaltBullet=Wykonano z [i/s1:381]
+ItemName.MythrilBullet= Mithrilowy pocisk
+ItemTooltip.MythrilBullet=Wykonano z [i/s1:382]
+ItemName.AdamantiteBullet= Adamantytowy pocisk
+ItemTooltip.AdamantiteBullet=Wykonano z [i/s1:391]
+
+
+///NAZWA I OPIS TOREB///
+ItemName.ChlorofytePouch = worek z woreczkiem z chlorofitem
+ItemName.CrystalPouch=Kryształowy woreczek
+ItemName.CursedPouch=Torba Przeklętych Kul
+ItemName.ExplosivePouch=Wybuchowa sakiewka
+ItemName.GoldenPouch=Worek ze złotymi kulami
+ItemName.IchorPouch=Woreczek Ichor
+ItemName.LuminitePouch=Torba Luminite Bullets
+ItemName.MeteorPouch=Worek meteorów
+ItemName.NanoPouch=Torba Nano Kul
+ItemName.PartyPouch=Torba imprezowa
+ItemName.SilverPouch=Worek srebrnych kul
+ItemName.VelocityPouch=Woreczek prędkości
+ItemName.VenomPouch=Torba Trujących Kul
+
+ItemName.CopperPouch=Woreczek z miedzianymi kulami
+ItemName.DirtPouch=Worek kul brudu
+ItemTooltip.DirtPouch=Dlaczego to zrobiłeś?
+ItemName.GelPouch=Torba na żel
+ItemName.GemPouch=Woreczek z klejnotami
+ItemName.IcePouch=Worek lodowych kul
+ItemName.IronPouch=Worek żelaznych kul
+ItemName.LeadPouch=Woreczek z ołowianymi kulami
+ItemName.PinkGelPouch=Różowa torebka żelowa
+ItemName.PreciousPouch=Woreczek z cennymi kulami
+ItemName.SnowPouch=Worek Śnieżnych Kul
+ItemName.StonePouch=Worek kamiennych kul
+ItemName.TungstenPouch=Torba wolframowych kul
+ItemName.HellPouch=Worek Piekielnych Kul
+ItemName.CobaltPouch=Woreczek z kobaltowymi kulami
+ItemName.MythrilPouch=Torba Mithrilowych Kul
+ItemName.AdamantitePouch=Woreczek z kulami Adamantium
+
+ItemName.CosmoPouch=Worek Niebiańskich Kul
+ItemTooltip.CosmoPouch=Ten woreczek należał kiedyś do Albedo.
+ItemName.PostLunarPouch=Woreczek z nabojami Post Moon Lord
+ItemTooltip.PostLunarPouch=Ten woreczek ma moce, o których twój ojciec nigdy nie śnił.
+ItemName.HardmodePouch=Worek trybu twardego
+ItemTooltip.HardmodePouch=Jak szampon 3 w 1.
+ItemName.PrehardmodePouch=Woreczek z nabojami trybu wstępnego
+ItemTooltip.PrehardmodePouch=Mieszanka wszystkich torebek sprzed trybu twardego.
+
+
+///POZYCJA BOS///
+ItemName.CursedPistol=Przeklęty pistolet
+ItemTooltip.CursedPistol=Obsydianowy pistolet, przeklęta przez boga broń.
+ItemName.GodTribute=Boży hołd
+ItemTooltip.GodTribute=Ofiara dla starożytnej istoty...
+ItemName.SniperVoodooDoll=Snajperska lalka Voodoo
+ItemTooltip.SniperVoodooDoll=Nie nadaje się do użytku
+
+ItemName.GunDemonBag=Torba skarbów demona broni
+ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
+ItemName.GunGodBag=Torba skarbów boga broni
+ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
+ItemName.HellGuardBag=Torba skarbów Straży Piekieł
+ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
+
+ItemName.GunDemonTrophy=Trofeum demona broni
+ItemTooltip.GunDemonTrophy=Trofeum za wytrwałość.
+ItemName.GunGodTrophy=Trofeum boga broni
+ItemTooltip.GunGodTrophy=Trofeum za wytrwałość.
+ItemName.HellGuardTrophy=Trofeum Straży Piekieł
+ItemTooltip.HellGuardTrophy=Trofeum za wytrwałość.
+
+
+///NAZWY BOSSÓW///
+NPCName.HellGuard=Strażnik piekieł
+NPCName.HellGuardHand=Ręka Piekielnego Strażnika
+NPCName.GunGod=Bóg broni
+NPCName.MiniGun=Opętana broń
+NPCName.GunDemonHead=Demon pistoletu
+NPCName.GunDemonBody=Demon pistoletu
+NPCName.GunDemonTail=Demon pistoletu
+NPCName.MagmaLeechHead=Wysysacz magmy
+NPCName.MagmaLeechBody=Wysysacz magmy
+NPCName.MagmaLeechTail=Wysysacz magmy
+
+
+///Wiadomości do szefa///
+BossMassage.HellGuard=Czujesz, że piekło stało się niebezpieczne...
+BossMassage.GunGod=Uwolniłeś starożytną moc...\nKtoś na pewno zauważył...
+BossMassage.GunDemon=Piekielne stworzenia tworzą dla ciebie drogę...
+
+
+///NAZWY NIPS//
+Sniper.name1=Oznaczony
+Sniper.name2=Kyle
+Sniper.name3=Kiryl
+Sniper.name4=Kula
+Sniper.name5=Kirsi
+Sniper.name6=Michael
+Sniper.name7=Cole
+
+Bagman.name1=Denis
+Bagman.name2=Michael
+Bagman.name3=Galia
+Bagman.name4=Mikasa
+Bagman.name5=Alla
+Bagman.name6=Cenarius
+Bagman.name7=Karla
+
+
+///DIALOGI NIP///
+Sniper.dialog1=Czy słyszałeś coś o kulach nieba? Nie? Też tu jestem.
+Sniper.dialog2=Mogę robić kule ze wszystkiego, mogę nawet robić kule z innych kul.
+Sniper.dialog3=Chcesz kupić lodowe kule? Tylko nie trzymaj ich zbyt długo w kieszeni.
+Sniper.dialog4=Dobrze zarabiać za ziemię.
+
+Bagman.dialog1=Czy znasz snajpera? On jest moim bratem.
+Bagman.dialog2=Gdybyś tylko wiedział jak ciężko zajęło mi zebranie tych worków z nabojami.
+Bagman.dialog3=Najniższe ceny na wszystko za jedną platynę i paczkę dobrych rzeczy w kieszeni.
+Bagman.dialog4= Słyszałeś o Albedo, jest przerażający... Nie ufaj mu!
+
+
+///RÓŻNE///
+Misc.OnEnter=[AlbedoMod] - !MOD W TESTACH ALFA!
+NPC.Hardmod=Hardmod
+NPC.PreHardmod=PreHardmod

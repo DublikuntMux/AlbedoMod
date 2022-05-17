@@ -1,3 +1,5 @@
+using Albedo.Base;
+using Albedo.Global;
 using Albedo.NPCs.Boss.GunGod;
 using Terraria;
 using Terraria.ID;
@@ -5,16 +7,17 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Summons
 {
-    public class GodTribute : ModItem
+    public class GodTribute : AlbedoItem
     {
+        protected override int Rarity => 12;
+
         public override void SetDefaults()
         {
             item.width = 20;
             item.height = 20;
-            item.rare = ItemRarityID.Expert;
             item.useAnimation = 30;
             item.useTime = 30;
-            item.useStyle = 4;
+            item.useStyle = ItemUseStyleID.HoldingUp;
             item.maxStack = 1;
             item.value = Item.sellPrice(0, 1);
             item.active = true;
@@ -30,11 +33,6 @@ namespace Albedo.Items.Summons
         {
             NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<GunGod>());
             return true;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3556, line);
         }
     }
 }

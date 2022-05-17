@@ -1,3 +1,6 @@
+using Albedo.Base;
+using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
@@ -9,8 +12,10 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class ShortStarCannon : ModItem
+    public class ShortStarCannon : AlbedoItem
     {
+        protected override int Rarity => 5;
+
         public override void SetDefaults()
         {
             item.damage = 50;
@@ -21,7 +26,6 @@ namespace Albedo.Items.Weapons.Ranged
             item.useAnimation = 30;
             item.ranged = true;
             item.noMelee = true;
-            item.rare = ItemRarityID.Green;
             item.value = Item.buyPrice(0, 5);
             item.shootSpeed = 28f;
             item.useAmmo = AmmoID.FallenStar;
@@ -54,7 +58,7 @@ namespace Albedo.Items.Weapons.Ranged
             float rotation, float scale, int whoAmI)
         {
             var texture = mod.GetTexture("Items/Weapons/Ranged/ShortStarCannon_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+            GameHelper.GlowMask(texture, rotation, scale, whoAmI);
         }
 
         public override void AddRecipes()

@@ -1,3 +1,6 @@
+using Albedo.Base;
+using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged;
 using Albedo.Tiles.CraftStations;
@@ -10,8 +13,10 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class ShotgunMeasurements : ModItem
+    public class ShotgunMeasurements : AlbedoItem
     {
+        protected override int Rarity => 9;
+
         public override void SetDefaults()
         {
             item.damage = 695;
@@ -23,7 +28,6 @@ namespace Albedo.Items.Weapons.Ranged
             item.shootSpeed = 7.5f;
             item.useAmmo = AmmoID.Bullet;
             item.UseSound = SoundID.Item31;
-            item.rare = ItemRarityID.Purple;
             item.width = 96;
             item.height = 34;
             item.useStyle = ItemUseStyleID.HoldingOut;
@@ -38,16 +42,11 @@ namespace Albedo.Items.Weapons.Ranged
             return false;
         }
 
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3039, line);
-        }
-
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor,
             float rotation, float scale, int whoAmI)
         {
             var texture = mod.GetTexture("Items/Weapons/Ranged/ShotgunMeasurements_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+            GameHelper.GlowMask(texture, rotation, scale, whoAmI);
         }
 
         public override Vector2? HoldoutOffset()

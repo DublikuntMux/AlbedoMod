@@ -1,14 +1,17 @@
+using Albedo.Base;
+using Albedo.Global;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Albedo.AlbedoUtils;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class RustleDunes : ModItem
+    public class RustleDunes : AlbedoItem
     {
+        protected override int Rarity => 6;
+
         public override void SetDefaults()
         {
             item.damage = 19;
@@ -21,17 +24,11 @@ namespace Albedo.Items.Weapons.Ranged
             item.useStyle = ItemUseStyleID.HoldingOut;
             item.noMelee = true;
             item.knockBack = 6f;
-            item.rare = ItemRarityID.Yellow;
             item.UseSound = SoundID.Item36;
             item.autoReuse = true;
             item.shootSpeed = 6f;
             item.shoot = ProjectileID.Bullet;
             item.useAmmo = AmmoID.Bullet;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return LiveRarity(3533, line);
         }
 
         public override Vector2? HoldoutOffset()

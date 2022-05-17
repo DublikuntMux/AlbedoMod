@@ -1,5 +1,6 @@
 ﻿using System;
 using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -29,7 +30,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
         public override void AI()
         {
-            if (AlbedoUtils.BossIsAlive(ref AlbedoGlobalNpc.HellGuard, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
+            if (BossHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
                 !Main.npc[AlbedoGlobalNpc.HellGuard].dontTakeDamage)
             {
                 if (projectile.localAI[0] == 0.0)

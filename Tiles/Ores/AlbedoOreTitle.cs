@@ -18,9 +18,7 @@ namespace Albedo.Tiles.Ores
             Main.tileMergeDirt[Type] = true;
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
-
-            var name = CreateMapEntryName();
-            AddMapEntry(new Color(215, 15, 115), name);
+            AddMapEntry(new Color(215, 15, 115));
 
             dustType = DustID.AmethystBolt;
             drop = ModContent.ItemType<AlbedoOre>();
@@ -28,6 +26,13 @@ namespace Albedo.Tiles.Ores
             soundStyle = 1;
             mineResist = 2f;
             minPick = 45;
+        }
+
+        public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
+        {
+            r = 0.9f;
+            g = 0f;
+            b = 0.3f;
         }
     }
 }

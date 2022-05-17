@@ -1,11 +1,14 @@
+using Albedo.Global;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace Albedo.Base
 {
-    public abstract class BasePouch : ModItem
+    public abstract class BasePouch : AlbedoItem
     {
         protected abstract int AmmunitionItem { get; }
+
+        protected override int Rarity => 8;
 
         public override void SetDefaults()
         {
@@ -16,12 +19,6 @@ namespace Albedo.Base
             item.maxStack = 1;
             var item1 = item;
             item1.value *= 3996;
-            item.rare = ItemRarityID.Yellow;
-        }
-
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3027, line);
         }
 
         public override void AddRecipes()

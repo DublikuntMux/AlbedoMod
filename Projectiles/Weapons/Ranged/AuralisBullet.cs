@@ -10,11 +10,7 @@ namespace Albedo.Projectiles.Weapons.Ranged
         private static readonly Color BlueColor = new Color(0, 77, 255);
 
         private static readonly Color GreenColor = new Color(0, 255, 77);
-
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Auralis Bullet");
-        }
+        public override string Texture => "Albedo/Projectiles/Empty";
 
         public override void SetDefaults()
         {
@@ -40,8 +36,18 @@ namespace Albedo.Projectiles.Weapons.Ranged
         {
             projectile.ai[0] += 1f;
             if (projectile.ai[0] > 6f)
-                AlbedoUtils.NewDust(projectile, Vector2.Zero, 229, 6, 90, 1, ColorSwap(BlueColor, GreenColor, 1f), 100,
-                    true, true);
+                for (var i = 0; i < 5; i++)
+                {
+                    var obj = Main.dust[
+                        Dust.NewDust(projectile.position, projectile.width, projectile.height, 229,
+                            projectile.velocity.X, projectile.velocity.Y, 100, ColorSwap(BlueColor, GreenColor, 1f))];
+                    obj.velocity = Vector2.Zero;
+                    obj.position -= projectile.velocity / 5f * i;
+                    obj.noGravity = true;
+                    obj.scale = 0.65f;
+                    obj.noLight = true;
+                    obj.color = ColorSwap(BlueColor, GreenColor, 1f);
+                }
         }
 
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)

@@ -15,7 +15,6 @@ namespace Albedo.Items.Ammos.Bullets
             item.height = 40;
             item.knockBack = 0.25f;
             item.value = Item.buyPrice(copper: 1);
-            item.rare = ItemRarityID.White;
             item.consumable = true;
             item.shoot = ModContent.ProjectileType<IronBulletProjectile>();
             item.ammo = AmmoID.Bullet;

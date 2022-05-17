@@ -6,6 +6,7 @@ namespace Albedo.Projectiles.Bullets
 {
     public class GemBulletProjectile : BasBulletProjectile
     {
+        public override string Texture => "Albedo/Projectiles/Empty";
         protected override string Name => "Gem Bullet";
         protected override int Penetrate => 3;
 

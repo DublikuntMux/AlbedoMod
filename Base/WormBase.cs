@@ -8,14 +8,14 @@ namespace Albedo.Base
 {
     public abstract class WormBase : ModNPC
     {
-        public bool JustSpawned
+        protected bool JustSpawned
         {
             get => npc.localAI[0] == 0f;
             set => npc.localAI[0] = value ? 0f : 1f;
         }
 
-        public NPC PrevSegment => Main.npc[(int) npc.ai[1]];
-        public NPC ParentHead => Main.npc[(int) npc.ai[2]];
+        private NPC PrevSegment => Main.npc[(int) npc.ai[1]];
+        private NPC ParentHead => Main.npc[(int) npc.ai[2]];
 
         public override void SetStaticDefaults()
         {
@@ -72,7 +72,7 @@ namespace Albedo.Base
             return false;
         }
 
-        public void CheckSegments()
+        protected void CheckSegments()
         {
             if (!PrevSegment.active
                 || !ParentHead.active)

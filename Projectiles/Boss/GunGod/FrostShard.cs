@@ -1,4 +1,5 @@
 using Albedo.Global;
+using Albedo.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -43,7 +44,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
             projectile.velocity.X *= 0.95f;
             projectile.position.Y += projectile.velocity.Y / 2f;
-            if (AlbedoUtils.BossIsAlive(ref AlbedoGlobalNpc.GunGod, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
+            if (BossHelper.BossIsAlive(ref AlbedoGlobalNpc.GunGod, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
                 projectile.position.Y > Main.npc[AlbedoGlobalNpc.GunGod].Center.Y +
                 (Main.npc[AlbedoGlobalNpc.GunGod].localAI[3] == 1f ? 2000 : 1400)) projectile.Kill();
         }

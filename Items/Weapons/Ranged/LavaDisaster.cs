@@ -1,3 +1,6 @@
+using Albedo.Base;
+using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
@@ -9,8 +12,10 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Ranged
 {
-    public class LavaDisaster : ModItem
+    public class LavaDisaster : AlbedoItem
     {
+        protected override int Rarity => 6;
+
         public override void SetDefaults()
         {
             item.damage = 25;
@@ -24,7 +29,6 @@ namespace Albedo.Items.Weapons.Ranged
             item.noMelee = true;
             item.knockBack = 2f;
             item.value = Item.buyPrice(0, 60);
-            item.rare = ItemRarityID.Lime;
             item.UseSound = SoundID.Item31;
             item.autoReuse = true;
             item.shoot = ProjectileID.PurificationPowder;
@@ -32,16 +36,11 @@ namespace Albedo.Items.Weapons.Ranged
             item.useAmmo = AmmoID.Bullet;
         }
 
-        public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
-        {
-            return AlbedoUtils.LiveRarity(3526, line);
-        }
-
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor,
             float rotation, float scale, int whoAmI)
         {
             var texture = mod.GetTexture("Items/Weapons/Ranged/LavaDisaster_Glow");
-            AlbedoUtils.GlowMask(texture, rotation, scale, whoAmI);
+            GameHelper.GlowMask(texture, rotation, scale, whoAmI);
         }
 
         public override Vector2? HoldoutOffset()

@@ -2,8 +2,10 @@
 using System.IO;
 using Albedo.Buffs.Boss;
 using Albedo.Global;
+using Albedo.Helper;
 using Albedo.Items.TreasureBags;
 using Albedo.Items.Trophies;
+using Albedo.Projectiles.Boss;
 using Albedo.Projectiles.Boss.GunGod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -29,8 +31,8 @@ namespace Albedo.NPCs.Boss.GunGod
 
         public override void SetDefaults()
         {
-            npc.width = 58;
-            npc.height = 57;
+            npc.width = 74;
+            npc.height = 62;
             npc.damage = 150;
             npc.defense = 80;
             npc.lifeMax = 160000;
@@ -61,7 +63,7 @@ namespace Albedo.NPCs.Boss.GunGod
         public override bool CanHitPlayer(Player target, ref int cooldownSlot)
         {
             cooldownSlot = 1;
-            if (npc.Distance(AlbedoUtils.ClosestPointInHitbox(target, npc.Center)) < 42f && npc.ai[0] != 10f)
+            if (npc.Distance(BossHelper.ClosestPointInHitbox(target, npc.Center)) < 42f && npc.ai[0] != 10f)
                 return npc.ai[0] != 18f;
             return false;
         }
@@ -109,13 +111,14 @@ namespace Albedo.NPCs.Boss.GunGod
             if (Main.netMode != NetmodeID.MultiplayerClient)
             {
                 if (npc.localAI[3] == 2f &&
-                    AlbedoUtils.ProjectileExists(_ritualProj, ModContent.ProjectileType<Arena1>()) == null)
+                    BossHelper.ProjectileExists(_ritualProj, ModContent.ProjectileType<GodArena1>()) == null)
                     _ritualProj = Projectile.NewProjectile(npc.Center, Vector2.Zero,
-                        ModContent.ProjectileType<Arena1>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
-                if (AlbedoUtils.ProjectileExists(_ringProj, ModContent.ProjectileType<Arena2>()) == null)
-                    _ringProj = Projectile.NewProjectile(npc.Center, Vector2.Zero, ModContent.ProjectileType<Arena2>(),
+                        ModContent.ProjectileType<GodArena1>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
+                if (BossHelper.ProjectileExists(_ringProj, ModContent.ProjectileType<GodArena2>()) == null)
+                    _ringProj = Projectile.NewProjectile(npc.Center, Vector2.Zero,
+                        ModContent.ProjectileType<GodArena2>(),
                         0, 0f, Main.myPlayer, 0f, npc.whoAmI);
-                if (AlbedoUtils.ProjectileExists(_spriteProj, ModContent.ProjectileType<GunGodTrail>()) == null)
+                if (BossHelper.ProjectileExists(_spriteProj, ModContent.ProjectileType<GunGodTrail>()) == null)
                 {
                     if (Main.netMode == NetmodeID.SinglePlayer)
                     {
@@ -235,10 +238,11 @@ namespace Albedo.NPCs.Boss.GunGod
                     }
                     else if (npc.ai[1] == 120f)
                     {
-                        AlbedoUtils.ClearFriendlyProjectiles(1);
+                        BossHelper.ClearFriendlyProjectiles(1);
                         if (Main.netMode != NetmodeID.MultiplayerClient)
                             _ritualProj = Projectile.NewProjectile(npc.Center, Vector2.Zero,
-                                ModContent.ProjectileType<Arena1>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
+                                ModContent.ProjectileType<GodArena1>(), npc.damage / 4, 0f, Main.myPlayer, 0f,
+                                npc.whoAmI);
                         Main.PlaySound(SoundID.Roar, (int) npc.Center.X, (int) npc.Center.Y, 0);
                     }
 
@@ -1035,7 +1039,7 @@ namespace Albedo.NPCs.Boss.GunGod
                         npc.netUpdate = true;
                         npc.ai[2] = val.Center.X;
                         npc.ai[3] = val.Center.Y;
-                        if (AlbedoUtils.ProjectileExists(_ritualProj, ModContent.ProjectileType<Arena1>()) != null)
+                        if (BossHelper.ProjectileExists(_ritualProj, ModContent.ProjectileType<GodArena1>()) != null)
                         {
                             npc.ai[2] = Main.projectile[_ritualProj].Center.X;
                             npc.ai[3] = Main.projectile[_ritualProj].Center.Y;
@@ -1226,7 +1230,7 @@ namespace Albedo.NPCs.Boss.GunGod
                     npc.ai[2] = 0f;
                     npc.ai[3] = 0f;
                     npc.netUpdate = true;
-                    AlbedoUtils.ClearHostileProjectiles(2, npc.whoAmI);
+                    BossHelper.ClearHostileProjectiles(2, npc.whoAmI);
                 }
 
                 return true;
@@ -1313,7 +1317,7 @@ namespace Albedo.NPCs.Boss.GunGod
                 npc.localAI[2] = 0f;
                 npc.dontTakeDamage = true;
                 npc.netUpdate = true;
-                AlbedoUtils.ClearHostileProjectiles(2, npc.whoAmI);
+                BossHelper.ClearHostileProjectiles(2, npc.whoAmI);
             }
 
             return false;
@@ -1324,7 +1328,7 @@ namespace Albedo.NPCs.Boss.GunGod
             if (!AlbedoWorld.DownedGunGod)
             {
                 AlbedoWorld.DownedGunGod = true;
-                AlbedoUtils.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.GunGod"), Color.Purple);
+                GameHelper.Chat(Language.GetTextValue("Mods.Albedo.BossMassage.GunGod"), Color.Purple);
             }
 
             if (Main.netMode == NetmodeID.Server)
