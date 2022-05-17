@@ -5,4 +5,4 @@ homepage = https://forums.terraria.org/index.php?threads/albedo-mod.112382/
 includePDB = false
 hideCode = true
 hideResources = true
-buildIgnore = .idea\* .git\* bin\* obj\* .gitignore Properties\* *.flp
+buildIgnore = .idea\* .git\* bin\* obj\* .gitignore Properties\*

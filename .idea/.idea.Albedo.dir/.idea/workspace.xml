@@ -5,22 +5,8 @@
     <projectFile profileName="TerrariaServer">Albedo.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d30f83fa-2f34-420d-b8ab-96b16894ddca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Sounds/Music/GunDemon.flp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sounds/Music/GunDemon.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sounds/Music/GunGod.flp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sounds/Music/GunGod.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sounds/Music/HellGuard.flp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sounds/Music/HellGuard.mp3" afterDir="false" />
+    <list default="true" id="d30f83fa-2f34-420d-b8ab-96b16894ddca" name="Changes" comment="add music">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Albedo.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Albedo.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Albedo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Albedo.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Localization/en-US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/Localization/en-US.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Localization/ru-RU.lang" beforeDir="false" afterPath="$PROJECT_DIR$/Localization/ru-RU.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonHead.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunGod/GunGod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunGod/GunGod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Boss/HellGuard/HellGuard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/HellGuard/HellGuard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +88,7 @@
       <workItem from="1652694991674" duration="1953000" />
       <workItem from="1652703170257" duration="15814000" />
       <workItem from="1652769800038" duration="2808000" />
-      <workItem from="1652776820873" duration="2690000" />
+      <workItem from="1652776820873" duration="3053000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1652509927517</created>
@@ -125,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652772493693</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add music">
+      <created>1652785740710</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652785740710</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -147,6 +140,7 @@
     <MESSAGE value="Code refactor" />
     <MESSAGE value="little fix + boss" />
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="add music" />
+    <option name="LAST_COMMIT_MESSAGE" value="add music" />
   </component>
 </project>
