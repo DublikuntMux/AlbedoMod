@@ -35,6 +35,10 @@ namespace Albedo.NPCs.Boss.GunDemon
             npc.buffImmune[BuffID.Confused] = true;
             npc.boss = true;
             bossBag = ModContent.ItemType<GunDemonBag>();
+            
+            npc.HitSound = SoundID.NPCHit57;
+            npc.DeathSound = SoundID.NPCDeath13;
+            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/GunDemon");
         }
 
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)

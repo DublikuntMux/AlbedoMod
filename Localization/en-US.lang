@@ -3,7 +3,7 @@ ItemName.Gunpowder=Gunpowder
 ItemTooltip.Gunpowder=Very explosive mixture.
 ItemName.BulletOnChain=Bullet On Chain
 ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder.
-ItemName.GunGodSoul=GunGod Soul
+ItemName.GunGodSoul=Gun God Soul
 ItemTooltip.GunGodSoul=Contains a power your father never dreamed of.
 
 
@@ -26,7 +26,7 @@ BuffDescription.BulletPetBuff=Why did the bullet come to life?
 BuffName.HellGuardCurse=Hellguard's Curse
 BuffDescription.HellGuardCurse=You need to kill the guardian of hell to heal with the wall of flesh.
 BuffName.GunGodCurse=GunGod Curses
-BuffDescription.GunGodCurse=GunGodCurse aura is pressing down on you...
+BuffDescription.GunGodCurse=Gun God aura is pressing down on you...
 BuffName.HellConfessions=Confessions of Hell
 BuffDescription.HellConfessions=Hell starts helping you \nHow prosaic it...
 
@@ -230,6 +230,6 @@ Bagman.dialog4= You've heard of Albedo, he's scary... Don't trust him!
 
 
 ///MISC///
-Misc.OnEnter=[AlbedoMod] - !MOD IN ALPHA TESTING!
+Misc.OnEnter=[AlbedoMod] - ! MOD IN ALPHA TESTING !
 NPC.Hardmod=Hardmod
 NPC.PreHardmod=PreHardmod

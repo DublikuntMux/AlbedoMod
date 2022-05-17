@@ -30,8 +30,6 @@ namespace Albedo.NPCs.Boss.HellGuard
             npc.damage = 50;
             npc.defense = 10;
             npc.lifeMax = 6000;
-            npc.HitSound = SoundID.NPCHit41;
-            npc.DeathSound = SoundID.NPCDeath44;
             npc.noGravity = true;
             npc.noTileCollide = true;
             npc.knockBackResist = 0.0f;
@@ -46,6 +44,9 @@ namespace Albedo.NPCs.Boss.HellGuard
             npc.dontTakeDamage = true;
             npc.alpha = byte.MaxValue;
             bossBag = ModContent.ItemType<HellGuardBag>();
+            npc.HitSound = SoundID.NPCHit41;
+            npc.DeathSound = SoundID.NPCDeath44;
+            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/HelGuard");
         }
 
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)

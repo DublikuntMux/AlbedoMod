@@ -37,7 +37,6 @@ namespace Albedo.NPCs.Boss.GunGod
             npc.defense = 80;
             npc.lifeMax = 160000;
             npc.value = Item.buyPrice(0, 20);
-            npc.HitSound = SoundID.NPCHit57;
             npc.noGravity = true;
             npc.noTileCollide = true;
             npc.npcSlots = 50f;
@@ -51,12 +50,16 @@ namespace Albedo.NPCs.Boss.GunGod
             npc.buffImmune[68] = true;
             npc.timeLeft = NPC.activeTime * 30;
             bossBag = ModContent.ItemType<GunGodBag>();
+            
+            npc.HitSound = SoundID.NPCHit57;
+            npc.DeathSound = SoundID.NPCDeath13;
+            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/GunGod");
         }
 
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
         {
             npc.damage = 300;
-            npc.lifeMax = (int) (80000 * 2.5f);
+            npc.lifeMax = 200000;
             npc.defense = 85;
         }
 

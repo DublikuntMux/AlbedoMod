@@ -3,7 +3,7 @@ ItemName.Gunpowder=Порох
 ItemTooltip.Gunpowder=Очень взрывоопасная смесь.
 ItemName.BulletOnChain=Пуля на цепи
 ItemTooltip.BulletOnChain=Вы были убиты этой пулей и сохранены в качестве напоминания.
-ItemName.GunGodSoul=Душа GunGod
+ItemName.GunGodSoul=Душа Бога оружия
 ItemTooltip.GunGodSoul=Содержит силу, о которой твой отец и не мечтал.
 
 
@@ -26,7 +26,7 @@ BuffDescription.BulletPetBuff=Почему пуля ожила?
 BuffName.HellGuardCurse=Проклятие Хранителя Ада
 BuffDescription.HellGuardCurse=Вам нужно убить стража ада, чтобы исцелиться стеной плоти.
 BuffName.GunGodCurse=Проклятия GunGod
-BuffDescription.GunGodCurse=Аура GunGodCurse давит на вас...
+BuffDescription.GunGodCurse=Аура Бога оружия давит на вас...
 BuffName.HellConfessions=Исповедь ада
 BuffDescription.HellConfessions=Ад начинает вам помогать\nКак это прозаично...
 
@@ -230,6 +230,6 @@ Bagman.dialog4= Вы слышали об Альбедо, он страшный..
 
 
 ///РАЗНОЕ///
-Misc.OnEnter=[AlbedoMod] - !MOD В АЛЬФА-ТЕСТИРОВАНИИ!
+Misc.OnEnter=[AlbedoMod] - ! МОД В АЛЬФА-ТЕСТИРОВАНИИ !
 NPC.Hardmod=Хардмод
 NPC.PreHardmod=Предхардмод
