@@ -50,17 +50,5 @@ namespace Albedo.Items.Weapons.Ranged
 				type == 14 ? ModContent.ProjectileType<IceShard>() : type, damage, knockBack, player.whoAmI);
 			return false;
 		}
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.IceBlock, 50);
-			recipe.AddIngredient(ItemID.Diamond, 15);
-			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 15);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 10);
-			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

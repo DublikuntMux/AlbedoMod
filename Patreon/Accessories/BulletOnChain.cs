@@ -1,15 +1,15 @@
-﻿using Albedo.Base;
-using Albedo.Buffs.Pets;
+﻿using Albedo.Items.Materials;
+using Albedo.Patreon.Buffs;
 using Albedo.Projectiles.Pets;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Albedo.Items.Accessories
+namespace Albedo.Patreon.Accessories
 {
-	public class BulletOnChain : AlbedoItem
+	public class BulletOnChain : PatreonItem
 	{
-		protected override int Rarity => 8;
+		protected override string Owner => "Bochok";
 
 		public override void SetDefaults()
 		{
@@ -29,6 +29,17 @@ namespace Albedo.Items.Accessories
 		public override void UseStyle(Player player)
 		{
 			if (player.whoAmI == Main.myPlayer && player.itemTime == 0) player.AddBuff(item.buffType, 3600);
+		}
+		
+		public override void AddRecipes()
+		{
+			var recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ModContent.ItemType<HellGuardSoul>(), 20);
+			recipe.AddIngredient(ModContent.ItemType<GunDemonSoul>(), 20);
+			recipe.AddIngredient(ModContent.ItemType<GunGodSoul>(), 20);
+			recipe.SetResult(this);
+			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.AddRecipe();
 		}
 	}
 }

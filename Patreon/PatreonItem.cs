@@ -9,11 +9,11 @@ namespace Albedo.Patreon
 	{
 		protected abstract string Owner { get; }
 
-		protected override int Rarity => 10;
+		protected override int Rarity => 8;
 
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
-			var val1 = new TooltipLine(mod, "tooltip", "=> Patreon Item <=") {
+			var val1 = new TooltipLine(mod, "tooltip", "=> Patreon <=") {
 				overrideColor = Color.Orange
 			};
 			var val2 = new TooltipLine(mod, "tooltip", "By: " + Owner) {

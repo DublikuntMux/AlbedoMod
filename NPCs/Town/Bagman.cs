@@ -137,9 +137,6 @@ namespace Albedo.NPCs.Town
 					shop.item[nextSlot].SetDefaults(ModContent.ItemType<HellPouch>());
 					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
 					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<ChlorophytePouch>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-					nextSlot++;
 					shop.item[nextSlot].SetDefaults(ModContent.ItemType<CrystalPouch>());
 					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
 					nextSlot++;
@@ -161,21 +158,27 @@ namespace Albedo.NPCs.Town
 					shop.item[nextSlot].SetDefaults(ModContent.ItemType<VenomPouch>());
 					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
 					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltPouch>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilPouch>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantitePouch>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-					nextSlot++;
-				}
-
-				if (NPC.downedMoonlord) {
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<LuminitePouch>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-					nextSlot++;
+					if (NPC.downedMechBoss2) {
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltPouch>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+						nextSlot++;
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilPouch>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+						nextSlot++;
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantitePouch>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+						nextSlot++;
+					}
+					if (NPC.downedPirates) {
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<ChlorophytePouch>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+						nextSlot++;
+					}
+					if (NPC.downedMoonlord) {
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<LuminitePouch>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+						nextSlot++;
+					}
 				}
 			}
 			else {
@@ -212,18 +215,20 @@ namespace Albedo.NPCs.Town
 				shop.item[nextSlot].SetDefaults(ModContent.ItemType<TungstenPouch>());
 				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
 				nextSlot++;
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<ExplosivePouch>());
-				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<GoldenPouch>());
-				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<MeteorPouch>());
-				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-				nextSlot++;
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<SilverPouch>());
-				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
-				nextSlot++;
+				if (NPC.downedBoss3) {
+					shop.item[nextSlot].SetDefaults(ModContent.ItemType<ExplosivePouch>());
+					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+					nextSlot++;
+					shop.item[nextSlot].SetDefaults(ModContent.ItemType<GoldenPouch>());
+					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+					nextSlot++;
+					shop.item[nextSlot].SetDefaults(ModContent.ItemType<MeteorPouch>());
+					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+					nextSlot++;
+					shop.item[nextSlot].SetDefaults(ModContent.ItemType<SilverPouch>());
+					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
+					nextSlot++;
+				}
 			}
 		}
 	}

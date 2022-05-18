@@ -6,6 +6,7 @@ using Terraria;
 using Terraria.GameContent.Generation;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
 using Terraria.ModLoader.IO;
 using Terraria.World.Generation;
 
@@ -68,11 +69,7 @@ namespace Albedo.Global
 			for (int k = 0; k < (int) (Main.maxTilesX * Main.maxTilesY * 6E-05); k++) {
 				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 				int y = WorldGen.genRand.Next((int) WorldGen.worldSurfaceLow, Main.maxTilesY);
-				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6),
-					ModContent.TileType<Saltpeter>());
-				x = WorldGen.genRand.Next(0, Main.maxTilesX);
-				y = WorldGen.genRand.Next((int) WorldGen.worldSurfaceLow, Main.maxTilesY);
-				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6),
+				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(4, 7), WorldGen.genRand.Next(2, 6),
 					ModContent.TileType<AlbedoOreTitle>());
 				x = WorldGen.genRand.Next(0, Main.maxTilesX);
 				y = WorldGen.genRand.Next((int) WorldGen.worldSurfaceLow, Main.maxTilesY);
@@ -87,10 +84,13 @@ namespace Albedo.Global
 			int jungleChestItemsChoice = 0;
 			int[] iceChestItems = {ModContent.ItemType<KryonikGun>()};
 			int iceChestItemsChoice = 0;
+			int[] obsidianChestItems = {ModContent.ItemType<Magmum>(), ModContent.ItemType<LavaDisaster>()};
+			int obsidianChestItemsChoice = 0;
+
 
 			for (int chestIndex = 0; chestIndex < 1000; chestIndex++) {
 				var chest = Main.chest[chestIndex];
-				if (Main.rand.NextFloat(0, 100) <= 30)
+				if (Main.rand.NextFloat(0, 100) >= 30)
 					if (chest != null && Main.tile[chest.x, chest.y].type == TileID.Containers &&
 					    Main.tile[chest.x, chest.y].frameX == 10 * 36)
 						for (int inventoryIndex = 0; inventoryIndex < 40; inventoryIndex++)
@@ -102,11 +102,21 @@ namespace Albedo.Global
 
 				if (chest != null && Main.tile[chest.x, chest.y].type == TileID.Containers &&
 				    Main.tile[chest.x, chest.y].frameX == 11 * 36)
-					if (Main.rand.NextFloat(0, 100) <= 30)
+					if (Main.rand.NextFloat(0, 100) >= 30)
 						for (int inventoryIndex = 0; inventoryIndex < 40; inventoryIndex++)
 							if (chest.item[inventoryIndex].type == ItemID.None) {
 								chest.item[inventoryIndex].SetDefaults(iceChestItems[iceChestItemsChoice]);
 								iceChestItemsChoice = (iceChestItemsChoice + 1) % iceChestItems.Length;
+								break;
+							}
+				
+				if (chest != null && Main.tile[chest.x, chest.y].type == TileID.Containers &&
+				    Main.tile[chest.x, chest.y].frameX == 3 * 36)
+					if (Main.rand.NextFloat(0, 100) >= 20)
+						for (int inventoryIndex = 0; inventoryIndex < 40; inventoryIndex++)
+							if (chest.item[inventoryIndex].type == ItemID.None) {
+								chest.item[inventoryIndex].SetDefaults(obsidianChestItems[obsidianChestItemsChoice]);
+								obsidianChestItemsChoice = (obsidianChestItemsChoice + 1) % obsidianChestItems.Length;
 								break;
 							}
 			}

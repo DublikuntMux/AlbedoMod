@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using Albedo.Global;
+using Albedo.Items.Materials;
 using Albedo.Items.MusicBox;
 using Albedo.Items.Summons;
 using Albedo.Items.Trophies;
+using Albedo.Items.Weapons.Ranged;
 using Albedo.NPCs.Boss.GunDemon;
 using Albedo.NPCs.Boss.GunGod;
 using Albedo.NPCs.Boss.HellGuard;
@@ -59,9 +61,13 @@ namespace Albedo
 				(Func<bool>) (() => AlbedoWorld.DownedHellGuard),
 				ModContent.ItemType<SniperVoodooDoll>(),
 				new List<int> {ModContent.ItemType<HellGuardTrophy>(), ModContent.ItemType<HellGuardBox>()},
-				new List<int>(ItemID.GreaterHealingPotion),
+				new List<int> {
+					ItemID.GreaterHealingPotion, ModContent.ItemType<HellGuardSoul>(), ModContent.ItemType<LavaDisaster>(),
+					ModContent.ItemType<Magmum>(), ModContent.ItemType<RustleDunes>()
+				},
 				Language.GetTextValue("Mods.Albedo.Boss.HellGuard.Info"),
-				Language.GetTextValue("Mods.Albedo.Boss.HellGuard.Gone"));
+				Language.GetTextValue("Mods.Albedo.Boss.HellGuard.Gone"),
+				"Albedo/NPCs/Boss/BossChecklist/HellGuard");
 			bossChecklist?.Call("AddBoss",
 				10.3f,
 				ModContent.NPCType<GunDemonHead>(),
@@ -70,9 +76,10 @@ namespace Albedo
 				(Func<bool>) (() => AlbedoWorld.DownedGunDemon),
 				ModContent.ItemType<CursedPistol>(),
 				new List<int> {ModContent.ItemType<GunDemonTrophy>(), ModContent.ItemType<GunDemonBox>()},
-				new List<int>(ItemID.GreaterHealingPotion),
+				new List<int> {ItemID.GreaterHealingPotion, ModContent.ItemType<GunDemonSoul>()},
 				Language.GetTextValue("Mods.Albedo.Boss.GunDemon.Info"),
-				Language.GetTextValue("Mods.Albedo.Boss.GunDemon.Gone"));
+				Language.GetTextValue("Mods.Albedo.Boss.GunDemon.Gone"),
+				"Albedo/NPCs/Boss/BossChecklist/GunDemon");
 			bossChecklist?.Call("AddBoss",
 				15f,
 				ModContent.NPCType<GunGod>(),
@@ -81,9 +88,13 @@ namespace Albedo
 				(Func<bool>) (() => AlbedoWorld.DownedGunGod),
 				ModContent.ItemType<GodTribute>(),
 				new List<int> {ModContent.ItemType<GunGodTrophy>(), ModContent.ItemType<GunGodBox>()},
-				new List<int>(ItemID.SuperHealingPotion),
+				new List<int> {
+					ItemID.SuperHealingPotion, ModContent.ItemType<GunGodSoul>(), ModContent.ItemType<SDFMG>(),
+					ModContent.ItemType<ShotgunMeasurements>()
+				},
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Info"),
-				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Gone"));
+				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Gone"),
+				"Albedo/NPCs/Boss/BossChecklist/GunGod");
 		}
 	}
 }

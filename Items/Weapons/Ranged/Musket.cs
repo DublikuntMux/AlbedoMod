@@ -1,4 +1,5 @@
 using Albedo.Base;
+using Terraria;
 using Terraria.ID;
 
 namespace Albedo.Items.Weapons.Ranged
@@ -20,7 +21,7 @@ namespace Albedo.Items.Weapons.Ranged
 			item.useAmmo = AmmoID.Bullet;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.knockBack = 4;
-			item.value = 60000;
+			item.value = Item.buyPrice(0, 0, 60);
 			item.UseSound = SoundID.Item11;
 			item.autoReuse = true;
 		}

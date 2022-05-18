@@ -1,4 +1,4 @@
-﻿using Albedo.Base;
+using Albedo.Base;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -7,9 +7,9 @@ using static Terraria.Main;
 
 namespace Albedo.Items.Materials
 {
-	public class GunGodSoul : AlbedoItem
+	public class GunDemonSoul : AlbedoItem
 	{
-		protected override int Rarity => 9;
+		protected override int Rarity => 8;
 
 		public override void SetStaticDefaults()
 		{
@@ -41,6 +41,6 @@ namespace Albedo.Items.Materials
 		}
 
 		public override void PostUpdate() =>
-			Lighting.AddLight(item.Center, Color.WhiteSmoke.ToVector3() * 0.55f * essScale);
+			Lighting.AddLight(item.Center, Color.OrangeRed.ToVector3() * 0.55f * essScale);
 	}
 }

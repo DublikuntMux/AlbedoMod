@@ -1,26 +1,26 @@
-///НАЗВАНИЕ И ОПИСАНИЕ ВСЕХ ОБЪЕКТОВ///
-ItemName.Gunpowder=Порох
-ItemTooltip.Gunpowder=Очень взрывоопасная смесь.
+///PTREON///
 ItemName.BulletOnChain=Пуля на цепи
 ItemTooltip.BulletOnChain=Вы были убиты этой пулей и сохранены в качестве напоминания.
-ItemName.GunGodSoul=Душа Бога оружия
-ItemTooltip.GunGodSoul=Содержит силу, о которой твой отец и не мечтал.
 
 
-///НАЗВАНИЕ И ОПИСАНИЕ РУД///
-ItemName.RawSaltpeter=Селитра
-ItemTooltip.RawSaltpeter=Очень взрывоопасный предмет
+///НАЗВАНИЕ И ОПИСАНИЕ МАТЕРИАЛОВ///
 ItemName.AlbedoOre=Руда Альбедо
 ItemTooltip.AlbedoOre=Древние слова сочатся из руды
 ItemName.AlbedoIngot=Слиток Альбедо
 ItemTooltip.AlbedoIngot=Слиток пытается поговорить с вами \nВы в своем уме?
 ItemName.AngeliteBar=Ангелитовый слиток
-ItemTooltip.AngeliteBar=Ангельская жизнь в баре.
+ItemTooltip.AngeliteBar=Ангельская жизнь в слитке.
 ItemName.AngeliteOre=Ангелитовая руда
 ItemTooltip.AngeliteOre=Жизнь ангела в руде.
+ItemName.HellGuardSoul=Душа адского защитника
+ItemTooltip.HellGuardSoul=Содержит силу, о которой твой отец и не мечтал.
+ItemName.GunDemonSoul=Душа демона оружия
+ItemTooltip.GunDemonSoul=Содержит силу, о которой твой отец и не мечтал.
+ItemName.GunGodSoul=Душа Бога оружия
+ItemTooltip.GunGodSoul=Содержит силу, о которой твой отец и не мечтал.
 
 
-///НАЗВАНИЕ И ОПИСАНИЕ БАДов///
+///НАЗВАНИЕ И ОПИСАНИЕ БАФОВ///
 BuffName.BulletPetBuff=Ваша смертельная пуля
 BuffDescription.BulletPetBuff=Почему пуля ожила?
 BuffName.HellGuardCurse=Проклятие Хранителя Ада
@@ -69,7 +69,7 @@ ItemName.ImprovedMusket=Улучшенный мушкет
 ItemTooltip.ImprovedMusket=Сила!!!
 
 
-///НАЗВАНИЕ ГОСУДАРСТВ КРАФТА///
+///НАЗВАНИЕ КРАФТ-СТАНЦИЙ///
 WeaponStationTile.Name=Станция для изготовления оружия
 ItemName.WeaponStation1=Станция изготовления оружия
 ItemTooltip.WeaponStation1=Станция для изготовления простого оружия.

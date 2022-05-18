@@ -31,18 +31,5 @@ namespace Albedo.Items.Weapons.Ranged
 		}
 
 		public override Vector2? HoldoutOffset() => new Vector2(-5f, 0f);
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.SandBlock, 50);
-			recipe.AddIngredient(ItemID.AntlionMandible, 15);
-			recipe.AddIngredient(ItemID.Amber, 10);
-			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 15);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 15);
-			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

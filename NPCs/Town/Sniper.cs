@@ -155,15 +155,17 @@ namespace Albedo.NPCs.Town
 					shop.item[nextSlot].SetDefaults(ModContent.ItemType<HellBullet>());
 					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 40);
 					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltBullet>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 60);
-					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilBullet>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 80);
-					nextSlot++;
-					shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantiteBullet>());
-					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 1);
-					nextSlot++;
+					if (NPC.downedMechBoss1) {
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<CobaltBullet>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 60);
+						nextSlot++;
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<MythrilBullet>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 80);
+						nextSlot++;
+						shop.item[nextSlot].SetDefaults(ModContent.ItemType<AdamantiteBullet>());
+						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 1);
+						nextSlot++;
+					}
 				}
 			}
 			else {
@@ -199,10 +201,6 @@ namespace Albedo.NPCs.Town
 				nextSlot++;
 				shop.item[nextSlot].SetDefaults(ModContent.ItemType<TungstenBullet>());
 				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(copper: 5);
-				nextSlot++;
-
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<Gunpowder>());
-				shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 20);
 				nextSlot++;
 			}
 		}

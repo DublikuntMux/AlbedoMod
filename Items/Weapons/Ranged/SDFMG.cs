@@ -50,19 +50,5 @@ namespace Albedo.Items.Weapons.Ranged
 		}
 
 		public override bool ConsumeAmmo(Player player) => rand.Next(0, 100) >= 50;
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarBar, 15);
-			recipe.AddIngredient(ItemID.SDMG);
-			recipe.AddIngredient(ItemID.BubbleGun);
-			recipe.AddIngredient(ItemID.DukeFishronTrophy);
-			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 50);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 20);
-			recipe.AddTile(ModContent.TileType<WeaponStation3Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

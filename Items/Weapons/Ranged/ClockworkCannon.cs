@@ -46,16 +46,5 @@ namespace Albedo.Items.Weapons.Ranged
 		}
 
 		public override bool ConsumeAmmo(Player player) => rand.Next(0, 100) >= 33;
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Cog, 25);
-			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 15);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 15);
-			recipe.AddTile(ModContent.TileType<WeaponStation2Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

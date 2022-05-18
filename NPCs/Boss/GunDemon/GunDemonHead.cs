@@ -25,8 +25,8 @@ namespace Albedo.NPCs.Boss.GunDemon
 			base.SetDefaults();
 			npc.width = 74;
 			npc.height = 82;
-			npc.lifeMax = 70000;
-			npc.damage = 120;
+			npc.lifeMax = 42000;
+			npc.damage = 140;
 			npc.defense = 50;
 			npc.lavaImmune = true;
 			npc.buffImmune[BuffID.OnFire] = true;
@@ -42,9 +42,9 @@ namespace Albedo.NPCs.Boss.GunDemon
 
 		public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
 		{
-			npc.damage = 165;
+			npc.damage = 210;
 			npc.defense = 55;
-			npc.lifeMax = 98000;
+			npc.lifeMax = 53550;
 		}
 
 		public override void AI()

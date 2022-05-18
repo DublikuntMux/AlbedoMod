@@ -51,18 +51,5 @@ namespace Albedo.Items.Weapons.Ranged
 		public override Vector2? HoldoutOffset() => new Vector2(-10f, 0f);
 
 		public override bool ConsumeAmmo(Player player) => rand.Next(100) >= 50;
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LunarBar, 25);
-			recipe.AddIngredient(ItemID.IllegalGunParts, 15);
-			recipe.AddIngredient(ItemID.SniperRifle);
-			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 50);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 20);
-			recipe.AddTile(ModContent.TileType<WeaponStation3Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

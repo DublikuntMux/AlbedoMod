@@ -3,6 +3,7 @@ using Albedo.Helper;
 using Albedo.Items.Materials;
 using Albedo.Items.MusicBox;
 using Albedo.Items.Trophies;
+using Albedo.Items.Weapons.Ranged;
 using Albedo.NPCs.Boss.HellGuard;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -27,9 +28,22 @@ namespace Albedo.Items.TreasureBags
 
 		public override void OpenBossBag(Player player)
 		{
-			player.QuickSpawnItem(ModContent.ItemType<AlbedoIngot>(), Main.rand.Next(20) + 20);
-			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardTrophy>());
-			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardBox>());
+			player.QuickSpawnItem(ModContent.ItemType<HellGuardSoul>(), Main.rand.Next(20) + 20);
+			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardTrophy>());
+			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardBox>());
+			switch (Main.rand.Next(4)) {
+				case 1 :
+					player.QuickSpawnItem(ModContent.ItemType<LavaDisaster>());
+					break;
+				case 2 :
+					player.QuickSpawnItem(ModContent.ItemType<Magmum>());
+					break;
+				case 3 :
+					player.QuickSpawnItem(ModContent.ItemType<RustleDunes>());
+					break;
+				case 4 :
+					break;
+			}
 		}
 
 		public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor,

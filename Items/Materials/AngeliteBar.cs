@@ -27,7 +27,7 @@ namespace Albedo.Items.Materials
 		public override void AddRecipes()
 		{
 			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ModContent.ItemType<AngeliteBar>(), 6);
+			recipe.AddIngredient(ModContent.ItemType<AngeliteOre>(), 6);
 			recipe.SetResult(this);
 			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.AddRecipe();

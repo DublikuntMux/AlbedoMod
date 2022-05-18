@@ -43,16 +43,5 @@ namespace Albedo.Items.Weapons.Ranged
 		public override bool ConsumeAmmo(Player player) => player.itemAnimation >= item.useAnimation - 2;
 
 		public override Vector2? HoldoutOffset() => new Vector2(-12f, 0f);
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.FlintlockPistol);
-			recipe.AddIngredient(ModContent.ItemType<AlbedoIngot>(), 10);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 20);
-			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

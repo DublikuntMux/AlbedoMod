@@ -55,16 +55,5 @@ namespace Albedo.Items.Weapons.Ranged
 			var texture = mod.GetTexture("Items/Weapons/Ranged/ShortStarCannon_Glow");
 			GameHelper.GlowMask(texture, rotation, scale, whoAmI);
 		}
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.MeteoriteBar, 10);
-			recipe.AddIngredient(ItemID.Minishark);
-			recipe.AddIngredient(ModContent.ItemType<Gunpowder>(), 20);
-			recipe.AddTile(ModContent.TileType<WeaponStation1Tile>());
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }
