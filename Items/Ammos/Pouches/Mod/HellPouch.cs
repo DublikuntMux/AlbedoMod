@@ -4,8 +4,8 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Pouches.Mod
 {
-    public class HellPouch : BasePouch
-    {
-        protected override int AmmunitionItem => ModContent.ItemType<HellBullet>();
-    }
+	public class HellPouch : BasePouch
+	{
+		protected override int AmmunitionItem => ModContent.ItemType<HellBullet>();
+	}
 }

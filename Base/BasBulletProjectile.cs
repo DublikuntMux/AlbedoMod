@@ -2,31 +2,28 @@
 
 namespace Albedo.Base
 {
-    public abstract class BasBulletProjectile : ModProjectile
-    {
-        protected new abstract string Name { get; }
-        protected abstract int Penetrate { get; }
+	public abstract class BasBulletProjectile : ModProjectile
+	{
+		protected new abstract string Name { get; }
+		protected abstract int Penetrate { get; }
 
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault(Name);
-        }
+		public override void SetStaticDefaults() => DisplayName.SetDefault(Name);
 
-        public override void SetDefaults()
-        {
-            projectile.ranged = true;
-            projectile.width = 4;
-            projectile.height = 20;
-            projectile.aiStyle = 1;
-            aiType = 14;
-            projectile.friendly = true;
-            projectile.hostile = false;
-            projectile.penetrate = Penetrate;
-            projectile.timeLeft = 400;
-            projectile.ignoreWater = false;
-            projectile.tileCollide = true;
-            projectile.scale = 0.7f;
-            projectile.extraUpdates = 1;
-        }
-    }
+		public override void SetDefaults()
+		{
+			projectile.ranged = true;
+			projectile.width = 4;
+			projectile.height = 20;
+			projectile.aiStyle = 1;
+			aiType = 14;
+			projectile.friendly = true;
+			projectile.hostile = false;
+			projectile.penetrate = Penetrate;
+			projectile.timeLeft = 400;
+			projectile.ignoreWater = false;
+			projectile.tileCollide = true;
+			projectile.scale = 0.7f;
+			projectile.extraUpdates = 1;
+		}
+	}
 }

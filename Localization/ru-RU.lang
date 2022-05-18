@@ -162,17 +162,17 @@ ItemName.CursedPistol=Проклятый пистолет
 ItemTooltip.CursedPistol=Обсидиановый пистолет, проклятое оружие.
 ItemName.GodTribute=Дань Богу
 ItemTooltip.GodTribute=Подношение древнему существу...
-ItemName.SniperVoodooDoll=Снайперская Кукла Вуду
+ItemName.SniperVoodooDoll=Кукла Вуду Снайпера
 ItemTooltip.SniperVoodooDoll=Не расходуется
 
-ItemName.GunDemonBag=Сумка с сокровищами демона с огнестрельным оружием
+ItemName.GunDemonBag=Сумка с сокровищами демона оружия
 ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
 ItemName.GunGodBag=Сумка с сокровищами бога оружия
 ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
 ItemName.HellGuardBag=Сумка с сокровищами стража ада
 ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
 
-ItemName.GunDemonTrophy=Трофей Демона Пистолета
+ItemName.GunDemonTrophy=Трофей Демона Оружия
 ItemTooltip.GunDemonTrophy=Трофей за упорство.
 ItemName.GunGodTrophy=Трофей бога оружия
 ItemTooltip.GunGodTrophy=Трофей за упорство.
@@ -183,20 +183,29 @@ ItemTooltip.HellGuardTrophy=Трофей за упорство.
 ///ИМЕНА БОССОВ///
 NPCName.HellGuard=Страж Ада
 NPCName.HellGuardHand=Рука Адского Стража
-NPCName.GunGod=Бог оружия
-NPCName.MiniGun=Одержимое оружие
-NPCName.GunDemonHead=Демон с оружием
-NPCName.GunDemonBody=Демон с оружием
-NPCName.GunDemonTail=Демон с оружием
+NPCName.GunDemonHead=Демон оружия
+NPCName.GunDemonBody=Демон оружия
+NPCName.GunDemonTail=Демон оружия
 NPCName.MagmaLeechHead=Магмовая пиявка
 NPCName.MagmaLeechBody=Магмовая пиявка
 NPCName.MagmaLeechTail=Маговая пиявка
+NPCName.GunGod=Бог оружия
+NPCName.MiniGun=Одержимое оружие
 
 
 ///СООБЩЕНИЯ БОССА///
 BossMassage.HellGuard=Вы чувствуете, что ад стал опасным..
-BossMassage.GunGod=Вы высвободили древнюю силу...\nКто-то определенно заметил...
+Boss.HellGuard.Info=Призывается в аду.
+Boss.HellGuard.Gone=Адский защитник показал свое первинство...
+
 BossMassage.GunDemon=Адские твари уступают тебе дорогу...
+Boss.GunDemon.Info=Призывается в аду после убийства {$NPCName.HellGuard}.
+Boss.GunDemon.Gone=Демон оружия не видет в вас соперника...
+
+BossMassage.GunGod=Вы высвободили древнюю силу...\nКто-то определенно заметил...
+Boss.GunGod.Info=Призывается когда угодно и где угодно.
+Boss.GunGod.Gone=Бог оружия принял вашу лушу как подношение...
+
 
 
 ///НАЗВАНИЯ НИПС//

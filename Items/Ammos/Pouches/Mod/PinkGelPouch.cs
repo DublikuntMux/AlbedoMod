@@ -4,8 +4,8 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Pouches.Mod
 {
-    public class PinkGelPouch : BasePouch
-    {
-        protected override int AmmunitionItem => ModContent.ItemType<PinkGelBullet>();
-    }
+	public class PinkGelPouch : BasePouch
+	{
+		protected override int AmmunitionItem => ModContent.ItemType<PinkGelBullet>();
+	}
 }

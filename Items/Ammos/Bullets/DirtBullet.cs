@@ -6,13 +6,13 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Bullets
 {
-    public class DirtBullet : BaseBullet
-    {
-        protected override float ShootSpeed => 0.5f;
-        protected override int Damage => 4;
-        protected override float KnockBack => 0.25f;
-        protected override int Price => Item.buyPrice(copper: 1);
-        protected override int BulletMaterial => ItemID.DirtBlock;
-        protected override int BulletProjectile => ModContent.ProjectileType<DirtBulletProjectile>();
-    }
+	public class DirtBullet : BaseBullet
+	{
+		protected override float ShootSpeed => 0.5f;
+		protected override int Damage => 4;
+		protected override float KnockBack => 0.25f;
+		protected override int Price => Item.buyPrice(copper: 1);
+		protected override int BulletMaterial => ItemID.DirtBlock;
+		protected override int BulletProjectile => ModContent.ProjectileType<DirtBulletProjectile>();
+	}
 }

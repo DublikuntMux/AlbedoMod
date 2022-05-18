@@ -4,8 +4,8 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Pouches.Mod
 {
-    public class IronPouch : BasePouch
-    {
-        protected override int AmmunitionItem => ModContent.ItemType<IronBullet>();
-    }
+	public class IronPouch : BasePouch
+	{
+		protected override int AmmunitionItem => ModContent.ItemType<IronBullet>();
+	}
 }

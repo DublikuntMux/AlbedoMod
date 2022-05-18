@@ -22,6 +22,8 @@ But there is already:
 * Patreon Items
 
 V0.0.5.3 - Enemy update
+* config menu
+* new music box
 * new buffs
 * new guns
 * code refactor

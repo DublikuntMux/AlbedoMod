@@ -5,8 +5,230 @@
     <projectFile profileName="TerrariaServer">Albedo.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d30f83fa-2f34-420d-b8ab-96b16894ddca" name="Changes" comment="add music">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d30f83fa-2f34-420d-b8ab-96b16894ddca" name="Changes" comment="music fix">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlbedoConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Items/MusicBox/GunDemonBox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Items/MusicBox/GunDemonBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Items/MusicBox/GunGodBox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Items/MusicBox/GunGodBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Items/MusicBox/HellGuardBox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Items/MusicBox/HellGuardBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/MusicBox/GunDemonBoxTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/MusicBox/GunDemonBoxTile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/MusicBox/GunGodBoxTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/MusicBox/GunGodBoxTile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/MusicBox/HellGuardBoxTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tiles/MusicBox/HellGuardBoxTile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Albedo.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Albedo.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Albedo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Albedo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/AlbedoItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/AlbedoItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/BasBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/BasBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/BaseBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/BaseBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/BasePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/BasePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/WormBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/WormBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buffs/Boss/GunGodCurse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Buffs/Boss/GunGodCurse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buffs/Boss/HellGuardCurse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Buffs/Boss/HellGuardCurse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buffs/Permanents/HellConfessions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Buffs/Permanents/HellConfessions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buffs/Pets/BulletPetBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Buffs/Pets/BulletPetBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Global/AlbedoGloabalProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global/AlbedoGloabalProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Global/AlbedoGlobalNpc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global/AlbedoGlobalNpc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Global/AlbedoPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global/AlbedoPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Global/AlbedoWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global/AlbedoWorld.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helper/BossHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helper/BossHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helper/GameHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helper/GameHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helper/MachHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helper/MachHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helper/SpawnHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helper/SpawnHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Accessories/BulletOnChain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Accessories/BulletOnChain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/AdamantiteBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/AdamantiteBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/CobaltBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/CobaltBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/CopperBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/CopperBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/DirtBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/DirtBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/GelBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/GelBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/GemBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/GemBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/HellBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/HellBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/IceBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/IceBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/IronBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/IronBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/LeadBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/LeadBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/MythrilBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/MythrilBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/PinkGelBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/PinkGelBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/PreciousBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/PreciousBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/SnowBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/SnowBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/StoneBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/StoneBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Bullets/TungstenBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Bullets/TungstenBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/CosmoPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/CosmoPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/HardmodePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/HardmodePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/PostLunarPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/PostLunarPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/PrehardmodePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/PrehardmodePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/AdamantitePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/AdamantitePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/CobaltPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/CobaltPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/CopperPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/CopperPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/DirtPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/DirtPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/GelPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/GelPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/GemPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/GemPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/HellPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/HellPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/IcePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/IcePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/IronPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/IronPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/LeadPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/LeadPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/MythrilPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/MythrilPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/PinkGelPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/PinkGelPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/PreciousPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/PreciousPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/SnowPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/SnowPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/StonePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/StonePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/TungstenPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Mod/TungstenPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/ChlorophytePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/ChlorophytePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/CrystalPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/CrystalPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/CursedPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/CursedPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/ExplosivePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/ExplosivePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/GoldenPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/GoldenPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/IchorPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/IchorPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/LuminitePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/LuminitePouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/MeteorPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/MeteorPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/NanoPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/NanoPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/PartyPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/PartyPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/SilverPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/SilverPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/VelocityPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/VelocityPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/VenomPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Pouches/Vanila/VenomPouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/CraftStations/WeaponStation1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/CraftStations/WeaponStation1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/CraftStations/WeaponStation2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/CraftStations/WeaponStation2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/CraftStations/WeaponStation3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/CraftStations/WeaponStation3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/AlbedoIngot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AlbedoIngot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/AlbedoOre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AlbedoOre.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/AngeliteBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AngeliteBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/AngeliteOre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AngeliteOre.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/GunGodSoul.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/GunGodSoul.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/Gunpowder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/Gunpowder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Materials/RawSaltpeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/RawSaltpeter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Summons/CursedPistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/CursedPistol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Summons/GodTribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/GodTribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Summons/SniperVoodooDoll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/SniperVoodooDoll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/TreasureBags/GunDemonBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/TreasureBags/GunDemonBag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/TreasureBags/GunGodBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/TreasureBags/GunGodBag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/TreasureBags/HellGuardBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/TreasureBags/HellGuardBag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Trophies/GunDemonTrophy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Trophies/GunDemonTrophy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Trophies/GunGodTrophy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Trophies/GunGodTrophy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Trophies/HellGuardTrophy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Trophies/HellGuardTrophy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/AdamantiteRifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/AdamantiteRifle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/AlienBlaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/AlienBlaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/AngelGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/AngelGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ClockworkCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ClockworkCannon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/CosmicAssaultRifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/CosmicAssaultRifle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/DistortedGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/DistortedGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ImprovedMusket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ImprovedMusket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/KryonikGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/KryonikGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/LavaDisaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/LavaDisaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/Magmum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/Magmum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/Musket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/Musket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/RocketShotgun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/RocketShotgun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/RustleDunes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/RustleDunes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/SDFMG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/SDFMG.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ShadowDreams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ShadowDreams.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ShortStarCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ShortStarCannon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ShotgunMeasurements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ShotgunMeasurements.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/Triple.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/Triple.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Localization/ru-RU.lang" beforeDir="false" afterPath="$PROJECT_DIR$/Localization/ru-RU.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonBody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonBody.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonHead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonTail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunDemon/GunDemonTail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunGod/GunGod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunGod/GunGod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunGod/MiniGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunGod/MiniGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/HellGuard/HellGuard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/HellGuard/HellGuard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Boss/HellGuard/HellGuardHand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/HellGuard/HellGuardHand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/ArchDemon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/ArchDemon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/FlamingReaper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/FlamingReaper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/FlyingLeech.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/FlyingLeech.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/MagmaLeechBody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Enemies/Hell/MagmaLeechBody.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/MagmaLeechHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Enemies/Hell/MagmaLeechHead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Hell/MagmaLeechTail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Enemies/Hell/MagmaLeechTail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Town/Bagman.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Town/Bagman.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCs/Town/Sniper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Town/Sniper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patreon/PatreonItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patreon/PatreonItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/BaseArena.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/BaseArena.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/BaseDeathray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/BaseDeathray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GlowLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GlowLine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GlowRing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GlowRing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GlowRingHollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GlowRingHollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Blast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Blast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/DeathScythe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/DeathScythe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flaming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flaming.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flocko.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flocko.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flocko2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flocko2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flocko3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Flocko3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/FrostShard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/FrostShard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GodArena1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GodArena1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GodArena2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GodArena2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathrayMark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathrayMark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathraySmall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathraySmall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathraySmall2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodDeathraySmall2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodSword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodSword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodSwordHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodSwordHandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodTrail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Laser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Parry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Parry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Reticle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Reticle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Rocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Rocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/SDFMG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/SDFMG.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/ScytheSpin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/ScytheSpin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/ScytheSplit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/ScytheSplit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Sickle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Sickle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Sickle2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Sickle2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Sickle3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/Sickle3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/SickleSplit1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/SickleSplit1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/SickleSplit2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/SickleSplit2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/Arena.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/Arena.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/CrystalBomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/CrystalBomb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/CrystalBombShard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/CrystalBombShard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/FlowerPetal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/FlowerPetal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/FuseBomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/FuseBomb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaChainBlast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaChainBlast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaChainBlast2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaChainBlast2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaGeyser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaGeyser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaPalladOrb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/HellGuard/LavaPalladOrb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/MoonLordSunBlast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/MoonLordSunBlast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/AdamantiteBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/AdamantiteBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/CobaltBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/CobaltBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/CopperBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/CopperBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/DirtBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/DirtBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/GelBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/GelBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/GemBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/GemBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/HellBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/HellBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/IceBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/IceBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/IronBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/IronBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/LeadBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/LeadBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/MythrilBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/MythrilBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/PinkGelBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/PinkGelBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/PreciousBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/PreciousBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/SnowBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/SnowBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/StoneBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/StoneBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/TungstenBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/TungstenBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Combined/CosmoBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Combined/CosmoBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Combined/HardmodeBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Combined/HardmodeBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Combined/PostLunarBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Combined/PostLunarBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Combined/PrehardmodBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Combined/PrehardmodBulletProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Pets/BulletPet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Pets/BulletPet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/AuralisBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/AuralisBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/EaterofDreamsProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/EaterofDreamsProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/FishronRpg.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/FishronRpg.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/IceShard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/IceShard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/IceShardSplit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/IceShardSplit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/SwitcherRocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Weapons/Ranged/SwitcherRocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Bars/AlbedoIngotTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Bars/AlbedoIngotTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Bars/AngeliteBarTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Bars/AngeliteBarTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/CraftStations/WeaponStation1Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/CraftStations/WeaponStation1Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/CraftStations/WeaponStation2Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/CraftStations/WeaponStation2Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/CraftStations/WeaponStation3Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/CraftStations/WeaponStation3Tile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Ores/AlbedoOreTitle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Ores/AlbedoOreTitle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Ores/AngeliteOreTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Ores/AngeliteOreTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Ores/Saltpeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Ores/Saltpeter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Trophies/GunDemonTrophyTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Trophies/GunDemonTrophyTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Trophies/GunGodTrophyTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Trophies/GunGodTrophyTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tiles/Trophies/HellGuardTrophyTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tiles/Trophies/HellGuardTrophyTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/description.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +240,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24acac254673452c8ded2ef938eebf2511eb400/51/f63c69e6/ModProjectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24acac254673452c8ded2ef938eebf2511eb400/5a/6b8c3309/ModItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Roaming/TML-Patcher/Decompiled/FargowiltasSouls/FargowiltasSouls/NPCs/DeviBoss/DeviBoss.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dubli/Documents/My Games/Terraria/ModLoader/Mod Sources/Albedo/Items/CraftStations/WeaponStation2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Dubli/Documents/My Games/Terraria/ModLoader/Mod Sources/Albedo/NPCs/Boss/GunGod/GunGod.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -88,7 +311,8 @@
       <workItem from="1652694991674" duration="1953000" />
       <workItem from="1652703170257" duration="15814000" />
       <workItem from="1652769800038" duration="2808000" />
-      <workItem from="1652776820873" duration="3053000" />
+      <workItem from="1652776820873" duration="13367000" />
+      <workItem from="1652806037587" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1652509927517</created>
@@ -118,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652785740710</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="music fix">
+      <created>1652786176097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652786176097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -141,6 +372,7 @@
     <MESSAGE value="little fix + boss" />
     <MESSAGE value="clean up" />
     <MESSAGE value="add music" />
-    <option name="LAST_COMMIT_MESSAGE" value="add music" />
+    <MESSAGE value="music fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="music fix" />
   </component>
 </project>

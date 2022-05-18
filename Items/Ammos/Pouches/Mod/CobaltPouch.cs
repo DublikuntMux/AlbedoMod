@@ -4,8 +4,8 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Pouches.Mod
 {
-    public class CobaltPouch : BasePouch
-    {
-        protected override int AmmunitionItem => ModContent.ItemType<CobaltBullet>();
-    }
+	public class CobaltPouch : BasePouch
+	{
+		protected override int AmmunitionItem => ModContent.ItemType<CobaltBullet>();
+	}
 }
