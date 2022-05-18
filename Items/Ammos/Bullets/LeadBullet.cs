@@ -1,3 +1,4 @@
+using Albedo.Base;
 using Albedo.Projectiles.Bullets;
 using Terraria;
 using Terraria.ID;
@@ -5,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Bullets
 {
-	public class LeadBullet : DirtBullet
+	public class LeadBullet : BaseBullet
 	{
 		protected override float ShootSpeed => 1f;
 		protected override int Damage => 9;
