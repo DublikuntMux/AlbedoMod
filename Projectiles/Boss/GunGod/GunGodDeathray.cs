@@ -19,7 +19,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
 		public override void AI()
 		{
-			if (!Main.dedServ && Main.LocalPlayer.active) Main.LocalPlayer.GetModPlayer<AlbedoPlayer>().Screenshake = 2;
+			if (!Main.dedServ && Main.LocalPlayer.active) Main.LocalPlayer.GetModPlayer<AlbedoPlayer>().ScreenShake = 2;
 
 			if (projectile.velocity.HasNaNs() || projectile.velocity == Vector2.Zero)
 				projectile.velocity = -Vector2.UnitY;

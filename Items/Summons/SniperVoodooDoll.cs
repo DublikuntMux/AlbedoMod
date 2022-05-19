@@ -1,4 +1,5 @@
 using Albedo.Base;
+using Albedo.Helper;
 using Albedo.NPCs.Boss.HellGuard;
 using Terraria;
 using Terraria.ID;
@@ -17,13 +18,13 @@ namespace Albedo.Items.Summons
 			item.useAnimation = 30;
 			item.useTime = 30;
 			item.useStyle = ItemUseStyleID.HoldingUp;
-			item.maxStack = 20;
+			item.maxStack = 1;
 			item.value = Item.sellPrice(0, 1);
 			item.active = true;
 			item.consumable = false;
 		}
 
-		public override bool CanUseItem(Player player) => !NPC.AnyNPCs(ModContent.NPCType<HellGuard>());
+		public override bool CanUseItem(Player player) => !BossHelper.OtherBossAlive(0);
 
 		public override bool UseItem(Player player)
 		{

@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using Albedo.Global;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace Albedo.Buffs.Boss
@@ -14,13 +15,7 @@ namespace Albedo.Buffs.Boss
 			canBeCleared = false;
 		}
 
-		public override void Update(Player player, ref int buffIndex)
-		{
-			player.lifeRegen = 0;
-			player.lifeRegenTime = 0;
-			player.allDamage /= 1.3f;
-			player.statDefense -= 10;
-			player.endurance /= 1.3f;
-		}
+		public override void Update(Player player, ref int buffIndex) =>
+			player.GetModPlayer<AlbedoPlayer>().GunDemonCurse = true;
 	}
 }

@@ -29,19 +29,17 @@ namespace Albedo.Items.TreasureBags
 		public override void OpenBossBag(Player player)
 		{
 			player.QuickSpawnItem(ModContent.ItemType<HellGuardSoul>(), Main.rand.Next(20) + 20);
-			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardTrophy>());
-			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardBox>());
-			switch (Main.rand.Next(4)) {
-				case 1 :
+			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardTrophy>());
+			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<HellGuardBox>());
+			switch (Main.rand.Next(14)) {
+				case 1:
 					player.QuickSpawnItem(ModContent.ItemType<LavaDisaster>());
 					break;
-				case 2 :
+				case 2:
 					player.QuickSpawnItem(ModContent.ItemType<Magmum>());
 					break;
-				case 3 :
+				case 3:
 					player.QuickSpawnItem(ModContent.ItemType<RustleDunes>());
-					break;
-				case 4 :
 					break;
 			}
 		}

@@ -1,3 +1,4 @@
+using Albedo.Base;
 using Albedo.Projectiles.Bullets;
 using Terraria;
 using Terraria.ID;
@@ -5,31 +6,13 @@ using Terraria.ModLoader;
 
 namespace Albedo.Items.Ammos.Bullets
 {
-	public class IronBullet : ModItem
+	public class IronBullet : BaseBullet
 	{
-		public override void SetDefaults()
-		{
-			item.damage = 9;
-			item.ranged = true;
-			item.width = 40;
-			item.height = 40;
-			item.knockBack = 0.25f;
-			item.value = Item.buyPrice(copper: 1);
-			item.consumable = true;
-			item.shoot = ModContent.ProjectileType<IronBulletProjectile>();
-			item.ammo = AmmoID.Bullet;
-			item.maxStack = 999;
-			item.shootSpeed = 0.5f;
-		}
-
-		public override void AddRecipes()
-		{
-			var recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.IronBar, 2);
-			recipe.anyIronBar = true;
-			recipe.AddTile(TileID.Anvils);
-			recipe.SetResult(this, 25);
-			recipe.AddRecipe();
-		}
+		protected override float ShootSpeed => 0.5f;
+		protected override int Damage => 9;
+		protected override float KnockBack => 0.25f;
+		protected override int Price => Item.buyPrice(copper: 1);
+		protected override int BulletMaterial => ItemID.IronBar;
+		protected override int BulletProjectile => ModContent.ProjectileType<IronBulletProjectile>();
 	}
 }

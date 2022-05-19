@@ -82,7 +82,7 @@ namespace Albedo.NPCs.Boss.HellGuard
 				npc.ai[1] = 0.0f;
 				npc.netUpdate = true;
 				if (!Main.dedServ && Main.LocalPlayer.active)
-					Main.LocalPlayer.GetModPlayer<AlbedoPlayer>().Screenshake = 30;
+					Main.LocalPlayer.GetModPlayer<AlbedoPlayer>().ScreenShake = 30;
 				if (Main.netMode == NetmodeID.MultiplayerClient)
 					return;
 				for (int index = 0; index < 8; ++index) {
@@ -121,7 +121,7 @@ namespace Albedo.NPCs.Boss.HellGuard
 							if (Main.netMode == NetmodeID.MultiplayerClient)
 								break;
 							if (!Main.dedServ && Main.LocalPlayer.active)
-								Main.LocalPlayer.GetModPlayer<AlbedoPlayer>().Screenshake = 30;
+								Main.LocalPlayer.GetModPlayer<AlbedoPlayer>().ScreenShake = 30;
 							if (Main.netMode == NetmodeID.MultiplayerClient)
 								break;
 							float num3 = 0.7853982f * Main.rand.NextFloat();

@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
@@ -66,17 +65,30 @@ namespace Albedo.Helper
 			}
 		}
 
-		public static void DustRing(Vector2 location, int max, int dust, float speed, Color color = default,
-			float scale = 1f, bool noLight = false)
+		public static int FindClosestHostileNpcPrioritizingMinionFocus(Projectile projectile, float detectionRange,
+			bool lineCheck = false, Vector2 center = default)
 		{
-			for (int i = 0; i < max; i++) {
-				var velocity = speed * Vector2.UnitY.RotatedBy((float) Math.PI * 2f / max * i);
-				int num = Dust.NewDust(location, 0, 0, dust, 0f, 0f, 0, color);
-				Main.dust[num].noLight = noLight;
-				Main.dust[num].noGravity = true;
-				Main.dust[num].velocity = velocity;
-				Main.dust[num].scale = scale;
-			}
+			if (center == default) center = projectile.Center;
+			var ownerMinionAttackTargetNpc = projectile.OwnerMinionAttackTargetNPC;
+			if (ownerMinionAttackTargetNpc != null && ownerMinionAttackTargetNpc.CanBeChasedBy() &&
+			    ownerMinionAttackTargetNpc.Distance(center) < detectionRange &&
+			    (!lineCheck || Collision.CanHitLine(center, 0, 0, ownerMinionAttackTargetNpc.Center, 0, 0)))
+				return ownerMinionAttackTargetNpc.whoAmI;
+			return FindClosestHostileNPC(center, detectionRange, lineCheck);
+		}
+
+		private static int FindClosestHostileNPC(Vector2 location, float detectionRange, bool lineCheck = false)
+		{
+			NPC val = null;
+			var npc = Main.npc;
+			foreach (var val2 in npc)
+				if (val2.CanBeChasedBy() && val2.Distance(location) < detectionRange &&
+				    (!lineCheck || Collision.CanHitLine(location, 0, 0, val2.Center, 0, 0))) {
+					detectionRange = val2.Distance(location);
+					val = val2;
+				}
+
+			return val?.whoAmI ?? -1;
 		}
 	}
 }

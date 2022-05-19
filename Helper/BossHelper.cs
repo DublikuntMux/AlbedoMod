@@ -91,7 +91,7 @@ namespace Albedo.Helper
 			}
 		}
 
-		private static bool OtherBossAlive(int npcId)
+		public static bool OtherBossAlive(int npcId)
 		{
 			if (npcId > -1 && npcId < 200)
 				for (int i = 0; i < 200; i++)

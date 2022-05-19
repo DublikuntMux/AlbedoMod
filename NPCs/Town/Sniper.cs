@@ -1,5 +1,4 @@
 using Albedo.Items.Ammos.Bullets;
-using Albedo.Items.Materials;
 using Albedo.Projectiles.Bullets;
 using Terraria;
 using Terraria.ID;

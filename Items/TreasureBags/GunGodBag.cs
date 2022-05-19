@@ -1,5 +1,6 @@
 using Albedo.Base;
 using Albedo.Helper;
+using Albedo.Items.Accessories;
 using Albedo.Items.Materials;
 using Albedo.Items.MusicBox;
 using Albedo.Items.Trophies;
@@ -29,18 +30,15 @@ namespace Albedo.Items.TreasureBags
 		public override void OpenBossBag(Player player)
 		{
 			player.QuickSpawnItem(ModContent.ItemType<GunGodSoul>(), Main.rand.Next(16) + 15);
-			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<GunGodTrophy>());
-			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<GunGodBox>());
-			switch (Main.rand.Next(4)) {
-				case 1 :
+			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<GunGodTrophy>());
+			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<GunGodBox>());
+			if (Main.rand.Next(100) <= 5) player.QuickSpawnItem(ModContent.ItemType<GodImetator>());
+			switch (Main.rand.Next(10)) {
+				case 1:
 					player.QuickSpawnItem(ModContent.ItemType<SDFMG>());
 					break;
-				case 2 :
+				case 2:
 					player.QuickSpawnItem(ModContent.ItemType<ShotgunMeasurements>());
-					break;
-				case 3 :
-					break;
-				case 4 :
 					break;
 			}
 		}

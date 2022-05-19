@@ -30,7 +30,7 @@ namespace Albedo.Patreon.Accessories
 		{
 			if (player.whoAmI == Main.myPlayer && player.itemTime == 0) player.AddBuff(item.buffType, 3600);
 		}
-		
+
 		public override void AddRecipes()
 		{
 			var recipe = new ModRecipe(mod);

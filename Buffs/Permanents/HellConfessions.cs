@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using Albedo.Global;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace Albedo.Buffs.Permanents
@@ -13,13 +14,7 @@ namespace Albedo.Buffs.Permanents
 			canBeCleared = false;
 		}
 
-		public override void Update(Player player, ref int buffIndex)
-		{
-			player.statDefense += 10;
-			player.endurance += 2f;
-			player.onFire2 = false;
-			player.maxMinions += 2;
-			player.allDamage *= 1.1f;
-		}
+		public override void Update(Player player, ref int buffIndex) =>
+			player.GetModPlayer<AlbedoPlayer>().HellConfession = true;
 	}
 }

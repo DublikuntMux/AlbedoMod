@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Albedo.Global;
+using Albedo.Items.Accessories;
 using Albedo.Items.Materials;
 using Albedo.Items.MusicBox;
 using Albedo.Items.Summons;
@@ -18,6 +19,15 @@ namespace Albedo
 {
 	public class Albedo : Mod
 	{
+		public Albedo()
+		{
+			Properties = new ModProperties {
+				Autoload = true,
+				AutoloadGores = true,
+				AutoloadSounds = true
+			};
+		}
+
 		public override void Load()
 		{
 			if (!Main.dedServ) {
@@ -36,21 +46,7 @@ namespace Albedo
 		public override void PostSetupContent()
 		{
 			var bossChecklist = ModLoader.GetMod("BossChecklist");
-
-			//SlimeKing = 1f;
-			//EyeOfCthulhu = 2f;
-			//EaterOfWorlds = 3f;
-			//QueenBee = 4f;
-			//Skeletron = 5f;
-			//WallOfFlesh = 6f;
-			//TheTwins = 7f;
-			//TheDestroyer = 8f;
-			//SkeletronPrime = 9f;
-			//Plantera = 10f;
-			//Golem = 11f;
-			//DukeFishron = 12f;
-			//LunaticCultist = 13f;
-			//Moonlord = 14f;
+			var yabhb = ModLoader.GetMod("FKBossHealthBar");
 
 			bossChecklist?.Call(
 				"AddBoss",
@@ -62,12 +58,13 @@ namespace Albedo
 				ModContent.ItemType<SniperVoodooDoll>(),
 				new List<int> {ModContent.ItemType<HellGuardTrophy>(), ModContent.ItemType<HellGuardBox>()},
 				new List<int> {
-					ItemID.GreaterHealingPotion, ModContent.ItemType<HellGuardSoul>(), ModContent.ItemType<LavaDisaster>(),
+					ItemID.GreaterHealingPotion, ModContent.ItemType<HellGuardSoul>(),
+					ModContent.ItemType<LavaDisaster>(),
 					ModContent.ItemType<Magmum>(), ModContent.ItemType<RustleDunes>()
 				},
 				Language.GetTextValue("Mods.Albedo.Boss.HellGuard.Info"),
 				Language.GetTextValue("Mods.Albedo.Boss.HellGuard.Gone"),
-				"Albedo/NPCs/Boss/BossChecklist/HellGuard");
+				"Albedo/UI/BossChecklist/HellGuard");
 			bossChecklist?.Call("AddBoss",
 				10.3f,
 				ModContent.NPCType<GunDemonHead>(),
@@ -79,7 +76,7 @@ namespace Albedo
 				new List<int> {ItemID.GreaterHealingPotion, ModContent.ItemType<GunDemonSoul>()},
 				Language.GetTextValue("Mods.Albedo.Boss.GunDemon.Info"),
 				Language.GetTextValue("Mods.Albedo.Boss.GunDemon.Gone"),
-				"Albedo/NPCs/Boss/BossChecklist/GunDemon");
+				"Albedo/UI/BossChecklist/GunDemon");
 			bossChecklist?.Call("AddBoss",
 				15f,
 				ModContent.NPCType<GunGod>(),
@@ -90,11 +87,18 @@ namespace Albedo
 				new List<int> {ModContent.ItemType<GunGodTrophy>(), ModContent.ItemType<GunGodBox>()},
 				new List<int> {
 					ItemID.SuperHealingPotion, ModContent.ItemType<GunGodSoul>(), ModContent.ItemType<SDFMG>(),
-					ModContent.ItemType<ShotgunMeasurements>()
+					ModContent.ItemType<ShotgunMeasurements>(), ModContent.ItemType<GodImetator>()
 				},
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Info"),
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Gone"),
-				"Albedo/NPCs/Boss/BossChecklist/GunGod");
+				"Albedo/UI/BossChecklist/GunGod");
+
+			yabhb?.Call("RegisterDD2HealthBar",
+				ModContent.NPCType<HellGuard>());
+			yabhb?.Call("RegisterDD2HealthBar",
+				ModContent.NPCType<GunDemonHead>());
+			yabhb?.Call("RegisterHealthBar",
+				ModContent.NPCType<GunGod>());
 		}
 	}
 }

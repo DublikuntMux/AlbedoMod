@@ -1,10 +1,7 @@
 using Albedo.Base;
-using Albedo.Items.Materials;
-using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 using static Terraria.Main;
 
 namespace Albedo.Items.Weapons.Ranged

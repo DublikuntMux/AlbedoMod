@@ -16,40 +16,38 @@ namespace Albedo.Global
 		{
 			switch (npc.type) {
 				case NPCID.EaterofSouls:
-					if (Main.rand.Next(1000) >= 1)
+					if (Main.rand.Next(1000) <= 1)
 						Item.NewItem(npc.getRect(), ModContent.ItemType<DistortedGun>());
 					break;
 				case NPCID.LavaSlime:
-					if (Main.rand.Next(800) >= 1)
+					if (Main.rand.Next(800) <= 1)
 						Item.NewItem(npc.getRect(), ModContent.ItemType<Magmum>());
 					break;
 				case NPCID.MartianOfficer:
-					if (Main.rand.Next(800) >= 1)
+					if (Main.rand.Next(800) <= 1)
 						Item.NewItem(npc.getRect(), ModContent.ItemType<AlienBlaster>());
 					break;
 				case NPCID.MartianWalker:
-					if (Main.rand.Next(800) >= 1)
+					if (Main.rand.Next(800) <= 1)
 						Item.NewItem(npc.getRect(), ModContent.ItemType<CosmicAssaultRifle>());
 					break;
 				case NPCID.IceGolem:
-					if (Main.rand.Next(800) >= 1)
+					if (Main.rand.Next(800) <= 1)
 						Item.NewItem(npc.getRect(), ModContent.ItemType<KryonikGun>());
 					break;
-					
 			}
 
 			if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
-			    .CanGrap) Item.NewItem(npc.getRect(), ModContent.ItemType<HellGuardSoul>());
+			    .CanGrab) Item.NewItem(npc.getRect(), ModContent.ItemType<HellGuardSoul>());
 			if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
-			    .CanGrap) Item.NewItem(npc.getRect(), ModContent.ItemType<GunDemonSoul>());
+			    .CanGrab) Item.NewItem(npc.getRect(), ModContent.ItemType<GunDemonSoul>());
 			if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
-			    .CanGrap) Item.NewItem(npc.getRect(), ModContent.ItemType<GunGodSoul>());
+			    .CanGrab) Item.NewItem(npc.getRect(), ModContent.ItemType<GunGodSoul>());
 		}
 
 		public override void SetupShop(int type, Chest shop, ref int nextSlot)
 		{
-			switch (type)
-			{
+			switch (type) {
 				case NPCID.Pirate:
 					shop.item[nextSlot].SetDefaults(ModContent.ItemType<Musket>());
 					shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 70);
@@ -57,6 +55,7 @@ namespace Albedo.Global
 						shop.item[nextSlot].SetDefaults(ModContent.ItemType<ImprovedMusket>());
 						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(silver: 10);
 					}
+
 					break;
 			}
 		}
@@ -70,6 +69,7 @@ namespace Albedo.Global
 							Main.player[i].AddBuff(ModContent.BuffType<HellGuardCurse>(), 36000, false);
 							break;
 						}
+
 			return true;
 		}
 	}

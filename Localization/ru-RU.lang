@@ -20,26 +20,31 @@ ItemName.GunGodSoul=Душа Бога оружия
 ItemTooltip.GunGodSoul=Содержит силу, о которой твой отец и не мечтал.
 
 
+///НАЗВАНИЕ И ОПИСАНИЕ АКСКСУАРОВ///
+ItemName.GodImetator=Иметация бога
+ItemTooltip.GodImetator=Попытка с иметировать божественую ауру.
+
+
 ///НАЗВАНИЕ И ОПИСАНИЕ БАФОВ///
 BuffName.BulletPetBuff=Ваша смертельная пуля
 BuffDescription.BulletPetBuff=Почему пуля ожила?
 BuffName.HellGuardCurse=Проклятие Хранителя Ада
-BuffDescription.HellGuardCurse=Вам нужно убить стража ада, чтобы исцелиться стеной плоти.
-BuffName.GunGodCurse=Проклятия GunGod
+BuffDescription.HellGuardCurse=Вам нужно убить стража ада, чтобы сразитца с стеной плоти.
+BuffName.GunGodCurse=Проклятия Бога оружия
 BuffDescription.GunGodCurse=Аура Бога оружия давит на вас...
 BuffName.HellConfessions=Исповедь ада
-BuffDescription.HellConfessions=Ад начинает вам помогать\nКак это прозаично...
+BuffDescription.HellConfessions=Ад начинает вам помогать \nКак это прозаично...
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ ВООРУЖЕНИЯ///
 ItemName.RustleDunes=Шорох дюн
 ItemTooltip.RustleDunes=Интересно, внутри есть джин?
-ItemName.ShotgunMeasurements=Размеры дробовика
+ItemName.ShotgunMeasurements=Ружё измерений
 ItemTooltip.ShotgunMeasurements=Настолько сильный, что даже не издает звука при выстреле.
 ItemName.LavaDisaster=Лавовая катастрофа
 ItemTooltip.LavaDisaster=Когда-то принадлежал Альбедо.
 ItemTooltip.SDFMG=Из дальних глубин разума.
-ItemName.KryonikGun=Ледяная пушка
+ItemName.KryonikGun=Крио пушка
 ItemTooltip.KryonikGun=Пули разлетаются на куски при столкновении с врагом..
 ItemName.ClockworkCannon=Заводная пушка
 ItemTooltip.ClockworkCannon=Быстрая стрельба...
@@ -48,9 +53,9 @@ ItemTooltip.Triple= ММММ))))
 ItemName.RocketShotgun=Ракетный дробовик
 ItemTooltip.RocketShotgun=Имеет шанс выстрелить ракетой вместо пули.
 ItemName.ShortStarCannon=Короткая звездная пушка
-ItemTooltip.ShortStarCannon=Стреляет сразу 5 звездами.
+ItemTooltip.ShortStarCannon=Стреляет сразу 5 звездами!
 ItemName.AdamantiteRifle=Адамантитовая винтовка
-ItemTooltip.AdamantiteRifle=Адамантитовая сила!!!
+ItemTooltip.AdamantiteRifle=Сила адамантита!!!
 ItemName.AlienBlaster=Инопланетный бластер
 ItemTooltip.AlienBlaster=Потерянное инопланетное оружие.
 ItemName.Musket=Мушкет
@@ -63,14 +68,13 @@ ItemName.Magmum=Магмум
 ItemTooltip.Magmum=Похоже на лавового червя.
 ItemName.AngelGun=Ангел
 ItemTooltip.AngelGun=Падший ангел.
-ItemName.ShadowDreams=Сны теней
+ItemName.ShadowDreams=Сон тьмы
 ItemTooltip.ShadowDreams=Глубокие темные фантазии.
 ItemName.ImprovedMusket=Улучшенный мушкет
 ItemTooltip.ImprovedMusket=Сила!!!
 
 
 ///НАЗВАНИЕ КРАФТ-СТАНЦИЙ///
-WeaponStationTile.Name=Станция для изготовления оружия
 ItemName.WeaponStation1=Станция изготовления оружия
 ItemTooltip.WeaponStation1=Станция для изготовления простого оружия.
 ItemName.WeaponStation2=Усовершенствованный боевой модуль
@@ -80,7 +84,7 @@ ItemTooltip.WeaponStation3=Станция изготовления оружия 
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ ПУЛИ///
-ItemName.DirtBullet=Грязевая пуля
+ItemName.DirtBullet=Земляная пуля
 ItemTooltip.DirtBullet=Сделано из [i/s1:2]
 ItemName.StoneBullet=Каменная пуля
 ItemTooltip.StoneBullet=Сделано из [i/s1:3]
@@ -89,23 +93,23 @@ ItemTooltip.IceBullet=Сделано из [i/s1:664]
 ItemName.SnowBullet=Снежная пуля
 ItemTooltip.SnowBullet=Сделано из [i/s1:593]
 ItemName.GelBullet= Гелевая пуля
-ItemTooltip.GelBullet=Отскакивает от стен\nСделано из [i/s1:23]
+ItemTooltip.GelBullet=Отскакивает от стен \nСделано из [i/s1:23]
 ItemName.PinkGelBullet= Розовая гелевая пуля
-ItemTooltip.PinkGelBullet=Отскакивает от стен\nСделано из [i/s1:3111]
+ItemTooltip.PinkGelBullet=Отскакивает от стен \nСделано из [i/s1:3111]
 ItemName.GemBullet=Самоцветная пуля
 ItemTooltip.GemBullet=Очень хорошая пуля \nСделана из [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] лил [i/s1:999]
 ItemName.CopperBullet=Медная пуля
-ItemTooltip.CopperBullet=Почему?\nСделано из [i/s1:20]
+ItemTooltip.CopperBullet=Почему? \nСделано из [i/s1:20]
 ItemName.IronBullet=Железная пуля
-ItemTooltip.IronBullet=Самая распространенная пуля\nСделана из [i/s1:22]
+ItemTooltip.IronBullet=Самая распространенная пуля \nСделана из [i/s1:22]
 ItemName.LeadBullet=Свинцовая пуля
-ItemTooltip.LeadBullet=Самая распространенная пуля\nСделана из [i/s1:704]
+ItemTooltip.LeadBullet=Самая распространенная пуля \nСделана из [i/s1:704]
 ItemName.PreciousBullet=Драгоценная пуля
-ItemTooltip.PreciousBullet=Это дороже, чем вы думаете\nНо есть ли в этом толк? \nСделано из [i/s1:19] или [i/s1:706]
+ItemTooltip.PreciousBullet=Это дороже, чем вы думаете \nНо есть ли в этом толк? \nСделано из [i/s1:19] или [i/s1:706]
 ItemName.TungstenBullet=Вольфрамовая пуля
-ItemTooltip.TungstenBullet=Самая распространенная пуля\nИзготовлена ​​из [i/s1:705]
+ItemTooltip.TungstenBullet=Самая распространенная пуля \nИзготовлена из [i/s1:705]
 ItemName.HellBullet=Адская пуля
-ItemTooltip.HellBullet=Поджигает врагов при попадании\nСделано из [i/s1:175]
+ItemTooltip.HellBullet=Поджигает врагов при попадании \nСделано из [i/s1:175]
 ItemName.CobaltBullet= Кобальтовая пуля
 ItemTooltip.CobaltBullet=Сделано из [i/s1:381]
 ItemName.MythrilBullet= Мифриловая пуля
@@ -115,55 +119,55 @@ ItemTooltip.AdamantiteBullet=Сделано из [i/s1:391]
 
 
 ///НАЗВАНИЕ И ОПИСАНИЕ СУМОК///
-ItemName.ChlorophytePouch=Мешочек с хлорофитом
-ItemName.CrystalPouch=Мешочек с кристаллами
+ItemName.ChlorophytePouch=Мешок с хлорофитовыми пулями
+ItemName.CrystalPouch=Мешок с кристальными пулями
 ItemName.CursedPouch=Мешок с проклятыми пулями
-ItemName.ExplosivePouch=Мешочек со взрывчаткой
+ItemName.ExplosivePouch=Мешок со взрывными пулями
 ItemName.GoldenPouch=Мешок с золотыми пулями
-ItemName.IchorPouch=Мешочек ихора
+ItemName.IchorPouch=Мешок с ихоревыми пулями
 ItemName.LuminitePouch=Мешок с люминитовыми пулями
-ItemName.MeteorPouch=Мешочек метеора
+ItemName.MeteorPouch=Мешок с метеоритными пулями
 ItemName.NanoPouch=Мешок с нанопулями
-ItemName.PartyPouch=Пакетная сумка
+ItemName.PartyPouch=Мешок с пулями вичеринки
 ItemName.SilverPouch=Мешок с серебряными пулями
-ItemName.VelocityPouch=Скоростной мешочек
+ItemName.VelocityPouch=Мешок с скорострельными пулями
 ItemName.VenomPouch=Мешок с ядовитыми пулями
 
-ItemName.CopperPouch=Мешочек с медными пулями
-ItemName.DirtPouch=Мешок с грязевыми пулями
+ItemName.CopperPouch=Мешок с медными пулями
+ItemName.DirtPouch=Мешок с земляными пулями
 ItemTooltip.DirtPouch=Зачем вы это сделали?
-ItemName.GelPouch=Гелевый мешочек
-ItemName.GemPouch=Мешочек с драгоценными камнями
+ItemName.GelPouch=Мешок с гелевыми пулями
+ItemName.GemPouch=Мешок с пулями из драгоценых пуль
 ItemName.IcePouch=Мешок с ледяными пулями
 ItemName.IronPouch=Мешок с железными пулями
-ItemName.LeadPouch=Мешочек со свинцовыми пулями
-ItemName.PinkGelPouch=Мешочек с розовым гелем
-ItemName.PreciousPouch=Мешочек с драгоценными пулями
+ItemName.LeadPouch=Мешок со свинцовыми пулями
+ItemName.PinkGelPouch=Мешок с пулями из розового геля
+ItemName.PreciousPouch=Мешок с драгоценными пулями
 ItemName.SnowPouch=Мешок со снежными пулями
 ItemName.StonePouch=Мешок с каменными пулями
 ItemName.TungstenPouch=Мешок с вольфрамовыми пулями
 ItemName.HellPouch=Мешок с адскими пулями
-ItemName.CobaltPouch=Мешочек с кобальтовыми пулями
+ItemName.CobaltPouch=Мешок с кобальтовыми пулями
 ItemName.MythrilPouch=Мешок с мифриловыми пулями
-ItemName.AdamantitePouch=Мешочек с адамантиевыми пулями
+ItemName.AdamantitePouch=Мешок с адамантиевыми пулями
 
 ItemName.CosmoPouch=Мешок небесных пуль
-ItemTooltip.CosmoPouch=Этот мешочек когда-то принадлежал Альбедо.
-ItemName.PostLunarPouch=Мешочек с пулями Почтового Лунного Лорда
-ItemTooltip.PostLunarPouch=Этот мешочек обладает силой, о которой ваш отец и не мечтал.
-ItemName.HardmodePouch=Сумка хардмода
+ItemTooltip.CosmoPouch=Этот Мешок когда-то принадлежал Альбедо.
+ItemName.PostLunarPouch=Мешок с пулями Лунного Лорда
+ItemTooltip.PostLunarPouch=Этот Мешок обладает силой, о которой ваш отец и не мечтал.
+ItemName.HardmodePouch=Мешок хардмода
 ItemTooltip.HardmodePouch=Как шампунь 3 в 1.
-ItemName.PrehardmodePouch=Мешочек с патронами прехардмода
-ItemTooltip.PrehardmodePouch=Смесь всех сумок до хардмода.
+ItemName.PrehardmodePouch=Мешок с патронами прехардмода
+ItemTooltip.PrehardmodePouch=Ужас...
 
 
-///ЭЛЕМЕНТ BOS///
+///СВЯЗОНОЕ С БОССАМИ///
 ItemName.CursedPistol=Проклятый пистолет
-ItemTooltip.CursedPistol=Обсидиановый пистолет, проклятое оружие.
+ItemTooltip.CursedPistol=Обсидиановый пистолет с проклятием Албедо...
 ItemName.GodTribute=Дань Богу
 ItemTooltip.GodTribute=Подношение древнему существу...
 ItemName.SniperVoodooDoll=Кукла Вуду Снайпера
-ItemTooltip.SniperVoodooDoll=Не расходуется
+ItemTooltip.SniperVoodooDoll=Не надо кидать в лаву.
 
 ItemName.GunDemonBag=Сумка с сокровищами демона оружия
 ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
@@ -172,12 +176,19 @@ ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
 ItemName.HellGuardBag=Сумка с сокровищами стража ада
 ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
 
-ItemName.GunDemonTrophy=Трофей Демона Оружия
+ItemName.GunDemonTrophy=Трофей демона оружия
 ItemTooltip.GunDemonTrophy=Трофей за упорство.
 ItemName.GunGodTrophy=Трофей бога оружия
 ItemTooltip.GunGodTrophy=Трофей за упорство.
 ItemName.HellGuardTrophy=Трофей адского стража
 ItemTooltip.HellGuardTrophy=Трофей за упорство.
+
+ItemName.HellGuardBox=Музыкальеая шкотулка адского защитника
+ItemTooltip.HellGuardBox=Боже как же он чуствует...
+ItemName.GunDemonBox=Музыкальеая шкотулка демона оружия
+ItemTooltip.GunDemonBox=Боже как же он чуствует...
+ItemName.GunGodBox=Музыкальеая шкотулка Бога оружия
+ItemTooltip.GunGodBox=Боже как же он чуствует...
 
 
 ///ИМЕНА БОССОВ///
@@ -186,11 +197,20 @@ NPCName.HellGuardHand=Рука Адского Стража
 NPCName.GunDemonHead=Демон оружия
 NPCName.GunDemonBody=Демон оружия
 NPCName.GunDemonTail=Демон оружия
+NPCName.GunGod=Бог оружия
+
+
+///ВРАГИ///
+NPCName.MiniGun=Одержимое оружие
 NPCName.MagmaLeechHead=Магмовая пиявка
 NPCName.MagmaLeechBody=Магмовая пиявка
 NPCName.MagmaLeechTail=Маговая пиявка
-NPCName.GunGod=Бог оружия
-NPCName.MiniGun=Одержимое оружие
+
+
+///ВТОРЖЕНИЯ///
+Invasion.Gun.Gona1=Оружие вылетает из сундуков...
+Invasion.Gun.Gona2=Оружие больше не хочит мстить...
+Invasion.Gun.UseItem=Оружие начинает вибрировать...
 
 
 ///СООБЩЕНИЯ БОССА///
@@ -207,9 +227,8 @@ Boss.GunGod.Info=Призывается когда угодно и где уго
 Boss.GunGod.Gone=Бог оружия принял вашу лушу как подношение...
 
 
-
 ///НАЗВАНИЯ НИПС//
-Sniper.name1=Отмечен
+Sniper.name1=Меченый
 Sniper.name2=Кайл
 Sniper.name3=Кирилл
 Sniper.name4=Пуля
@@ -227,7 +246,7 @@ Bagman.name7=Карла
 
 
 ///НИП ДИАЛОГИ///
-Sniper.dialog1=Вы слышали что-нибудь о небесных пулях? Нет? Я тоже здесь.
+Sniper.dialog1=Вы слышали что-нибудь о небесных пулях? Нет? Я тоже.
 Sniper.dialog2=Я могу делать пули из чего угодно, я даже могу делать пули из других пуль.
 Sniper.dialog3=Хотите купить ледяные пули? Только не держите их в кармане слишком долго.
 Sniper.dialog4=Хорошо получать деньги за землю.

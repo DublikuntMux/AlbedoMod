@@ -1,4 +1,5 @@
 using Albedo.Base;
+using Albedo.Helper;
 using Albedo.NPCs.Boss.GunDemon;
 using Terraria;
 using Terraria.ID;
@@ -23,8 +24,8 @@ namespace Albedo.Items.Summons
 			item.consumable = false;
 		}
 
-		public override bool CanUseItem(Player player) => !NPC.AnyNPCs(ModContent.NPCType<GunDemonHead>());
-
+		public override bool CanUseItem(Player player) => !BossHelper.OtherBossAlive(0);
+		
 		public override bool UseItem(Player player)
 		{
 			NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<GunDemonHead>());

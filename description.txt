@@ -13,6 +13,7 @@ Developer site: https://www.dublikunt.tk
 But there is already:
 * 3 Boss
 * 20 Ammos
+* 2 Accessories
 * 18 Guns
 * 5 Materials
 * 3 (de)buffs

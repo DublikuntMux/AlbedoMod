@@ -1,4 +1,5 @@
 using Albedo.Base;
+using Albedo.Helper;
 using Albedo.NPCs.Boss.GunGod;
 using Terraria;
 using Terraria.ID;
@@ -22,9 +23,9 @@ namespace Albedo.Items.Summons
 			item.active = true;
 			item.consumable = false;
 		}
-
-		public override bool CanUseItem(Player player) => !NPC.AnyNPCs(ModContent.NPCType<GunGod>());
-
+		
+		public override bool CanUseItem(Player player) => !BossHelper.OtherBossAlive(0);
+		
 		public override bool UseItem(Player player)
 		{
 			NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<GunGod>());

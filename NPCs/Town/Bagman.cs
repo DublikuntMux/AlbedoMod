@@ -169,11 +169,13 @@ namespace Albedo.NPCs.Town
 						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
 						nextSlot++;
 					}
+
 					if (NPC.downedPirates) {
 						shop.item[nextSlot].SetDefaults(ModContent.ItemType<ChlorophytePouch>());
 						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);
 						nextSlot++;
 					}
+
 					if (NPC.downedMoonlord) {
 						shop.item[nextSlot].SetDefaults(ModContent.ItemType<LuminitePouch>());
 						shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1);

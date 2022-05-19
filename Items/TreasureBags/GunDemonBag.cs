@@ -28,8 +28,8 @@ namespace Albedo.Items.TreasureBags
 		public override void OpenBossBag(Player player)
 		{
 			player.QuickSpawnItem(ModContent.ItemType<GunDemonSoul>(), Main.rand.Next(16) + 15);
-			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<GunDemonTrophy>());
-			if (Main.rand.Next(100) >= 10) player.QuickSpawnItem(ModContent.ItemType<GunDemonBox>());
+			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<GunDemonTrophy>());
+			if (Main.rand.Next(100) <= 10) player.QuickSpawnItem(ModContent.ItemType<GunDemonBox>());
 		}
 
 		public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor,

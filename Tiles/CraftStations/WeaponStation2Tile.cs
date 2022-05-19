@@ -24,7 +24,7 @@ namespace Albedo.Tiles.CraftStations
 			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
 			TileObjectData.addTile(Type);
 			var name = CreateMapEntryName();
-			name.SetDefault(Language.GetTextValue("Mods.Albedo.WeaponStationTile.Name"));
+			name.SetDefault(Language.GetTextValue("Mods.Albedo.ItemName.WeaponStation2"));
 			AddMapEntry(new Color(190, 180, 40), name);
 			disableSmartCursor = true;
 			dustType = DustID.Amber;

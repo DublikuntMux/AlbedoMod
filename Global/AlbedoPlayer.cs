@@ -1,5 +1,7 @@
+using System;
 using Albedo.Buffs.Permanents;
 using Albedo.Helper;
+using Albedo.Projectiles.Accessories;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.GameInput;
@@ -11,9 +13,18 @@ namespace Albedo.Global
 	public class AlbedoPlayer : ModPlayer
 	{
 		public static bool StartMessage;
+
 		public bool BulletPet;
-		public bool CanGrap;
-		public int Screenshake;
+
+		public bool CanGrab;
+
+		public bool GodImitator;
+		public bool GunDemonCurse;
+		public bool GunGodCurse;
+		public bool HellConfession;
+		public bool HellGuardCurse;
+
+		public int ScreenShake;
 
 		public override void OnEnterWorld(Player player)
 		{
@@ -27,19 +38,79 @@ namespace Albedo.Global
 
 		public override void ModifyScreenPosition()
 		{
-			if (Screenshake > 0) Main.screenPosition += Main.rand.NextVector2Circular(7f, 7f);
+			if (ScreenShake > 0) Main.screenPosition += Main.rand.NextVector2Circular(7f, 7f);
 		}
 
 		public override void ResetEffects()
 		{
-			if (Screenshake > 0)
-				--Screenshake;
+			if (ScreenShake > 0)
+				--ScreenShake;
+			BulletPet = false;
+			GunDemonCurse = false;
+			HellGuardCurse = false;
+			GunGodCurse = false;
+			GodImitator = false;
 		}
 
 		public override void UpdateDead()
 		{
-			if (Screenshake > 0)
-				--Screenshake;
+			if (ScreenShake > 0)
+				--ScreenShake;
+			GunDemonCurse = false;
+			HellGuardCurse = false;
+			GunGodCurse = false;
+		}
+
+		public override void PostUpdateBuffs()
+		{
+			if (GunDemonCurse) {
+				player.lifeRegen = 0;
+				player.lifeRegenTime = 0;
+				player.allDamage /= 1.3f;
+				player.statDefense -= 10;
+				player.endurance /= 1.3f;
+			}
+
+			if (GunGodCurse) {
+				player.lifeRegen = 0;
+				player.lifeRegenTime = 0;
+				player.allDamage /= 1.3f;
+				player.statDefense -= 10;
+				player.endurance /= 1.3f;
+				player.maxMinions /= 2;
+				player.ammoBox = false;
+			}
+
+			if (HellGuardCurse) {
+				player.bleed = true;
+				player.statDefense /= 2;
+				player.endurance /= 2f;
+				player.onFire2 = true;
+				player.lifeRegen = 0;
+				player.allDamage /= 10f;
+				player.lifeRegenTime = 0;
+			}
+
+			if (HellConfession) {
+				player.statDefense += 10;
+				player.endurance += 2f;
+				player.onFire2 = false;
+				player.maxMinions += 4;
+				player.allDamage *= 1.1f;
+			}
+		}
+
+		public override void PostUpdateEquips()
+		{
+			if (GodImitator)
+				if (player.whoAmI == Main.myPlayer &&
+				    player.ownedProjectileCounts[ModContent.ProjectileType<Imitator>()] == 0) {
+					const float radius = (float) Math.PI * 2f / 5f;
+					for (int i = 0; i < 5; i++)
+						Projectile.NewProjectile(player.Center + new Vector2(60f, 0f).RotatedBy(radius * i),
+							Vector2.Zero, ModContent.ProjectileType<Imitator>(), 150, 10f, player.whoAmI, 0f,
+							radius * i);
+				}
 		}
 	}
 }
