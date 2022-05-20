@@ -12,7 +12,7 @@ namespace Albedo
 		[DefaultValue(true)]
 		[Label("Enable on world enter message")]
 		[Tooltip("while true - enable, while false - disable")]
-		public bool StartMessage { get; set; }
+		private bool StartMessage { get; set; }
 
 		public override void OnChanged() => AlbedoPlayer.StartMessage = StartMessage;
 	}

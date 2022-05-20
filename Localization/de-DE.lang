@@ -1,45 +1,50 @@
-///TITEL UND BESCHREIBUNG ALLER OBJEKTE///
-ItemName.Gunpowder=Schießpulver
-ItemTooltip.Gunpowder=Sehr explosive Mischung.
+///PTREON///
 ItemName.BulletOnChain=Kugel auf Kette
 ItemTooltip.BulletOnChain=Du wurdest von dieser Kugel getötet und als Erinnerung gespeichert.
+
+
+///NAME UND BESCHREIBUNG DER MATERIALIEN///
+ItemName.AlbedoOre=Albedo-Erz
+ItemTooltip.AlbedoOre=Uralte Worte quellen aus Erz
+ItemName.AlbedoIngot=Albedo-Barren
+ItemTooltip.AlbedoIngot=Ingot versucht mit dir zu sprechen \nBist du verrückt?
+ItemName.AngeliteBar=Angelite-Bar
+ItemTooltip.AngeliteBar=Angelit-Lebensbarren.
+ItemName.AngeliteOre=Angelit-Erz
+ItemTooltip.AngeliteOre=AngeliteOre-Leben.
+ItemName.HellGuardSoul=Höllenwächter-Seele
+ItemTooltip.HellGuardSoul=Enthält eine Kraft, von der dein Vater nie geträumt hat.
+ItemName.GunDemonSoul=GunDemon-Seele
+ItemTooltip.GunDemonSoul=Enthält eine Kraft, von der dein Vater nie geträumt hat.
 ItemName.GunGodSoul=GunGod-Seele
 ItemTooltip.GunGodSoul=Enthält eine Kraft, von der dein Vater nie geträumt hat.
 
 
-///NAME UND BESCHREIBUNG DER ERZE///
-ItemName.RawSaltpeter=Salpeter
-ItemTooltip.RawSaltpeter=Sehr explosiver Gegenstand
-ItemName.AlbedoOre=Albedo-Erz
-ItemTooltip.AlbedoOre=Uralte Wörter sickern aus dem Erz
-ItemName.AlbedoIngot=Albedo-Barren
-ItemTooltip.AlbedoIngot=Ingot versucht mit dir zu sprechen \nBist du verrückt?
-ItemName.AngeliteBar=Angelite-Bar
-ItemTooltip.AngeliteBar=Engelleben in Bar.
-ItemName.AngeliteOre=Angelit-Erz
-ItemTooltip.AngeliteOre=Engelleben im Erz.
+///NAME UND BESCHREIBUNG DES ZUBEHÖRS///
+ItemName.GodImetator=Gott-Nachahmer
+ItemTooltip.GodImetator=Versuch, eine göttliche Aura zu imitieren.
 
 
 ///NAME UND BESCHREIBUNG BAFS///
 BuffName.BulletPetBuff=Deine tödliche Kugel
 BuffDescription.BulletPetBuff=Warum wurde die Kugel zum Leben erweckt?
 BuffName.HellGuardCurse=Hellguards Fluch
-BuffDescription.HellGuardCurse=Du musst den Wächter der Hölle töten, um mit der Wand aus Fleisch zu heilen.
-BuffName.GunGodCurse=GunGod-Flüche
-BuffDescription.GunGodCurse=Die GunGodCurse-Aura drückt auf dich...
-BuffName.HellConfessions=Geständnisse der Hölle
-BuffDescription.HellConfessions=Hell beginnt dir zu helfen \nWie prosaisch es ist...
+BuffDescription.HellGuardCurse=Du musst die Höllenwache töten, um gegen die Fleischwand zu kämpfen.
+BuffName.GunGodCurse=GunGodCurse
+BuffDescription.GunGodCurse=GunGods Aura drückt auf dich...
+BuffName.HellConfessions=Höllengeständnisse
+BuffDescription.HellConfessions=Die Hölle fängt an, dir zu helfen \nWie prosaisch...
 
 
 ///NAME UND BESCHREIBUNG DER WAFFEN///
 ItemName.RustleDunes=Rauschen der Dünen
-ItemTooltip.RustleDunes=Ich frage mich, ob Gin drin ist?
+ItemTooltip.RustleDunes=Ich frage mich, ob da drinnen ein Flaschengeist ist?
 ItemName.ShotgunMeasurements=Schrotflintenmessungen
-ItemTooltip.ShotgunMeasurements=So stark, dass es nicht einmal ein Geräusch macht, wenn es abgefeuert wird.
+ItemTooltip.ShotgunMeasurements=So stark, dass beim Abfeuern nicht einmal ein Geräusch zu hören ist.
 ItemName.LavaDisaster=Lava-Katastrophe
 ItemTooltip.LavaDisaster=Gehörte einst Albedo.
-ItemTooltip.SDFMG=Aus den Tiefen des Geistes.
-ItemName.KryonikGun=Eiskanone
+ItemTooltip.SDFMG=Aus den tiefsten Tiefen des Geistes.
+ItemName.KryonikGun=Kryokanone
 ItemTooltip.KryonikGun=Kugeln zersplittern beim Aufprall auf einen Feind.
 ItemName.ClockworkCannon=Uhrwerkkanone
 ItemTooltip.ClockworkCannon=Schnellfeuer...
@@ -48,35 +53,34 @@ ItemTooltip.Triple= MMMM))))
 ItemName.RocketShotgun=Raketen-Schrotflinte
 ItemTooltip.RocketShotgun=Hat die Chance, statt einer Kugel eine Rakete abzufeuern.
 ItemName.ShortStarCannon=Kurze Sternenkanone
-ItemTooltip.ShortStarCannon=Feuert 5 Sterne auf einmal.
+ItemTooltip.ShortStarCannon=Schießt 5 Sterne auf einmal!
 ItemName.AdamantiteRifle=Adamantit-Gewehr
-ItemTooltip.AdamantiteRifle=Adamantitische Kraft!!!
+ItemTooltip.AdamantiteRifle=Die Kraft von Adamantit!!!
 ItemName.AlienBlaster=Alien-Blaster
-ItemTooltip.AlienBlaster=Verlorene Alien-Waffen.
+ItemTooltip.AlienBlaster=Verlorene Alien-Waffe.
 ItemName.Musket=Muskete
 ItemTooltip.Musket=Normale Muskete.
 ItemName.DistortedGun=Verzerrte Waffe
-ItemTooltip.DistortedGun=Stinkt wie ein Wurm.
+ItemTooltip.DistortedGun=Riecht wie ein Wurm.
 ItemName.CosmicAssaultRifle=Kosmisches Sturmgewehr
-ItemTooltip.CosmicAssaultRifle=Verlorene Alien-Waffen.
+ItemTooltip.CosmicAssaultRifle=Verlorene außerirdische Waffe.
 ItemName.Magmum=Magmum
 ItemTooltip.Magmum=Sieht aus wie ein Lavawurm.
 ItemName.AngelGun=Engel
 ItemTooltip.AngelGun=Gefallener Engel.
 ItemName.ShadowDreams=Schattenträume
-ItemTooltip.ShadowDreams=Tiefdunkle Fantasien.
+ItemTooltip.ShadowDreams=Tiefe dunkle Fantasie.
 ItemName.ImprovedMusket=Verbesserte Muskete
-ItemTooltip.ImprovedMusket=Macht!!!
+ItemTooltip.ImprovedMusket=Stärke!!!
 
 
-///NAME DER HANDWERKSTAATEN///
-WeaponStationTile.Name=Waffenherstellungsstation
+///NAME DER HANDWERKSTATIONEN///
 ItemName.WeaponStation1=Waffenherstellungsstation
 ItemTooltip.WeaponStation1=Station zum Herstellen einfacher Waffen.
 ItemName.WeaponStation2=Fortgeschrittene Waffenstation
-ItemTooltip.WeaponStation2=Station zum Herstellen fortgeschrittener Waffen.
-ItemName.WeaponStation3=Waffenstation an der Wand
-ItemTooltip.WeaponStation3=Eine uralte Technologie-Waffenherstellungsstation.
+ItemTooltip.WeaponStation2=Station zum Herstellen verbesserter Waffen.
+ItemName.WeaponStation3=Wandhalterungsstation
+ItemTooltip.WeaponStation3=Eine Waffenherstellungsstation mit uralter Technologie.
 
 
 ///BEZEICHNUNG UND BESCHREIBUNG///
@@ -89,23 +93,23 @@ ItemTooltip.IceBullet=Hergestellt aus [i/s1:664]
 ItemName.SnowBullet=Schneekugel
 ItemTooltip.SnowBullet=Hergestellt aus [i/s1:593]
 ItemName.GelBullet= Gelkugel
-ItemTooltip.GelBullet=Springt von Wänden ab\nHergestellt aus [i/s1:23]
+ItemTooltip.GelBullet=Springt von Wänden ab \nHergestellt aus [i/s1:23]
 ItemName.PinkGelBullet= Rosa Gelkugel
-ItemTooltip.PinkGelBullet=Springt von Wänden ab\nHergestellt aus [i/s1:3111]
+ItemTooltip.PinkGelBullet=Springt von Wänden ab \nHergestellt aus [i/s1:3111]
 ItemName.GemBullet=Edelsteinkugel
-ItemTooltip.GemBullet=Sehr schöne Kugel \nHergestellt aus [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] kleine [i/s1:999]
+ItemTooltip.GemBullet=Sehr gutes Geschoss \nHergestellt aus [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] kleine [i/s1:999]
 ItemName.CopperBullet=Kupferkugel
-ItemTooltip.CopperBullet=Warum?\nHergestellt aus [i/s1:20]
+ItemTooltip.CopperBullet=Warum? \nHergestellt aus [i/s1:20]
 ItemName.IronBullet=Eisenkugel
-ItemTooltip.IronBullet=Häufigste Kugel\nHergestellt aus [i/s1:22]
+ItemTooltip.IronBullet=Das häufigste Geschoss \nHergestellt aus [i/s1:22]
 ItemName.LeadBullet=Leadkugel
-ItemTooltip.LeadBullet=Das häufigste Geschoss\nHergestellt aus [i/s1:704]
+ItemTooltip.LeadBullet=Das häufigste Geschoss \nHergestellt aus [i/s1:704]
 ItemName.PreciousBullet=Kostbare Kugel
 ItemTooltip.PreciousBullet=Es ist teurer als Sie denken \nAber ist es auch gut? \nHergestellt aus [i/s1:19] oder [i/s1:706]
 ItemName.TungstenBullet=Wolframkugel
-ItemTooltip.TungstenBullet=Das häufigste Geschoss\nHergestellt aus [i/s1:705]
+ItemTooltip.TungstenBullet=Das häufigste Geschoss \nHergestellt aus [i/s1:705]
 ItemName.HellBullet=Höllenkugel
-ItemTooltip.HellBullet=Setze Feinde in Brand, wenn sie getroffen werden \nHergestellt aus [i/s1:175]
+ItemTooltip.HellBullet=Setze Feinde bei Treffer in Brand \nHergestellt aus [i/s1:175]
 ItemName.CobaltBullet= Kobaltkugel
 ItemTooltip.CobaltBullet=Hergestellt aus [i/s1:381]
 ItemName.MythrilBullet= Mithril-Kugel
@@ -115,33 +119,33 @@ ItemTooltip.AdamantiteBullet=Hergestellt aus [i/s1:391]
 
 
 ///NAME UND BESCHREIBUNG DER TASCHEN///
-ItemName.ChlorophytePouch=Beutel mit Chlorophytenbeutel
+ItemName.ChlorophytePouch=Chlorophytenbeutel Beutel
 ItemName.CrystalPouch=Kristallbeutel
 ItemName.CursedPouch=Beutel mit verfluchten Kugeln
 ItemName.ExplosivePouch=Sprengstoffbeutel
 ItemName.GoldenPouch=Beutel mit goldenen Kugeln
 ItemName.IchorPouch=Ichor-Beutel
-ItemName.LuminitePouch=Beutel mit Luminite-Kugeln
+ItemName.LuminitePouch=Luminitbeutel
 ItemName.MeteorPouch=Meteorbeutel
-ItemName.NanoPouch=Beutel mit Nanokugeln
-ItemName.PartyPouch=Partybeutel
+ItemName.NanoPouch=Nano-Beutel
+ItemName.PartyPouch=Partybeutel voller Kugeln
 ItemName.SilverPouch=Sack mit Silberkugeln
 ItemName.VelocityPouch=Geschwindigkeitsbeutel
 ItemName.VenomPouch=Beutel mit Giftkugeln
 
 ItemName.CopperPouch=Beutel mit Kupferkugeln
-ItemName.DirtPouch=Beutel mit Dirt Bullets
+ItemName.DirtPouch=Schmutzbeutel
 ItemTooltip.DirtPouch=Warum hast du das getan?
-ItemName.GelPouch=Gelbeutelbeutel
-ItemName.GemPouch=Edelsteinbeutel
-ItemName.IcePouch=Ein Beutel mit Eiskugeln
+ItemName.GelPouch=Beutel mit Gelbeuteln
+ItemName.GemPouch=Edelsteinkugelbeutel
+ItemName.IcePouch=Eisbeutel Beutel
 ItemName.IronPouch=Sack voller Eisenkugeln
 ItemName.LeadPouch=Beutel mit Bleigeschossen
 ItemName.PinkGelPouch=Rosa Gelbeutel
-ItemName.PreciousPouch=Beutel mit wertvollen Kugeln
+ItemName.PreciousPouch=Kostbarer Beutel
 ItemName.SnowPouch=Sack Schneekugeln
 ItemName.StonePouch=Sack voller Steinkugeln
-ItemName.TungstenPouch=Beutel mit Wolframkugeln
+ItemName.TungstenPouch=Kugelbeutel aus Wolfram
 ItemName.HellPouch=Beutel mit Höllenkugeln
 ItemName.CobaltPouch=Beutel mit Kobaltkugeln
 ItemName.MythrilPouch=Beutel mit Mithrilkugeln
@@ -149,57 +153,86 @@ ItemName.AdamantitePouch=Beutel mit Adamantiumkugeln
 
 ItemName.CosmoPouch=Sack Himmelskugeln
 ItemTooltip.CosmoPouch=Dieser Beutel gehörte einst Albedo.
-ItemName.PostLunarPouch=Beutel mit Post Moon Lord Kugeln
-ItemTooltip.PostLunarPouch=Dieser Beutel hat Kräfte, von denen dein Vater nie geträumt hat.
+ItemName.PostLunarPouch=Beutel mit Kugeln des Mondfürsten
+ItemTooltip.PostLunarPouch=Dieser Beutel hat Macht jenseits der Träume deines Vaters.
 ItemName.HardmodePouch=Hardmode-Beutel
-ItemTooltip.HardmodePouch=Wie Shampoo 3 in 1.
-ItemName.PrehardmodePouch=Beutel mit Prehardmode-Kugeln
-ItemTooltip.PrehardmodePouch=Mix aller Pre-Hardmode-Beutel.
+ItemTooltip.HardmodePouch=Wie ein 3-in-1-Shampoo.
+ItemName.PrehardmodePouch=Prehardmode-Munitionstasche
+ItemTooltip.PrehardmodePouch=Horror...
 
 
-///BOS-ARTIKEL///
+///BOSS-BEZOGEN///
 ItemName.CursedPistol=Verfluchte Pistole
-ItemTooltip.CursedPistol=Obsidian-Pistole, gottverfluchte Waffe.
-ItemName.GodTribute=Gottes-Tribut
-ItemTooltip.GodTribute=Eine Opfergabe an ein uraltes Wesen...
-ItemName.SniperVoodooDoll=Scharfschützen-VoodooDoll
-ItemTooltip.SniperVoodooDoll=Nicht verbrauchbar
+ItemTooltip.CursedPistol=Albedos verfluchte Obsidianpistole...
+ItemName.GodTribute=Hommage an Gott
+ItemTooltip.GodTribute=Opfergabe an eine uralte Kreatur...
+ItemName.SniperVoodooDoll=Scharfschützen-Voodoo-Puppe
+ItemTooltip.SniperVoodooDoll=Wirf es nicht in die Lava.
 
-ItemName.GunDemonBag=Schatzbeutel des Waffendämons
+ItemName.GunDemonBag=Dämonen-Waffenschatzbeutel
 ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
-ItemName.GunGodBag=Waffengott-Schatzbeutel
+ItemName.GunGodBag=Schatzbeutel des Waffengottes
 ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
-ItemName.HellGuardBag=Höllenwächter-Schatzbeutel
+ItemName.HellGuardBag=Hellguards Schatzbeutel
 ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
 
-ItemName.GunDemonTrophy=Waffendämon-Trophäe
-ItemTooltip.GunDemonTrophy=Trophäe für Ausdauer.
-ItemName.GunGodTrophy=Waffengott-Trophäe
-ItemTooltip.GunGodTrophy=Trophäe für Ausdauer.
+ItemName.GunDemonTrophy=GunDemonTrophy
+ItemTooltip.GunDemonTrophy=Eine Trophäe für Ausdauer.
+ItemName.GunGodTrophy=GunGod-Trophäe
+ItemTooltip.GunGodTrophy=Eine Trophäe für Ausdauer.
 ItemName.HellGuardTrophy=Trophäe der Höllenwache
-ItemTooltip.HellGuardTrophy=Trophäe für Ausdauer.
+ItemTooltip.HellGuardTrophy=Eine Trophäe für Ausdauer.
+
+ItemName.HellGuardBox=Hellguards Spieluhr
+ItemTooltip.HellGuardBox=Gott, wie fühlt er sich...
+ItemName.GunDemonBox=GunDemonBox Waffendämonen-Musikbox
+ItemTooltip.GunDemonBox=Gott, wie fühlt er sich...
+ItemName.GunGodBox=GunGod-Spieluhr
+ItemTooltip.GunGodBox=Gott, wie fühlt er sich...
+
+ItemName.VibrateGun=Vibrierende Pistole
+ItemTooltip.VibrateGun=Wohin das führen könnte...
 
 
 ///BOSSNAMEN///
 NPCName.HellGuard=Höllenwächter
-NPCName.HellGuardHand=Hand der Höllenwache
+NPCName.HellGuardHand=Hellguard-Hand
+NPCName.GunDemonHead=GunDemonHead
+NPCName.GunDemonBody=GunDemonBody
+NPCName.GunDemonTail=GunDemonTail
 NPCName.GunGod=Waffengott
+
+
+///FEINDE///
 NPCName.MiniGun=Besessene Waffe
-NPCName.GunDemonHead=Waffendämon
-NPCName.GunDemonBody=Waffendämon
-NPCName.GunDemonTail=Waffendämon
 NPCName.MagmaLeechHead=Magmasauger
-NPCName.MagmaLeechBody=Magmanegel
-NPCName.MagmaLeechTail=Magmanegel
+NPCName.MagmaLeechBody=MagmaleechBody
+NPCName.MagmaLeechTail=Magma BlutegelSchwanz
+
+
+///EINBRÜCHE///
+Invasion.Gun.Name=Besessene Waffe
+Invasion.Gun.Info=Alle Waffen wurden sauer auf dich und flogen eine Kiste voller Wows aus und fingen an, dich einzuschließen.
+Invasion.Gun.Gona1=Waffen fliegen aus Truhen...
+Invasion.Gun.Gona2=Die Waffe will keine Rache mehr...
+Invasion.Gun.UseItem=Die Waffe beginnt zu vibrieren...
 
 
 ///BOSS-NACHRICHTEN///
 BossMassage.HellGuard=Du fühlst dich, als wäre die Hölle gefährlich geworden..
+Boss.HellGuard.Info=In die Hölle gerufen.
+Boss.HellGuard.Gone=Der Hellguard hat seine Dominanz gezeigt...
+
+BossMassage.GunDemon=Höllenkreaturen machen Platz für dich...
+Boss.GunDemon.Info=Nach dem Töten von {$NPCName.HellGuard} in die Hölle gerufen.
+Boss.GunDemon.Gone=GunDemon sieht dich nicht als Rivalen...
+
 BossMassage.GunGod=Du hast eine uralte Macht entfesselt...\nJemand hat es definitiv bemerkt...
-BossMassage.GunDemon=Höllische Kreaturen machen Platz für dich...
+Boss.GunGod.Info=Werden immer und überall beschworen.
+Boss.GunGod.Gone=Der Gott der Waffen hat deine Hülle als Opfergabe angenommen...
 
 
-///NIPS-NAMEN//
+///NAMEN VON NIPS//
 Sniper.name1=Markiert
 Sniper.name2=Kyle
 Sniper.name3=Kirill
@@ -217,19 +250,19 @@ Bagman.name6=Cenarius
 Bagman.name7=Karla
 
 
-///NIP-DIALOGE///
-Sniper.dialog1=Haben Sie etwas über Himmelskugeln gehört? Nicht? Ich bin auch hier.
-Sniper.dialog2=Ich kann aus allem Kugeln machen, ich kann sogar Kugeln aus anderen Kugeln machen.
+///NPC-DIALOGE///
+Sniper.dialog1=Haben Sie etwas über Himmelskugeln gehört? Nein? Ich auch.
+Sniper.dialog2=Ich kann aus allem Kugeln machen, ich kann sogar aus anderen Kugeln Kugeln machen.
 Sniper.dialog3=Möchtest du Eiskugeln kaufen? Bewahren Sie sie nur nicht zu lange in Ihrer Tasche auf.
 Sniper.dialog4=Es ist gut, für Land bezahlt zu werden.
 
 Bagman.dialog1=Kennst du den Scharfschützen? Er ist mein Bruder.
-Bagman.dialog2=Wenn du nur wüsstest, wie schwer es mich gekostet hat, diese Säcke voller Kugeln einzusammeln.
-Bagman.dialog3=Die bescheidensten Preise für alles für nur ein Platin und eine Tüte mit guten Sachen in der Tasche.
-Bagman.dialog4=Du hast von Albedo gehört, er ist unheimlich... Traue ihm nicht!
+Bagman.dialog2=Wenn du nur wüsstest, wie schwer es für mich war, diese Säcke voller Kugeln einzusammeln.
+Bagman.dialog3=Die bescheidensten Preise für alles für ein Platin und eine Tüte voller guter Dinge in der Tasche.
+Bagman.dialog4=Du hast von Albedo gehört, er ist unheimlich... Glaub ihm nicht!
 
 
-///Verschiedenes///
-Misc.OnEnter=[AlbedoMod] - !MOD IM ALPHA-TEST!
+///SONSTIGES///
+Misc.OnEnter=[AlbedoMod] - ! MOD IM ALPHA-TEST !
 NPC.Hardmod=Hardmod
 NPC.PreHardmod=PreHardmod

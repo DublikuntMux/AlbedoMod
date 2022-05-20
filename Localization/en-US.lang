@@ -1,45 +1,50 @@
-///TITLE AND DESCRIPTION OF ALL OBJECTS///
-ItemName.Gunpowder=Gunpowder
-ItemTooltip.Gunpowder=Very explosive mixture.
+///PTREON///
 ItemName.BulletOnChain=Bullet On Chain
 ItemTooltip.BulletOnChain=You were killed by this bullet and saved as a reminder.
-ItemName.GunGodSoul=Gun God Soul
-ItemTooltip.GunGodSoul=Contains a power your father never dreamed of.
 
 
-///NAME AND DESCRIPTION OF ORES///
-ItemName.RawSaltpeter=Saltpeter
-ItemTooltip.RawSaltpeter=Very Explosive Item
+///NAME AND DESCRIPTION OF MATERIALS///
 ItemName.AlbedoOre=Albedo Ore
-ItemTooltip.AlbedoOre=Ancient words ooze from the ore
+ItemTooltip.AlbedoOre=Ancient words ooze from ore
 ItemName.AlbedoIngot=Albedo Ingot
 ItemTooltip.AlbedoIngot=Ingot is trying to talk to you \nAre you out of your mind?
 ItemName.AngeliteBar=Angelite Bar
-ItemTooltip.AngeliteBar=Angel life in bar.
+ItemTooltip.AngeliteBar=Angelite Life Ingot.
 ItemName.AngeliteOre=Angelite Ore
-ItemTooltip.AngeliteOre=Angel life in ore.
+ItemTooltip.AngeliteOre=AngeliteOre life.
+ItemName.HellGuardSoul=Hellguard Soul
+ItemTooltip.HellGuardSoul=Contains a power your father never dreamed of.
+ItemName.GunDemonSoul=GunDemon Soul
+ItemTooltip.GunDemonSoul=Contains a power your father never dreamed of.
+ItemName.GunGodSoul=GunGod Soul
+ItemTooltip.GunGodSoul=Contains a power your father never dreamed of.
+
+
+///NAME AND DESCRIPTION OF ACCESSORIES///
+ItemName.GodImetator=God Imetator
+ItemTooltip.GodImetator=Attempted to imitate a divine aura.
 
 
 ///NAME AND DESCRIPTION OF BAFS///
 BuffName.BulletPetBuff=Your Deadly Bullet
 BuffDescription.BulletPetBuff=Why did the bullet come to life?
 BuffName.HellGuardCurse=Hellguard's Curse
-BuffDescription.HellGuardCurse=You need to kill the guardian of hell to heal with the wall of flesh.
-BuffName.GunGodCurse=GunGod Curses
-BuffDescription.GunGodCurse=Gun God aura is pressing down on you...
-BuffName.HellConfessions=Confessions of Hell
-BuffDescription.HellConfessions=Hell starts helping you \nHow prosaic it...
+BuffDescription.HellGuardCurse=You need to kill the Hell Guard to fight the Wall of Flesh.
+BuffName.GunGodCurse=GunGodCurse
+BuffDescription.GunGodCurse=GunGod's aura is pressing down on you...
+BuffName.HellConfessions=Hell Confessions
+BuffDescription.HellConfessions=Hell is starting to help you \nHow prosaic...
 
 
 ///NAME AND DESCRIPTION OF WEAPONS///
 ItemName.RustleDunes=Rustle of the Dunes
-ItemTooltip.RustleDunes=I wonder if there is gin inside?
+ItemTooltip.RustleDunes=I wonder if there's a genie inside?
 ItemName.ShotgunMeasurements=ShotgunMeasurements
-ItemTooltip.ShotgunMeasurements=So strong that it doesn't even make a sound when fired.
+ItemTooltip.ShotgunMeasurements=So strong it doesn't even make a sound when fired.
 ItemName.LavaDisaster=Lava Disaster
 ItemTooltip.LavaDisaster=Once belonged to Albedo.
-ItemTooltip.SDFMG=From the Far Depths of the Mind.
-ItemName.KryonikGun=Ice Cannon
+ItemTooltip.SDFMG=From the deepest depths of the mind.
+ItemName.KryonikGun=Cryo Gun
 ItemTooltip.KryonikGun=Bullets shatter into pieces on impact with an enemy..
 ItemName.ClockworkCannon=Clockwork Cannon
 ItemTooltip.ClockworkCannon=Quick Fire...
@@ -48,35 +53,34 @@ ItemTooltip.Triple= MMMM))))
 ItemName.RocketShotgun=Rocket Shotgun
 ItemTooltip.RocketShotgun=Has a chance to fire a rocket instead of a bullet.
 ItemName.ShortStarCannon=Short Star Cannon
-ItemTooltip.ShortStarCannon=Fires 5 stars at once.
+ItemTooltip.ShortStarCannon=Shoots 5 stars at once!
 ItemName.AdamantiteRifle=Adamantite Rifle
-ItemTooltip.AdamantiteRifle=Adamantite power!!!
+ItemTooltip.AdamantiteRifle=The Power of Adamantite!!!
 ItemName.AlienBlaster=Alien Blaster
-ItemTooltip.AlienBlaster=Lost alien weapons.
+ItemTooltip.AlienBlaster=Lost Alien Weapon.
 ItemName.Musket=Musket
-ItemTooltip.Musket=Regular musket.
+ItemTooltip.Musket=Regular Musket.
 ItemName.DistortedGun=Distorted Gun
-ItemTooltip.DistortedGun=Stinks like a worm.
-ItemName.CosmicAssaultRifle=Cosmic Assault Rifle
-ItemTooltip.CosmicAssaultRifle=Lost alien weapons.
+ItemTooltip.DistortedGun=Smells like a worm.
+ItemName.CosmicAssaultRifle=CosmicAssault Rifle
+ItemTooltip.CosmicAssaultRifle=Lost Alien Weapon.
 ItemName.Magmum=Magmum
 ItemTooltip.Magmum=Looks like a lava worm.
 ItemName.AngelGun=Angel
 ItemTooltip.AngelGun=Fallen Angel.
-ItemName.ShadowDreams=Shadow Dreams
-ItemTooltip.ShadowDreams=Deep dark fantasies.
+ItemName.ShadowDreams=ShadowDreams
+ItemTooltip.ShadowDreams=Deep dark fantasy.
 ItemName.ImprovedMusket=Improved Musket
-ItemTooltip.ImprovedMusket=Power!!!
+ItemTooltip.ImprovedMusket=Strength!!!
 
 
-///NAME OF CRAFT STATES///
-WeaponStationTile.Name=Weapon Crafting Station
+///NAME OF CRAFT STATIONS///
 ItemName.WeaponStation1=Weapon Crafting Station
 ItemTooltip.WeaponStation1=Station for crafting simple weapons.
 ItemName.WeaponStation2=Advanced Weapon Station
-ItemTooltip.WeaponStation2=Station for crafting advanced weapons.
-ItemName.WeaponStation3=Wall Weapon Station
-ItemTooltip.WeaponStation3=An ancient technology weapon crafting station.
+ItemTooltip.WeaponStation2=Station for crafting upgraded weapons.
+ItemName.WeaponStation3=Wall Mount Station
+ItemTooltip.WeaponStation3=A weapon crafting station using ancient technology.
 
 
 ///BULLET NAME AND DESCRIPTION///
@@ -89,23 +93,23 @@ ItemTooltip.IceBullet=Made from [i/s1:664]
 ItemName.SnowBullet=Snow Bullet
 ItemTooltip.SnowBullet=Made from [i/s1:593]
 ItemName.GelBullet= Gel Bullet
-ItemTooltip.GelBullet=Bounces off walls\nMade from [i/s1:23]
+ItemTooltip.GelBullet=Bounces off walls \nMade from [i/s1:23]
 ItemName.PinkGelBullet= Pink Gel Bullet
-ItemTooltip.PinkGelBullet=Bounces off walls\nMade from [i/s1:3111]
+ItemTooltip.PinkGelBullet=Bounces off walls \nMade from [i/s1:3111]
 ItemName.GemBullet=Gem Bullet
-ItemTooltip.GemBullet=Very Nice Bullet \nMade from [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
+ItemTooltip.GemBullet=Very Good Bullet \nMade from [i/s1:177] lil [i/s1:178] lil [i/s1:179] lil [i/s1:180] lil [i/s1:181] lil [i/s1:182] lil [i/s1:999]
 ItemName.CopperBullet=Copper Bullet
-ItemTooltip.CopperBullet=Why?\nMade from [i/s1:20]
+ItemTooltip.CopperBullet=Why? \nMade from [i/s1:20]
 ItemName.IronBullet=Iron Bullet
-ItemTooltip.IronBullet=Most common bullet\nMade from [i/s1:22]
+ItemTooltip.IronBullet=The Most Common Bullet \nMade from [i/s1:22]
 ItemName.LeadBullet=Lead Bullet
-ItemTooltip.LeadBullet=The most common bullet\nMade from [i/s1:704]
+ItemTooltip.LeadBullet=The Most Common Bullet \nMade From [i/s1:704]
 ItemName.PreciousBullet=Precious Bullet
 ItemTooltip.PreciousBullet=It's more expensive than you think \nBut is it any good? \nMade from [i/s1:19] or [i/s1:706]
 ItemName.TungstenBullet=Tungsten Bullet
-ItemTooltip.TungstenBullet=The most common bullet\nMade from [i/s1:705]
+ItemTooltip.TungstenBullet=The Most Common Bullet \nMade from [i/s1:705]
 ItemName.HellBullet=Hell Bullet
-ItemTooltip.HellBullet=Set enemies on fire when hit \nMade from [i/s1:175]
+ItemTooltip.HellBullet=Set enemies on fire on hit \nMade from [i/s1:175]
 ItemName.CobaltBullet= Cobalt Bullet
 ItemTooltip.CobaltBullet=Made from [i/s1:381]
 ItemName.MythrilBullet= Mithril Bullet
@@ -115,91 +119,120 @@ ItemTooltip.AdamantiteBullet=Made from [i/s1:391]
 
 
 ///NAME AND DESCRIPTION OF BAGS///
-ItemName.ChlorophytePouch=Bag of Chlorophyte Pouch
+ItemName.ChlorophytePouch=Chlorophyte Pouch Pouch
 ItemName.CrystalPouch=Crystal Pouch
-ItemName.CursedPouch=Bag of Cursed Bullets
+ItemName.CursedPouch=Pouch of Cursed Bullets
 ItemName.ExplosivePouch=Explosive Pouch
-ItemName.GoldenPouch=Bag of Golden Bullets
+ItemName.GoldenPouch=Pouch of Golden Bullets
 ItemName.IchorPouch=Ichor Pouch
-ItemName.LuminitePouch=Bag of Luminite Bullets
+ItemName.LuminitePouch=Luminite Pouch
 ItemName.MeteorPouch=Meteor Pouch
-ItemName.NanoPouch=Bag of Nano Bullets
-ItemName.PartyPouch=Party Pouch Bag
+ItemName.NanoPouch=Nano Pouch
+ItemName.PartyPouch=Party Pouch of Bullets
 ItemName.SilverPouch=Sack of Silver Bullets
-ItemName.VelocityPouch=Velocity Pouch
-ItemName.VenomPouch=Bag of Poison Bullets
+ItemName.VelocityPouch=VelocityPouch
+ItemName.VenomPouch=Pouch of Poison Bullets
 
 ItemName.CopperPouch=Pouch of Copper Bullets
-ItemName.DirtPouch=Bag of Dirt Bullets
+ItemName.DirtPouch=Dirt Pouch
 ItemTooltip.DirtPouch=Why did you do this?
-ItemName.GelPouch=Gel Pouch Bag
-ItemName.GemPouch=Gem Pouch
-ItemName.IcePouch=A bag of ice bullets
+ItemName.GelPouch=Pouch of Gel Pouches
+ItemName.GemPouch=Gem Bullet Pouch
+ItemName.IcePouch=Ice Pouch Pouch
 ItemName.IronPouch=Sack of Iron Bullets
 ItemName.LeadPouch=Pouch of Lead Bullets
 ItemName.PinkGelPouch=Pink Gel Pouch
-ItemName.PreciousPouch=Pouch of Precious Bullets
+ItemName.PreciousPouch=Precious Pouch
 ItemName.SnowPouch=Sack of Snow Bullets
 ItemName.StonePouch=Sack of Stone Bullets
-ItemName.TungstenPouch=Bag of Tungsten Bullets
+ItemName.TungstenPouch=Tungsten Bullet Pouch
 ItemName.HellPouch=Bag of Hell Bullets
 ItemName.CobaltPouch=Pouch of Cobalt Bullets
-ItemName.MythrilPouch=Bag of Mithril Bullets
+ItemName.MythrilPouch=Pouch of Mithril Bullets
 ItemName.AdamantitePouch=Pouch of Adamantium Bullets
 
 ItemName.CosmoPouch=Sack of Sky Bullets
-ItemTooltip.CosmoPouch=This pouch once belonged to Albedo.
-ItemName.PostLunarPouch=Pouch of Post Moon Lord Bullets
-ItemTooltip.PostLunarPouch=This pouch has powers that your father never dreamed of.
+ItemTooltip.CosmoPouch=This Pouch once belonged to Albedo.
+ItemName.PostLunarPouch=Lunar Lord's Pouch of Bullets
+ItemTooltip.PostLunarPouch=This Pouch has power beyond your father's dreams.
 ItemName.HardmodePouch=Hardmode Pouch
-ItemTooltip.HardmodePouch=Like shampoo 3 in 1.
-ItemName.PrehardmodePouch=Pouch of Prehardmode Bullets
-ItemTooltip.PrehardmodePouch=Mix of all pre-hardmode pouch.
+ItemTooltip.HardmodePouch=Like a 3 in 1 shampoo.
+ItemName.PrehardmodePouch=Prehardmode Ammo Pouch
+ItemTooltip.PrehardmodePouch=Horror...
 
 
-///BOS ITEM///
+///BOSS RELATED///
 ItemName.CursedPistol=Cursed Pistol
-ItemTooltip.CursedPistol=Obsidian pistol god-cursed weapon.
-ItemName.GodTribute=God Tribute
-ItemTooltip.GodTribute=An offering to an ancient being...
-ItemName.SniperVoodooDoll=Sniper VoodooDoll
-ItemTooltip.SniperVoodooDoll=Not consumable
+ItemTooltip.CursedPistol=Albedo's Cursed Obsidian Pistol...
+ItemName.GodTribute=Tribute to God
+ItemTooltip.GodTribute=Offering to an Ancient Creature...
+ItemName.SniperVoodooDoll=Sniper Voodoo Doll
+ItemTooltip.SniperVoodooDoll=Don't throw it into the lava.
 
-ItemName.GunDemonBag=Gun Demon Treasure Bag
+ItemName.GunDemonBag=Demon Weapon Treasure Bag
 ItemTooltip.GunDemonBag={$CommonItemTooltip.RightClickToOpen}
-ItemName.GunGodBag=Gun God Treasure Bag
+ItemName.GunGodBag=Gun God's Treasure Bag
 ItemTooltip.GunGodBag={$CommonItemTooltip.RightClickToOpen}
-ItemName.HellGuardBag=Hell Guard Treasure Bag
+ItemName.HellGuardBag=Hellguard's Treasure Bag
 ItemTooltip.HellGuardBag={$CommonItemTooltip.RightClickToOpen}
 
-ItemName.GunDemonTrophy=Gun Demon Trophy
-ItemTooltip.GunDemonTrophy=Trophy for perseverance.
-ItemName.GunGodTrophy=Gun God Trophy
-ItemTooltip.GunGodTrophy=Trophy for perseverance.
+ItemName.GunDemonTrophy=GunDemonTrophy
+ItemTooltip.GunDemonTrophy=A trophy for perseverance.
+ItemName.GunGodTrophy=GunGod Trophy
+ItemTooltip.GunGodTrophy=A trophy for perseverance.
 ItemName.HellGuardTrophy=Hell Guard Trophy
-ItemTooltip.HellGuardTrophy=Trophy for perseverance.
+ItemTooltip.HellGuardTrophy=A trophy for perseverance.
+
+ItemName.HellGuardBox=Hellguard's Music Box
+ItemTooltip.HellGuardBox=God, how does he feel...
+ItemName.GunDemonBox=GunDemonBox Weapon Demon Music Box
+ItemTooltip.GunDemonBox=God, how does he feel...
+ItemName.GunGodBox=GunGod Music Box
+ItemTooltip.GunGodBox=God, how does he feel...
+
+ItemName.VibrateGun=Vibrating Gun
+ItemTooltip.VibrateGun=Where this might lead...
 
 
 ///BOSS NAMES///
-NPCName.HellGuard=Hell Guard
-NPCName.HellGuardHand=Hand of the HellGuard
+NPCName.HellGuard=Hellguard
+NPCName.HellGuardHand=Hellguard Hand
+NPCName.GunDemonHead=GunDemonHead
+NPCName.GunDemonBody=GunDemonBody
+NPCName.GunDemonTail=GunDemonTail
 NPCName.GunGod=Gun God
+
+
+///ENEMIES///
 NPCName.MiniGun=Possessed Weapon
-NPCName.GunDemonHead=Gun Demon
-NPCName.GunDemonBody=Gun Demon
-NPCName.GunDemonTail=Gun Demon
 NPCName.MagmaLeechHead=Magma Leech
-NPCName.MagmaLeechBody=Magma Leech
-NPCName.MagmaLeechTail=Magma Leech
+NPCName.MagmaLeechBody=Magma LeechBody
+NPCName.MagmaLeechTail=Magma LeechTail
+
+
+///INTRUSIONS///
+Invasion.Gun.Name=Possessed Weapon
+Invasion.Gun.Info=All weapons got mad at you and flew out a chest of wows and started to envelop you.
+Invasion.Gun.Gona1=Weapons fly out of chests...
+Invasion.Gun.Gona2=The weapon no longer wants revenge...
+Invasion.Gun.UseItem=The weapon starts vibrating...
 
 
 ///BOSS MESSAGES///
 BossMassage.HellGuard=You feel like hell has become dangerous..
-BossMassage.GunGod=You have unleashed an ancient power...\nSomeone has definitely noticed...
-BossMassage.GunDemon=Infernal creatures make way for you...
+Boss.HellGuard.Info=Summoned in Hell.
+Boss.HellGuard.Gone=The Hellguard has shown his dominance...
+
+BossMassage.GunDemon=Hell creatures make way for you...
+Boss.GunDemon.Info=Summoned in Hell after killing {$NPCName.HellGuard}.
+Boss.GunDemon.Gone=GunDemon doesn't see you as a rival...
+
+BossMassage.GunGod=You have unleashed an ancient power...\nSomeone definitely noticed...
+Boss.GunGod.Info=Summoned anytime, anywhere.
+Boss.GunGod.Gone=The God of Weapons has accepted your husk as an offering...
 
 
-///NIPS NAMES//
+///NAMES OF NIPS//
 Sniper.name1=Tagged
 Sniper.name2=Kyle
 Sniper.name3=Kirill
@@ -217,19 +250,19 @@ Bagman.name6=Cenarius
 Bagman.name7=Karla
 
 
-///NIP DIALOGUES///
-Sniper.dialog1=Have you heard anything about sky bullets? Not? I'm here too.
+///NPC DIALOGUES///
+Sniper.dialog1=Have you heard anything about sky bullets? Not? Me too.
 Sniper.dialog2=I can make bullets out of anything, I can even make bullets out of other bullets.
-Sniper.dialog3=Would you like to buy ice bullets? Just don't keep them in your pocket for too long.
+Sniper.dialog3=Want to buy ice bullets? Just don't keep them in your pocket for too long.
 Sniper.dialog4=It's good to get paid for land.
 
 Bagman.dialog1=Do you know the sniper? He's my brother.
-Bagman.dialog2=If you only knew how hard it took me to collect these bags of bullets.
-Bagman.dialog3=The most modest prices on everything for just one platinum and a bag of good stuff in your pocket.
-Bagman.dialog4= You've heard of Albedo, he's scary... Don't trust him!
+Bagman.dialog2=If you only knew how hard it was for me to collect those bags of bullets.
+Bagman.dialog3=The most modest prices for everything for one platinum and a bag of good things in your pocket.
+Bagman.dialog4= You've heard of Albedo, he's scary... Don't believe him!
 
 
-///MISC///
+///OTHER///
 Misc.OnEnter=[AlbedoMod] - ! MOD IN ALPHA TESTING !
 NPC.Hardmod=Hardmod
 NPC.PreHardmod=PreHardmod

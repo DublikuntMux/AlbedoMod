@@ -16,7 +16,7 @@ But there is already:
 * 2 Accessories
 * 18 Guns
 * 5 Materials
-* 3 (de)buffs
+* 3 (de)Buffs
 * 2 NPC
 * 1 Pet
 * All Languages

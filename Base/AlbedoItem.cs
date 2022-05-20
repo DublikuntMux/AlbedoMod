@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -20,7 +21,7 @@ namespace Albedo.Base
 					break;
 				case 10:
 				case 9:
-					item.rare = ItemRarityID.Red;
+					item.rare = ItemRarityID.Purple;
 					break;
 				case 8:
 				case 7:
@@ -47,56 +48,65 @@ namespace Albedo.Base
 
 		public override bool PreDrawTooltipLine(DrawableTooltipLine line, ref int yOffset)
 		{
-			int rarity = 0;
-			switch (Rarity) {
-				case 12:
-					rarity = 3556; //RainbowMid
-					break;
-				case 11:
-					rarity = 2870; //Rainbow
-					break;
-				case 10:
-					rarity = 3039; //Cosmos
-					break;
-				case 9:
-					rarity = 3025; //Purple
-					break;
-				case 8:
-					rarity = 3027; //Gold
-					break;
-				case 7:
-					rarity = 3553; //Copper
-					break;
-				case 6:
-					rarity = 1053; //Yellow
-					break;
-				case 5:
-					rarity = 3550; //Orange
-					break;
-				case 4:
-					rarity = 3551; //Green
-					break;
-				case 3:
-					rarity = 3552; //Blue
-					break;
-				case 2:
-					rarity = 3026; //White
-					break;
-				case 1:
-					rarity = 3026; //Black
-					break;
-			}
-
 			if (line.mod == "Terraria" && line.Name == "ItemName") {
 				Main.spriteBatch.End();
-				Main.spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null);
-				GameShaders.Armor.Apply(GameShaders.Armor.GetShaderIdFromItemId(rarity), item);
-				Utils.DrawBorderString(Main.spriteBatch, line.text, new Vector2(line.X, line.Y), Color.White);
+				Main.spriteBatch.Begin(SpriteSortMode.Immediate, null, null, null, null, null, Main.UIScaleMatrix);
+
+				switch (Rarity) {
+					case 12:
+						GameShaders.Misc["PulseDiagonal"].UseColor(Color.Purple)
+							.UseSecondaryColor(Color.Red).Apply(); //RainbowMid
+						break;
+					case 11:
+						GameShaders.Misc["PulseUpwards"].UseColor(Color.Purple)
+							.UseSecondaryColor(Color.Red).Apply(); //Rainbow
+						break;
+					case 10:
+						GameShaders.Misc["PulseCircle"].UseColor(Color.Purple)
+							.UseSecondaryColor(Color.Aqua).Apply(); //Cosmos
+						break;
+					case 9:
+						GameShaders.Misc["PulseDiagonal"].UseColor(Color.Purple)
+							.UseSecondaryColor(Color.Aqua).Apply(); //Purple
+						break;
+					case 8:
+						GameShaders.Misc["PulseCircle"].UseColor(Color.Gold)
+							.UseSecondaryColor(Color.LightGoldenrodYellow).Apply(); //Gold
+						break;
+					case 7:
+						GameShaders.Misc["PulseCircle"].UseColor(Color.Brown)
+							.UseSecondaryColor(Color.SandyBrown).Apply(); //Copper
+						break;
+					case 6:
+						GameShaders.Misc["PulseCircle"].UseColor(Color.Yellow)
+							.UseSecondaryColor(Color.LightYellow).Apply(); //Yellow
+						break;
+					case 5:
+						GameShaders.Misc["PulseCircle"].UseColor(new Color(255, 48, 154))
+							.UseSecondaryColor(new Color(255, 169, 240)).Apply(); //Orange
+						break;
+					case 4:
+						GameShaders.Misc["PulseDiagonal"].UseColor(Color.Green)
+							.UseSecondaryColor(Color.ForestGreen).Apply(); //Green
+						break;
+					case 3:
+						GameShaders.Misc["PulseDiagonal"].UseColor(Color.Blue)
+							.UseSecondaryColor(Color.Aqua).Apply(); //Blue
+						break;
+					case 2:
+						GameShaders.Misc["PulseDiagonal"].UseColor(Color.White)
+							.UseSecondaryColor(Color.WhiteSmoke).Apply(); //White
+						break;
+					case 1:
+						GameShaders.Misc["PulseDiagonal"].UseColor(Color.Black)
+							.UseSecondaryColor(Color.DarkSlateGray).Apply();//Black
+						break;
+				}
+				Utils.DrawBorderString(Main.spriteBatch, line.text, new Vector2(line.X, line.Y), new Color(255, 169, 240));
 				Main.spriteBatch.End();
-				Main.spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null);
+				Main.spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, Main.UIScaleMatrix);
 				return false;
 			}
-
 			return true;
 		}
 	}

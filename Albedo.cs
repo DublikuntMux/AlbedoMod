@@ -10,7 +10,10 @@ using Albedo.Items.Weapons.Ranged;
 using Albedo.NPCs.Boss.GunDemon;
 using Albedo.NPCs.Boss.GunGod;
 using Albedo.NPCs.Boss.HellGuard;
+using Albedo.NPCs.Enemies.Invasion.PossessedWeapon;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -30,6 +33,14 @@ namespace Albedo
 
 		public override void Load()
 		{
+			if (Main.netMode != NetmodeID.Server) {
+				Ref<Effect> shader1 = new Ref<Effect>(GetEffect("Effects/TextShader"));
+				
+				GameShaders.Misc["PulseUpwards"] = new MiscShaderData(shader1, "PulseUpwards");
+				GameShaders.Misc["PulseDiagonal"] = new MiscShaderData(shader1, "PulseDiagonal");
+				GameShaders.Misc["PulseCircle"] = new MiscShaderData(shader1, "PulseCircle");
+			}
+			
 			if (!Main.dedServ) {
 				string[,] musicBoxes = {
 					{"HellGuard", "HellGuardBox", "HellGuardBoxTile"},
@@ -92,6 +103,20 @@ namespace Albedo
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Info"),
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Gone"),
 				"Albedo/UI/BossChecklist/GunGod");
+			bossChecklist?.Call("AddEvent", 9.6f, new List<int> {
+				NPCID.BlazingWheel, NPCID.PossessedArmor, ModContent.NPCType<GunCaster>(), NPCID.MartianTurret,
+				NPCID.EnchantedSword, NPCID.CrimsonAxe, NPCID.CursedHammer
+			},
+				this, 
+				Language.GetTextValue("Mods.Albedo.Invasion.Gun.Name"),
+				(Func<bool>) (() => AlbedoWorld.DownedGunInvasion),
+				ModContent.ItemType<VibrateGun>(),
+				new List<int> {},
+				new List<int> {},
+				Language.GetTextValue("Mods.Albedo.Invasion.Gun.Info"),
+				Language.GetTextValue("Mods.Albedo.Invasion.Gun.Gona2"),
+				"Albedo/UI/BossChecklist/GunInvaidors"
+			);
 
 			yabhb?.Call("RegisterDD2HealthBar",
 				ModContent.NPCType<HellGuard>());
