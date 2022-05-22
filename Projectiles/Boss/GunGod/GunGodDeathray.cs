@@ -3,6 +3,7 @@ using System.Linq;
 using Albedo.Global;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -61,7 +62,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 				             (Main.rand.NextBool(2) ? -1f : 1f) * ((float) Math.PI / 2f);
 				float num5 = (float) Main.rand.NextDouble() * 2f + 2f;
 				var vector3 = new Vector2((float) Math.Cos(num4) * num5, (float) Math.Sin(num4) * num5);
-				int num6 = Dust.NewDust(vector2, 0, 0, 244, vector3.X, vector3.Y);
+				int num6 = Dust.NewDust(vector2, 0, 0, DustID.CopperCoin, vector3.X, vector3.Y);
 				Main.dust[num6].noGravity = true;
 				Main.dust[num6].scale = 1.7f;
 			}
@@ -69,7 +70,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 			if (Main.rand.NextBool(5)) {
 				var vector4 = projectile.velocity.RotatedBy(1.5707963705062866) *
 				              ((float) Main.rand.NextDouble() - 0.5f) * projectile.width;
-				int num7 = Dust.NewDust(vector2 + vector4 - Vector2.One * 4f, 8, 8, 244, 0f, 0f, 100, default, 1.5f);
+				int num7 = Dust.NewDust(vector2 + vector4 - Vector2.One * 4f, 8, 8, DustID.CopperCoin, 0f, 0f, 100, default, 1.5f);
 				var obj = Main.dust[num7];
 				obj.velocity *= 0.5f;
 				Main.dust[num7].velocity.Y = 0f - Math.Abs(Main.dust[num7].velocity.Y);

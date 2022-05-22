@@ -11,7 +11,6 @@ namespace Albedo.Buffs.Boss
 			Main.buffNoTimeDisplay[Type] = true;
 			Main.debuff[Type] = true;
 			Main.buffNoSave[Type] = true;
-			longerExpertDebuff = false;
 			canBeCleared = false;
 		}
 

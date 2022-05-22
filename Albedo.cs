@@ -13,6 +13,7 @@ using Albedo.NPCs.Boss.HellGuard;
 using Albedo.NPCs.Enemies.Invasion.PossessedWeapon;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.Localization;
@@ -35,10 +36,15 @@ namespace Albedo
 		{
 			if (Main.netMode != NetmodeID.Server) {
 				Ref<Effect> shader1 = new Ref<Effect>(GetEffect("Effects/TextShader"));
+				Ref<Effect> shader2 = new Ref<Effect>(GetEffect("Effects/ScreenEffects"));
 				
 				GameShaders.Misc["PulseUpwards"] = new MiscShaderData(shader1, "PulseUpwards");
 				GameShaders.Misc["PulseDiagonal"] = new MiscShaderData(shader1, "PulseDiagonal");
 				GameShaders.Misc["PulseCircle"] = new MiscShaderData(shader1, "PulseCircle");
+				
+				Filters.Scene["InvertColor"] = new Filter(new ScreenShaderData(shader2, "InvertColor"), EffectPriority.VeryHigh);
+
+				Filters.Scene["InvertColor"].Load();
 			}
 			
 			if (!Main.dedServ) {

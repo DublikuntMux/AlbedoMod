@@ -146,7 +146,7 @@ namespace Albedo.NPCs.Boss.GunGod
 			}
 
 			if (Main.player[Main.myPlayer].active && npc.Distance(Main.player[Main.myPlayer].Center) < 3000f)
-				Main.player[Main.myPlayer].AddBuff(ModContent.BuffType<GunGodCurse>(), 2);
+				Main.player[Main.myPlayer].AddBuff(ModContent.BuffType<GunGodCurse>(), 100);
 			var val = Main.player[npc.target];
 			npc.direction = npc.spriteDirection = npc.Center.X < val.Center.X ? 1 : -1;
 			Vector2 vector;
@@ -1145,7 +1145,7 @@ namespace Albedo.NPCs.Boss.GunGod
 		public override void HitEffect(int hitDirection, double damage)
 		{
 			for (int i = 0; i < 3; i++) {
-				int num = Dust.NewDust(npc.position, npc.width, npc.height, 87);
+				int num = Dust.NewDust(npc.position, npc.width, npc.height, DustID.TopazBolt);
 				Main.dust[num].noGravity = true;
 				var obj = Main.dust[num];
 				obj.velocity *= 3f;

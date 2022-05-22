@@ -1,4 +1,5 @@
 ﻿using System;
+using Albedo.Buffs.Boss;
 using Albedo.Global;
 using Albedo.Helper;
 using Albedo.Items.TreasureBags;
@@ -6,6 +7,7 @@ using Albedo.Projectiles.Boss.HellGuard;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -145,7 +147,7 @@ namespace Albedo.NPCs.Boss.HellGuard
 							npc.life = npc.lifeMax;
 						CombatText.NewText(npc.Hitbox, CombatText.HealLife, num);
 						for (int index1 = 0; index1 < 5; ++index1) {
-							int index2 = Dust.NewDust(npc.Center, 0, 0, 174, 0.0f, 0.0f, 0, new Color(), 1.5f);
+							int index2 = Dust.NewDust(npc.Center, 0, 0, DustID.InfernoFork, 0.0f, 0.0f, 0, new Color(), 1.5f);
 							Main.dust[index2].noGravity = true;
 							var dust = Main.dust[index2];
 							dust.velocity *= 8f;
@@ -227,7 +229,7 @@ namespace Albedo.NPCs.Boss.HellGuard
 								for (int index = -1; index <= 1; ++index)
 									Projectile.NewProjectile(npc.Center + Vector2.UnitY * 60f,
 										(npc.localAI[2] == 1f ? 12 : 8) * npc.DirectionTo(player.Center)
-											.RotatedBy(MathHelper.ToRadians(8 * index)), 258, npc.damage / 4, 0f,
+											.RotatedBy(MathHelper.ToRadians(8 * index)), ProjectileID.Fireball, npc.damage / 4, 0f,
 										Main.myPlayer);
 						}
 

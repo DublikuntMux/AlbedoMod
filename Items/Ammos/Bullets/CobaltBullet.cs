@@ -9,7 +9,7 @@ namespace Albedo.Items.Ammos.Bullets
 	public class CobaltBullet : BaseBullet
 	{
 		protected override float ShootSpeed => 4f;
-		protected override int Damage => 20;
+		protected override int Damage => 9;
 		protected override float KnockBack => 1.50f;
 		protected override int Price => Item.buyPrice(copper: 30);
 		protected override int BulletMaterial => ItemID.CobaltBar;

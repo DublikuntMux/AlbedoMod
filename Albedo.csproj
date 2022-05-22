@@ -16,4 +16,7 @@
   <ItemGroup>
     <Folder Include="Invasion" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Effects\ScreenEffects.fx" />
+  </ItemGroup>
 </Project>

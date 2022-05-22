@@ -5,8 +5,10 @@ using Albedo.Projectiles.Accessories;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.GameInput;
+using Terraria.Graphics.Effects;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace Albedo.Global
 {
@@ -15,14 +17,14 @@ namespace Albedo.Global
 		public static bool StartMessage;
 
 		public bool BulletPet;
+		public bool GodImitator;
 
 		public bool CanGrab;
-
-		public bool GodImitator;
+		
+		public bool HellGuardCurse;
 		public bool GunDemonCurse;
 		public bool GunGodCurse;
 		public bool HellConfession;
-		public bool HellGuardCurse;
 
 		public int ScreenShake;
 
@@ -46,9 +48,10 @@ namespace Albedo.Global
 			if (ScreenShake > 0)
 				--ScreenShake;
 			BulletPet = false;
-			GunDemonCurse = false;
 			HellGuardCurse = false;
+			GunDemonCurse = false;
 			GunGodCurse = false;
+			HellConfession = false;
 			GodImitator = false;
 		}
 
@@ -56,9 +59,10 @@ namespace Albedo.Global
 		{
 			if (ScreenShake > 0)
 				--ScreenShake;
-			GunDemonCurse = false;
 			HellGuardCurse = false;
+			GunDemonCurse = false;
 			GunGodCurse = false;
+			HellConfession = false;
 		}
 
 		public override void PostUpdateBuffs()
@@ -68,13 +72,12 @@ namespace Albedo.Global
 				player.lifeRegenTime = 0;
 				player.allDamage /= 1.3f;
 				player.statDefense -= 10;
-				player.endurance /= 1.3f;
+				player.endurance /= 1.1f;
 			}
 
 			if (GunGodCurse) {
 				player.lifeRegen = 0;
 				player.lifeRegenTime = 0;
-				player.allDamage /= 1.3f;
 				player.statDefense -= 10;
 				player.endurance /= 1.3f;
 				player.maxMinions /= 2;
@@ -87,7 +90,7 @@ namespace Albedo.Global
 				player.endurance /= 2f;
 				player.onFire2 = true;
 				player.lifeRegen = 0;
-				player.allDamage /= 10f;
+				player.allDamage /= 1.1f;
 				player.lifeRegenTime = 0;
 			}
 

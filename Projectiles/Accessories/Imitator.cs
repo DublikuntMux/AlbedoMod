@@ -29,6 +29,7 @@ namespace Albedo.Projectiles.Accessories
 			projectile.timeLeft = 18000;
 			projectile.tileCollide = false;
 			projectile.ignoreWater = true;
+			projectile.damage = 20;
 		}
 
 		public override void AI()

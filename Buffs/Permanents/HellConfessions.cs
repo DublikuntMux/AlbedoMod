@@ -14,7 +14,6 @@ namespace Albedo.Buffs.Permanents
 			canBeCleared = false;
 		}
 
-		public override void Update(Player player, ref int buffIndex) =>
-			player.GetModPlayer<AlbedoPlayer>().HellConfession = true;
+		public override void Update(Player player, ref int buffIndex) => player.GetModPlayer<AlbedoPlayer>().HellConfession = true;
 	}
 }

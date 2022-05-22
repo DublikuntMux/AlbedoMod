@@ -1,5 +1,6 @@
 ﻿using Albedo.Global;
 using Terraria;
+using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
 namespace Albedo.Buffs.Boss
@@ -11,11 +12,9 @@ namespace Albedo.Buffs.Boss
 			Main.buffNoTimeDisplay[Type] = true;
 			Main.debuff[Type] = true;
 			Main.buffNoSave[Type] = true;
-			longerExpertDebuff = false;
 			canBeCleared = false;
 		}
 
-		public override void Update(Player player, ref int buffIndex) =>
-			player.GetModPlayer<AlbedoPlayer>().GunDemonCurse = true;
+		public override void Update(Player player, ref int buffIndex) => player.GetModPlayer<AlbedoPlayer>().HellGuardCurse = true;
 	}
 }

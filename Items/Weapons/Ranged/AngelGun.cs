@@ -1,7 +1,9 @@
 using Albedo.Base;
+using Albedo.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace Albedo.Items.Weapons.Ranged
 {
@@ -11,7 +13,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override void SetDefaults()
 		{
-			item.damage = 236;
+			item.damage = 90;
 			item.ranged = true;
 			item.width = 50;
 			item.maxStack = 1;
@@ -37,6 +39,15 @@ namespace Albedo.Items.Weapons.Ranged
 		{
 			type = 20;
 			return base.Shoot(player, ref position, ref speedX, ref speedY, ref type, ref damage, ref knockBack);
+		}
+
+		public override void AddRecipes()
+		{
+			var recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ModContent.ItemType<AngeliteBar>(), 20);
+			recipe.SetResult(this);
+			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.AddRecipe();
 		}
 	}
 }

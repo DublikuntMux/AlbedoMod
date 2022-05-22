@@ -11,6 +11,7 @@ namespace Albedo.Global
 	{
 		public static int HellGuard;
 		public static int GunGod;
+		public static int Albedo;
 
 		public override void NPCLoot(NPC npc)
 		{
@@ -66,7 +67,7 @@ namespace Albedo.Global
 				if (!AlbedoWorld.DownedHellGuard)
 					for (int i = 0; i < 255; i++)
 						if (Main.player[i].active && !Main.player[i].dead) {
-							Main.player[i].AddBuff(ModContent.BuffType<HellGuardCurse>(), 36000, false);
+							Main.player[i].AddBuff(ModContent.BuffType<HellGuardCurse>(), 100, false);
 							break;
 						}
 

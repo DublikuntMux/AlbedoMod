@@ -17,6 +17,7 @@ namespace Albedo.Global
 		public static bool DownedHellGuard;
 		public static bool DownedGunDemon;
 		public static bool DownedGunGod;
+		public static bool DownedAlbedo;
 
 		public static bool GunInvasionUp;
 		public static bool DownedGunInvasion;
@@ -29,6 +30,7 @@ namespace Albedo.Global
 			DownedHellGuard = false;
 			DownedGunDemon = false;
 			DownedGunGod = false;
+			DownedAlbedo = false;
 		}
 
 		public override TagCompound Save()
@@ -37,6 +39,7 @@ namespace Albedo.Global
 			if (DownedHellGuard) list.Add("HellGuard");
 			if (DownedGunDemon) list.Add("GunDemon");
 			if (DownedGunGod) list.Add("GunGod");
+			if (DownedAlbedo) list.Add("Albedo");
 			if (DownedGunInvasion) list.Add("GunInvasion");
 			if (GunInvasionUp) list.Add("GunInvasionUp");
 			var tc = new TagCompound {
@@ -51,6 +54,7 @@ namespace Albedo.Global
 			DownedHellGuard = list.Contains("HellGuard");
 			DownedGunDemon = list.Contains("GunDemon");
 			DownedGunGod = list.Contains("GunGod");
+			DownedAlbedo = list.Contains("Albedo");
 			DownedGunInvasion = list.Contains("GunInvasion");
 			GunInvasionUp = list.Contains("GunInvasionUp");
 		}
@@ -61,8 +65,10 @@ namespace Albedo.Global
 			DownedHellGuard = bitsByte[0];
 			DownedGunDemon = bitsByte[1];
 			DownedGunGod = bitsByte[2];
-			DownedGunInvasion = bitsByte[3];
-			GunInvasionUp = bitsByte[4];
+			DownedAlbedo = bitsByte[3];
+			
+			DownedGunInvasion = bitsByte[4];
+			GunInvasionUp = bitsByte[5];
 		}
 
 		public override void NetSend(BinaryWriter writer)
@@ -71,8 +77,10 @@ namespace Albedo.Global
 				[0] = DownedHellGuard,
 				[1] = DownedGunDemon,
 				[2] = DownedGunGod,
-				[3] = DownedGunInvasion,
-				[4] = GunInvasionUp
+				[3] = DownedAlbedo,
+				
+				[4] = DownedGunInvasion,
+				[5] = GunInvasionUp
 			};
 			writer.Write(bitsByte);
 		}

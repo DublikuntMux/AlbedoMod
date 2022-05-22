@@ -1,5 +1,6 @@
 using System;
 using Albedo.Base;
+using Albedo.Buffs.Boss;
 using Albedo.Global;
 using Albedo.Helper;
 using Albedo.Items.TreasureBags;
@@ -53,6 +54,8 @@ namespace Albedo.NPCs.Boss.GunDemon
 			UpdatePosition();
 			UpdateVelocity();
 			SpawnAdds();
+			if (Main.player[Main.myPlayer].active && npc.Distance(Main.player[Main.myPlayer].Center) < 3000f)
+				Main.player[Main.myPlayer].AddBuff(ModContent.BuffType<GunDemonCurse>(), 100);
 		}
 
 		private void SpawnAdds()
@@ -101,7 +104,7 @@ namespace Albedo.NPCs.Boss.GunDemon
 		public override void OnHitPlayer(Player target, int damage, bool crit)
 		{
 			target.AddBuff(24, 300);
-			target.AddBuff(67, 300);
+			target.AddBuff(67, 300); 
 		}
 
 		public override void BossLoot(ref string name, ref int potionType) => potionType = 188;

@@ -19,7 +19,7 @@ namespace Albedo.Items.Weapons.Ranged
 			item.shoot = ProjectileID.PurificationPowder;
 			item.useAmmo = AmmoID.Bullet;
 			item.UseSound = SoundID.Item11;
-			item.damage = 333;
+			item.damage = 50;
 			item.shootSpeed = 9f;
 			item.noMelee = true;
 			item.value = 100000;
