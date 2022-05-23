@@ -22,7 +22,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+			var val = EnemyHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 			if (val != null) {
 				projectile.alpha -= 2;
 				if (projectile.alpha < 0) projectile.alpha = 0;

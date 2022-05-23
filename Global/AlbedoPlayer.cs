@@ -1,14 +1,10 @@
 using System;
-using Albedo.Buffs.Permanents;
 using Albedo.Helper;
 using Albedo.Projectiles.Accessories;
 using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.GameInput;
-using Terraria.Graphics.Effects;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Terraria.ID;
 
 namespace Albedo.Global
 {
@@ -17,25 +13,18 @@ namespace Albedo.Global
 		public static bool StartMessage;
 
 		public bool BulletPet;
-		public bool GodImitator;
-
-		public bool CanGrab;
 		
-		public bool HellGuardCurse;
+		public bool GodImitator;
 		public bool GunDemonCurse;
 		public bool GunGodCurse;
-		public bool HellConfession;
+
+		public bool HellGuardCurse;
 
 		public int ScreenShake;
 
 		public override void OnEnterWorld(Player player)
 		{
 			if (StartMessage) GameHelper.Chat(Language.GetTextValue("Mods.Albedo.Misc.OnEnter"), Color.Red, false);
-		}
-
-		public override void ProcessTriggers(TriggersSet triggersSet)
-		{
-			if (AlbedoWorld.DownedGunDemon) player.AddBuff(ModContent.BuffType<HellConfessions>(), 3);
 		}
 
 		public override void ModifyScreenPosition()
@@ -51,7 +40,6 @@ namespace Albedo.Global
 			HellGuardCurse = false;
 			GunDemonCurse = false;
 			GunGodCurse = false;
-			HellConfession = false;
 			GodImitator = false;
 		}
 
@@ -62,7 +50,6 @@ namespace Albedo.Global
 			HellGuardCurse = false;
 			GunDemonCurse = false;
 			GunGodCurse = false;
-			HellConfession = false;
 		}
 
 		public override void PostUpdateBuffs()
@@ -92,14 +79,6 @@ namespace Albedo.Global
 				player.lifeRegen = 0;
 				player.allDamage /= 1.1f;
 				player.lifeRegenTime = 0;
-			}
-
-			if (HellConfession) {
-				player.statDefense += 10;
-				player.endurance += 2f;
-				player.onFire2 = false;
-				player.maxMinions += 4;
-				player.allDamage *= 1.1f;
 			}
 		}
 

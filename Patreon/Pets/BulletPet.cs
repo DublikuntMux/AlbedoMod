@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Albedo.Projectiles.Pets
+namespace Albedo.Patreon.Pets
 {
 	public class BulletPet : ModProjectile
 	{

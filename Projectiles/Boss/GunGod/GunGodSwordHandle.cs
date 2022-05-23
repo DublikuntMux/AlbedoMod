@@ -27,7 +27,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 		{
 			if (projectile.velocity.HasNaNs() || projectile.velocity == Vector2.Zero)
 				projectile.velocity = -Vector2.UnitY;
-			int byUuidReal = BossHelper.GetByUuidReal(projectile.owner, (int) projectile.ai[1],
+			int byUuidReal = EnemyHelper.GetByUuidReal(projectile.owner, (int) projectile.ai[1],
 				ModContent.ProjectileType<GunGodSword>());
 			if (byUuidReal != -1) {
 				projectile.Center = Main.projectile[byUuidReal].Center + Main.projectile[byUuidReal].velocity * 75f;

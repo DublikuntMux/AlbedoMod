@@ -60,7 +60,7 @@ namespace Albedo.Projectiles.Boss
 					color = Color.Yellow;
 					num = 30;
 					num2 = 10f;
-					var val13 = BossHelper.NpcExists(projectile.localAI[1],
+					var val13 = EnemyHelper.NpcExists(projectile.localAI[1],
 						ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 					if (val13 != null) {
 						projectile.Center = val13.Center;
@@ -97,7 +97,7 @@ namespace Albedo.Projectiles.Boss
 					color = Color.Yellow;
 					num = 60;
 					num2 = 6f;
-					var val10 = BossHelper.NpcExists(projectile.localAI[1],
+					var val10 = EnemyHelper.NpcExists(projectile.localAI[1],
 						ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 					if (val10 != null) {
 						projectile.Center = val10.Center;
@@ -119,7 +119,7 @@ namespace Albedo.Projectiles.Boss
 					color = Color.Yellow;
 					num = 150;
 					num2 = 7f;
-					var val6 = BossHelper.NpcExists(projectile.localAI[1],
+					var val6 = EnemyHelper.NpcExists(projectile.localAI[1],
 						ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 					if (val6 != null) {
 						projectile.Center = val6.Center;
@@ -141,7 +141,7 @@ namespace Albedo.Projectiles.Boss
 					color = new Color(0f, 1f, 1f);
 					num = 150;
 					num2 = 10f;
-					var val12 = BossHelper.NpcExists(projectile.localAI[1],
+					var val12 = EnemyHelper.NpcExists(projectile.localAI[1],
 						ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 					if (val12 != null) {
 						var value = val12.Center + Vector2.UnitX * projectile.ai[1];
@@ -156,7 +156,7 @@ namespace Albedo.Projectiles.Boss
 				case 6: {
 					color = new Color(51, 255, 191);
 					num = 90;
-					var val9 = BossHelper.PlayerExists(projectile.ai[1]);
+					var val9 = EnemyHelper.PlayerExists(projectile.ai[1]);
 					if (val9 != null)
 						projectile.rotation = projectile.DirectionTo(val9.Center).ToRotation();
 					else
@@ -193,7 +193,7 @@ namespace Albedo.Projectiles.Boss
 				case 8: {
 					color = Color.Yellow;
 					num = 60;
-					var val4 = BossHelper.NpcExists(projectile.ai[1], 128, 131, 129, 130);
+					var val4 = EnemyHelper.NpcExists(projectile.ai[1], 128, 131, 129, 130);
 					if (val4 != null) {
 						projectile.Center = val4.Center;
 						projectile.rotation = val4.rotation + (float) Math.PI / 2f;
@@ -211,7 +211,7 @@ namespace Albedo.Projectiles.Boss
 					color = Color.Red;
 					num = 120;
 					num2 = 2f;
-					var val2 = BossHelper.NpcExists(projectile.ai[1], 125);
+					var val2 = EnemyHelper.NpcExists(projectile.ai[1], 125);
 					if (val2 != null) {
 						var vector = new Vector2(val2.width - 24, 0f).RotatedBy(val2.rotation + 1.57079633);
 						projectile.Center = val2.Center + vector;
@@ -226,7 +226,7 @@ namespace Albedo.Projectiles.Boss
 					color = Color.Purple;
 					num = 90;
 					num2 = 2f;
-					var val3 = BossHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+					var val3 = EnemyHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 					if (val3 != null) {
 						projectile.Center = val3.Center;
 						projectile.rotation = val3.localAI[0];

@@ -65,7 +65,7 @@ namespace Albedo.Projectiles
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(projectile.ai[1], npcType);
+			var val = EnemyHelper.NpcExists(projectile.ai[1], npcType);
 			if (val != null) {
 				var projectile1 = projectile;
 				projectile1.alpha -= increment;

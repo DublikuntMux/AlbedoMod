@@ -62,7 +62,7 @@ namespace Albedo.NPCs.Boss.GunGod
 		public override bool CanHitPlayer(Player target, ref int cooldownSlot)
 		{
 			cooldownSlot = 1;
-			if (npc.Distance(BossHelper.ClosestPointInHitbox(target, npc.Center)) < 42f && npc.ai[0] != 10f)
+			if (npc.Distance(EnemyHelper.ClosestPointInHitbox(target, npc.Center)) < 42f && npc.ai[0] != 10f)
 				return npc.ai[0] != 18f;
 			return false;
 		}
@@ -106,14 +106,14 @@ namespace Albedo.NPCs.Boss.GunGod
 
 			if (Main.netMode != NetmodeID.MultiplayerClient) {
 				if (npc.localAI[3] == 2f &&
-				    BossHelper.ProjectileExists(_ritualProj, ModContent.ProjectileType<GodArena1>()) == null)
+				    EnemyHelper.ProjectileExists(_ritualProj, ModContent.ProjectileType<GodArena1>()) == null)
 					_ritualProj = Projectile.NewProjectile(npc.Center, Vector2.Zero,
 						ModContent.ProjectileType<GodArena1>(), npc.damage / 4, 0f, Main.myPlayer, 0f, npc.whoAmI);
-				if (BossHelper.ProjectileExists(_ringProj, ModContent.ProjectileType<GodArena2>()) == null)
+				if (EnemyHelper.ProjectileExists(_ringProj, ModContent.ProjectileType<GodArena2>()) == null)
 					_ringProj = Projectile.NewProjectile(npc.Center, Vector2.Zero,
 						ModContent.ProjectileType<GodArena2>(),
 						0, 0f, Main.myPlayer, 0f, npc.whoAmI);
-				if (BossHelper.ProjectileExists(_spriteProj, ModContent.ProjectileType<GunGodTrail>()) == null) {
+				if (EnemyHelper.ProjectileExists(_spriteProj, ModContent.ProjectileType<GunGodTrail>()) == null) {
 					if (Main.netMode == NetmodeID.SinglePlayer) {
 						int num = 0;
 						for (int num2 = 999; num2 >= 0; num2--)
@@ -217,7 +217,7 @@ namespace Albedo.NPCs.Boss.GunGod
 						}
 					}
 					else if (npc.ai[1] == 120f) {
-						BossHelper.ClearFriendlyProjectiles(1);
+						EnemyHelper.ClearFriendlyProjectiles(1);
 						if (Main.netMode != NetmodeID.MultiplayerClient)
 							_ritualProj = Projectile.NewProjectile(npc.Center, Vector2.Zero,
 								ModContent.ProjectileType<GodArena1>(), npc.damage / 4, 0f, Main.myPlayer, 0f,
@@ -918,7 +918,7 @@ namespace Albedo.NPCs.Boss.GunGod
 						npc.netUpdate = true;
 						npc.ai[2] = val.Center.X;
 						npc.ai[3] = val.Center.Y;
-						if (BossHelper.ProjectileExists(_ritualProj, ModContent.ProjectileType<GodArena1>()) != null) {
+						if (EnemyHelper.ProjectileExists(_ritualProj, ModContent.ProjectileType<GodArena1>()) != null) {
 							npc.ai[2] = Main.projectile[_ritualProj].Center.X;
 							npc.ai[3] = Main.projectile[_ritualProj].Center.Y;
 						}
@@ -1091,7 +1091,7 @@ namespace Albedo.NPCs.Boss.GunGod
 					npc.ai[2] = 0f;
 					npc.ai[3] = 0f;
 					npc.netUpdate = true;
-					BossHelper.ClearHostileProjectiles(2, npc.whoAmI);
+					EnemyHelper.ClearHostileProjectiles(2, npc.whoAmI);
 				}
 
 				return true;
@@ -1166,7 +1166,7 @@ namespace Albedo.NPCs.Boss.GunGod
 				npc.localAI[2] = 0f;
 				npc.dontTakeDamage = true;
 				npc.netUpdate = true;
-				BossHelper.ClearHostileProjectiles(2, npc.whoAmI);
+				EnemyHelper.ClearHostileProjectiles(2, npc.whoAmI);
 			}
 
 			return false;

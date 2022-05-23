@@ -36,7 +36,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 		public override void AI()
 		{
 			projectile.hide = false;
-			var val = BossHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+			var val = EnemyHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 			if (val != null) {
 				if (val.ai[0] == 0f) projectile.extraUpdates = 1;
 				if (projectile.localAI[0] == 0f) projectile.localAI[1] = projectile.ai[1] / 60f;

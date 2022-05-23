@@ -27,7 +27,7 @@ namespace Albedo.Projectiles.Boss
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(projectile.ai[0]);
+			var val = EnemyHelper.NpcExists(projectile.ai[0]);
 			if (val != null) projectile.Center = val.Center;
 			float num = 12f;
 			int num2 = 30;

@@ -2,7 +2,6 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -46,7 +45,8 @@ namespace Albedo.Projectiles.Boss.HellGuard
 				projectile.alpha = byte.MaxValue;
 			projectile.rotation += (float) Math.PI / 40f * projectile.localAI[0];
 			Lighting.AddLight(projectile.Center, 0.3f, 0.75f, 0.9f);
-			int index = Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.NorthPole, 0.0f, 0.0f, 100,
+			int index = Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.NorthPole, 0.0f,
+				0.0f, 100,
 				Color.Transparent);
 			Main.dust[index].noGravity = true;
 			var projectile1 = projectile;

@@ -1,9 +1,6 @@
 using Albedo.Base;
-using Albedo.Buffs.Boss;
 using Microsoft.Xna.Framework;
-using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace Albedo.NPCs.Boss.GunDemon
 {
@@ -29,7 +26,7 @@ namespace Albedo.NPCs.Boss.GunDemon
 			npc.defense = 55;
 			npc.lifeMax = 98000;
 		}
-		
+
 		public override void AI() => CheckSegments();
 
 		public override bool CheckActive() => false;

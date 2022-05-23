@@ -45,7 +45,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 				Main.PlaySound(SoundID.Item84, projectile.Center);
 			}
 			else if (projectile.timeLeft < 360) {
-				var val = BossHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+				var val = EnemyHelper.NpcExists(projectile.ai[0], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 				if (val == null) {
 					projectile.Kill();
 					return;

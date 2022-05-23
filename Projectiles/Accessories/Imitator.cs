@@ -69,7 +69,7 @@ namespace Albedo.Projectiles.Accessories
 			float x2 = projectile.position.X;
 			float y = projectile.position.Y;
 			bool flag = false;
-			var val2 = BossHelper.NpcExists(
+			var val2 = EnemyHelper.NpcExists(
 				GameHelper.FindClosestHostileNpcPrioritizingMinionFocus(projectile, 700f, true));
 			if (val2 != null) {
 				x2 = val2.Center.X;

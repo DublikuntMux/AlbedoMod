@@ -38,7 +38,7 @@ namespace Albedo.Projectiles.Boss.HellGuard
 					target.AddBuff(67, 120);
 			}
 
-			if (!BossHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
+			if (!EnemyHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
 				    ModContent.NPCType<NPCs.Boss.HellGuard.HellGuard>()))
 				return;
 			target.AddBuff(24, 300);

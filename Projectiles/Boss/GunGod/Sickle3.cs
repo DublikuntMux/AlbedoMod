@@ -20,7 +20,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 			var projectile1 = projectile;
 			projectile1.rotation += 0.8f;
 			if (projectile.ai[1] == 0f) {
-				var val = BossHelper.PlayerExists(projectile.ai[0]);
+				var val = EnemyHelper.PlayerExists(projectile.ai[0]);
 				if (val != null) {
 					var vector = new Vector2(projectile.localAI[0], projectile.localAI[1]);
 					if (projectile.Distance(vector) > val.Distance(vector) - 160f) {

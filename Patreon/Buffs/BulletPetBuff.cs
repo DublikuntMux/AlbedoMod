@@ -1,5 +1,5 @@
 ﻿using Albedo.Global;
-using Albedo.Projectiles.Pets;
+using Albedo.Patreon.Pets;
 using Terraria;
 using Terraria.ModLoader;
 

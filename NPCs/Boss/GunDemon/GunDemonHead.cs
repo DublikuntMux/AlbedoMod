@@ -104,7 +104,7 @@ namespace Albedo.NPCs.Boss.GunDemon
 		public override void OnHitPlayer(Player target, int damage, bool crit)
 		{
 			target.AddBuff(24, 300);
-			target.AddBuff(67, 300); 
+			target.AddBuff(67, 300);
 		}
 
 		public override void BossLoot(ref string name, ref int potionType) => potionType = 188;

@@ -27,7 +27,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
 		public override void AI()
 		{
-			if (BossHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
+			if (EnemyHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
 			    !Main.npc[AlbedoGlobalNpc.HellGuard].dontTakeDamage) {
 				if (projectile.localAI[0] == 0.0) {
 					projectile.localAI[0] = Main.rand.NextBool() ? -1f : 1f;

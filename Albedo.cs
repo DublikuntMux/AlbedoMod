@@ -35,18 +35,19 @@ namespace Albedo
 		public override void Load()
 		{
 			if (Main.netMode != NetmodeID.Server) {
-				Ref<Effect> shader1 = new Ref<Effect>(GetEffect("Effects/TextShader"));
-				Ref<Effect> shader2 = new Ref<Effect>(GetEffect("Effects/ScreenEffects"));
-				
+				var shader1 = new Ref<Effect>(GetEffect("Effects/TextShader"));
+				var shader2 = new Ref<Effect>(GetEffect("Effects/ScreenEffects"));
+
 				GameShaders.Misc["PulseUpwards"] = new MiscShaderData(shader1, "PulseUpwards");
 				GameShaders.Misc["PulseDiagonal"] = new MiscShaderData(shader1, "PulseDiagonal");
 				GameShaders.Misc["PulseCircle"] = new MiscShaderData(shader1, "PulseCircle");
-				
-				Filters.Scene["InvertColor"] = new Filter(new ScreenShaderData(shader2, "InvertColor"), EffectPriority.VeryHigh);
+
+				Filters.Scene["InvertColor"] =
+					new Filter(new ScreenShaderData(shader2, "InvertColor"), EffectPriority.VeryHigh);
 
 				Filters.Scene["InvertColor"].Load();
 			}
-			
+
 			if (!Main.dedServ) {
 				string[,] musicBoxes = {
 					{"HellGuard", "HellGuardBox", "HellGuardBoxTile"},
@@ -110,15 +111,16 @@ namespace Albedo
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Gone"),
 				"Albedo/UI/BossChecklist/GunGod");
 			bossChecklist?.Call("AddEvent", 9.6f, new List<int> {
-				NPCID.BlazingWheel, NPCID.PossessedArmor, ModContent.NPCType<GunCaster>(), NPCID.MartianTurret,
-				NPCID.EnchantedSword, NPCID.CrimsonAxe, NPCID.CursedHammer
-			},
-				this, 
+					NPCID.BlazingWheel, NPCID.PossessedArmor, ModContent.NPCType<GunCaster>(), NPCID.MartianTurret,
+					NPCID.EnchantedSword, NPCID.CrimsonAxe, NPCID.CursedHammer, ModContent.NPCType<LiveArmorCopper>(),
+					ModContent.NPCType<LiveArmorGold>()
+				},
+				this,
 				Language.GetTextValue("Mods.Albedo.Invasion.Gun.Name"),
 				(Func<bool>) (() => AlbedoWorld.DownedGunInvasion),
 				ModContent.ItemType<VibrateGun>(),
-				new List<int> {},
-				new List<int> {},
+				new List<int>(),
+				new List<int>(),
 				Language.GetTextValue("Mods.Albedo.Invasion.Gun.Info"),
 				Language.GetTextValue("Mods.Albedo.Invasion.Gun.Gona2"),
 				"Albedo/UI/BossChecklist/GunInvaidors"

@@ -24,7 +24,7 @@ namespace Albedo.Items.Summons
 			item.consumable = false;
 		}
 
-		public override bool CanUseItem(Player player) => !BossHelper.OtherBossAlive(0);
+		public override bool CanUseItem(Player player) => !EnemyHelper.OtherBossAlive(0);
 
 		public override bool UseItem(Player player)
 		{

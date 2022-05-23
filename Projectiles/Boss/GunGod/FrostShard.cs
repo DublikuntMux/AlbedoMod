@@ -43,7 +43,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
 			projectile.velocity.X *= 0.95f;
 			projectile.position.Y += projectile.velocity.Y / 2f;
-			if (BossHelper.BossIsAlive(ref AlbedoGlobalNpc.GunGod, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
+			if (EnemyHelper.BossIsAlive(ref AlbedoGlobalNpc.GunGod, ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
 			    projectile.position.Y > Main.npc[AlbedoGlobalNpc.GunGod].Center.Y +
 			    (Main.npc[AlbedoGlobalNpc.GunGod].localAI[3] == 1f ? 2000 : 1400)) projectile.Kill();
 		}

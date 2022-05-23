@@ -1,6 +1,6 @@
 ﻿using Albedo.Items.Materials;
 using Albedo.Patreon.Buffs;
-using Albedo.Projectiles.Pets;
+using Albedo.Patreon.Pets;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

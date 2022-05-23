@@ -8,7 +8,7 @@ using static Terraria.Main;
 
 namespace Albedo.Helper
 {
-	public class BossHelper
+	public class EnemyHelper
 	{
 		private static NPC NpcExists(int whoAmI, params int[] types)
 		{

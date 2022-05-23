@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -99,14 +98,17 @@ namespace Albedo.Base
 						break;
 					case 1:
 						GameShaders.Misc["PulseDiagonal"].UseColor(Color.Black)
-							.UseSecondaryColor(Color.DarkSlateGray).Apply();//Black
+							.UseSecondaryColor(Color.DarkSlateGray).Apply(); //Black
 						break;
 				}
-				Utils.DrawBorderString(Main.spriteBatch, line.text, new Vector2(line.X, line.Y), new Color(255, 169, 240));
+
+				Utils.DrawBorderString(Main.spriteBatch, line.text, new Vector2(line.X, line.Y),
+					new Color(255, 169, 240));
 				Main.spriteBatch.End();
 				Main.spriteBatch.Begin(SpriteSortMode.Deferred, null, null, null, null, null, Main.UIScaleMatrix);
 				return false;
 			}
+
 			return true;
 		}
 	}

@@ -43,7 +43,7 @@ namespace Albedo.Projectiles.Boss.HellGuard
 				}
 
 				if (projectile.localAI[1] > 60.0 && projectile.localAI[1] < 150.0 &&
-				    BossHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
+				    EnemyHelper.BossIsAlive(ref AlbedoGlobalNpc.HellGuard,
 					    ModContent.NPCType<NPCs.Boss.HellGuard.HellGuard>()) &&
 				    Main.npc[AlbedoGlobalNpc.HellGuard].HasValidTarget) {
 					float rotation1 = projectile.velocity.ToRotation();

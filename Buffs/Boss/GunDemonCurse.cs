@@ -1,6 +1,5 @@
 ﻿using Albedo.Global;
 using Terraria;
-using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
 namespace Albedo.Buffs.Boss
@@ -15,6 +14,7 @@ namespace Albedo.Buffs.Boss
 			canBeCleared = false;
 		}
 
-		public override void Update(Player player, ref int buffIndex) => player.GetModPlayer<AlbedoPlayer>().HellGuardCurse = true;
+		public override void Update(Player player, ref int buffIndex) =>
+			player.GetModPlayer<AlbedoPlayer>().GunDemonCurse = true;
 	}
 }

@@ -1,10 +1,8 @@
 using System;
 using Albedo.Base;
-using Albedo.Buffs.Boss;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace Albedo.NPCs.Boss.GunDemon
 {
@@ -80,7 +78,7 @@ namespace Albedo.NPCs.Boss.GunDemon
 					dust.noGravity = true;
 				}
 		}
-		
+
 		public override bool CheckActive() => false;
 
 		public override bool? DrawHealthBar(byte hbPosition, ref float scale, ref Vector2 position) => false;

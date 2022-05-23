@@ -52,7 +52,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 				projectile.netUpdate = true;
 				var val = Main.player[Player.FindClosest(projectile.position, projectile.width, projectile.height)];
 				projectile.velocity = projectile.DirectionTo(val.Center);
-				if (BossHelper.BossIsAlive(ref AlbedoGlobalNpc.GunGod,
+				if (EnemyHelper.BossIsAlive(ref AlbedoGlobalNpc.GunGod,
 					    ModContent.NPCType<NPCs.Boss.GunGod.GunGod>()) &&
 				    Main.npc[AlbedoGlobalNpc.GunGod].localAI[3] > 1f) {
 					var projectile1 = projectile;

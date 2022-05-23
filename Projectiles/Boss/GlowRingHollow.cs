@@ -57,7 +57,7 @@ namespace Albedo.Projectiles.Boss
 					color = Color.Yellow;
 					num2 = 180;
 					num3 = 10;
-					var val5 = BossHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+					var val5 = EnemyHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 					if (val5 != null) {
 						projectile.Center = val5.Center;
 						num = 1400f * (num2 - projectile.localAI[0]) / num2;

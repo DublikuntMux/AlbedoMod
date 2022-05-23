@@ -66,7 +66,7 @@ namespace Albedo.NPCs.Boss.HellGuard
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(npc.ai[2], ModContent.NPCType<HellGuard>());
+			var val = EnemyHelper.NpcExists(npc.ai[2], ModContent.NPCType<HellGuard>());
 			if (val == null) {
 				npc.life = 0;
 				npc.checkDead();
@@ -410,7 +410,7 @@ namespace Albedo.NPCs.Boss.HellGuard
 			float knockback,
 			bool crit)
 		{
-			if (!BossHelper.CanDeleteProjectile(projectile))
+			if (!EnemyHelper.CanDeleteProjectile(projectile))
 				return;
 			projectile.penetrate = 0;
 			projectile.timeLeft = 0;

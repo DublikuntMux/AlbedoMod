@@ -4,7 +4,6 @@ using Albedo.Projectiles.Boss.GunGod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -45,7 +44,7 @@ namespace Albedo.NPCs.Boss.GunGod
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(npc.ai[0], ModContent.NPCType<GunGod>());
+			var val = EnemyHelper.NpcExists(npc.ai[0], ModContent.NPCType<GunGod>());
 			if (val == null || val.dontTakeDamage) {
 				if (Main.netMode != NetmodeID.MultiplayerClient) {
 					npc.life = 0;
@@ -110,7 +109,7 @@ namespace Albedo.NPCs.Boss.GunGod
 				obj.velocity *= 3f;
 			}
 
-			if (npc.life <= 0) {
+			if (npc.life <= 0)
 				for (int j = 0; j < 30; j++) {
 					int num2 = Dust.NewDust(npc.position, npc.width, npc.height, DustID.TopazBolt, 0f, 0f, 0, default,
 						2f);
@@ -118,7 +117,6 @@ namespace Albedo.NPCs.Boss.GunGod
 					var obj2 = Main.dust[num2];
 					obj2.velocity *= 12f;
 				}
-			}
 		}
 
 		public override Color? GetAlpha(Color drawColor) => Color.White;

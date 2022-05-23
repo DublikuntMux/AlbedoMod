@@ -15,7 +15,8 @@ namespace Albedo.Invasion
 		public static readonly int[] PreHardmodeInvaders = {
 			NPCID.BlazingWheel,
 			NPCID.PossessedArmor,
-			ModContent.NPCType<GunCaster>()
+			ModContent.NPCType<LiveArmorGold>(),
+			ModContent.NPCType<LiveArmorCopper>()
 		};
 
 		public static readonly int[] HardmodeInvaders = {
@@ -26,7 +27,7 @@ namespace Albedo.Invasion
 		};
 
 		public static readonly int[] PostLunarInvaders = {
-			NPCID.RustyArmoredBonesAxe
+			ModContent.NPCType<GunCaster>()
 		};
 
 		public static int[] GetFullInvaderList()

@@ -11,7 +11,6 @@ namespace Albedo.Global
 	{
 		public static int HellGuard;
 		public static int GunGod;
-		public static int Albedo;
 
 		public override void NPCLoot(NPC npc)
 		{
@@ -37,13 +36,6 @@ namespace Albedo.Global
 						Item.NewItem(npc.getRect(), ModContent.ItemType<KryonikGun>());
 					break;
 			}
-
-			if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
-			    .CanGrab) Item.NewItem(npc.getRect(), ModContent.ItemType<HellGuardSoul>());
-			if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
-			    .CanGrab) Item.NewItem(npc.getRect(), ModContent.ItemType<GunDemonSoul>());
-			if (Main.player[Player.FindClosest(npc.position, npc.width, npc.height)].GetModPlayer<AlbedoPlayer>()
-			    .CanGrab) Item.NewItem(npc.getRect(), ModContent.ItemType<GunGodSoul>());
 		}
 
 		public override void SetupShop(int type, Chest shop, ref int nextSlot)

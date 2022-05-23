@@ -1,8 +1,6 @@
 ﻿using System;
 using Albedo.Helper;
-using Albedo.Items.Ammos.Bullets;
 using Albedo.NPCs.Enemies.Invasion.PossessedWeapon;
-using Albedo.Projectiles.Boss.GunGod;
 using Albedo.Projectiles.Bullets;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -51,7 +49,7 @@ namespace Albedo.Projectiles.Enemies
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(npc.ai[0], ModContent.NPCType<GunCaster>());
+			var val = EnemyHelper.NpcExists(npc.ai[0], ModContent.NPCType<GunCaster>());
 			if (val == null || val.dontTakeDamage) {
 				if (Main.netMode != NetmodeID.MultiplayerClient) {
 					npc.life = 0;
@@ -79,7 +77,8 @@ namespace Albedo.Projectiles.Enemies
 							var vector = 16f * npc.ai[3].ToRotationVector2()
 								.RotatedBy((Main.rand.NextDouble() - 0.5) * 0.785398185253143 / 12.0);
 							vector *= Main.rand.NextFloat(0.9f, 1.1f);
-							int num = Projectile.NewProjectile(npc.Center, vector, ModContent.ProjectileType<HellBulletProjectile>(),
+							int num = Projectile.NewProjectile(npc.Center, vector,
+								ModContent.ProjectileType<HellBulletProjectile>(),
 								val.damage / 4, 0f, Main.myPlayer);
 							if (num != 1000)
 								Main.projectile[num].timeLeft = (int) (npc.localAI[2] / vector.Length()) + 1;

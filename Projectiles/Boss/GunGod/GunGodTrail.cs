@@ -32,7 +32,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 
 		public override void AI()
 		{
-			var val = BossHelper.NpcExists(projectile.ai[1]);
+			var val = EnemyHelper.NpcExists(projectile.ai[1]);
 			if (val != null) {
 				projectile.Center = val.Center;
 				projectile.alpha = val.alpha;

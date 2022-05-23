@@ -26,6 +26,7 @@ namespace Albedo.Buffs.Boss
 				player.GetModPlayer<AlbedoPlayer>().ScreenShake = 60;
 				_broadcast = true;
 			}
+
 			player.GetModPlayer<AlbedoPlayer>().HellGuardCurse = true;
 		}
 	}

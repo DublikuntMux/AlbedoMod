@@ -32,7 +32,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 		{
 			if (projectile.velocity.HasNaNs() || projectile.velocity == Vector2.Zero)
 				projectile.velocity = -Vector2.UnitY;
-			var val = BossHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
+			var val = EnemyHelper.NpcExists(projectile.ai[1], ModContent.NPCType<NPCs.Boss.GunGod.GunGod>());
 			if (val == null) {
 				projectile.Kill();
 				return;
