@@ -13,6 +13,7 @@ namespace Albedo.Items.Ammos.Combined
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = 50;
 			item.ranged = true;
 			item.width = 26;

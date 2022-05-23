@@ -43,7 +43,6 @@ namespace Albedo.NPCs.Enemies.Invasion.PossessedWeapon
 			npc.value = Item.buyPrice(0, 0, 20);
 			npc.HitSound = SoundID.NPCHit1;
 			npc.DeathSound = SoundID.NPCDeath6;
-			banner = npc.type;
 		}
 
 		public override void ScaleExpertStats(int numPlayers, float bossLifeScale)

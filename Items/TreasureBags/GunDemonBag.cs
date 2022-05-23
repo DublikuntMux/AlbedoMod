@@ -19,6 +19,7 @@ namespace Albedo.Items.TreasureBags
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.maxStack = 999;
 			item.consumable = true;
 			item.width = 24;

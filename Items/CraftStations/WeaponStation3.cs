@@ -12,9 +12,9 @@ namespace Albedo.Items.CraftStations
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 28;
 			item.height = 14;
-			item.rare = ItemRarityID.Red;
 			item.maxStack = 99;
 			item.useTurn = true;
 			item.autoReuse = true;

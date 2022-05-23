@@ -6,9 +6,11 @@ namespace Albedo.NPCs.Enemies.Invasion.PossessedWeapon
 {
 	public class LiveArmorCopper : ModNPC
 	{
-		public override void SetStaticDefaults() => Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.PossessedArmor];
+		public override void SetStaticDefaults() =>
+			Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.PossessedArmor];
 
-		public override void SetDefaults() {
+		public override void SetDefaults()
+		{
 			npc.width = 28;
 			npc.height = 45;
 			npc.damage = 55;

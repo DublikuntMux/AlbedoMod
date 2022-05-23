@@ -13,6 +13,7 @@ namespace Albedo.Patreon.Accessories
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = 0;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.width = 30;

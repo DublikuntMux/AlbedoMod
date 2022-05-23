@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using Albedo.Base;
 using Albedo.Buffs.Item;
+using Albedo.Items.Materials;
 using Albedo.Projectiles.Weapons.Ranged.ZenithGun;
+using Albedo.Tiles.CraftStations;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -20,6 +22,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = 100;
 			item.ranged = true;
 			item.width = 100;
@@ -114,14 +117,14 @@ namespace Albedo.Items.Weapons.Ranged
 			return true;
 		}
 
-		public override bool ConsumeAmmo(Player player) => Main.rand.NextFloat() >= 0.66f;
+		public override bool ConsumeAmmo(Player player) => Main.rand.NextFloat() >= 0.77f;
 
 		public override Vector2? HoldoutOffset() => new Vector2(-14f, 0f);
 
 		public override void AddRecipes()
 		{
 			var val = new ModRecipe(mod);
-			val.AddTile(TileID.LunarCraftingStation);
+			val.AddTile(ModContent.TileType<WeaponStation3Tile>());
 			val.SetResult(this);
 			val.AddIngredient(ItemID.SDMG);
 			val.AddIngredient(ItemID.VortexBeater);
@@ -133,7 +136,9 @@ namespace Albedo.Items.Weapons.Ranged
 			val.AddIngredient(ItemID.ClockworkAssaultRifle);
 			val.AddIngredient(ItemID.PhoenixBlaster);
 			val.AddIngredient(ItemID.TheUndertaker);
-			val.AddIngredient(ItemID.Musket);
+			val.AddIngredient(ModContent.ItemType<GunGodSoul>(), 15);
+			val.AddIngredient(ModContent.ItemType<HellGuardSoul>(), 15);
+			val.AddIngredient(ModContent.ItemType<GunDemonSoul>(), 15);
 			val.AddRecipe();
 		}
 	}

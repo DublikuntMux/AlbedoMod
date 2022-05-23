@@ -16,6 +16,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = 666;
 			item.ranged = true;
 			item.useTime = item.useAnimation = 30;

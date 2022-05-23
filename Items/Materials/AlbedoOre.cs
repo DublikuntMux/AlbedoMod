@@ -14,6 +14,7 @@ namespace Albedo.Items.Materials
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.useTurn = true;
 			item.value = Item.buyPrice(silver: 5);

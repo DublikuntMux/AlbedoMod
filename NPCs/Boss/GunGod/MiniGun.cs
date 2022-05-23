@@ -23,8 +23,8 @@ namespace Albedo.NPCs.Boss.GunGod
 		{
 			npc.width = 54;
 			npc.height = 18;
-			npc.defense = 100;
-			npc.lifeMax = 20000;
+			npc.defense = 50;
+			npc.lifeMax = 2000;
 			npc.scale = 2f;
 			npc.damage = 100;
 			npc.HitSound = SoundID.NPCHit4;
@@ -39,8 +39,6 @@ namespace Albedo.NPCs.Boss.GunGod
 			npc.buffImmune[68] = true;
 			npc.dontTakeDamage = true;
 		}
-
-		public override void ScaleExpertStats(int numPlayers, float bossLifeScale) => npc.damage = 200;
 
 		public override void AI()
 		{

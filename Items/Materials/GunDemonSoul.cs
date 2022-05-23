@@ -21,6 +21,7 @@ namespace Albedo.Items.Materials
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			var refItem = new Item();
 			refItem.SetDefaults(ItemID.SoulofSight);
 			item.width = refItem.width;

@@ -10,7 +10,6 @@ namespace Albedo.Projectiles.Bullets
 		private const int MaxBounces = 2;
 
 		private int _bounce;
-		protected override string Name => "Snow Bullet";
 		protected override int Penetrate => 2;
 
 		public override void AI()
@@ -22,7 +21,8 @@ namespace Albedo.Projectiles.Bullets
 		public override void Kill(int timeLeft)
 		{
 			Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y, 21, 0.5f, 0.8f);
-			for (int i = 0; i < 6; i++) Dust.NewDust(projectile.position, projectile.width, projectile.height, 20);
+			for (int i = 0; i < 6; i++)
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.PurificationPowder);
 		}
 
 		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit) =>
@@ -32,7 +32,8 @@ namespace Albedo.Projectiles.Bullets
 		{
 			_bounce++;
 			Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y, 21, 0.5f, 0.8f);
-			for (int i = 0; i < 1; i++) Dust.NewDust(projectile.position, projectile.width, projectile.height, 20);
+			for (int i = 0; i < 1; i++)
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.PurificationPowder);
 			if (projectile.velocity.X != oldVelocity.X) projectile.velocity.X = -oldVelocity.X;
 			if (projectile.velocity.Y != oldVelocity.Y) projectile.velocity.Y = -oldVelocity.Y;
 			projectile.aiStyle = 1;

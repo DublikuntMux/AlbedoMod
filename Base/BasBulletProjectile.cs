@@ -4,10 +4,7 @@ namespace Albedo.Base
 {
 	public abstract class BasBulletProjectile : ModProjectile
 	{
-		protected new abstract string Name { get; }
 		protected abstract int Penetrate { get; }
-
-		public override void SetStaticDefaults() => DisplayName.SetDefault(Name);
 
 		public override void SetDefaults()
 		{

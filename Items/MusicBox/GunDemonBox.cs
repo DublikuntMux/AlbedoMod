@@ -11,6 +11,7 @@ namespace Albedo.Items.MusicBox
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.useTurn = true;
 			item.useAnimation = 15;

@@ -16,6 +16,7 @@ namespace Albedo.Base
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = Damage;
 			item.ranged = true;
 			item.width = 40;

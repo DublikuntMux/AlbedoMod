@@ -14,6 +14,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = 50;
 			item.crit = 5;
 			item.useStyle = ItemUseStyleID.HoldingOut;

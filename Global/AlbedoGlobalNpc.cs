@@ -1,5 +1,4 @@
 using Albedo.Buffs.Boss;
-using Albedo.Items.Materials;
 using Albedo.Items.Weapons.Ranged;
 using Terraria;
 using Terraria.ID;

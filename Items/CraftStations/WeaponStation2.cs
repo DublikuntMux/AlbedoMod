@@ -12,6 +12,7 @@ namespace Albedo.Items.CraftStations
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 28;
 			item.height = 14;
 			item.maxStack = 99;

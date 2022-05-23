@@ -1,7 +1,6 @@
 ﻿using System;
 using Albedo.Helper;
 using Albedo.NPCs.Enemies.Invasion.PossessedWeapon;
-using Albedo.Projectiles.Bullets;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -27,7 +26,7 @@ namespace Albedo.Projectiles.Enemies
 			npc.defense = 40;
 			npc.lifeMax = 500;
 			npc.scale = 1f;
-			npc.damage = 100;
+			npc.damage = 25;
 			npc.HitSound = SoundID.NPCHit4;
 			npc.DeathSound = SoundID.NPCDeath14;
 			npc.noGravity = true;
@@ -78,8 +77,8 @@ namespace Albedo.Projectiles.Enemies
 								.RotatedBy((Main.rand.NextDouble() - 0.5) * 0.785398185253143 / 12.0);
 							vector *= Main.rand.NextFloat(0.9f, 1.1f);
 							int num = Projectile.NewProjectile(npc.Center, vector,
-								ModContent.ProjectileType<HellBulletProjectile>(),
-								val.damage / 4, 0f, Main.myPlayer);
+								ModContent.ProjectileType<MinionProjectile>(),
+								val.damage, 0f, Main.myPlayer);
 							if (num != 1000)
 								Main.projectile[num].timeLeft = (int) (npc.localAI[2] / vector.Length()) + 1;
 						}

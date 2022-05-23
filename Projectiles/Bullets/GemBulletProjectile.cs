@@ -7,7 +7,6 @@ namespace Albedo.Projectiles.Bullets
 	public class GemBulletProjectile : BasBulletProjectile
 	{
 		public override string Texture => "Albedo/Projectiles/Empty";
-		protected override string Name => "Gem Bullet";
 		protected override int Penetrate => 3;
 
 		public override void AI()
@@ -23,7 +22,8 @@ namespace Albedo.Projectiles.Bullets
 		public override void Kill(int timeLeft)
 		{
 			Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y, 21, 0.5f, 0.8f);
-			for (int i = 0; i < 20; i++) Dust.NewDust(projectile.position, projectile.width, projectile.height, 15);
+			for (int i = 0; i < 20; i++)
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.MagicMirror);
 		}
 	}
 }

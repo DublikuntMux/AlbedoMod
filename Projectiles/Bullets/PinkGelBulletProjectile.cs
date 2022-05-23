@@ -10,7 +10,6 @@ namespace Albedo.Projectiles.Bullets
 		private const int MaxBounces = 5;
 
 		private int _bounce;
-		protected override string Name => "PinkGel Bullet";
 		protected override int Penetrate => 4;
 
 		public override void AI()
@@ -23,7 +22,7 @@ namespace Albedo.Projectiles.Bullets
 		{
 			Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y, 21, 0.5f, 0.8f);
 			for (int i = 0; i < 6; i++)
-				Dust.NewDust(projectile.position, projectile.width, projectile.height, 21, 0f, 0f, 0,
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.VilePowder, 0f, 0f, 0,
 					new Color(244, 0, 255));
 		}
 
@@ -32,7 +31,7 @@ namespace Albedo.Projectiles.Bullets
 			_bounce++;
 			Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y, 21, 0.5f, 0.8f);
 			for (int i = 0; i < 4; i++)
-				Dust.NewDust(projectile.position, projectile.width, projectile.height, 21, 0f, 0f, 0,
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.VilePowder, 0f, 0f, 0,
 					new Color(244, 0, 255));
 			if (projectile.velocity.X != oldVelocity.X) projectile.velocity.X = -oldVelocity.X;
 			if (projectile.velocity.Y != oldVelocity.Y) projectile.velocity.Y = -oldVelocity.Y;

@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 
 namespace Albedo.Projectiles.Accessories
 {
-	public class Imitator : ModProjectile
+	public class ImitatorProjectile : ModProjectile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -90,7 +90,7 @@ namespace Albedo.Projectiles.Accessories
 				if (projectile.owner == Main.myPlayer)
 					Projectile.NewProjectile(projectile.Center.X - 4f, projectile.Center.Y, num4, num5,
 						ModContent.ProjectileType<PostLunarBulletProjectile>(),
-						projectile.damage, projectile.knockBack, projectile.owner);
+						40, projectile.knockBack, projectile.owner);
 				projectile.ai[0] = num;
 			}
 

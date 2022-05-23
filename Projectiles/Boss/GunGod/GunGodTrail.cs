@@ -65,7 +65,7 @@ namespace Albedo.Projectiles.Boss.GunGod
 				Main.spriteBatch.End();
 				Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, Main.DefaultSamplerState,
 					DepthStencilState.None, RasterizerState.CullCounterClockwise, null, Main.GameViewMatrix.ZoomMatrix);
-				GameShaders.Armor.GetShaderFromItemId(1016).Apply(projectile);
+				GameShaders.Armor.GetShaderFromItemId(1011).Apply(projectile);
 			}
 
 			for (int i = 0; i < ProjectileID.Sets.TrailCacheLength[projectile.type]; i++) {

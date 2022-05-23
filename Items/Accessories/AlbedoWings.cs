@@ -11,6 +11,7 @@ namespace Albedo.Items.Accessories
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 30;
 			item.height = 36;
 			item.value = Item.sellPrice(0, 30);

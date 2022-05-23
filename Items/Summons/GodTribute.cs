@@ -13,6 +13,7 @@ namespace Albedo.Items.Summons
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 20;
 			item.height = 20;
 			item.useAnimation = 30;

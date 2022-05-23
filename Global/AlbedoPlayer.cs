@@ -1,8 +1,10 @@
 using System;
+using Albedo.Buffs.Boss;
 using Albedo.Helper;
 using Albedo.Projectiles.Accessories;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
@@ -13,7 +15,7 @@ namespace Albedo.Global
 		public static bool StartMessage;
 
 		public bool BulletPet;
-		
+
 		public bool GodImitator;
 		public bool GunDemonCurse;
 		public bool GunGodCurse;
@@ -55,7 +57,9 @@ namespace Albedo.Global
 		public override void PostUpdateBuffs()
 		{
 			if (GunDemonCurse) {
-				player.lifeRegen = 0;
+				if (player.lifeRegen > 0) {
+					player.lifeRegen = 0;
+				}
 				player.lifeRegenTime = 0;
 				player.allDamage /= 1.3f;
 				player.statDefense -= 10;
@@ -63,7 +67,9 @@ namespace Albedo.Global
 			}
 
 			if (GunGodCurse) {
-				player.lifeRegen = 0;
+				if (player.lifeRegen > 0) {
+					player.lifeRegen = 0;
+				}
 				player.lifeRegenTime = 0;
 				player.statDefense -= 10;
 				player.endurance /= 1.3f;
@@ -76,7 +82,9 @@ namespace Albedo.Global
 				player.statDefense /= 2;
 				player.endurance /= 2f;
 				player.onFire2 = true;
-				player.lifeRegen = 0;
+				if (player.lifeRegen > 0) {
+					player.lifeRegen = 0;
+				}
 				player.allDamage /= 1.1f;
 				player.lifeRegenTime = 0;
 			}
@@ -86,11 +94,11 @@ namespace Albedo.Global
 		{
 			if (GodImitator)
 				if (player.whoAmI == Main.myPlayer &&
-				    player.ownedProjectileCounts[ModContent.ProjectileType<Imitator>()] == 0) {
+				    player.ownedProjectileCounts[ModContent.ProjectileType<ImitatorProjectile>()] == 0) {
 					const float radius = (float) Math.PI * 2f / 5f;
 					for (int i = 0; i < 5; i++)
 						Projectile.NewProjectile(player.Center + new Vector2(60f, 0f).RotatedBy(radius * i),
-							Vector2.Zero, ModContent.ProjectileType<Imitator>(), 150, 10f, player.whoAmI, 0f,
+							Vector2.Zero, ModContent.ProjectileType<ImitatorProjectile>(), 150, 10f, player.whoAmI, 0f,
 							radius * i);
 				}
 		}

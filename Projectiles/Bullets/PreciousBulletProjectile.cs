@@ -6,7 +6,6 @@ namespace Albedo.Projectiles.Bullets
 {
 	public class PreciousBulletProjectile : BasBulletProjectile
 	{
-		protected override string Name => "Precious Bullet";
 		protected override int Penetrate => 4;
 
 		public override void AI()
@@ -19,8 +18,8 @@ namespace Albedo.Projectiles.Bullets
 		{
 			Main.PlaySound(SoundID.Dig, (int) projectile.position.X, (int) projectile.position.Y, 21, 0.5f, 0.8f);
 			for (int i = 0; i < 6; i++) {
-				Dust.NewDust(projectile.position, projectile.width, projectile.height, 11);
-				Dust.NewDust(projectile.position, projectile.width, projectile.height, 10);
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.Silver);
+				Dust.NewDust(projectile.position, projectile.width, projectile.height, DustID.Gold);
 			}
 		}
 	}

@@ -13,6 +13,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.damage = 90;
 			item.ranged = true;
 			item.width = 50;

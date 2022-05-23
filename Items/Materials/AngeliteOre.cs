@@ -11,6 +11,7 @@ namespace Albedo.Items.Materials
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 30;
 			item.height = 24;
 			item.maxStack = 999;

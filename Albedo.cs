@@ -110,6 +110,7 @@ namespace Albedo
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Info"),
 				Language.GetTextValue("Mods.Albedo.Boss.GunGod.Gone"),
 				"Albedo/UI/BossChecklist/GunGod");
+			
 			bossChecklist?.Call("AddEvent", 9.6f, new List<int> {
 					NPCID.BlazingWheel, NPCID.PossessedArmor, ModContent.NPCType<GunCaster>(), NPCID.MartianTurret,
 					NPCID.EnchantedSword, NPCID.CrimsonAxe, NPCID.CursedHammer, ModContent.NPCType<LiveArmorCopper>(),
@@ -126,12 +127,30 @@ namespace Albedo
 				"Albedo/UI/BossChecklist/GunInvaidors"
 			);
 
-			yabhb?.Call("RegisterDD2HealthBar",
-				ModContent.NPCType<HellGuard>());
-			yabhb?.Call("RegisterDD2HealthBar",
-				ModContent.NPCType<GunDemonHead>());
-			yabhb?.Call("RegisterHealthBar",
-				ModContent.NPCType<GunGod>());
+			yabhb?.Call("RegisterCustomHealthBar",
+				ModContent.NPCType<HellGuard>(),
+				false,
+				Language.GetTextValue("Mods.Albedo.NPCName.HellGuard"),
+				GetTexture("UI/yabhb/ClassicBarFill"),
+				GetTexture("UI/yabhb/HellBarStart"),
+				GetTexture("UI/yabhb/HellBarMiddle"),
+				GetTexture("UI/yabhb/HellBarEnd"));
+			yabhb?.Call("RegisterCustomHealthBar",
+				ModContent.NPCType<GunDemonHead>(),
+				false,
+				Language.GetTextValue("Mods.Albedo.NPCName.GunDemonHead"),
+				GetTexture("UI/yabhb/ClassicBarFill"),
+				GetTexture("UI/yabhb/HellBarStart"),
+				GetTexture("UI/yabhb/HellBarMiddle"),
+				GetTexture("UI/yabhb/HellBarEnd"));
+			yabhb?.Call("RegisterCustomHealthBar",
+				ModContent.NPCType<GunGod>(),
+				false,
+				Language.GetTextValue("Mods.Albedo.NPCName.GunGod"),
+				GetTexture("UI/yabhb/GunBarFill"),
+				GetTexture("UI/yabhb/GunBarStart"),
+				GetTexture("UI/yabhb/GunBarMiddle"),
+				GetTexture("UI/yabhb/GunBarEnd"));
 		}
 	}
 }

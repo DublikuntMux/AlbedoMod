@@ -8,8 +8,8 @@ namespace Albedo.Buffs.Item
 	{
 		public override void SetDefaults()
 		{
-			Main.buffNoSave[this.Type] = true;
-			Main.buffNoTimeDisplay[this.Type] = true;
+			Main.buffNoSave[Type] = true;
+			Main.buffNoTimeDisplay[Type] = true;
 		}
 
 		public override void Update(Player player, ref int buffIndex)

@@ -9,6 +9,7 @@ namespace Albedo.Items.Weapons.Ranged
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.autoReuse = true;
 			item.useAnimation = 36;

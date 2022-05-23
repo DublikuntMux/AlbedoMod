@@ -12,12 +12,12 @@ namespace Albedo.Items.Trophies
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 30;
 			item.height = 30;
 			item.maxStack = 99;
 			item.useTurn = true;
 			item.autoReuse = true;
-			item.rare = ItemRarityID.Purple;
 			item.value = Item.sellPrice(0, 1);
 			item.useAnimation = 15;
 			item.useTime = 15;

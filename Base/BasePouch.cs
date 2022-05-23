@@ -12,6 +12,7 @@ namespace Albedo.Base
 		public override void SetDefaults()
 		{
 			item.CloneDefaults(AmmunitionItem);
+			base.SetDefaults();
 			item.width = 26;
 			item.height = 26;
 			item.consumable = false;

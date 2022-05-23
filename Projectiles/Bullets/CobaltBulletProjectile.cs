@@ -6,7 +6,6 @@ namespace Albedo.Projectiles.Bullets
 {
 	public class CobaltBulletProjectile : BasBulletProjectile
 	{
-		protected override string Name => "Cobalt Bullet";
 		protected override int Penetrate => 8;
 
 		public override void AI()

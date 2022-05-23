@@ -13,10 +13,12 @@ namespace Albedo.Items.Summons
 	{
 		protected override int Rarity => 8;
 
-		public override void SetStaticDefaults() => Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
+		public override void SetStaticDefaults() =>
+			Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
 
 		public override void SetDefaults()
 		{
+			base.SetDefaults();
 			item.width = 36;
 			item.height = 22;
 			item.scale = 1;
