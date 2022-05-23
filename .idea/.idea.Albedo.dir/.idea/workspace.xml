@@ -8,102 +8,9 @@
     <projectFile profileName="TerrariaServer">Albedo.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d30f83fa-2f34-420d-b8ab-96b16894ddca" name="Changes" comment="resprite">
-      <change afterPath="$PROJECT_DIR$/Projectiles/Enemies/MinionProjectile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/ClassicBarFill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/GunBarEnd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/GunBarFill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/GunBarMiddle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/GunBarStart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/HellBarEnd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/HellBarMiddle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/yabhb/HellBarStart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+    <list default="true" id="d30f83fa-2f34-420d-b8ab-96b16894ddca" name="Changes" comment="code clean up">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Albedo.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Albedo.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Albedo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Albedo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base/BasBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/BasBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base/BaseBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/BaseBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base/BasePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Base/BasePouch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buffs/Item/ZenithGunMinionBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Buffs/Item/ZenithGunMinionBuff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buffs/Item/ZenithGunMinionBuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Buffs/Item/ZenithGunMinionBuff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Global/AlbedoGlobalNpc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global/AlbedoGlobalNpc.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Global/AlbedoPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global/AlbedoPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Accessories/AlbedoWings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Accessories/AlbedoWings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Accessories/GodImetator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Accessories/GodImetator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/CosmoPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/CosmoPouch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/HardmodePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/HardmodePouch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/PostLunarPouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/PostLunarPouch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Ammos/Combined/PrehardmodePouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Ammos/Combined/PrehardmodePouch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/CraftStations/WeaponStation1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/CraftStations/WeaponStation1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/CraftStations/WeaponStation2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/CraftStations/WeaponStation2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/CraftStations/WeaponStation3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/CraftStations/WeaponStation3.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/AlbedoIngot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AlbedoIngot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/AlbedoOre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AlbedoOre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/AngeliteBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AngeliteBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/AngeliteOre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/AngeliteOre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/GunDemonSoul.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/GunDemonSoul.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/GunGodSoul.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/GunGodSoul.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Materials/HellGuardSoul.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Materials/HellGuardSoul.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/MusicBox/GunDemonBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/MusicBox/GunDemonBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/MusicBox/GunGodBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/MusicBox/GunGodBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/MusicBox/HellGuardBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/MusicBox/HellGuardBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Summons/CursedPistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/CursedPistol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Summons/GodTribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/GodTribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Summons/SniperVoodooDoll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/SniperVoodooDoll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Summons/VibrateGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Summons/VibrateGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/TreasureBags/GunDemonBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/TreasureBags/GunDemonBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/TreasureBags/GunGodBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/TreasureBags/GunGodBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/TreasureBags/HellGuardBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/TreasureBags/HellGuardBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Trophies/GunDemonTrophy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Trophies/GunDemonTrophy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Trophies/GunGodTrophy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Trophies/GunGodTrophy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Trophies/HellGuardTrophy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Trophies/HellGuardTrophy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/AdamantiteRifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/AdamantiteRifle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/AlienBlaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/AlienBlaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/AngelGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/AngelGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ClockworkCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ClockworkCannon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/CosmicAssaultRifle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/CosmicAssaultRifle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/DistortedGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/DistortedGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ImprovedMusket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ImprovedMusket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/KryonikGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/KryonikGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/LavaDisaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/LavaDisaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/Magmum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/Magmum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/Musket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/Musket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/RocketShotgun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/RocketShotgun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/RustleDunes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/RustleDunes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/SDFMG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/SDFMG.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ShadowDreams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ShadowDreams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ShortStarCannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ShortStarCannon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ShotgunMeasurements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ShotgunMeasurements.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/Triple.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/Triple.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Items/Weapons/Ranged/ZenithGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Items/Weapons/Ranged/ZenithGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Localization/ru-RU.lang" beforeDir="false" afterPath="$PROJECT_DIR$/Localization/ru-RU.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Boss/GunGod/MiniGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Boss/GunGod/MiniGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Invasion/PossessedWeapon/GunCaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Enemies/Invasion/PossessedWeapon/GunCaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Invasion/PossessedWeapon/LiveArmorCopper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Enemies/Invasion/PossessedWeapon/LiveArmorCopper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCs/Enemies/Invasion/PossessedWeapon/LiveArmorGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NPCs/Enemies/Invasion/PossessedWeapon/LiveArmorGold.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patreon/Accessories/BulletOnChain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Patreon/Accessories/BulletOnChain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Accessories/Imitator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Accessories/ImitatorProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Accessories/Imitator.png" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Accessories/ImitatorProjectile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Boss/GunGod/GunGodTrail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/AdamantiteBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/AdamantiteBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/CobaltBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/CobaltBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/CopperBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/CopperBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/DirtBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/DirtBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/GelBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/GelBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/GemBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/GemBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/HellBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/HellBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/HellBulletProjectile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/IceBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/IceBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/IronBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/IronBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/LeadBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/LeadBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/MythrilBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/MythrilBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/PinkGelBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/PinkGelBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/PreciousBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/PreciousBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/SnowBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/SnowBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/StoneBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/StoneBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Bullets/TungstenBulletProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Bullets/TungstenBulletProjectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projectiles/Enemies/GunCusterMinion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Projectiles/Enemies/GunCusterMinion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,19 +56,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "RiderDotTracePageId"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Albedo: Terraria">
     <configuration name="Albedo: Terraria" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Albedo.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETFramework,Version=v4.8" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETFramework,Version=v4.5" />
       <option name="LAUNCH_PROFILE_NAME" value="Terraria" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -176,7 +83,7 @@
     </configuration>
     <configuration name="Albedo: TerrariaServer" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Albedo.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETFramework,Version=v4.8" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETFramework,Version=v4.5" />
       <option name="LAUNCH_PROFILE_NAME" value="TerrariaServer" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -189,6 +96,10 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Albedo: Terraria" />
+      <item itemvalue=".NET Launch Settings Profile.Albedo: TerrariaServer" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -222,7 +133,7 @@
       <workItem from="1653211943839" duration="54000" />
       <workItem from="1653215770020" duration="5285000" />
       <workItem from="1653283395289" duration="4339000" />
-      <workItem from="1653294363761" duration="9001000" />
+      <workItem from="1653294363761" duration="9812000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1652509927517</created>
@@ -308,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653295101941</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="code clean up">
+      <created>1653304418618</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653304418618</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -339,6 +257,7 @@
     <MESSAGE value="add translate" />
     <MESSAGE value="re banase" />
     <MESSAGE value="resprite" />
-    <option name="LAST_COMMIT_MESSAGE" value="resprite" />
+    <MESSAGE value="code clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="code clean up" />
   </component>
 </project>
